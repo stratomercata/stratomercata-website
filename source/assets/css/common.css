@@ -347,7 +347,6 @@ header {
  * Removes default margins for precise control.
  */
 h1, h2, h3, h4, h5, h6 {
-    text-transform: lowercase;
     margin-bottom: 10px;
     margin-top: 5px;
     color: #333;
