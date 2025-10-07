@@ -1,5 +1,4 @@
 ---
-layout: mercata
 title: "Mercata V2 Contest: Winners Announced!"
 date: 2025-09-24
 hosts: ["Kieren James-Lubin", "Victor Wong", "Jaime Gonzalez", "Michael Tan"]
