@@ -95,13 +95,13 @@
       See: https://jekyllrb.com/docs/navigation/
     -->
     <header class="site-header-center">
-        <h1 class="site-header-title"><a href="/">{{ site.title }}</a></h1>
+        <h1 class="site-header-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
         <p class="site-description site-description-center">{{ site.description }}</p>
         <nav class="site-nav-flex">
             <ul class="site-nav site-nav-list">
-                <li><a href="/people/">People</a></li>
-                <li><a href="/videos/">Videos</a></li>
-                <li><a href="/articles/">Articles</a></li>
+                <li><a href="{{ '/people/' | relative_url }}">People</a></li>
+                <li><a href="{{ '/videos/' | relative_url }}">Videos</a></li>
+                <li><a href="{{ '/articles/' | relative_url }}">Articles</a></li>
             </ul>
         </nav>
         <style>
