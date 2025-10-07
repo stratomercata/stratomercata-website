@@ -5,6 +5,13 @@
 # Jekyll Documentation: https://jekyllrb.com/docs/configuration/
 
 # ============================================================================
+# Build Directory Configuration
+# ============================================================================
+# Tell Jekyll to look for content in the source/ directory
+
+source: source
+
+# ============================================================================
 # Basic Site Information
 # ============================================================================
 # These settings define your site's identity and are used throughout templates,
