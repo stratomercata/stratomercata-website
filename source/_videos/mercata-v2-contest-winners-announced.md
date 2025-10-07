@@ -14,7 +14,7 @@ Our long-awaited [Mercata V2 contest]("https://www.stratomercata.com/blog/announ
 
 ## Transcript
 
-We suggest that you start at the [Victor's welcome](#victor-welcome).
+We suggest that you start at the [Victor's introduction](#victor-introduction).
 
 <div class="table-of-contents">
     <h2>Contents</h2>
