@@ -23,6 +23,63 @@ while ensuring clean, valid HTML output.
 
 {%- assign body_content = include.content -%}
 
+{%- comment -%}Remove links to non-existent people profiles{%- endcomment -%}
+{%- comment -%}Find all links to /people/ and check if the person exists{%- endcomment -%}
+{%- assign people_link_parts = body_content | split: '<a href="' -%}
+{%- assign new_body = "" -%}
+{%- for part in people_link_parts -%}
+  {%- if forloop.first -%}
+    {%- assign new_body = part -%}
+  {%- else -%}
+    {%- comment -%}Check if this link is to a people page{%- endcomment -%}
+    {%- if part contains '/people/' -%}
+      {%- assign link_parts = part | split: '">' -%}
+      {%- if link_parts.size > 1 -%}
+        {%- assign href_part = link_parts[0] -%}
+        {%- assign after_link_start = link_parts[1] -%}
+        {%- assign link_text_parts = after_link_start | split: '</a>' -%}
+        {%- if link_text_parts.size > 1 -%}
+          {%- assign link_text = link_text_parts[0] -%}
+          {%- assign after_link = link_text_parts[1] -%}
+          
+          {%- comment -%}Extract the person identifier from the href{%- endcomment -%}
+          {%- assign person_identifier = href_part | split: '/people/' | last | split: '/' | first -%}
+          
+          {%- comment -%}Check if this person exists in site.people{%- endcomment -%}
+          {%- assign person_exists = false -%}
+          {%- for person in site.people -%}
+            {%- assign person_slug = person.url | split: '/people/' | last | split: '/' | first -%}
+            {%- if person_slug == person_identifier -%}
+              {%- assign person_exists = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+          
+          {%- if person_exists -%}
+            {%- comment -%}Person exists, keep the link{%- endcomment -%}
+            {%- assign new_body = new_body | append: '<a href="' | append: part -%}
+          {%- else -%}
+            {%- comment -%}Person doesn't exist, replace with plain text{%- endcomment -%}
+            {%- assign new_body = new_body | append: link_text | append: after_link -%}
+            {%- comment -%}Add back any remaining </a> tags that might be in after_link{%- endcomment -%}
+            {%- for remaining in link_text_parts offset: 2 -%}
+              {%- assign new_body = new_body | append: '</a>' | append: remaining -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign new_body = new_body | append: '<a href="' | append: part -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- assign new_body = new_body | append: '<a href="' | append: part -%}
+      {%- endif -%}
+    {%- else -%}
+      {%- comment -%}Not a people link, keep as is{%- endcomment -%}
+      {%- assign new_body = new_body | append: '<a href="' | append: part -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign body_content = new_body -%}
+
 {%- comment -%}Protect content inside no-auto-link-marker spans{%- endcomment -%}
 {%- assign protected_spans = "" | split: "" -%}
 {%- assign span_parts = body_content | split: '<span class="no-auto-link-marker">' -%}
