@@ -8,7 +8,7 @@ embed-content-width: 50%
       CSS Stylesheets for custom embeds and site styling.
       See: https://jekyllrb.com/docs/assets/
     -->
-    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="{{ '/assets/css/common.css' | relative_url }}">
 
     <!--
       Character encoding and responsive viewport.
@@ -172,7 +172,7 @@ embed-content-width: 50%
     <div class="footer-desktop">
         <div class="footer-brand-container">
             <a href="https://stratomercata.com" target="_blank" rel="noopener" class="footer-brand-link">
-                <img src="/images/github.com/2025.08.28/strato-mercata.png" alt="STRATO Mercata" class="footer-brand-logo" />
+                <img src="{{ '/images/github.com/2025.08.28/strato-mercata.png' | relative_url }}" alt="STRATO Mercata" class="footer-brand-logo" />
                 <span class="footer-brand-text"><a href="https://stratomercata.com" class="footer-strato-link">STRATO Mercata</a>: Where Stability Meets Opportunity</span>
             </a>
         </div>
@@ -185,7 +185,7 @@ embed-content-width: 50%
     <div class="footer-mobile">
         <div class="footer-mobile-brand-container">
             <a href="https://stratomercata.com" target="_blank" rel="noopener" class="footer-mobile-brand-link">
-                <img src="/images/github.com/2025.08.28/strato-mercata.png" alt="STRATO Mercata" class="footer-mobile-brand-logo" />
+                <img src="{{ '/images/github.com/2025.08.28/strato-mercata.png' | relative_url }}" alt="STRATO Mercata" class="footer-mobile-brand-logo" />
                 <span class="footer-brand-text-block"><a href="https://stratomercata.com" class="footer-strato-link">STRATO Mercata</a></span>
                 <span class="footer-brand-text-block">Where Stability Meets Opportunity</span>
             </a>

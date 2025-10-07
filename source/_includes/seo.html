@@ -267,12 +267,12 @@
 {% endcomment %}
 
 {% comment %} Preload critical resources {% endcomment %}
-<link rel="preload" href="/assets/css/common.css" as="style">
+<link rel="preload" href="{{ '/assets/css/common.css' | relative_url }}" as="style">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://www.google-analytics.com">
 
 {% comment %} Favicon and app icons {% endcomment %}
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
 
 {% comment %} Site verification {% endcomment %}
 {% if site.google_site_verification %}
