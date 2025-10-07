@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<nav aria-label="Breadcrumb">
+    <div class="back-link">
+        <a href="/articles/">&larr; Back to Articles</a>
+    </div>
+</nav>
+
+<article itemscope itemtype="https://schema.org/Article">
+    <header{% if page.source_url %} class="has-embed"{% endif %}>
+        <h1 itemprop="headline">
+          {% if page.lowercase_title %}{{ page.lowercase_title }}{% else %}{{ page.title }}{% endif %}{% if page.alias %} ("{{ page.alias }}"){% endif %}
+        </h1>
+        <div class="content-meta">
+            {% if page.date %}
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>
+                <meta itemprop="dateModified" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">
+            {% endif %}
+            {% if page.author %}
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    by
+                    {% assign matched_person = nil %}
+                    {% for person in site.people %}
+                      {% if person.name == page.author %}
+                        {% assign matched_person = person %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                    {% if matched_person %}
+                      <a href="{{ matched_person.url }}" itemprop="name">{{ page.author }}</a>
+                    {% else %}
+                      <span itemprop="name">{{ page.author }}</span>
+                    {% endif %}
+                </span>
+            {% endif %}
+        </div>
+        {% if page.description %}
+        <div class="article-description" itemprop="description">
+            {{ page.description }}
+        </div>
+        <meta itemprop="description" content="{{ page.description }}">
+        {% endif %}
+        {% if page.image %}
+        <meta itemprop="image" content="{{ page.image | absolute_url }}">
+        {% endif %}
+    </header>
+    {% if page.embed.url %}
+      {% include content-embed.html
+        url=page.embed.url
+        img=page.embed.img
+        site=page.embed.site
+        title=page.title
+        author=page.author
+        date=page.date
+        description=page.description
+      %}
+    {% endif %}
+
+    <div class="article-content" itemprop="articleBody">
+        {% include auto_link.html content=content %}
+    </div>
+    
+    {% if page.tags and page.tags.size > 0 %}
+    <div class="article-tags">
+        <strong>Tags:</strong>
+        {% for tag in page.tags %}
+            <span class="tag" itemprop="keywords">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>
+
+{% comment %}
+  Back-links Section - Automatically generated list of pages that reference this article
+{% endcomment %}
+{% include back-links.html %}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+
+  <!--
+  =========================
+  Jekyll Default Layout: <head> Section
+  =========================
+  This section sets up the HTML <head> for every page using this layout.
+  For more on Jekyll layouts: https://jekyllrb.com/docs/layouts/
+  -->
+  <head>
+
+    <!--
+      CSS Stylesheets for custom embeds and site styling.
+      See: https://jekyllrb.com/docs/assets/
+    -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+
+    <!--
+      Character encoding and responsive viewport.
+      See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+      Centralized SEO optimization
+      See: _includes/seo.html for all SEO meta tags, structured data, and social media optimization
+    -->
+    {% include seo.html %}
+
+    <!--
+      Google Analytics integration.
+      See: https://support.google.com/analytics/answer/1008080
+    -->
+    {% if site.google_analytics and site.google_analytics != "" %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+
+    <!--
+      Redirect from GitHub Pages to custom domain.
+      See: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
+    -->
+    <script>
+    if (window.location.hostname === "bobsummerwill.github.io") {
+        window.location.replace("https://www.earlydaysofeth.org" + window.location.pathname);
+    }
+    </script>
+
+    
+
+
+
+  </head>
+
+  <!--
+  =========================
+  Jekyll Default Layout: <body> Section
+  =========================
+  This section contains the main site header, navigation, content, and footer.
+  -->
+  <body>
+
+    <!-- Full-page Background Video -->
+    {% assign video_pages = "/" | split: "," %}
+    {% assign video_pages = video_pages | push: "/people/" %}
+    {% assign video_pages = video_pages | push: "/videos/" %}
+    {% assign video_pages = video_pages | push: "/articles/" %}
+    {% assign video_pages = video_pages | push: "/grid/" %}
+    {% assign show_video = false %}
+    {% if video_pages contains page.url %}
+      {% assign show_video = true %}
+    {% elsif page.url contains "/articles/" %}
+      {% assign show_video = true %}
+    {% elsif page.url contains "/people/" %}
+      {% assign show_video = true %}
+    {% elsif page.url contains "/videos/" %}
+      {% assign show_video = true %}
+    {% endif %}
+    {% if show_video %}
+    <video class="full-page-bg-video" autoplay loop muted playsinline>
+        <source src="/assets/videos/archive.org/ethereum.org/20140305192502/ethereum-bg-2014.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    {% endif %}
+
+    <!--
+      Site header with title and navigation.
+      See: https://jekyllrb.com/docs/navigation/
+    -->
+    <header class="site-header-center">
+        <h1 class="site-header-title"><a href="/">{{ site.title }}</a></h1>
+        <p class="site-description site-description-center">{{ site.description }}</p>
+        <nav class="site-nav-flex">
+            <ul class="site-nav site-nav-list">
+                <li><a href="/people/">People</a> (<a href="/grid/">Grid</a>)</li>
+                <li><a href="/videos/">Videos</a></li>
+                <li><a href="/articles/">Articles</a></li>
+            </ul>
+        </nav>
+        <style>
+            /* Override common.css navigation styles for mobile */
+            nav ul.site-nav {
+                flex-wrap: nowrap !important;
+            }
+            
+            /* Always show underline on navigation links */
+            nav ul.site-nav a {
+                text-decoration: underline !important;
+            }
+            
+            /* Keep navigation horizontal on mobile */
+            @media (max-width: 768px) {
+                nav ul.site-nav {
+                    flex-direction: row !important;
+                    flex-wrap: nowrap !important;
+                    gap: 8px !important;
+                }
+                nav ul.site-nav li {
+                    white-space: nowrap !important;
+                    flex-shrink: 0 !important;
+                }
+            }
+        </style>
+    </header>
+    
+    <!--
+      Main content area where page/post content is rendered.
+      See: https://jekyllrb.com/docs/variables/#content
+    -->
+    <main>
+        {{ content }}
+    </main>
+    
+    <!--
+      Site footer with sponsor and contribution links.
+      Customize as needed for your project.
+    -->
+    <footer class="footer-gradient">
+
+        <!-- Desktop footer (original single-line) -->
+        <div class="footer-desktop">
+            <div class="footer-brand-container">
+                <a href="https://stratomercata.com" target="_blank" rel="noopener" class="footer-brand-link">
+                    <img src="/images/github.com/2025.08.28/strato-mercata.png" alt="STRATO Mercata" class="footer-brand-logo" />
+                    <span class="footer-brand-text">Early Days of Ethereum is supported by<span class="whitespace-pre"> </span><a href="https://stratomercata.com" class="footer-strato-link">STRATO Mercata</a></span>
+                </a>
+            </div>
+            <div class="footer-contribution-text">
+                Contributions welcome via <a href="https://github.com/bobsummerwill/EarlyDaysOfEthereum/issues" class="footer-link">issues</a>, 
+                <a href="https://github.com/bobsummerwill/EarlyDaysOfEthereum/pulls" class="footer-link">pull requests</a>, 
+                or directly to Bob's <a href="https://x.com/bobsummerwill" class="footer-link">X</a> or 
+                <a href="https://linkedin.com/in/bobsummerwill" class="footer-link">LinkedIn</a>.
+            </div>
+        </div>
+
+        <!-- Mobile footer (split lines) -->
+        <div class="footer-mobile">
+            <div class="footer-mobile-brand-container">
+                <a href="https://stratomercata.com" target="_blank" rel="noopener" class="footer-mobile-brand-link">
+                    <img src="/images/github.com/2025.08.28/strato-mercata.png" alt="STRATO Mercata" class="footer-mobile-brand-logo" />
+                    <span class="footer-brand-text-block">Early Days of Ethereum</span>
+                    <span class="footer-brand-text-block">is supported by</span>
+                    <span class="footer-brand-text-block"><a href="https://stratomercata.com" class="footer-strato-link">STRATO Mercata</a></span>
+                </a>
+            </div>
+            <div class="footer-contribution-text">
+                Contributions welcome via <a href="https://github.com/bobsummerwill/EarlyDaysOfEthereum/issues" class="footer-link">issues</a>, 
+                <a href="https://github.com/bobsummerwill/EarlyDaysOfEthereum/pulls" class="footer-link">pull requests</a>, 
+                or directly to Bob's <a href="https://x.com/bobsummerwill" class="footer-link">X</a> or 
+                <a href="https://linkedin.com/in/bobsummerwill" class="footer-link">LinkedIn</a>.
+            </div>
+        </div>
+
+        <!--
+        Responsive CSS for footer: shows .footer-desktop on large screens and .footer-mobile on small screens.
+        Ensures the footer layout adapts for desktop and mobile devices.
+        -->
+        <style>
+            @media (max-width: 600px) {
+                .footer-desktop { display: none !important; }
+                .footer-mobile { display: flex !important; }
+            }
+            @media (min-width: 601px) {
+                .footer-desktop { display: flex !important; }
+                .footer-mobile { display: none !important; }
+            }
+        </style>
+    
+    </footer>
+
+    <!--
+    HIDEABLE SECTION SUPPORT
+    ------------------------
+    Any page (post, person, video, etc.) can define a hideable section by using a Liquid capture block in the Markdown file:
+
+        {% capture hideable_section %}
+        ...content to hide...
+        {% endcapture %}
+
+    The default layout will automatically output this section wrapped in:
+        <div class="hideable-section" style="display:none">...</div>
+
+    A global JavaScript snippet will show all .hideable-section elements if the URL contains ?hidden=false.
+    This allows for dynamic, client-side toggling of sensitive or optional content for review or admin purposes.
+
+    No raw HTML or includes are needed in the Markdown file—just the capture block.
+    -->
+    <script>
+    // Show hideable sections if ?hidden=false is present in the URL
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('hidden') === 'false') {
+        document.querySelectorAll('.hideable-section').forEach(function(el) {
+            el.style.display = '';
+        });
+        }
+    })();
+    </script>
+
+        <!--
+        Handles click-to-play for DEVCON0 video section.
+        See: https://jekyllrb.com/docs/navigation/
+        https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
+        -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // For single person page
+            const thumbnailWrapper = document.querySelector('.devcon0-thumbnail-wrapper');
+            const videoPlayer = document.querySelector('.devcon0-video-player');
+            if (thumbnailWrapper && videoPlayer) {
+                const iframe = videoPlayer.querySelector('iframe');
+                thumbnailWrapper.addEventListener('click', function() {
+                    // Set the iframe src to start the video
+                    iframe.src = 'https://www.youtube.com/embed/_BvvUlKDqp0?start={{ page.devcon0 }}&autoplay=1';
+                    // Hide thumbnail and show video
+                    thumbnailWrapper.style.display = 'none';
+                    videoPlayer.style.display = 'block';
+                });
+                // Hover effect for play button
+                const playButton = thumbnailWrapper.querySelector('.play-button-overlay');
+                if (playButton) {
+                    thumbnailWrapper.addEventListener('mouseenter', function() {
+                        playButton.style.background = 'rgba(0,0,0,0.9)';
+                        playButton.style.transform = 'translate(-50%, -50%) scale(1.1)';
+                    });
+                    thumbnailWrapper.addEventListener('mouseleave', function() {
+                        playButton.style.background = 'rgba(0,0,0,0.8)';
+                        playButton.style.transform = 'translate(-50%, -50%) scale(1)';
+                    });
+                }
+            }
+
+            // For people index grid (multiple videos)
+            const thumbnailWrappers = document.querySelectorAll('.devcon0-thumbnail-wrapper-people');
+            thumbnailWrappers.forEach(function(wrapper) {
+                const img = wrapper.querySelector('img');
+                const videoContainer = wrapper.parentElement;
+                const videoPlayer = videoContainer.querySelector('.devcon0-video-player-people');
+                const iframe = videoPlayer.querySelector('iframe');
+                const playButton = wrapper.querySelector('.play-button-overlay-people');
+                // Add hover effects for play button
+                if (playButton) {
+                    wrapper.addEventListener('mouseenter', function() {
+                        playButton.style.background = 'rgba(0,0,0,0.9)';
+                        playButton.style.transform = 'translate(-50%, -50%) scale(1.1)';
+                    });
+                    wrapper.addEventListener('mouseleave', function() {
+                        playButton.style.background = 'rgba(0,0,0,0.8)';
+                        playButton.style.transform = 'translate(-50%, -50%) scale(1)';
+                    });
+                }
+                // Handle click to play video
+                wrapper.addEventListener('click', function() {
+                    const timestamp = img.getAttribute('data-devcon0-timestamp');
+                    if (timestamp && iframe) {
+                        // Set the iframe src to start the video with autoplay
+                        iframe.src = 'https://www.youtube.com/embed/_BvvUlKDqp0?start=' + timestamp + '&autoplay=1';
+                        // Hide thumbnail and show video
+                        wrapper.style.display = 'none';
+                        videoPlayer.style.display = 'block';
+                    }
+                });
+            });
+        });
+        </script>
+
+    </body>
+
+</html>

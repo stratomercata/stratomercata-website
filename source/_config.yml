@@ -1,0 +1,155 @@
+# ============================================================================
+# Jekyll Configuration File for Early Days of Ethereum
+# ============================================================================
+# This file configures how Jekyll builds and serves the site.
+# Jekyll Documentation: https://jekyllrb.com/docs/configuration/
+
+# ============================================================================
+# Basic Site Information
+# ============================================================================
+# These settings define your site's identity and are used throughout templates,
+# SEO optimization, and social media sharing.
+
+title: "Early Days of Ethereum"
+description: "Preserving the history and stories of the people who built Ethereum."
+baseurl: ""  # Subpath of your site, e.g. /blog (leave empty for root domain)
+url: "https://www.earlydaysofeth.org"  # Full URL of your site (used for absolute URLs)
+author: "Bob Summerwill"  # Default author for content and SEO
+
+# ============================================================================
+# SEO and Localization Settings
+# ============================================================================
+# These settings enhance search engine optimization and define site language/timezone.
+
+lang: en_US  # Language code for HTML lang attribute and SEO
+timezone: America/Vancouver  # Timezone for date processing
+keywords: "Ethereum, blockchain, cryptocurrency, Vitalik Buterin, Gavin Wood, early history, foundation, development"  # Default keywords for SEO
+
+# ============================================================================
+# Site Verification Codes
+# ============================================================================
+# Add verification codes from search engines to prove site ownership.
+# These appear as <meta> tags in the site <head> for verification.
+
+google_site_verification: "VAAK0u6FRzaYZ9K8SHqFh_4HOGGGh7-dqDjc"  # Google Search Console verification
+bing_site_verification: ""  # Bing Webmaster Tools verification (add when available)
+
+# ============================================================================
+# Analytics Configuration
+# ============================================================================
+# Configure web analytics tracking. The tracking code is automatically
+# included in all pages via the default layout.
+
+google_analytics: "G-K07HLJER91"  # Google Analytics 4 tracking ID
+
+# ============================================================================
+# Jekyll Build Settings
+# ============================================================================
+# These settings control how Jekyll processes and builds your site.
+
+markdown: kramdown  # Markdown processor (kramdown is Jekyll's default)
+highlighter: rouge  # Syntax highlighter for code blocks
+permalink: /:categories/:year/:month/:day/:title/  # URL structure for blog posts
+
+# Kramdown-specific settings
+kramdown:
+  # Fix smart quotes rendering issue (was converting Anthony 'Texture' D'Onofrio incorrectly)
+  smart_quotes: ["apos", "apos", "quot", "quot"]  # Use straight quotes instead of curly quotes
+
+# ============================================================================
+# Jekyll Collections
+# ============================================================================
+# Collections organize related content into groups. Each collection creates
+# a content type with its own folder, URL structure, and processing rules.
+# 
+# How Collections Work:
+# - Files go in folders named _[collection-name]/ (e.g., _people/, _articles/)
+# - Each .md file becomes a webpage with its own URL
+# - Collections can be accessed in templates as site.[collection-name]
+# - Perfect for content that isn't blog posts but needs organization
+
+collections:
+  # Articles Collection (_articles/ folder)
+  # Purpose: Historical articles about Ethereum's development and milestones
+  # Example files: ethereum-timeline.md, crypto-valley.md
+  articles:
+    output: true  # Generate individual pages for each article
+    permalink: /articles/:name/  # URL pattern: /articles/ethereum-timeline/
+  
+  # People Collection (_people/ folder) 
+  # Purpose: Biographical profiles of Ethereum contributors (180+ people)
+  # Example files: vitalik-buterin.md, gavin-wood.md
+  people:
+    output: true  # Generate individual pages for each person
+    permalink: /people/:name/  # URL pattern: /people/vitalik-buterin/
+  
+  # Videos Collection (_videos/ folder)
+  # Purpose: Video episodes and content documenting Ethereum's history
+  # Example files: episode004-taylor-gerring.md
+  videos:
+    output: true  # Generate individual pages for each video
+    permalink: /videos/:path/  # URL pattern: /videos/episode004-taylor-gerring/
+
+# ============================================================================
+# Default Front Matter Values
+# ============================================================================
+# Automatically apply front matter values to files based on their location.
+# This saves you from manually adding "layout: person" to every people file.
+#
+# How Defaults Work:
+# - Jekyll checks each file against these scope rules
+# - If a file matches the scope, the values are automatically applied
+# - Files can still override defaults by specifying their own values
+#
+# Path-based Targeting:
+# - path: "_people" matches any file in the _people/ folder
+# - This is simpler than collection-based targeting (type: "people")
+# - Both approaches work identically, but path-based is more readable
+
+defaults:
+  # Articles get the "article" layout automatically
+  # Without this: You'd need "layout: article" in every article file
+  # With this: Jekyll adds it automatically to all files in _articles/
+  - scope: { path: "_articles" }
+    values: { layout: "article" }
+  
+  # People get the "person" layout automatically  
+  # Without this: You'd need "layout: person" in all 180+ people files
+  # With this: Jekyll adds it automatically to all files in _people/
+  - scope: { path: "_people" }
+    values: { layout: "person" }
+  
+  # Videos get the "video" layout automatically
+  # Without this: You'd need "layout: video" in every video file
+  # With this: Jekyll adds it automatically to all files in _videos/
+  # Note: Individual files can override (e.g., Mercata videos use "layout: mercata")
+  - scope: { path: "_videos" }
+    values: { layout: "video" }
+
+# ============================================================================
+# Jekyll Plugins
+# ============================================================================
+# Plugins extend Jekyll's functionality. These are automatically loaded
+# and provide additional features during site generation.
+
+plugins:
+  - jekyll-feed     # Generates RSS/Atom feeds at /feed.xml
+  - jekyll-sitemap  # Generates XML sitemap at /sitemap.xml for search engines
+
+# ============================================================================
+# How This All Works Together
+# ============================================================================
+# 1. Collections organize your content into logical groups (people, articles, videos)
+# 2. Defaults automatically assign the correct layout to each content type
+# 3. Your centralized SEO system (_includes/seo.html) provides different 
+#    optimizations for each collection type
+# 4. Index pages (people/index.html) loop through collections to display content
+# 5. The auto-linking system can cross-reference between collections
+# 6. Jekyll builds everything into a static website in the _site/ folder
+#
+# This architecture lets you:
+# - Add new people without specifying layouts
+# - Organize content logically
+# - Maintain consistent URLs
+# - Provide collection-specific features (like different SEO images)
+# - Scale to hundreds of content files efficiently
