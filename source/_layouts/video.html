@@ -58,7 +58,7 @@ layout: default
                         {% endfor %}
                         {% unless host_hidden %}
                             {% if host_found %}
-                                {% capture host_entry %}<a href="{{ host_url }}">{{ host_display_name }}</a>{% endcapture %}
+                                {% capture host_entry %}<a href="{{ host_url | relative_url }}">{{ host_display_name }}</a>{% endcapture %}
                             {% else %}
                                 {% assign host_entry = host %}
                             {% endif %}
@@ -96,7 +96,7 @@ layout: default
                         {% endfor %}
                         {% unless guest_hidden %}
                             {% if guest_found %}
-                                {% capture guest_entry %}<a href="{{ guest_url }}">{{ guest_display_name }}</a>{% endcapture %}
+                                {% capture guest_entry %}<a href="{{ guest_url | relative_url }}">{{ guest_display_name }}</a>{% endcapture %}
                             {% else %}
                                 {% assign guest_entry = guest %}
                             {% endif %}
