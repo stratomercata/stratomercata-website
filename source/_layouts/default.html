@@ -14,7 +14,7 @@
       CSS Stylesheets for custom embeds and site styling.
       See: https://jekyllrb.com/docs/assets/
     -->
-    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="{{ '/assets/css/common.css' | relative_url }}">
 
     <!--
       Character encoding and responsive viewport.
@@ -85,7 +85,7 @@
     {% endif %}
     {% if show_video %}
     <video class="full-page-bg-video" autoplay loop muted playsinline>
-        <source src="/assets/videos/archive.org/ethereum.org/20140305192502/ethereum-bg-2014.webm" type="video/webm">
+        <source src="{{ '/assets/videos/archive.org/ethereum.org/20140305192502/ethereum-bg-2014.webm' | relative_url }}" type="video/webm">
         Your browser does not support the video tag.
     </video>
     {% endif %}
@@ -148,7 +148,7 @@
         <div class="footer-desktop">
             <div class="footer-brand-container">
                 <a href="https://stratomercata.com" target="_blank" rel="noopener" class="footer-brand-link">
-                    <img src="/images/github.com/2025.08.28/strato-mercata.png" alt="STRATO Mercata" class="footer-brand-logo" />
+                    <img src="{{ '/images/github.com/2025.08.28/strato-mercata.png' | relative_url }}" alt="STRATO Mercata" class="footer-brand-logo" />
                     <span class="footer-brand-text">Early Days of Ethereum is supported by<span class="whitespace-pre"> </span><a href="https://stratomercata.com" class="footer-strato-link">STRATO Mercata</a></span>
                 </a>
             </div>
@@ -164,7 +164,7 @@
         <div class="footer-mobile">
             <div class="footer-mobile-brand-container">
                 <a href="https://stratomercata.com" target="_blank" rel="noopener" class="footer-mobile-brand-link">
-                    <img src="/images/github.com/2025.08.28/strato-mercata.png" alt="STRATO Mercata" class="footer-mobile-brand-logo" />
+                    <img src="{{ '/images/github.com/2025.08.28/strato-mercata.png' | relative_url }}" alt="STRATO Mercata" class="footer-mobile-brand-logo" />
                     <span class="footer-brand-text-block">Early Days of Ethereum</span>
                     <span class="footer-brand-text-block">is supported by</span>
                     <span class="footer-brand-text-block"><a href="https://stratomercata.com" class="footer-strato-link">STRATO Mercata</a></span>
