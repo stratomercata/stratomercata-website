@@ -38,9 +38,9 @@ For leaders, show co-founders first (alphabetically), then other leaders (alphab
         <div class="person-header">
             {% if person.photo %}
                 <div class="person-photo">
-                    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+                    <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" />
                 </div>
-            {% endif %}                
+            {% endif %}
             <div class="person-info">
                 <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
                 
@@ -132,9 +132,9 @@ For leaders, show co-founders first (alphabetically), then other leaders (alphab
         <div class="person-header">
             {% if person.photo %}
                 <div class="person-photo">
-                    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+                    <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" />
                 </div>
-            {% endif %}                
+            {% endif %}
             <div class="person-info">
                 <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
                 
@@ -230,9 +230,9 @@ For leaders, show co-founders first (alphabetically), then other leaders (alphab
         <div class="person-header">
             {% if person.photo %}
                 <div class="person-photo">
-                    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+                    <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" />
                 </div>
-            {% endif %}                
+            {% endif %}
             <div class="person-info">
                 <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
                 
@@ -328,9 +328,9 @@ For leaders, show co-founders first (alphabetically), then other leaders (alphab
         <div class="person-header">
             {% if person.photo %}
                 <div class="person-photo">
-                    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+                    <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" />
                 </div>
-            {% endif %}                
+            {% endif %}
             <div class="person-info">
                 <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
                 

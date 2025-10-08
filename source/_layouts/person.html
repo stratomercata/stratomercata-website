@@ -15,7 +15,7 @@ embed-content-width: 50%
   See: https://jekyllrb.com/docs/variables/#page-variables
 -->
 <div class="back-link">
-    <a href="/people/">&larr; Back to People</a>
+    <a href="{{ '/people/' | relative_url }}">&larr; Back to People</a>
 </div>
 
 {% if page.hidden %}
@@ -33,7 +33,7 @@ embed-content-width: 50%
   <div class="person-header">
     {% if page.photo %}
       <div class="person-photo">
-        <img src="{{ page.photo }}" alt="{{ page.name }}" />
+        <img src="{{ page.photo | relative_url }}" alt="{{ page.name }}" />
       </div>
     {% endif %}
     <div class="person-info">

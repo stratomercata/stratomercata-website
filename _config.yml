@@ -19,8 +19,8 @@ source: source
 
 title: "STRATO Mercata"
 description: "Easily earn on vaulted gold, silver & crypto. Get instant credit. Built by ETH veterans"
-baseurl: ""  # Subpath of your site, e.g. /blog (leave empty for root domain)
-url: "https://www.earlydaysofeth.org"  # Full URL of your site (used for absolute URLs)
+baseurl: "/stratomercata-website"  # Subpath of your site for GitHub Pages
+url: "https://stratomercata.github.io"  # Full URL of your site (used for absolute URLs)
 author: "Bob Summerwill"  # Default author for content and SEO
 
 # ============================================================================
