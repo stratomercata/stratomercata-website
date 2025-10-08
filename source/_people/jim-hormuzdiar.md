@@ -1,0 +1,19 @@
+---
+name: Jim Hormuzdiar
+role: Co-Founder & CTO
+category: leader
+cofounder: true
+photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-2-2-1.png
+social:
+  linkedin: https://linkedin.com/in/james-hormuzdiar-b276778
+  github: https://github.com/jamshidh
+description: Co-Founder and Chief Technology Officer at BlockApps and STRATO Mercata, architecting enterprise-grade blockchain solutions since 2014.
+---
+
+Jim Hormuzdiar is the Co-Founder and Chief Technology Officer of [BlockApps](https://blockapps.net) and [STRATO Mercata](https://stratomercata.com), bringing deep technical expertise in blockchain architecture and distributed systems.
+
+As a co-founder of BlockApps since 2014, Jim has been instrumental in building the technical foundation of the STRATO blockchain platform, one of the earliest enterprise blockchain solutions.
+
+At STRATO Mercata, Jim leads the technical team in developing secure, scalable infrastructure for digital asset finance, ensuring the platform can handle complex financial operations while maintaining the highest standards of security and reliability.
+
+Jim's vision combines cutting-edge blockchain technology with practical business applications, creating solutions that bridge the gap between traditional finance and decentralized systems.

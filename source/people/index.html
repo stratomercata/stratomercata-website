@@ -1,544 +1,423 @@
 ---
 layout: default
 title: People
-description: "A catalog of people everyone who were involved during the early days of Ethereum"
+description: "Meet the team behind STRATO Mercata - blockchain veterans building the future of digital asset finance"
 image: "/images/archive.org/ethdev.com/20151210143340/ethdev-team_1200x630.png"
 ---
-
 
 <!--
   People Index Page
   =========================
-  This page lists all people in the Early Days of Ethereum site, grouped by epoch.
+  This page lists the team and contributors behind STRATO Mercata.
   - Jekyll Collections: https://jekyllrb.com/docs/collections/
   - Liquid Templating: https://shopify.github.io/liquid/
 -->
 
 <h1>People</h1>
 
-<p>This is a catalog of everybody who has been involved with the <a href="https://ethereum.org" target="_blank" rel="noopener">Ethereum Project</a> in the phase prior to the creation of the <a href="https://ethereum.foundation" target="_blank" rel="noopener">Ethereum Foundation</a>, or involved with the <a href="https://ethereum.foundation" target="_blank" rel="noopener">Ethereum Foundation</a> after that was incorporated.</p>
+<p>STRATO Mercata is built by the team at <a href="https://blockapps.net" target="_blank" rel="noopener">BlockApps</a>, pioneers in enterprise blockchain technology since 2014. Our team brings together decades of blockchain expertise, financial infrastructure knowledge, and a deep commitment to making digital assets more accessible and useful.</p>
 
-<p>For simplicity, this catalog also includes individuals who were employed or contracted by Ethereum ÐΞV UG (Berlin) and other Ethereum project legal entities in Amsterdam, London, etc. These people were never directly employed by the EF in a strict legal sense, but for all practical purposes did "work for the <a href="https://ethereum.foundation" target="_blank" rel="noopener">Ethereum Foundation</a>", as they were working part-time or full-time on the project with that work being funded by the EF.</p>
+<p>Many of our team members were involved in the early days of blockchain technology, contributing to foundational projects and bringing that experience to bear on creating a modern, secure, and user-friendly platform for earning on vaulted assets and accessing instant credit.</p>
 
-<p>Obviously, the list of people who have been involved with the <a href="https://ethereum.org" target="_blank" rel="noopener">Ethereum Project</a> as a whole since its inception is now an astronomically long list. That is not the focus here – only on the <a href="https://ethereum.foundation" target="_blank" rel="noopener">Ethereum Foundation</a> and other legal entities (to 2018), and on people involved in its pre-historical period, whether or not they actually worked for the EF or other legal entities during that nascent period.</p>
-
-<p>Below are profiles and biographies for all of these individuals. Many are just stubs at the moment but the goal is to build detailed profiles for everyone, which will take considerable time to complete.</p>
-
-<div class="table-of-contents">
-    <h2>Contents</h2>
-    <ul>
-        <li><a href="#whitepaper-red-wedding">Whitepaper to "Red Wedding" (November 2013 to June 2014)</a></li>
-        <li><a href="#stiftung-ethereum">Stiftung Ethereum and ETH ÐΞV (July 2014 to February 2015)</a></li>
-        <li><a href="#interregnum">The Interregnum (March 2015 to June 2015)</a></li>
-        <li><a href="#the-ming-dynasty">The Ming Dynasty (July 2015 to January 2018)</a></li>
-        <li><a href="#the-infinite-garden">The Infinite Garden (February 2018 onwards)</a></li>
-        <li><a href="#other-people">Other People</a></li>
-    </ul>
-</div>
+<p>Below are profiles and biographies of the people building STRATO Mercata. We're continuously growing our team and expanding our capabilities to better serve our users and partners.</p>
 
 {% comment %}
-Group people by start date and sort chronologically
+Group people by category and sort alphabetically within each category
+For leaders, show co-founders first (alphabetically), then other leaders (alphabetically)
 {% endcomment %}
-{% assign people_with_dates = "" | split: "" %}
-{% assign people_without_dates = "" | split: "" %}
+{% assign all_leaders = site.people | where: "category", "leader" %}
+{% assign cofounders = all_leaders | where: "cofounder", true | sort: "name" %}
+{% assign other_leaders = all_leaders | where_exp: "item", "item.cofounder != true" | sort: "name" %}
+{% assign staff = site.people | where: "category", "staff" | sort: "name" %}
+{% assign advisors = site.people | where: "category", "advisor" | sort: "name" %}
 
-{% for person in site.people %}
-    {% if person.hidden != true and person.hidden != 'true' %}
-        {% if person.start and person.start != '' and person.start != '???' %}
-            {% assign people_with_dates = people_with_dates | push: person %}
-        {% else %}
-            {% assign people_without_dates = people_without_dates | push: person %}
-        {% endif %}
-    {% endif %}
-{% endfor %}
-
-{% comment %}
-Create a hash of start dates to group people and sort chronologically
-{% endcomment %}
-{% assign date_groups = "" | split: "" %}
-{% assign processed_dates = "" | split: "" %}
-
-{% for person in people_with_dates %}
-    {% unless processed_dates contains person.start %}
-        {% assign processed_dates = processed_dates | push: person.start %}
-        {% assign date_groups = date_groups | push: person.start %}
-    {% endunless %}
-{% endfor %}
-
-{% comment %}
-Sort date groups chronologically by extracting years and months
-{% endcomment %}
-{% assign sorted_dates = "" | split: "" %}
-{% assign years_2013 = "" | split: "" %}
-{% assign years_2014 = "" | split: "" %}
-{% assign years_2015 = "" | split: "" %}
-{% assign years_2016 = "" | split: "" %}
-{% assign years_2017 = "" | split: "" %}
-{% assign years_2018 = "" | split: "" %}
-{% assign years_other = "" | split: "" %}
-
-{% for date_str in date_groups %}
-    {% if date_str contains "2013" %}
-        {% assign years_2013 = years_2013 | push: date_str %}
-    {% elsif date_str contains "2014" %}
-        {% assign years_2014 = years_2014 | push: date_str %}
-    {% elsif date_str contains "2015" %}
-        {% assign years_2015 = years_2015 | push: date_str %}
-    {% elsif date_str contains "2016" %}
-        {% assign years_2016 = years_2016 | push: date_str %}
-    {% elsif date_str contains "2017" %}
-        {% assign years_2017 = years_2017 | push: date_str %}
-    {% elsif date_str contains "2018" %}
-        {% assign years_2018 = years_2018 | push: date_str %}
-    {% else %}
-        {% assign years_other = years_other | push: date_str %}
-    {% endif %}
-{% endfor %}
-
-{% comment %}
-Sort each year's dates by month order
-{% endcomment %}
-{% assign month_order = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," %}
-
-{% comment %}
-Sort 2013 dates by month
-{% endcomment %}
-{% for month in month_order %}
-    {% for date_str in years_2013 %}
-        {% if date_str contains month %}
-            {% assign sorted_dates = sorted_dates | push: date_str %}
-        {% endif %}
-    {% endfor %}
-{% endfor %}
-
-{% comment %}
-Sort 2014 dates by month
-{% endcomment %}
-{% for month in month_order %}
-    {% for date_str in years_2014 %}
-        {% if date_str contains month %}
-            {% assign sorted_dates = sorted_dates | push: date_str %}
-        {% endif %}
-    {% endfor %}
-{% endfor %}
-
-{% comment %}
-Sort 2015 dates by month
-{% endcomment %}
-{% for month in month_order %}
-    {% for date_str in years_2015 %}
-        {% if date_str contains month %}
-            {% assign sorted_dates = sorted_dates | push: date_str %}
-        {% endif %}
-    {% endfor %}
-{% endfor %}
-
-{% comment %}
-Sort 2016 dates by month
-{% endcomment %}
-{% for month in month_order %}
-    {% for date_str in years_2016 %}
-        {% if date_str contains month %}
-            {% assign sorted_dates = sorted_dates | push: date_str %}
-        {% endif %}
-    {% endfor %}
-{% endfor %}
-
-{% comment %}
-Sort 2017 dates by month
-{% endcomment %}
-{% for month in month_order %}
-    {% for date_str in years_2017 %}
-        {% if date_str contains month %}
-            {% assign sorted_dates = sorted_dates | push: date_str %}
-        {% endif %}
-    {% endfor %}
-{% endfor %}
-
-{% comment %}
-Sort 2018 dates by month
-{% endcomment %}
-{% for month in month_order %}
-    {% for date_str in years_2018 %}
-        {% if date_str contains month %}
-            {% assign sorted_dates = sorted_dates | push: date_str %}
-        {% endif %}
-    {% endfor %}
-{% endfor %}
-
-{% comment %}
-Add other dates (alphabetically sorted as fallback)
-{% endcomment %}
-{% assign years_other_sorted = years_other | sort %}
-{% for year_group in years_other_sorted %}
-    {% assign sorted_dates = sorted_dates | push: year_group %}
-{% endfor %}
-
-{% comment %}
-Display people grouped by start date with epoch headings
-{% endcomment %}
-{% assign current_epoch = "" %}
-{% for start_date in sorted_dates %}
-    {% assign people_in_date = people_with_dates | where: "start", start_date | sort: "name" %}
-    
-    {% comment %}
-    Determine which epoch this date belongs to
-    {% endcomment %}
-    {% assign epoch = "" %}
-    {% assign is_2013 = false %}
-    {% assign is_2014_early = false %}
-    {% assign is_2014_late = false %}
-    {% assign is_2015_early = false %}
-    {% assign is_2015_mid = false %}
-    {% assign is_2015_late = false %}
-    {% assign is_2016_plus = false %}
-    
-    {% if start_date contains "2013" %}
-        {% assign is_2013 = true %}
-    {% endif %}
-    
-    {% if start_date contains "2014" %}
-        {% if start_date contains "Jan" or start_date contains "Feb" or start_date contains "Mar" or start_date contains "Apr" or start_date contains "May" or start_date contains "Jun" %}
-            {% assign is_2014_early = true %}
-        {% else %}
-            {% assign is_2014_late = true %}
-        {% endif %}
-    {% endif %}
-    
-    {% if start_date contains "2015" %}
-        {% if start_date contains "Jan" or start_date contains "Feb" %}
-            {% assign is_2015_early = true %}
-        {% elsif start_date contains "Mar" or start_date contains "Apr" or start_date contains "May" or start_date contains "Jun" %}
-            {% assign is_2015_mid = true %}
-        {% else %}
-            {% assign is_2015_late = true %}
-        {% endif %}
-    {% endif %}
-    
-    {% if start_date contains "2016" or start_date contains "2017" %}
-        {% assign is_2016_plus = true %}
-    {% endif %}
-    
-    {% assign is_2018_early = false %}
-    {% assign is_2018_plus = false %}
-    
-    {% if start_date contains "2018" %}
-        {% if start_date contains "Jan" %}
-            {% assign is_2016_plus = true %}
-        {% elsif start_date contains "Feb" or start_date contains "Mar" or start_date contains "Apr" or start_date contains "May" or start_date contains "Jun" or start_date contains "Jul" or start_date contains "Aug" or start_date contains "Sep" or start_date contains "Oct" or start_date contains "Nov" or start_date contains "Dec" %}
-            {% assign is_2018_plus = true %}
-        {% endif %}
-    {% endif %}
-    
-    {% if start_date contains "2019" or start_date contains "2020" or start_date contains "2021" or start_date contains "2022" or start_date contains "2023" or start_date contains "2024" or start_date contains "2025" %}
-        {% assign is_2018_plus = true %}
-    {% endif %}
-    
-    {% if is_2013 or is_2014_early %}
-        {% assign epoch = 'Whitepaper to "Red Wedding" (November 2013 to June 2014)' %}
-    {% elsif is_2014_late or is_2015_early %}
-        {% assign epoch = "Stiftung Ethereum and ETH DEV (July 2014 to February 2015)" %}
-    {% elsif is_2015_mid %}
-        {% assign epoch = "The Interregnum (March 2015 to June 2015)" %}
-    {% elsif is_2015_late or is_2016_plus %}
-        {% assign epoch = "The Ming Dynasty (July 2015 to January 2018)" %}
-    {% elsif is_2018_plus %}
-        {% assign epoch = "The Infinite Garden (February 2018 onwards)" %}
-    {% endif %}
-    
-    {% comment %}
-    Add epoch heading if we're entering a new epoch
-    {% endcomment %}
-    {% if epoch != current_epoch and epoch != "" %}
-        {% assign current_epoch = epoch %}
-        {% if epoch == 'Whitepaper to "Red Wedding" (November 2013 to June 2014)' %}
-            <h1 id="whitepaper-red-wedding">{{ epoch }}</h1>
-        {% elsif epoch == "Stiftung Ethereum and ETH DEV (July 2014 to February 2015)" %}
-            <h1 id="stiftung-ethereum">{{ epoch }}</h1>
-        {% elsif epoch == "The Interregnum (March 2015 to June 2015)" %}
-            <h1 id="interregnum">{{ epoch }}</h1>
-        {% elsif epoch == "The Ming Dynasty (July 2015 to January 2018)" %}
-            <h1 id="the-ming-dynasty">{{ epoch }}</h1>
-        {% elsif epoch == "The Infinite Garden (February 2018 onwards)" %}
-            <h1 id="the-infinite-garden">{{ epoch }}</h1>
-        {% else %}
-            <h1>{{ epoch }}</h1>
-        {% endif %}
-    {% endif %}
-    
-    <h2 class="heading-date">{{ start_date }}</h2>
-    
-    <div class="people-list">
-        {% for person in people_in_date %}
-        <div class="person-card">
-            <div class="person-header">
-                {% if person.photo %}
-                    <div class="person-photo">
-                        <img src="{{ person.photo }}" alt="{{ person.name }}" />
-                    </div>
-                {% endif %}                
-                <div class="person-info">
-                    <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
-                    
-                    {% if person.role %}
-                    <div class="person-role">{{ person.role }}</div>
-                    {% endif %}
-                    
-                    {% if person.period %}
-                    <div class="person-period">Active: {{ person.period }}</div>
-                    {% endif %}
-                    
-                    {% if person.description %}
-                    <p class="person-description">
-                        {% include auto_link.html content=person.description %}
-                    </p>
-                    {% endif %}
-                    
-                    {% if person.start and person.start != "" %}
-                    <div class="person-dates">
-                        {% if person.end and person.end != "" %}
-                            <span>({{ person.start }} to {{ person.end }})</span>
-                        {% else %}
-                            <span>({{ person.start }} to ???)</span>
-                        {% endif %}
-                    </div>
-                    {% endif %}
-                    
-                    {% if person.social %}
-                    <div class="person-social-links-index">
-                        {% if person.social.website %}
-                        <a href="{{ person.social.website }}" target="_blank" rel="noopener" title="Website">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                            </svg>
-                        </a>
-                        {% endif %}
-                        {% if person.social.github %}
-                        <a href="{{ person.social.github }}" target="_blank" rel="noopener" title="GitHub">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        {% endif %}
-                        {% if person.social.twitter %}
-                        <a href="{{ person.social.twitter }}" target="_blank" rel="noopener" title="Twitter/X">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                            </svg>
-                        </a>
-                        {% endif %}
-                        {% if person.social.linkedin %}
-                        <a href="{{ person.social.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        {% endif %}
-                        {% if person.social.reddit %}
-                        <a href="{{ person.social.reddit }}" target="_blank" rel="noopener" title="Reddit">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
-                            </svg>
-                        </a>
-                        {% endif %}
-                        {% if person.social.youtube %}
-                        <a href="{{ person.social.youtube }}" target="_blank" rel="noopener" title="YouTube">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
-                        </a>
-                        {% endif %}
-                        {% if person.social.wikipedia %}
-                        <a href="{{ person.social.wikipedia }}" target="_blank" rel="noopener" title="Wikipedia">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" class="wikipedia-icon">
-                        </a>
-                        {% endif %}
-                        {% if person.social.medium %}
-                        <a href="{{ person.social.medium }}" target="_blank" rel="noopener" title="Medium">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-                            </svg>
-                        </a>
-                        {% endif %}
-                    </div>
-                    {% endif %}
-                    {% if person.interview %}
-                    <div class="person-interview-link">
-                        <a href="{{ person.interview }}" class="interview-link">
-                          <svg viewBox="0 0 20 20" width="16" height="16" class="interview-svg">
-                            <circle cx="10" cy="10" r="10" fill="#005580"/>
-                            <polygon points="7,5 15,10 7,15" fill="#fff"/>
-                          </svg>
-                          Interview
-                        </a>
-                    </div>
-                    {% endif %}
+<h2>Leadership</h2>
+<div class="people-list">
+    {% for person in cofounders %}
+    <div class="person-card">
+        <div class="person-header">
+            {% if person.photo %}
+                <div class="person-photo">
+                    <img src="{{ person.photo }}" alt="{{ person.name }}" />
                 </div>
-            </div>
-            
-            {% if person.devcon0 %}
-            <div class="devcon0-section">
-                <h4 class="devcon0-header">DEVCON0 self-introduction</h4>
+            {% endif %}                
+            <div class="person-info">
+                <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
                 
-                {% assign name_parts = person.name | split: ' ' %}
-                {% assign firstname = name_parts[0] | downcase %}
-                {% assign lastname = name_parts[-1] | downcase %}
-                {% assign thumbnail_filename = firstname | append: '-' | append: lastname | append: '.jpg' %}
-                {% assign thumbnail_path = '/images/youtube.com/BvvUlKDqp0/thumbnails/' | append: thumbnail_filename %}
-                
-                {% comment %}Check if thumbnail file exists{% endcomment %}
-                {% assign thumbnail_exists = false %}
-                {% for static_file in site.static_files %}
-                    {% if static_file.path == thumbnail_path %}
-                        {% assign thumbnail_exists = true %}
-                        {% break %}
-                    {% endif %}
-                {% endfor %}
-                
-                <div class="devcon0-video-container-people">
-                    <div class="devcon0-thumbnail-wrapper-people">
-                        {% if thumbnail_exists %}
-                            <img src="{{ thumbnail_path }}" 
-                                 alt="{{ person.name }} DEVCON0 introduction"
-                                 class="devcon0-thumbnail-img-people"
-                                 data-person-name="{{ person.name }}"
-                                 data-devcon0-timestamp="{{ person.devcon0 }}">
-                            
-                            <!-- Play button overlay -->
-                            <div class="play-button-overlay-people">
-                                <div class="play-button-triangle-people"></div>
-                            </div>
-                        {% else %}
-                            <!-- No thumbnail available, show iframe directly -->
-                            <div class="devcon0-fallback-people">
-                                <iframe 
-                                    src="https://www.youtube.com/embed/_BvvUlKDqp0?start={{ person.devcon0 }}" 
-                                    frameborder="0" 
-                                    allowfullscreen
-                                    title="DEVCON0 self-introduction"
-                                    class="devcon0-iframe-people">
-                                </iframe>
-                            </div>
-                        {% endif %}
-                    </div>
-                    
-                    <!-- Hidden video container for click-to-play -->
-                    <div class="devcon0-video-player-people">
-                        <iframe 
-                            src="" 
-                            frameborder="0" 
-                            allowfullscreen
-                            title="DEVCON0 self-introduction"
-                            class="devcon0-iframe-people">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-            {% endif %}
-        </div>
-        {% endfor %}
-    </div>
-{% endfor %}
-
-{% comment %}
-Display people without start dates in "Other" section
-{% endcomment %}
-{% if people_without_dates.size > 0 %}
-    <h1 id="other-people">Other</h1>
-    
-    <div class="people-list">
-        {% assign sorted_other_people = people_without_dates | sort: "name" %}
-        {% for person in sorted_other_people %}
-        <div class="person-card">
-            <div class="person-header">
-                {% if person.photo %}
-                    <div class="person-photo">
-                        <img src="{{ person.photo }}" alt="{{ person.name }}" />
-                    </div>
+                {% if person.role %}
+                <div class="person-role">{{ person.role }}</div>
                 {% endif %}
                 
-                <div class="person-info">
-                    <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
-                    
-                    {% if person.role %}
-                    <div class="person-role">{{ person.role }}</div>
+                {% if person.description %}
+                <p class="person-description">
+                    {% include auto_link.html content=person.description %}
+                </p>
+                {% endif %}
+                
+                {% if person.social %}
+                <div class="person-social-links-index">
+                    {% if person.social.website %}
+                    <a href="{{ person.social.website }}" target="_blank" rel="noopener" title="Website">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </a>
                     {% endif %}
-                    
-                    {% if person.period %}
-                    <div class="person-period">Active: {{ person.period }}</div>
+                    {% if person.social.github %}
+                    <a href="{{ person.social.github }}" target="_blank" rel="noopener" title="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
                     {% endif %}
-                    
-                    {% if person.description %}
-                    <p class="person-description">
-                        {% include auto_link.html content=person.description %}
-                    </p>
+                    {% if person.social.twitter %}
+                    <a href="{{ person.social.twitter }}" target="_blank" rel="noopener" title="Twitter/X">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.linkedin %}
+                    <a href="{{ person.social.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.reddit %}
+                    <a href="{{ person.social.reddit }}" target="_blank" rel="noopener" title="Reddit">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.youtube %}
+                    <a href="{{ person.social.youtube }}" target="_blank" rel="noopener" title="YouTube">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.wikipedia %}
+                    <a href="{{ person.social.wikipedia }}" target="_blank" rel="noopener" title="Wikipedia">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" class="wikipedia-icon">
+                    </a>
+                    {% endif %}
+                    {% if person.social.medium %}
+                    <a href="{{ person.social.medium }}" target="_blank" rel="noopener" title="Medium">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </a>
                     {% endif %}
                 </div>
-            </div>
-            
-            {% if person.devcon0 %}
-            <div class="devcon0-section">
-                <h4 class="devcon0-header-left">DEVCON0 self-introduction</h4>
-                
-                {% assign name_parts = person.name | split: ' ' %}
-                {% assign firstname = name_parts[0] | downcase %}
-                {% assign lastname = name_parts[-1] | downcase %}
-                {% assign thumbnail_filename = firstname | append: '-' | append: lastname | append: '.jpg' %}
-                {% assign thumbnail_path = '/images/youtube.com/BvvUlKDqp0/thumbnails/' | append: thumbnail_filename %}
-                
-                {% comment %}Check if thumbnail file exists{% endcomment %}
-                {% assign thumbnail_exists = false %}
-                {% for static_file in site.static_files %}
-                    {% if static_file.path == thumbnail_path %}
-                        {% assign thumbnail_exists = true %}
-                        {% break %}
-                    {% endif %}
-                {% endfor %}
-                
-                <div class="devcon0-video-container-people">
-                    <div class="devcon0-thumbnail-wrapper-people">
-                        {% if thumbnail_exists %}
-                            <img src="{{ thumbnail_path }}" 
-                                 alt="{{ person.name }} DEVCON0 introduction" 
-                                 class="devcon0-thumbnail-img-people"
-                                 data-person-name="{{ person.name }}"
-                                 data-devcon0-timestamp="{{ person.devcon0 }}">
-                            
-                            <!-- Play button overlay -->
-                            <div class="play-button-overlay-people">
-                                <div class="play-button-triangle-people"></div>
-                            </div>
-                        {% else %}
-                            <!-- No thumbnail available, show iframe directly -->
-                            <div class="devcon0-fallback-people">
-                                <iframe 
-                                    src="https://www.youtube.com/embed/_BvvUlKDqp0?start={{ person.devcon0 }}" 
-                                    frameborder="0" 
-                                    allowfullscreen
-                                    title="DEVCON0 self-introduction"
-                                    class="devcon0-iframe-people">
-                                </iframe>
-                            </div>
-                        {% endif %}
-                    </div>
-                    
-                    <!-- Hidden video container for click-to-play -->
-                    <div class="devcon0-video-player-people">
-                        <iframe 
-                            src="" 
-                            frameborder="0" 
-                            allowfullscreen
-                            title="DEVCON0 self-introduction"
-                            class="devcon0-iframe-people">
-                        </iframe>
-                    </div>
+                {% endif %}
+                {% if person.interview %}
+                <div class="person-interview-link">
+                    <a href="{{ person.interview }}" class="interview-link">
+                      <svg viewBox="0 0 20 20" width="16" height="16" class="interview-svg">
+                        <circle cx="10" cy="10" r="10" fill="#005580"/>
+                        <polygon points="7,5 15,10 7,15" fill="#fff"/>
+                      </svg>
+                      Interview
+                    </a>
                 </div>
+                {% endif %}
             </div>
-            {% endif %}
         </div>
-        {% endfor %}
     </div>
-{% endif %}
+    {% endfor %}
+    {% for person in other_leaders %}
+    <div class="person-card">
+        <div class="person-header">
+            {% if person.photo %}
+                <div class="person-photo">
+                    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+                </div>
+            {% endif %}                
+            <div class="person-info">
+                <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
+                
+                {% if person.role %}
+                <div class="person-role">{{ person.role }}</div>
+                {% endif %}
+                
+                {% if person.description %}
+                <p class="person-description">
+                    {% include auto_link.html content=person.description %}
+                </p>
+                {% endif %}
+                
+                {% if person.social %}
+                <div class="person-social-links-index">
+                    {% if person.social.website %}
+                    <a href="{{ person.social.website }}" target="_blank" rel="noopener" title="Website">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.github %}
+                    <a href="{{ person.social.github }}" target="_blank" rel="noopener" title="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.twitter %}
+                    <a href="{{ person.social.twitter }}" target="_blank" rel="noopener" title="Twitter/X">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.linkedin %}
+                    <a href="{{ person.social.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.reddit %}
+                    <a href="{{ person.social.reddit }}" target="_blank" rel="noopener" title="Reddit">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.youtube %}
+                    <a href="{{ person.social.youtube }}" target="_blank" rel="noopener" title="YouTube">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.wikipedia %}
+                    <a href="{{ person.social.wikipedia }}" target="_blank" rel="noopener" title="Wikipedia">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" class="wikipedia-icon">
+                    </a>
+                    {% endif %}
+                    {% if person.social.medium %}
+                    <a href="{{ person.social.medium }}" target="_blank" rel="noopener" title="Medium">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                </div>
+                {% endif %}
+                {% if person.interview %}
+                <div class="person-interview-link">
+                    <a href="{{ person.interview }}" class="interview-link">
+                      <svg viewBox="0 0 20 20" width="16" height="16" class="interview-svg">
+                        <circle cx="10" cy="10" r="10" fill="#005580"/>
+                        <polygon points="7,5 15,10 7,15" fill="#fff"/>
+                      </svg>
+                      Interview
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<h2>Team Members</h2>
+<div class="people-list">
+    {% for person in staff %}
+    <div class="person-card">
+        <div class="person-header">
+            {% if person.photo %}
+                <div class="person-photo">
+                    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+                </div>
+            {% endif %}                
+            <div class="person-info">
+                <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
+                
+                {% if person.role %}
+                <div class="person-role">{{ person.role }}</div>
+                {% endif %}
+                
+                {% if person.description %}
+                <p class="person-description">
+                    {% include auto_link.html content=person.description %}
+                </p>
+                {% endif %}
+                
+                {% if person.social %}
+                <div class="person-social-links-index">
+                    {% if person.social.website %}
+                    <a href="{{ person.social.website }}" target="_blank" rel="noopener" title="Website">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.github %}
+                    <a href="{{ person.social.github }}" target="_blank" rel="noopener" title="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.twitter %}
+                    <a href="{{ person.social.twitter }}" target="_blank" rel="noopener" title="Twitter/X">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.linkedin %}
+                    <a href="{{ person.social.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.reddit %}
+                    <a href="{{ person.social.reddit }}" target="_blank" rel="noopener" title="Reddit">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.youtube %}
+                    <a href="{{ person.social.youtube }}" target="_blank" rel="noopener" title="YouTube">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.wikipedia %}
+                    <a href="{{ person.social.wikipedia }}" target="_blank" rel="noopener" title="Wikipedia">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" class="wikipedia-icon">
+                    </a>
+                    {% endif %}
+                    {% if person.social.medium %}
+                    <a href="{{ person.social.medium }}" target="_blank" rel="noopener" title="Medium">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                </div>
+                {% endif %}
+                {% if person.interview %}
+                <div class="person-interview-link">
+                    <a href="{{ person.interview }}" class="interview-link">
+                      <svg viewBox="0 0 20 20" width="16" height="16" class="interview-svg">
+                        <circle cx="10" cy="10" r="10" fill="#005580"/>
+                        <polygon points="7,5 15,10 7,15" fill="#fff"/>
+                      </svg>
+                      Interview
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<h2>Advisors</h2>
+<div class="people-list">
+    {% for person in advisors %}
+    <div class="person-card">
+        <div class="person-header">
+            {% if person.photo %}
+                <div class="person-photo">
+                    <img src="{{ person.photo }}" alt="{{ person.name }}" />
+                </div>
+            {% endif %}                
+            <div class="person-info">
+                <h3><a href="{{ person.url | relative_url }}">{{ person.name }}{% if person.nickname and person.nickname != '' %} ("{{ person.nickname }}"){% endif %}</a></h3>
+                
+                {% if person.role %}
+                <div class="person-role">{{ person.role }}</div>
+                {% endif %}
+                
+                {% if person.description %}
+                <p class="person-description">
+                    {% include auto_link.html content=person.description %}
+                </p>
+                {% endif %}
+                
+                {% if person.social %}
+                <div class="person-social-links-index">
+                    {% if person.social.website %}
+                    <a href="{{ person.social.website }}" target="_blank" rel="noopener" title="Website">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.github %}
+                    <a href="{{ person.social.github }}" target="_blank" rel="noopener" title="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.twitter %}
+                    <a href="{{ person.social.twitter }}" target="_blank" rel="noopener" title="Twitter/X">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.linkedin %}
+                    <a href="{{ person.social.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.reddit %}
+                    <a href="{{ person.social.reddit }}" target="_blank" rel="noopener" title="Reddit">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.youtube %}
+                    <a href="{{ person.social.youtube }}" target="_blank" rel="noopener" title="YouTube">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                    {% if person.social.wikipedia %}
+                    <a href="{{ person.social.wikipedia }}" target="_blank" rel="noopener" title="Wikipedia">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" class="wikipedia-icon">
+                    </a>
+                    {% endif %}
+                    {% if person.social.medium %}
+                    <a href="{{ person.social.medium }}" target="_blank" rel="noopener" title="Medium">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                </div>
+                {% endif %}
+                {% if person.interview %}
+                <div class="person-interview-link">
+                    <a href="{{ person.interview }}" class="interview-link">
+                      <svg viewBox="0 0 20 20" width="16" height="16" class="interview-svg">
+                        <circle cx="10" cy="10" r="10" fill="#005580"/>
+                        <polygon points="7,5 15,10 7,15" fill="#fff"/>
+                      </svg>
+                      Interview
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
 {% if site.people.size == 0 %}
 <p class="no-content">No people profiles have been added yet. Check back soon!</p>

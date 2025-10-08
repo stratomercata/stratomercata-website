@@ -2,7 +2,7 @@
   Centralized SEO Include
   ======================
   This include handles all SEO meta tags, structured data, and social media optimization
-  for the Early Days of Ethereum site. It provides smart defaults and content-specific
+  for the STRATO Mercata site. It provides smart defaults and content-specific
   optimizations while maintaining fine-grained control.
 -->
 
@@ -89,7 +89,7 @@
 <meta property="og:description" content="{{ seo_description }}">
 <meta property="og:url" content="{{ seo_url }}">
 <meta property="og:image" content="{{ seo_image }}">
-<meta property="og:image:alt" content="{% if page.collection == 'people' %}{{ page.name | default: page.title }} - Early Days of Ethereum{% else %}{{ seo_title }}{% endif %}">
+<meta property="og:image:alt" content="{% if page.collection == 'people' %}{{ page.name | default: page.title }} - STRATO Mercata{% else %}{{ seo_title }}{% endif %}">
 
 {% comment %} Content-specific Open Graph tags {% endcomment %}
 {% if page.collection == 'people' %}
@@ -120,7 +120,7 @@
 <meta name="twitter:title" content="{{ seo_title }}">
 <meta name="twitter:description" content="{{ seo_description }}">
 <meta name="twitter:image" content="{{ seo_image }}">
-<meta name="twitter:image:alt" content="{% if page.collection == 'people' %}{{ page.name | default: page.title }} - Early Days of Ethereum{% else %}{{ seo_title }}{% endif %}">
+<meta name="twitter:image:alt" content="{% if page.collection == 'people' %}{{ page.name | default: page.title }} - STRATO Mercata{% else %}{{ seo_title }}{% endif %}">
 
 {% comment %}
   =========================
@@ -201,8 +201,8 @@
       {% endif %}
       "worksFor": {
         "@type": "Organization",
-        "name": "Ethereum",
-        "description": "Decentralized blockchain platform"
+        "name": "STRATO Mercata",
+        "description": "Easily earn on vaulted gold, silver & crypto. Get instant credit."
       }
     }
     {% elsif page.collection == 'articles' %},
