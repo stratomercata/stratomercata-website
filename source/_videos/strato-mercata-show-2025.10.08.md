@@ -7,9 +7,9 @@ embed:
   url: https://www.youtube.com/embed/15MltoqMjZU
 ---
 
-Bob Summerwill, Kieren James-Lubin, Jaime Gonzalez and Michael Tan were all in Singapore last week for the [TOKEN2049](https://token2049.com) mega-conference.
+[Bob]({{ '/people/bob-summerwill/' | relative_url }}), [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), [Jaime]({{ '/people/jaime-gonzalez/' | relative_url }}) and [Michael]({{ '/people/michael-tan/' | relative_url }}) were all in Singapore last week for the [TOKEN2049](https://token2049.com) mega-conference.
 
-Bob and Kieren joined Victor Wong to reflect on the event, and on the market trends which manifested there.
+[Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) joined [Victor]({{ '/people/victor-wong/' | relative_url }}) to reflect on the event, and on the market trends which manifested there.
 
 
 ## Transcript
@@ -99,33 +99,33 @@ You can tell Bob, Bob's an OG. Bob can tell me, I can tell you.
 [[3:12]](https://www.youtube.com/watch?v=15MltoqMjZU&t=192s) **Victor:**
 Yes, so we've been building since the launch of Ethereum and continue to follow this journey. So you'll get hopefully no shilling and a lot of good historical context about what we're going to talk about today. And today we are going to talk about the highlights from Token 2049.
 
-And was it more boring or more crazy in terms of the blockchain world? Joining me is Bob Summerwell. Bob, you want to do a quick intro?
+And was it more boring or more crazy in terms of the blockchain world? Joining me is Bob Summerwill. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), you want to do a quick intro?
 
 [[3:46]](https://www.youtube.com/watch?v=15MltoqMjZU&t=226s) **Bob:**
-Hi there, I'm Bob Summerwell. We are all, we're not old. We're all very experienced.
+Hi there, I'm Bob Summerwill. We are all, we're not old. We're all very experienced.
 
 [[3:52]](https://www.youtube.com/watch?v=15MltoqMjZU&t=232s) **Victor:**
 Thank you.
 
 [[3:54]](https://www.youtube.com/watch?v=15MltoqMjZU&t=234s) **Bob:**
-But yes, I'm head of ecosystem.
+But yes, I'm Head of Ecosystem.
 
 [[3:58]](https://www.youtube.com/watch?v=15MltoqMjZU&t=238s) **Victor:**
-Yeah, and Karen, of course.
+Yeah, and Kieren, of course.
 
 [[4:01]](https://www.youtube.com/watch?v=15MltoqMjZU&t=241s) **Kieren:**
 Yeah, I am also experienced. You know, not as long as you can be in the space, but it's starting to feel like it, right? Like we've really been around for some time.
 
 [[4:12]](https://www.youtube.com/watch?v=15MltoqMjZU&t=252s) **Victor:**
-But yes, I'm- I will bestow the OG title on you, Karen. So we could go around. I mean, anyone that's been around since before the launch of Ethereum and was part of it, I think, you know, that would be, we can claim that title.
+But yes, I'm- I will bestow the OG title on you, [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}). So we could go around. I mean, anyone that's been around since before the launch of Ethereum and was part of it, I think, you know, that would be, we can claim that title.
 
 [[4:30]](https://www.youtube.com/watch?v=15MltoqMjZU&t=270s) **Kieren:**
 Ah, how the time goes.
 
 [[4:33]](https://www.youtube.com/watch?v=15MltoqMjZU&t=273s) **Victor:**
-So I will say that I was not in Singapore. I kind of played hooky with Karen's approval. You know, international travel is brutal.
+So I will say that I was not in Singapore. I kind of played hooky with [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }})'s approval. You know, international travel is brutal.
 
-But Bob and Karen were there. And why, to get your kind of impressions, what do you think the big themes this year were at Token 2049?
+But [Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) were there. And why, to get your kind of impressions, what do you think the big themes this year were at Token 2049?
 
 [[4:57]](https://www.youtube.com/watch?v=15MltoqMjZU&t=297s) **Kieren:**
 Yeah, a bunch of big topics. One thing that was notable is that it felt like meme coins had almost completely vanished. And there was a lot of that the previous year.
@@ -284,10 +284,10 @@ It's a great way to bring in more kind of bigger, more boring, more conservative
 [[20:43]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1243s) **Victor:**
 By the way, we have a comment from Shiva who says he loves your take on meme ecosystems. You know, not surprisingly, someone who has their own meme ecosystem. You got to hold all the memes, that's the key.
 
-Shout out to you, Shiva. Bob, so what do you think about, you know, treasuries and stable coins?
+Shout out to you, Shiva. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), so what do you think about, you know, treasuries and stable coins?
 
 [[21:04]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1264s) **Bob:**
-Yeah, I mean, you know, I guess this is all sort of maturity. And it's a strange kind of feeling, you know, looking back on all of our joint experience, sort of on enterprise Ethereum efforts kicking off in 2016, 2017. And really the thought there that all of these public and private use cases could all be met by suitably modular codebases and thinking EVMs. And, you know, and here we are, you know, that you've got, you know, you've got Stripe announcing Tempo and having a, you know, a consortium of companies doing that kind of payments. You know, set up and then you've got, you know, NASDAQ announcing, you know, equities on chain again with a Bazoo derivative. And then you've got BASE and Coinbase. And, you know, all of these things are happening in a very similar kind of form to what we were shooting for all that time back.
+Yeah, I mean, you know, I guess this is all sort of maturity. And it's a strange kind of feeling, you know, looking back on all of our joint experience, sort of on enterprise Ethereum efforts kicking off in 2016, 2017. And really the thought there that all of these public and private use cases could all be met by suitably modular codebases and thinking EVMs. And, you know, and here we are, you know, that you've got, you know, you've got Stripe announcing Tempo and having a, you know, a consortium of companies doing that kind of payments. You know, set up and then you've got, you know, NASDAQ announcing, you know, equities on chain again with a Besu derivative. And then you've got BASE and Coinbase. And, you know, all of these things are happening in a very similar kind of form to what we were shooting for all that time back.
 
 And that's, you know, while these things are kind of a bit boring, it is also quite amazing that we've got to that place that these very conservative incumbents have caught up without thinking, you know. It's pretty amazing.
 
@@ -373,7 +373,7 @@ And then it just kind of functions and it's big. Like every week or so, I see li
 And so there's a feeling of inevitability that kicked in for me like a couple months ago that, you know, has I've never quite felt.
 
 [[31:11]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1871s) **Victor:**
-What about you, Bob? What did you find, you know, on the craziness level? What do you think?
+What about you, [Bob]({{ '/people/bob-summerwill/' | relative_url }})? What did you find, you know, on the craziness level? What do you think?
 
 [[31:19]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1879s) **Bob:**
 I can't have been in the right bit of the building. I didn't see any booth babes. Where were they?
@@ -453,7 +453,7 @@ Like it's a strange thing in which retail was in for a while and maybe got burne
 It's not all financial services, obviously, but a lot of them are. And this includes things like making sure people don't lose the keys somehow or what have you. So there's like a needle that's right there, but I think that's gonna be a lot of what the next phase is about.
 
 [[38:59]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2339s) **Victor:**
-Bob, what do you think?
+[Bob]({{ '/people/bob-summerwill/' | relative_url }}), what do you think?
 
 [[39:01]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2341s) **Bob:**
 Well, I mean, I think the way that that will happen for a lot of retail is that they're not gonna have their hands on directly. It'll all be through these instruments. So their experience is just, oh yeah, I've got a brokerage account and there's those in it as well, but they kind of, they look indistinguishable to, you know, to commodities or equities or bonds or anything else.
@@ -461,7 +461,7 @@ Well, I mean, I think the way that that will happen for a lot of retail is that 
 It's just, yeah, there's some more financial instruments and then you go. So I think that's your sort of speculative retail, you know, crypto as an investment people. What I think is gonna be more interesting to watch is sort of the payments side, you know, especially with the Stripe project there, you know, if you get to a place where lots of just regular payment flows can be using crypto rather than fiat, that's really interesting, you know, that you can start getting real velocity of non-speculative use because everything really at this point has pretty much been speculation or, you know, a little bit of payments, but not really any large volume of payments, you know, early on it's like, you know, buy your coffee with Bitcoin and that didn't last very long and that kind of hasn't really come back. But really with the stable coins and these large, you know, integrations, you know, like PayPal as well, you know, PayPal are doing things, MasterCard have announced stuff. I'm sure, you know, all of these payment rails are gonna be joining in on the game and that really changes things.
 
 [[40:45]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2445s) **Victor:**
-Yeah, and one question, like, are we going to DevConnect? I know me and Bob have already bought our tickets. Karen, you're the hoedown.
+Yeah, and one question, like, are we going to DevConnect? I know me and [Bob]({{ '/people/bob-summerwill/' | relative_url }}) have already bought our tickets. [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), you're the holdout.
 
 Can I get a commitment?
 
@@ -479,19 +479,19 @@ So I'm just really curious to find out.
 Vitalik said he's more likely to get recognized in Buenos Aires than in the U.S. Yeah, well, and so if you like this content, please join us every week.
 
 [[41:27]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2487s) **Victor:**
-We have this at the same time. And follow us on Twitter, at stradomercada with an A and join our Telegram community. Bob, if they wanna hear more from you, where can they find you?
+We have this at the same time. And follow us on Twitter, at stradomercada with an A and join our Telegram community. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), if they wanna hear more from you, where can they find you?
 
 [[41:40]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2500s) **Bob:**
-Yeah, so I'm just BobSamuel, same as my name on Twitter.
+Yeah, so I'm just bobsummerwill, same as my name on Twitter.
 
 [[41:46]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2506s) **Victor:**
-And Karen, where can people find you?
+And [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), where can people find you?
 
 [[41:50]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2510s) **Kieren:**
-KJamesLubin, so shortened, but my name also on Twitter slash X.
+kjameslubin, so shortened, but my name also on Twitter / X.
 
 [[41:58]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2518s) **Victor:**
-And you can find me at Vic4Wong on Twitter. Bob and Karen have both shamed me publicly because I have so few followers, even though I was an early adopter. So please, please connect to me.
+And you can find me at vic4wong on Twitter. [Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) have both shamed me publicly because I have so few followers, even though I was an early adopter. So please, please connect to me.
 
 Love to hear from you.
 
@@ -499,10 +499,10 @@ Love to hear from you.
 What's the four about? What's the Vic four?
 
 [[42:16]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2536s) **Victor:**
-So four is a number that no Chinese person likes because it sounds suspiciously like death. So it's, you know, back in the world of eight character usernames, I could always get Vic4Wong having an Asian name with the number four in it, like pretty much guaranteed that I could get it.
+So four is a number that no Chinese person likes because it sounds suspiciously like death. So it's, you know, back in the world of eight character usernames, I could always get vic4wong having an Asian name with the number four in it, like pretty much guaranteed that I could get it.
 
 [[42:42]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2562s) **Kieren:**
-Always doing things the long way.
+Always doing things the wong way.
 
 [[42:44]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2564s) **Victor:**
 Exactly. I've never heard that joke before. Okay.
