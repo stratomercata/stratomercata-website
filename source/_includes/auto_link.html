@@ -155,7 +155,8 @@ while ensuring clean, valid HTML output.
 {%- comment -%}Process videos first{%- endcomment -%}
 {%- for video in site.videos -%}
   {%- assign title_to_replace = video.title -%}
-  {%- assign link_replacement = '<a href="' | append: video.url | append: '">' | append: video.title | append: '</a>' -%}
+  {%- assign video_url = video.url | relative_url -%}
+  {%- assign link_replacement = '<a href="' | append: video_url | append: '">' | append: video.title | append: '</a>' -%}
   {%- assign body_content = body_content | replace: title_to_replace, link_replacement -%}
 {%- endfor -%}
 
@@ -200,10 +201,11 @@ while ensuring clean, valid HTML output.
 {%- for article in site.articles -%}
   {%- assign title_to_replace = article.title -%}
   {%- assign alias_to_replace = article.alias -%}
-  {%- assign link_replacement = '<a href="' | append: article.url | append: '">' | append: article.title | append: '</a>' -%}
+  {%- assign article_url = article.url | relative_url -%}
+  {%- assign link_replacement = '<a href="' | append: article_url | append: '">' | append: article.title | append: '</a>' -%}
   {%- assign body_content = body_content | replace: title_to_replace, link_replacement -%}
   {%- if alias_to_replace %}
-    {%- assign alias_link_replacement = '<a href="' | append: article.url | append: '">' | append: article.alias | append: '</a>' -%}
+    {%- assign alias_link_replacement = '<a href="' | append: article_url | append: '">' | append: article.alias | append: '</a>' -%}
     {%- assign body_content = body_content | replace: alias_to_replace, alias_link_replacement -%}
   {%- endif -%}
 {%- endfor -%}
@@ -214,10 +216,11 @@ while ensuring clean, valid HTML output.
   {%- assign display_name = other_person.name -%}
   
   {%- comment -%}Create the replacement link{%- endcomment -%}
+  {%- assign person_url = other_person.url | relative_url -%}
   {%- if other_person.hidden -%}
-    {%- assign link_replacement = '<span class="hidden-autolink" data-original-name="' | append: display_name | append: '" data-original-url="' | append: other_person.url | append: '">[REDACTED]</span>' -%}
+    {%- assign link_replacement = '<span class="hidden-autolink" data-original-name="' | append: display_name | append: '" data-original-url="' | append: person_url | append: '">[REDACTED]</span>' -%}
   {%- else -%}
-    {%- assign link_replacement = '<a href="' | append: other_person.url | append: '">' | append: other_person.name | append: '</a>' -%}
+    {%- assign link_replacement = '<a href="' | append: person_url | append: '">' | append: other_person.name | append: '</a>' -%}
   {%- endif -%}
   
   {%- comment -%}Replace person names, but protect instances within existing article/video links{%- endcomment -%}
