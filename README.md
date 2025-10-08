@@ -49,6 +49,50 @@ EarlyDaysOfEthereum/
     └── images/                # Image assets
 ```
 
+### Workflow for adding new video with transcripts
+
+1. Victor downloaded video from Streamyard and shared it in Discord
+2. Bob downloaded that video to his computer (1GB for 42 mins footage!)
+3. Bob asked Cline to convert it to audio (55.7MB output)
+
+```bash
+ffmpeg -i ~/Downloads/"State of Blockchain_ More Boring or More Crazy_ Reflections on Token2049 Singapore.mp4" -q:a 0 -map a ~/Downloads/"State of Blockchain - More Boring or More Crazy - Reflections on Token2049 Singapore.mp3"
+```
+
+4. Bob dropped the audio into [TurboScribe](https://turboscribe.ai), in Whale Transcription mode.  In Speaker Recognition and More Settings, enabling Recognize Speakers.  How many speakers is 3, then click Transcribe.
+5. Copy that mp3 file into /source/videos/raw-audio/strato-mercata-show-2025.10.08.mp3, for future reference
+6. Copy /source/_videos/mercata-v2-contest-kickoff.md to /source/video/mercata-mercata-show-2025.10.08.md as a template, but then change the preamble, and then with a local Jekyll clean and build the video should show up on the /videos page.   From there you are very iterating on the content within that MD file.
+
+```yaml
+---
+title: "State of Blockchain: More Boring or More Crazy"
+date: 2025-10-08
+hosts: ["Bob Summerwill", "Victor Wong", "Kieren-James-Lubin"]
+description: "Reflections on TOKEN2049 in Singapore"
+embed:
+  url: https://www.youtube.com/embed/rSfw2sgHVJE
+---
+```
+
+7. By this time the TurboScribe transcription has completed, and you can select ... then Export Transcript, Export as TXT, with the "Section Timestamps" ticked on.   Open the generated TXT file and cut-and-paste its contents into the body of the new MD file.
+
+8. Work out which speaker is which, and ask Cline to transform all the headings, like so:
+
+```
+for the new show MD, convert all
+
+[Speaker 3] (0:03 - 0:05)
+
+into
+
+[[0:03]](https://www.youtube.com/watch?v=15MltoqMjZU&t=3s) **Victor:**
+
+Where the 3s is the number of seconds in that starting timestamp
+```
+
+In this particular instance, Cline decided that it could identify all three speakers and just do it all, which it did successfully.
+
+
 ### Local Development
 
 ```bash
