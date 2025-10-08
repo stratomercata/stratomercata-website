@@ -71,7 +71,7 @@ Display back-links section if any were found
   <ul class="back-links-list">
     {% for backlink in backlinks %}
     <li>
-      <a href="{{ backlink.url }}">{{ backlink.title | default: backlink.name }}</a>
+      <a href="{{ backlink.url | relative_url }}">{{ backlink.title | default: backlink.name }}</a>
       {% if backlink.collection %}
         <span class="back-link-type">({{ backlink.collection | slice: 0 | upcase }}{{ backlink.collection | slice: 1, 20 }})</span>
       {% endif %}

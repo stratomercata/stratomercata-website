@@ -9,7 +9,7 @@
       {% endunless %}
     {% endif %}
     
-    <a href="{{ include.url | default: include.src }}" class="blog-embed-link-wrapper content-embed-link-wrapper">
+    <a href="{{ include.url | default: include.src | relative_url }}" class="blog-embed-link-wrapper content-embed-link-wrapper">
       <div class="blog-embed-video-wrapper content-embed-video-wrapper">
         {% if is_local_video %}
         <video
@@ -38,7 +38,7 @@
         {% endif %}
         {% if include.author or include.date %}
           <div class="content-embed-metadata">
-            {% if include.author %}by {% assign matched_person = nil %}{% for person in site.people %}{% if person.name == include.author %}{% assign matched_person = person %}{% break %}{% endif %}{% endfor %}{% if matched_person %}<a href="{{ matched_person.url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>{% else %}<span class="blog-embed-author">{{ include.author }}</span>{% endif %}{% endif %}{% if include.date %}{% if include.author %}, {% endif %}<span class="blog-embed-date">{{ include.date }}</span>{% endif %}
+            {% if include.author %}by {% assign matched_person = nil %}{% for person in site.people %}{% if person.name == include.author %}{% assign matched_person = person %}{% break %}{% endif %}{% endfor %}{% if matched_person %}<a href="{{ matched_person.url | relative_url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>{% else %}<span class="blog-embed-author">{{ include.author }}</span>{% endif %}{% endif %}{% if include.date %}{% if include.author %}, {% endif %}<span class="blog-embed-date">{{ include.date }}</span>{% endif %}
           </div>
         {% endif %}
       </div>
@@ -46,7 +46,7 @@
   {% else %}
     <!-- BLOG MODE -->
     {% if include.img or include.title %}
-      <a href="{{ include.url }}" target="_blank" rel="noopener" class="blog-embed-link-wrapper">
+      <a href="{{ include.url | relative_url }}" target="_blank" rel="noopener" class="blog-embed-link-wrapper">
         {% if include.img %}
           <div class="blog-embed-image-container">
             <img src="{{ include.img }}" alt="{{ include.alt | default: include.url }}" class="blog-embed-image" loading="lazy" />
@@ -83,7 +83,7 @@
             {% endif %}
           {% endfor %}
           {% if matched_person %}
-            by <a href="{{ matched_person.url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>
+            by <a href="{{ matched_person.url | relative_url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>
             {% if include.date %} , <span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
           {% elsif include.author %}
             by <span class="blog-embed-author">{{ include.author }}</span>
@@ -95,7 +95,7 @@
         {% endif %}
       {% elsif include.author or include.date %}
         <div class="content-embed-metadata-mb">
-          {% if include.author %}by {% assign matched_person = nil %}{% for person in site.people %}{% if person.name == include.author %}{% assign matched_person = person %}{% break %}{% endif %}{% endfor %}{% if matched_person %}<a href="{{ matched_person.url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>{% else %}<span class="blog-embed-author">{{ include.author }}</span>{% endif %}{% endif %}{% if include.date %}{% if include.author %}, {% endif %}<span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
+          {% if include.author %}by {% assign matched_person = nil %}{% for person in site.people %}{% if person.name == include.author %}{% assign matched_person = person %}{% break %}{% endif %}{% endfor %}{% if matched_person %}<a href="{{ matched_person.url | relative_url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>{% else %}<span class="blog-embed-author">{{ include.author }}</span>{% endif %}{% endif %}{% if include.date %}{% if include.author %}, {% endif %}<span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
         </div>
       {% endif %}
       {% unless include.img %}
