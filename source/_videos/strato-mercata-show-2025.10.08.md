@@ -14,6 +14,20 @@ embed:
 
 ## Transcript
 
+We suggest that you start at the [Victor's introduction](#victor-introduction).
+
+<div class="table-of-contents">
+    <h2>Contents</h2>
+    <ul>
+        <li><a href="#small-talk-waiting-for-attendees">Small talk. Waiting for attendees</a></li>
+        <li><a href="#victor-introduction">Victor's introduction</a></li>
+    </ul>
+</div>
+
+<a id="small-talk-waiting-for-attendees"></a>
+
+### Small talk. Waiting for attendees
+
 [[0:03]](https://www.youtube.com/watch?v=15MltoqMjZU&t=3s) **Victor:**
 Okay, I think we are live.
 
@@ -27,7 +41,7 @@ Let's just give a minute for people to join.
 All righty.
 
 [[0:23]](https://www.youtube.com/watch?v=15MltoqMjZU&t=23s) **Bob:**
-So I looked at the background noise reduction, it says not supported in this browser. I'm using Firefox, perhaps it has to be Chrome.
+So I looked at the background noise reduction, it says not supported in this browser. I'm using Firefox, perhaps it has to be Chrome?
 
 [[0:33]](https://www.youtube.com/watch?v=15MltoqMjZU&t=33s) **Kieren:**
 Yes. You must pick from the two available choices.
@@ -39,7 +53,7 @@ Safari.
 Maybe three.
 
 [[0:42]](https://www.youtube.com/watch?v=15MltoqMjZU&t=42s) **Victor:**
-Yeah, Safari has a huge amount, just because of the icon.
+Yeah, Safari has a huge amount, just because of the iPhone.
 
 [[0:48]](https://www.youtube.com/watch?v=15MltoqMjZU&t=48s) **Kieren:**
 Is Edge, is it called Edge still?
@@ -59,7 +73,7 @@ That's funny. Try though, they might, wow, Chrome just continues to rise in mark
 Safari is trending down, yeah, they're just pretty tiny. Wow, Opera is still around. That's amazing.
 
 [[1:40]](https://www.youtube.com/watch?v=15MltoqMjZU&t=100s) **Bob:**
-They all use Chromium now.
+They all use Chromium though.
 
 [[1:42]](https://www.youtube.com/watch?v=15MltoqMjZU&t=102s) **Kieren:**
 Okay, fair enough.
@@ -72,19 +86,29 @@ Okay, so should we wait another minute or should we just start?
 [[2:03]](https://www.youtube.com/watch?v=15MltoqMjZU&t=123s) **Kieren:**
 That's a good question. We can ease into the substance of the content. Do we have any minute-long non sequiturs?
 
+<a id="victor-introduction"></a>
+
+### Victor's introduction
+
 [[2:11]](https://www.youtube.com/watch?v=15MltoqMjZU&t=131s) **Victor:**
 Cold opens. Well, maybe we should do our intros because we- Okay, we could do the intros. So hi, everyone.
 
-Welcome to our week show. If you don't know, we are all part of the Strato Mercado project that is a layer one EVM compatible blockchain focused on bringing DeFi to the masses. Now, the three of us here are all longtime builders and all Ethereum OGs.
+Welcome to our week show. If you don't know, we are all part of the [STRATO Mercata](https://stratomercata.com) project that is a layer one EVM compatible blockchain focused on bringing Defi to the masses.
+
+Now, the three of us here are all longtime builders and all Ethereum OGs.
 
 I'm Victor Wong.
 
 [[2:48]](https://www.youtube.com/watch?v=15MltoqMjZU&t=168s) **Kieren:**
-Vic, I don't know if you can describe yourself as an OG. I think someone else has to describe it.
+[Vic]({{ '/people/victor-wong/' | relative_url }}), I don't know if you can describe yourself as an OG. I think someone else has to describe it.
 
 [[2:53]](https://www.youtube.com/watch?v=15MltoqMjZU&t=173s) **Victor:**
-Someone has to bestow that. Okay, you two are OGs. Can we say it to each other?
+Someone has to bestow that. Okay, you two are OGs.
 
+[[2:58]](https://www.youtube.com/watch?v=15MltoqMjZU&t=178s) **Bob:**
+Can we say it to each other?
+
+[[3:00]](https://www.youtube.com/watch?v=15MltoqMjZU&t=180s) **Victor:**
 Yeah, can we say it to each other?
 
 [[3:01]](https://www.youtube.com/watch?v=15MltoqMjZU&t=181s) **Kieren:**
@@ -94,10 +118,10 @@ You are an OG, but yeah, let's do that in a circle.
 Right, exactly.
 
 [[3:09]](https://www.youtube.com/watch?v=15MltoqMjZU&t=189s) **Kieren:**
-You can tell Bob, Bob's an OG. Bob can tell me, I can tell you.
+You can tell [Bob]({{ '/people/bob-summerwill/' | relative_url }}), [Bob]({{ '/people/bob-summerwill/' | relative_url }})'s an OG. [Bob]({{ '/people/bob-summerwill/' | relative_url }}) can tell me, I can tell you.
 
 [[3:12]](https://www.youtube.com/watch?v=15MltoqMjZU&t=192s) **Victor:**
-Yes, so we've been building since the launch of Ethereum and continue to follow this journey. So you'll get hopefully no shilling and a lot of good historical context about what we're going to talk about today. And today we are going to talk about the highlights from Token 2049.
+Yes, so we've been building since the launch of Ethereum and continue to follow this journey. So you'll get hopefully no shilling and a lot of good historical context about what we're going to talk about today. And today we are going to talk about the highlights from [TOKEN2049](https://token2049.com).
 
 And was it more boring or more crazy in terms of the blockchain world? Joining me is Bob Summerwill. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), you want to do a quick intro?
 
@@ -111,13 +135,13 @@ Thank you.
 But yes, I'm Head of Ecosystem.
 
 [[3:58]](https://www.youtube.com/watch?v=15MltoqMjZU&t=238s) **Victor:**
-Yeah, and Kieren, of course.
+Yeah, and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), of course.
 
 [[4:01]](https://www.youtube.com/watch?v=15MltoqMjZU&t=241s) **Kieren:**
-Yeah, I am also experienced. You know, not as long as you can be in the space, but it's starting to feel like it, right? Like we've really been around for some time.
+Yeah, I am also experienced. You know, not as long as you can be in the space, but it's starting to feel like it, right? Like we've really been around for some time.  But yes, I'm ...
 
 [[4:12]](https://www.youtube.com/watch?v=15MltoqMjZU&t=252s) **Victor:**
-But yes, I'm- I will bestow the OG title on you, [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}). So we could go around. I mean, anyone that's been around since before the launch of Ethereum and was part of it, I think, you know, that would be, we can claim that title.
+I'm- I will bestow the OG title on you, [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}). So we could go around. I mean, anyone that's been around since before the launch of Ethereum and was part of it, I think, you know, that would be, we can claim that title.
 
 [[4:30]](https://www.youtube.com/watch?v=15MltoqMjZU&t=270s) **Kieren:**
 Ah, how the time goes.
@@ -125,7 +149,7 @@ Ah, how the time goes.
 [[4:33]](https://www.youtube.com/watch?v=15MltoqMjZU&t=273s) **Victor:**
 So I will say that I was not in Singapore. I kind of played hooky with [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }})'s approval. You know, international travel is brutal.
 
-But [Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) were there. And why, to get your kind of impressions, what do you think the big themes this year were at Token 2049?
+But [Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) were there. And why, to get your kind of impressions, what do you think the big themes this year were at [TOKEN2049](https://token2049.com)?
 
 [[4:57]](https://www.youtube.com/watch?v=15MltoqMjZU&t=297s) **Kieren:**
 Yeah, a bunch of big topics. One thing that was notable is that it felt like meme coins had almost completely vanished. And there was a lot of that the previous year.
@@ -144,18 +168,20 @@ You know, a lot of, you know, merger with TradFi sort of feel. I also think some
 
 Where like a year ago, it felt like the crypto was sort of peripheral to the problems with the world. And now it feels like it's like a big part of the solution. It's very strange.
 
-And everyone sort of acknowledges that, you know, like Donald Trump Jr. Donald Trump Jr. was there. Like that's a big changeover. You just feel, you know, like some weeks ago, like Putin made his comments about like how the United States was trying to use stablecoins to export American inflation, which is probably true.
+And everyone sort of acknowledges that, you know, like [Donald Trump Jr.](https://en.wikipedia.org/wiki/Donald_Trump_Jr.) was there. Like that's a big changeover. You just feel, you know, like some weeks ago, like [Putin](https://en.wikipedia.org/wiki/Vladimir_Putin) made his comments about like how the United States was trying to use stablecoins to export American inflation, which is probably true.
 
 But it's like that's a big turnaround. It's like a from the top policy as opposed to just. And you felt that at the conference as well.
 
 [[7:03]](https://www.youtube.com/watch?v=15MltoqMjZU&t=423s) **Bob:**
-Well, I mean, that wasn't new on the Bitcoin conference side. So I was in Nashville 2014 and Vegas, sorry, 2014, 2020, 2024. And then this July in Vegas.
+Well, I mean, that wasn't new on the Bitcoin conference side. So I was in Nashville 2014 and Vegas, sorry, 2024. And then this July in Vegas.
 
-So in Nashville last year, you had Trump, RFK Jr. And then this year you had both Trump boys, Don Jr. and Eric were both there. And oh, my goodness, I'm forgetting his name from the UK. That will come to me in a second.
+So in Nashville last year, you had [Trump](https://en.wikipedia.org/wiki/Donald_Trump), [RFK jr](https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr.). And then this year you had both Trump boys, [Don Jr.](https://en.wikipedia.org/wiki/Donald_Trump_Jr.) and [Eric](https://en.wikipedia.org/wiki/Eric_Trump) were both there. And oh, my goodness, I'm forgetting his name from the UK. That will come to me in a second.
+
+*(Bob was thinking of [Nigel Farage](https://en.wikipedia.org/wiki/Nigel_Farage))*
 
 But yeah, and also, you know, like tons of other Congress people and state level stuff. Like that's been a real theme well in advance on the Bitcoin side. I mean, I guess essentially because you've just already got that monetary store of value use case.
 
-It's like getting into these boring ETF, you know, treasury company, government level adoption sort of stuff that's happened earlier than on the Bitcoin side than more generally. But yeah, also, I mean, obviously, like the Trumps have got their world liberty nonsense going on and got to be pumping that one.
+It's like getting into these boring ETF, you know, treasury company, government level adoption sort of stuff that's happened earlier than on the Bitcoin side than more generally. But yeah, also, I mean, obviously, like the Trumps have got their [World Liberty](https://worldlibertyfinancial.com/) nonsense going on and got to be pumping that one.
 
 [[8:28]](https://www.youtube.com/watch?v=15MltoqMjZU&t=508s) **Victor:**
 Well, actually, that's a good transition. So, you know, we couldn't internally we were trying to decide whether the conference was more boring or more crazy than usual. You kind of have talked about the boring elements, I guess, you know, more institutional.
@@ -163,7 +189,7 @@ Well, actually, that's a good transition. So, you know, we couldn't internally w
 And I'm curious, like, you know, since this is in Singapore, a very global conference, like what countries outside the U.S. seem to be moving in this direction? You know, like, obviously, the U.S. has been a holdup for a really long time. But, you know, how are things getting boring and how are things getting more global?
 
 [[9:05]](https://www.youtube.com/watch?v=15MltoqMjZU&t=545s) **Kieren:**
-Bob, I want to remind you not to criticize our friends in Washington, at least in a public forum. Supporters of the...
+[Bob]({{ '/people/bob-summerwill/' | relative_url }}), I want to remind you not to criticize our friends in Washington, at least in a public forum. Supporters of the...
 
 [[9:12]](https://www.youtube.com/watch?v=15MltoqMjZU&t=552s) **Bob:**
 Yeah, I'm not getting back in.
@@ -175,7 +201,7 @@ And, yeah, I think it's a strange... The institutional feeling was much stronger
 
 Like, there were many, you know, the stablecoin... Stablecoins have this institutional feel to them. Even, you know, at the beginning, they didn't.
 
-And it is funny to watch, like, you know, I see these announcements like, you know, Tether's coming to the U.S. And they've, you know, set up a nice regulatory framework that, you know, they can work with. And I went to a side event and met some of the Tether people. It's also just funny to see them, you know, in the media, like buying sports teams and, you know, all of that.
+And it is funny to watch, like, you know, I see these announcements like, you know, [Tether](https://en.wikipedia.org/wiki/Tether_(cryptocurrency))'s coming to the U.S. And they've, you know, set up a nice regulatory framework that, you know, they can work with. And I went to a side event and met some of the [Tether](https://en.wikipedia.org/wiki/Tether_(cryptocurrency)) people. It's also just funny to see them, you know, in the media, like buying sports teams and, you know, all of that.
 
 Like, at a certain point, you get big enough, you become institutional, right?
 
@@ -185,15 +211,21 @@ Right.
 [[10:28]](https://www.youtube.com/watch?v=15MltoqMjZU&t=628s) **Kieren:**
 But, yeah, I think, you know, even last year, it felt like blockchain technology, at the, maybe at the lower levels of the stack, disproportionately gets created in the broader West, right? And maybe that with the exception of some of the exchanges and such. And it gets used outside the West more.
 
-So you see stablecoin balances. Yes, they're big in the U.S., but it's kind of really a global story. Tether in particular being, like, much larger than Circle.
+So you see stablecoin balances. Yes, they're big in the U.S., but it's kind of really a global story. [Tether](https://en.wikipedia.org/wiki/Tether_(cryptocurrency)) in particular being, like, much larger than [Circle](https://en.wikipedia.org/wiki/Circle_Internet_Group).
 
-Obviously, I think both of them, you know, Tether purports not to serve the U.S. I'm sure there's plenty of U.S. USDT holders. Circle may be preferencing the U.S., but probably covers global as well. It's a, yeah, so the, I think it's a funny feeling in which the people at the conference are a little more like users than builders.
+Obviously, I think both of them, you know, [Tether](https://en.wikipedia.org/wiki/Tether_(cryptocurrency)) purports not to serve the U.S. I'm sure there's plenty of U.S. USDT holders. [Circle](https://en.wikipedia.org/wiki/Circle_Internet_Group) may be preferencing the U.S., but probably covers global as well. It's a, yeah, so the, I think it's a funny feeling in which the people at the conference are a little more like users than builders.
 
-And there's also just, I mean, the feel, Token is a little like, someone described it to me, kind of like Comic-Con. And I thought that was actually very apt. Like, there's people in funny, like, they're like astronauts.
+And there's also just, I mean, the feel, [TOKEN](https://token2049.com) is a little like, someone described it to me, kind of like [Comic-Con](https://en.wikipedia.org/wiki/Comic_book_convention). And I thought that was actually very apt. Like, there's people in funny, like, they're like astronauts.
 
-You could take yourself as an astronaut with Justin Son pictures of the clock as one. And like lots of, like, shiny outfits. And I think the world's tallest man was there.
+You could take yourself as an astronaut with [Justin Sun](https://en.wikipedia.org/wiki/Justin_Sun) pictures of the clock as one. And like lots of, like, shiny outfits. And I think the world's tallest man was there.
+
+<img src="{{ '/images/personal/bob-summerwill/photos/2025.10.08/bob-and-justin-sun.jpeg' | relative_url }}" alt="Bob and Justin Sun at TOKEN2049" style="width: 50%;">
 
 Sadly, in a wheelchair. I think he has a hard time standing. For at least for long periods of time.
+
+*(Who is apparently [Sultan Kösen](https://en.wikipedia.org/wiki/Sultan_K%C3%B6sen) at 251 cm (8 ft 2.82 in))*
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sultankosen82/video/7556604405978680583" data-video-id="7556604405978680583" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@sultankosen82" href="https://www.tiktok.com/@sultankosen82?refer=embed">@sultankosen82</a> <p></p> <a target="_blank" title="♬ original sound - Sultan Kösen" href="https://www.tiktok.com/music/original-sound-Sultan-Kösen-7556604405978680583?refer=embed">♬ original sound - Sultan Kösen</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
 It was like, you saw this, like, horse in a wheelchair. I was like, no, that's a human. Like, like a really large, I don't know, eight, six or seven, 10 or something.
 
@@ -207,9 +239,7 @@ Yeah, yeah, exactly. And so, you know, the mix is definitely a big global confer
 
 Coming from hubs, you know, again, a lot of UAE, some of the European hubs. And big U.S. contingents, very long flight for us. But yeah, it was great.
 
-You know, Singapore also is a great place to hang out. And pretty good representation of the global scene, if you will. There's also a, I don't know if this perfectly ties into the global amount.
-
-There's the feeling that the same people are manning the booths last year to this year. I've also heard very expensive conference. But the companies have in many cases changed.
+You know, Singapore also is a great place to hang out. And pretty good representation of the global scene, if you will. There's also a, I don't know if this perfectly ties into the global amount.  There's the feeling that the same people are manning the booths last year to this year. I've also heard very expensive conference. But the companies have in many cases changed.
 
 Except for like the very big ones, you know, the headliners, people get invited to the stage, et cetera. A lot of turnover and who was represented at the conference. So, you know, in some ways, being a media company is one of the better ways to, you know, survive cycles in crypto.
 
@@ -221,12 +251,12 @@ Yeah. And it seems those fees are getting bigger and bigger too, right? It's jus
 Garbage?
 
 [[13:38]](https://www.youtube.com/watch?v=15MltoqMjZU&t=818s) **Kieren:**
-Garbage? I got a phone. Garbage?
+Garbage? I got a phone call. Garbage?
 
 [[13:44]](https://www.youtube.com/watch?v=15MltoqMjZU&t=824s) **Victor:**
 So, yeah. And we don't want to keep you too long. Obviously, you got important things to do around the house.
 
-Bob, what do you think about the global and the boring part of it?
+[Bob]({{ '/people/bob-summerwill/' | relative_url }}), what do you think about the global and the boring part of it?
 
 [[13:56]](https://www.youtube.com/watch?v=15MltoqMjZU&t=836s) **Bob:**
 So, yeah, I mean, I guess just something else to say that is I've been to a lot of conferences. I've never seen somewhere with so much floor space of expo halls. Just on and on and on.
@@ -236,17 +266,17 @@ Like, honestly, like city blocks. Many, many city blocks worth of stuff. You kno
 Yeah, there's another whole floor of this. Yeah, it's twice as much as you thought.
 
 [[14:23]](https://www.youtube.com/watch?v=15MltoqMjZU&t=863s) **Victor:**
-Even bigger than DevCon in Thailand last year? Because I remember looking, you know, getting my step tracker and like seeing like, oh, man, 15,000 steps in the conference center.
+Even bigger than [DEVCON](https://devcon.org) in Thailand last year? Because I remember looking, you know, getting my step tracker and like seeing like, oh, man, 15,000 steps in the conference center.
 
 [[14:36]](https://www.youtube.com/watch?v=15MltoqMjZU&t=876s) **Bob:**
-Bigger in terms of the expo area, certainly. You know, like DevCon was a large, you know, floor area, but it was lots and lots of different rooms of talks. And then little stores, whereas this is just, you know, expo hall of selling.
+Bigger in terms of the expo area, certainly. You know, like [DEVCON](https://devcon.org) was a large, you know, floor area, but it was lots and lots of different rooms of talks. And then little stores, whereas this is just, you know, expo hall of selling.  I don't know what most of them were.
 
-I don't know what most of them were. Thousands and thousands of projects that you've never heard of doing a thing that is pretty indistinguishable from everybody else. So, yeah, talking about the turnover, Kieran, I mean, I'm sure that's the case is the vast majority of them are going to be gone in a year's time.
+Thousands and thousands of projects that you've never heard of doing a thing that is pretty indistinguishable from everybody else. So, yeah, talking about the turnover, [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), I mean, I'm sure that's the case is the vast majority of them are going to be gone in a year's time.
 
 And never even know they happened.
 
 [[15:16]](https://www.youtube.com/watch?v=15MltoqMjZU&t=916s) **Victor:**
-But do you guys think the boringness comes from institutions themselves or what they're doing? Because everyone seems to be doing like stable corn or treasury company, you know, like that. Those seem to be the two options.
+But do you guys think the boringness comes from institutions themselves or what they're doing? Because everyone seems to be doing like stablecoin or treasury company, you know, like that. Those seem to be the two options.
 
 [[15:30]](https://www.youtube.com/watch?v=15MltoqMjZU&t=930s) **Kieren:**
 Yeah, I think it's a strange thing in which like the meme coins ended to some degree with the U.S. elections. And like, I feel like Libra was really the end, you know, in which, you know, a coin associated with a public official did pretty badly for the people involved. Excuse me.
@@ -326,7 +356,7 @@ And no, they don't like that. So we better be on good behavior, get the brownie 
 Yeah, I mean, I kind of feel like what we've really seen is just like, regulation was like the lid on a bucket. And the minute you move that lid, the demand, like the real level of demand that we're seeing now is what sort of always existed. But it's just been held back for a really long time.
 
 [[27:03]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1623s) **Kieren:**
-Yeah, the circle IPO was kind of crazy. It was it showed, you know, just like how much it went up after listing, like how much pent-up demand is out there if this is even like slightly allowed.
+Yeah, the [Circle](https://en.wikipedia.org/wiki/Circle_Internet_Group) IPO was kind of crazy. It was it showed, you know, just like how much it went up after listing, like how much pent-up demand is out there if this is even like slightly allowed.
 
 [[27:17]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1637s) **Victor:**
 Yeah, and I feel like the treasury companies are a similar thing, right? Like all of those things. Well, while we're getting to that point, how do you think things are getting a little bit more crazier than last year?
@@ -352,7 +382,7 @@ As someone who's gone to like gaming conferences.
 [[29:11]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1751s) **Kieren:**
 Practically illegal. Yes, exactly. I think booth babes are gone.
 
-But Token was very much like a booth babe conference. And in fact, they were sort of like, almost like seemingly more of them than last year. And then this led to like, does this mean we're near the top?
+But [TOKEN](https://token2049.com) was very much like a booth babe conference. And in fact, they were sort of like, almost like seemingly more of them than last year. And then this led to like, does this mean we're near the top?
 
 Like, you know, like is the price speculation at a maximum at this moment? And I got, you know, it wasn't euphoria. But people were feeling pretty good.
 
@@ -410,7 +440,7 @@ And then sometimes things will come out of the bottom and go into the top. But t
 
 And it left the bad stuff to run amok, contributing to the impression that the space was just like all scams. And like it might be all scams by number of projects, like the average project might be a scam or just not worth any value. But like the average business is like not a good business.
 
-But the big ones are good most of the time, not all the time. And they're kind of just being allowed out. You know, I got a Circle IPO, good example, Metamask token, you know, it's like probably they should have had one a long time ago.
+But the big ones are good most of the time, not all the time. And they're kind of just being allowed out. You know, I got a [Circle](https://en.wikipedia.org/wiki/Circle_Internet_Group) IPO, good example, Metamask token, you know, it's like probably they should have had one a long time ago.
 
 Like they've been using it for a long time. They probably wanted a token.
 
@@ -431,7 +461,7 @@ Right, we're scum away. We're not even going to make any effort to be compliant 
 But yeah, I mean, I think another crazy thing is I think we're going to have masses of ICOs like tons and tons of them coming up.
 
 [[36:24]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2184s) **Victor:**
-Well, on that, I think we've crossed the 30-minute mark. I wanted to ask you guys, do you have any closing thoughts about Token 2049 or where we're at in the overall state of blockchain?
+Well, on that, I think we've crossed the 30-minute mark. I wanted to ask you guys, do you have any closing thoughts about [TOKEN2049](https://token2049.com) or where we're at in the overall state of blockchain?
 
 [[36:38]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2198s) **Kieren:**
 One thing I would say, I was reminded, food is excellent in Singapore. If you, for those who haven't, but there was a hawker market in the conference.
