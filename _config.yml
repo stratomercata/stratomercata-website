@@ -27,8 +27,8 @@ author: "Bob Summerwill"  # Default author for content and SEO
 # These settings enhance search engine optimization and define site language/timezone.
 
 lang: en_US  # Language code for HTML lang attribute and SEO
-timezone: America/Vancouver  # Timezone for date processing
-keywords: "Ethereum, blockchain, cryptocurrency, Vitalik Buterin, Gavin Wood, early history, foundation, development"  # Default keywords for SEO
+timezone: America/New_York  # Timezone for date processing
+keywords: "STRATO Mercata, blockchain, cryptocurrency, DeFi, real-world assets, RWA, gold, silver, lending, borrowing, trading, Ethereum, tokenization"  # Default keywords for SEO
 
 # ============================================================================
 # Site Verification Codes
@@ -36,8 +36,8 @@ keywords: "Ethereum, blockchain, cryptocurrency, Vitalik Buterin, Gavin Wood, ea
 # Add verification codes from search engines to prove site ownership.
 # These appear as <meta> tags in the site <head> for verification.
 
-google_site_verification: "VAAK0u6FRzaYZ9K8SHqFh_4HOGGGh7-dqDjc"  # Google Search Console verification
-bing_site_verification: ""  # Bing Webmaster Tools verification (add when available)
+# google_site_verification: ""  # Google Search Console verification (add when available)
+# bing_site_verification: ""  # Bing Webmaster Tools verification (add when available)
 
 # ============================================================================
 # Analytics Configuration
@@ -45,7 +45,7 @@ bing_site_verification: ""  # Bing Webmaster Tools verification (add when availa
 # Configure web analytics tracking. The tracking code is automatically
 # included in all pages via the default layout.
 
-google_analytics: "G-K07HLJER91"  # Google Analytics 4 tracking ID
+# google_analytics: ""  # Google Analytics 4 tracking ID (add when available)
 
 # ============================================================================
 # Jekyll Build Settings
@@ -58,8 +58,8 @@ permalink: /:categories/:year/:month/:day/:title/  # URL structure for blog post
 
 # Kramdown-specific settings
 kramdown:
-  # Fix smart quotes rendering issue (was converting Anthony 'Texture' D'Onofrio incorrectly)
-  smart_quotes: ["apos", "apos", "quot", "quot"]  # Use straight quotes instead of curly quotes
+  # Use straight quotes instead of curly quotes for better compatibility
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
 # ============================================================================
 # Jekyll Collections
@@ -75,25 +75,25 @@ kramdown:
 
 collections:
   # Articles Collection (_articles/ folder)
-  # Purpose: Historical articles about Ethereum's development and milestones
-  # Example files: ethereum-timeline.md, crypto-valley.md
+  # Purpose: Platform updates, announcements, and educational content
+  # Example files: platform-launch.md, trading-guide.md
   articles:
     output: true  # Generate individual pages for each article
-    permalink: /articles/:name/  # URL pattern: /articles/ethereum-timeline/
+    permalink: /articles/:name/  # URL pattern: /articles/platform-launch/
   
   # People Collection (_people/ folder) 
-  # Purpose: Biographical profiles of Ethereum contributors (180+ people)
-  # Example files: vitalik-buterin.md, gavin-wood.md
+  # Purpose: Team member profiles and contributor biographies
+  # Example files: bob-summerwill.md, victor-wong.md
   people:
     output: true  # Generate individual pages for each person
-    permalink: /people/:name/  # URL pattern: /people/vitalik-buterin/
+    permalink: /people/:name/  # URL pattern: /people/bob-summerwill/
   
   # Videos Collection (_videos/ folder)
-  # Purpose: Video episodes and content documenting Ethereum's history
-  # Example files: episode004-taylor-gerring.md
+  # Purpose: Show episodes, contest announcements, and platform demonstrations
+  # Example files: strato-mercata-show-2025.10.08.md
   videos:
     output: true  # Generate individual pages for each video
-    permalink: /videos/:path/  # URL pattern: /videos/episode004-taylor-gerring/
+    permalink: /videos/:path/  # URL pattern: /videos/strato-mercata-show-2025.10.08/
 
 # ============================================================================
 # Default Front Matter Values
@@ -119,7 +119,7 @@ defaults:
     values: { layout: "article" }
   
   # People get the "person" layout automatically  
-  # Without this: You'd need "layout: person" in all 180+ people files
+  # Without this: You'd need "layout: person" in all people files
   # With this: Jekyll adds it automatically to all files in _people/
   - scope: { path: "_people" }
     values: { layout: "person" }
@@ -127,7 +127,6 @@ defaults:
   # Videos get the "video" layout automatically
   # Without this: You'd need "layout: video" in every video file
   # With this: Jekyll adds it automatically to all files in _videos/
-  # Note: Individual files can override (e.g., Mercata videos use "layout: mercata")
   - scope: { path: "_videos" }
     values: { layout: "video" }
 
