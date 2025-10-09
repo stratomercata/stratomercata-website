@@ -36,8 +36,8 @@ keywords: "STRATO Mercata, blockchain, cryptocurrency, DeFi, real-world assets, 
 # Add verification codes from search engines to prove site ownership.
 # These appear as <meta> tags in the site <head> for verification.
 
-# google_site_verification: ""  # Google Search Console verification (add when available)
-# bing_site_verification: ""  # Bing Webmaster Tools verification (add when available)
+google_site_verification: ""  # Google Search Console verification (add when available)
+bing_site_verification: ""  # Bing Webmaster Tools verification (add when available)
 
 # ============================================================================
 # Analytics Configuration
@@ -45,7 +45,7 @@ keywords: "STRATO Mercata, blockchain, cryptocurrency, DeFi, real-world assets, 
 # Configure web analytics tracking. The tracking code is automatically
 # included in all pages via the default layout.
 
-# google_analytics: ""  # Google Analytics 4 tracking ID (add when available)
+google_analytics: ""  # Google Analytics 4 tracking ID (add when available)
 
 # ============================================================================
 # Jekyll Build Settings
