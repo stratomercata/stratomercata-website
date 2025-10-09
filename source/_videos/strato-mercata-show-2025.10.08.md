@@ -14,17 +14,26 @@ embed:
 
 ## Transcript
 
-We suggest that you start at the [Victor's introduction](#victor-introduction).
+We suggest that you start at the [Victor's introduction](#introduction).
 
 <div class="table-of-contents">
     <h2>Contents</h2>
     <ul>
-        <li><a href="#small-talk-waiting-for-attendees">Small talk. Waiting for attendees</a></li>
-        <li><a href="#victor-introduction">Victor's introduction</a></li>
+        <li><a href="#small-talk">Small talk.  Waiting for attendees</a></li>
+        <li><a href="#introduction">Victor's introduction</a></li>
+        <li><a href="#big-themes">Big themes</a></li>
+        <li><a href="#boring-or-crazy">Boring or crazy?</a></li>
+        <li><a href="#enterprise-maturity">Enterprise blockchain maturity</a></li>
+        <li><a href="#institutional-approval">Institutional approval</a></li>
+        <li><a href="#booth-babes">Booth babes</a></li>
+        <li><a href="#top-signals">Top signals</a></li>
+        <li><a href="#return-of-retail">Return of retail</a></li>
+        <li><a href="#devconnect">Devconnect</a></li>
+        <li><a href="#socials">Socials</a></li>
     </ul>
 </div>
 
-<a id="small-talk-waiting-for-attendees"></a>
+<a id="small-talk"></a>
 
 ### Small talk. Waiting for attendees
 
@@ -86,7 +95,7 @@ Okay, so should we wait another minute or should we just start?
 [[2:03]](https://www.youtube.com/watch?v=15MltoqMjZU&t=123s) **Kieren:**
 That's a good question. We can ease into the substance of the content. Do we have any minute-long non sequiturs?
 
-<a id="victor-introduction"></a>
+<a id="introduction"></a>
 
 ### Victor's introduction
 
@@ -159,6 +168,11 @@ Ah, how the time goes.
 [[4:33]](https://www.youtube.com/watch?v=15MltoqMjZU&t=273s) **Victor:**
 So I will say that I was not in Singapore. I kind of played hooky with [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }})'s approval. You know, international travel is brutal.
 
+
+<a id="big-themes"></a>
+
+### Big themes
+
 But [Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) were there. And why, to get your kind of impressions, what do you think the big themes this year were at [TOKEN2049](https://token2049.com)?
 
 [[4:57]](https://www.youtube.com/watch?v=15MltoqMjZU&t=297s) **Kieren:**
@@ -202,6 +216,10 @@ It's like getting into these boring ETF, you know, treasury company, government 
    site="worldlibertyfinancial.com"
 %}
 </div>
+
+<a id="boring-or-crazy"></a>
+
+### More boring or more crazy?
 
 [[8:28]](https://www.youtube.com/watch?v=15MltoqMjZU&t=508s) **Victor:**
 Well, actually, that's a good transition. So, you know, we couldn't internally we were trying to decide whether the conference was more boring or more crazy than usual. You kind of have talked about the boring elements, I guess, you know, more institutional.
@@ -285,8 +303,6 @@ So, yeah. And we don't want to keep you too long. Obviously, you got important t
 [[13:56]](https://www.youtube.com/watch?v=15MltoqMjZU&t=836s) **Bob:**
 So, yeah, I mean, I guess just something else to say that is I've been to a lot of conferences. I've never seen somewhere with so much floor space of expo halls. Just on and on and on.
 
-<img src="https://lh3.googleusercontent.com/p/AF1QipPIb5yCEtTq8KOOx9oU2UP7ML7B5Sh2ZAi2P2KC=s680-w680-h510" alt="TOKEN2049 Conference Floor" style="width: 50%;">
-
 Like, honestly, like city blocks. Many, many city blocks worth of stuff. You know, and then you go, oh, right.  Yeah, there's another whole floor of this. Yeah, it's twice as much as you thought.
 
 [[14:23]](https://www.youtube.com/watch?v=15MltoqMjZU&t=863s) **Victor:**
@@ -356,6 +372,10 @@ You got to hodl the memes, that's the key.
 [[20:57]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1257s) **Kieren:**
 Shout out to you, [Shiba](https://x.com/Cryptotarzan19). [Bob]({{ '/people/bob-summerwill/' | relative_url }}), so what do you think about, you know, treasuries and stablecoins?
 
+<a id="enterprise-maturity"></a>
+
+### Enterprise blockchain maturity
+
 [[21:04]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1264s) **Bob:**
 Yeah, I mean, you know, I guess this is all sort of maturity. And it's a strange kind of feeling, you know, looking back on all of our joint experience, sort of on [Enterprise Ethereum](https://entethalliance.org/) efforts kicking off in 2016, 2017.
 
@@ -399,6 +419,10 @@ And that's, you know, while these things are kind of a bit boring, it is also qu
 
 [[22:43]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1363s) **Victor:**
 Well, I think part of it and maybe one of the reasons as builders we find it boring is that effectively there are no tech innovations really that are driving this. Right. It's really it's really about people who already have a bunch of money pouring more money into the seams of it.
+
+<a id="institutional-approval"></a>
+
+### Institutional approval
 
 [[23:02]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1382s) **Kieren:**
 At a time, you know, I think most much of the space was extremely eager for institutional approval, even with some, you know, nominal hostility to it. And I now feel the emotion that like I'm like, I almost don't want it. I'm like, get out of here.
@@ -457,6 +481,11 @@ The perp DEX is, there's like a new perp DEX a minute. Yeah, I think, I guess th
 
 And he said that he's done better not thinking about it as a four-year cycle anymore. Because it's sort of, it feels like they're compressing and they're kind of mini cycles within the cycle. And yeah, I suppose just everything is heating up in that way.
 
+
+<a id="booth-babes"></a>
+
+### Booth babes
+
 I'll, a friend of ours sort of made a joke. So in the US, probably in Canada, we do not have a [booth babe](https://en.wikipedia.org/wiki/Promotional_model) culture. Maybe, I'd heard that like, you know.
 
 [[29:07]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1747s) **Victor:**
@@ -493,6 +522,10 @@ And so there's a feeling of inevitability that kicked in for me like a couple mo
 
 [[31:11]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1871s) **Victor:**
 What about you, [Bob]({{ '/people/bob-summerwill/' | relative_url }})? What did you find, you know, on the craziness level? What do you think?
+
+<a id="top-signals"></a>
+
+### Top signals
 
 [[31:19]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1879s) **Bob:**
 I can't have been in the right bit of the building. I didn't see any booth babes. Where were they?
@@ -559,6 +592,10 @@ Well, on that, I think we've crossed the 30-minute mark. I wanted to ask you guy
 [[36:38]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2198s) **Kieren:**
 One thing I would say, I was reminded, food is excellent in Singapore. If you, for those who haven't, but there was a [hawker market](https://en.wikipedia.org/wiki/Hawker_centre) in the conference.  It was kind of crazy.
 
+<a id="return-of-retail"></a>
+
+### Return of retail
+
 [[36:48]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2208s) **Kieren:**
 They like made one, you know, it was very cool. That's awesome. I'm pretty optimistic.
 
@@ -581,6 +618,10 @@ Well, I mean, I think the way that that will happen for a lot of retail is that 
 It's just, yeah, there's some more financial instruments and then you go. So I think that's your sort of speculative retail, you know, crypto as an investment people. What I think is gonna be more interesting to watch is sort of the payments side, you know, especially with the [Stripe project](https://tempo.xyz/) there, you know, if you get to a place where lots of just regular payment flows can be using crypto rather than fiat, that's really interesting, you know, that you can start getting real velocity of non-speculative use.
 
 Because everything really at this point has pretty much been speculation or, you know, a little bit of payments, but not really any large volume of payments, you know, early on it's like, you know, buy your coffee with Bitcoin and that didn't last very long and that kind of hasn't really come back. But really with the stablecoins and these large, you know, integrations, you know, like PayPal as well, you know, [PayPal are doing things](https://www.paypal.com/us/digital-wallet/manage-money/crypto/pyusd), MasterCard have [announced stuff](https://www.mastercard.com/global/en/business/payments/consumer-payments/next-gen-payments/digital-asset-solutions.html). I'm sure, you know, all of these payment rails are gonna be joining in on the game and that really changes things.
+
+<a id="devconnect"></a>
+
+### Devconnect
 
 [[40:45]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2445s) **Victor:**
 Yeah, and one question, like, are we going to [DevConnect](https://devconnect.org/)? I know me and [Bob]({{ '/people/bob-summerwill/' | relative_url }}) have already bought our tickets. [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), you're the holdout.
@@ -609,6 +650,10 @@ So I'm just really curious to find out.
 
 [[41:17]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2477s) **Kieren:**
 [Vitalik](https://en.wikipedia.org/wiki/Vitalik_Buterin) said he's more likely to get recognized in Buenos Aires than in the U.S.
+
+<a id="socials"></a>
+
+### Socials
 
 [[41:22]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2482s) **Victor:**
 Yeah, well, and so if you like this content, please join us every week.
