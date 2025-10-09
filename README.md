@@ -43,15 +43,15 @@ stratomercata-website/
 
 ### Configuration Philosophy
 
-The `_config.yml` file is environment-agnostic:
-- **No `baseurl`**: Defaults to empty string for local development
-- **No `url`**: Defaults to localhost for local development
-- **GitHub Actions**: Sets both `--baseurl` and `--url` dynamically during deployment
+The `_config.yml` file contains production settings:
+- **`baseurl: "/stratomercata-website"`**: GitHub Pages subpath
+- **`url: "https://stratomercata.github.io"`**: Production domain
 
-This approach ensures:
-- Local development works at `http://localhost:4000` (no subdirectory)
-- Production deployment works correctly on GitHub Pages
-- No need to override config values for local vs production
+For local development, Jekyll's `serve` command automatically overrides these:
+- Sets `url` to `http://localhost:4000`
+- Sets `baseurl` to empty string
+
+This is the standard Jekyll approach for GitHub Pages sites.
 
 ---
 
@@ -191,10 +191,11 @@ The GitHub Actions workflow (`.github/workflows/jekyll-gh-pages.yml`):
 1. Checks out the repository
 2. Sets up Ruby and installs dependencies
 3. Configures GitHub Pages settings
-4. Builds the site with production URL and baseurl:
+4. Builds the site with dynamic baseurl:
    ```bash
-   bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --url "https://stratomercata.github.io"
+   bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
    ```
+   The `url` setting from `_config.yml` is used automatically
 5. Uploads and deploys the site
 
 ### Manual Deployment

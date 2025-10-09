@@ -19,6 +19,8 @@ source: source
 
 title: "STRATO Mercata"
 description: "Easily earn on vaulted gold, silver & crypto. Get instant credit. Built by ETH veterans"
+baseurl: "/stratomercata-website"  # Subpath for GitHub Pages
+url: "https://stratomercata.github.io"  # Production domain
 author: "Bob Summerwill"  # Default author for content and SEO
 
 # ============================================================================
