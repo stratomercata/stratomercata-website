@@ -248,10 +248,14 @@ Just someone will pay that big conference fee.
 [[13:33]](https://www.youtube.com/watch?v=15MltoqMjZU&t=813s) **Victor:**
 Yeah. And it seems those fees are getting bigger and bigger too, right? It's just very, very expensive.
 
+[[13:37]](https://www.youtube.com/watch?v=15MltoqMjZU&t=817s) **Cleaner:**
 Garbage?
 
 [[13:38]](https://www.youtube.com/watch?v=15MltoqMjZU&t=818s) **Kieren:**
-Garbage? I got a phone call. Garbage?
+I got a phone call.
+
+[[13:39]](https://www.youtube.com/watch?v=15MltoqMjZU&t=819s) **Cleaner:**
+Garbage?
 
 [[13:44]](https://www.youtube.com/watch?v=15MltoqMjZU&t=824s) **Victor:**
 So, yeah. And we don't want to keep you too long. Obviously, you got important things to do around the house.
@@ -261,15 +265,13 @@ So, yeah. And we don't want to keep you too long. Obviously, you got important t
 [[13:56]](https://www.youtube.com/watch?v=15MltoqMjZU&t=836s) **Bob:**
 So, yeah, I mean, I guess just something else to say that is I've been to a lot of conferences. I've never seen somewhere with so much floor space of expo halls. Just on and on and on.
 
-Like, honestly, like city blocks. Many, many city blocks worth of stuff. You know, and then you go, oh, right.
-
-Yeah, there's another whole floor of this. Yeah, it's twice as much as you thought.
+Like, honestly, like city blocks. Many, many city blocks worth of stuff. You know, and then you go, oh, right.  Yeah, there's another whole floor of this. Yeah, it's twice as much as you thought.
 
 [[14:23]](https://www.youtube.com/watch?v=15MltoqMjZU&t=863s) **Victor:**
 Even bigger than [DEVCON](https://devcon.org) in Thailand last year? Because I remember looking, you know, getting my step tracker and like seeing like, oh, man, 15,000 steps in the conference center.
 
 [[14:36]](https://www.youtube.com/watch?v=15MltoqMjZU&t=876s) **Bob:**
-Bigger in terms of the expo area, certainly. You know, like [DEVCON](https://devcon.org) was a large, you know, floor area, but it was lots and lots of different rooms of talks. And then little stores, whereas this is just, you know, expo hall of selling.  I don't know what most of them were.
+Bigger in terms of the expo area, certainly. You know, like [DEVCON](https://devcon.org) was a large, you know, floor area, but it was lots and lots of different rooms of talks. And then little stalls, whereas this is just, you know, expo hall of selling.  I don't know what most of them were.
 
 Thousands and thousands of projects that you've never heard of doing a thing that is pretty indistinguishable from everybody else. So, yeah, talking about the turnover, [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), I mean, I'm sure that's the case is the vast majority of them are going to be gone in a year's time.
 
@@ -279,25 +281,25 @@ And never even know they happened.
 But do you guys think the boringness comes from institutions themselves or what they're doing? Because everyone seems to be doing like stablecoin or treasury company, you know, like that. Those seem to be the two options.
 
 [[15:30]](https://www.youtube.com/watch?v=15MltoqMjZU&t=930s) **Kieren:**
-Yeah, I think it's a strange thing in which like the meme coins ended to some degree with the U.S. elections. And like, I feel like Libra was really the end, you know, in which, you know, a coin associated with a public official did pretty badly for the people involved. Excuse me.
+Yeah, I think it's a strange thing in which like the meme coins ended to some degree with the U.S. elections. And like, I feel like [$Libra](https://en.wikipedia.org/wiki/$Libra_cryptocurrency_scandal) was really the end, you know, in which, you know, a coin associated with a public official did pretty badly for the people involved. Excuse me.
 
 [[15:59]](https://www.youtube.com/watch?v=15MltoqMjZU&t=959s) **Victor:**
-And sorry, I thought you were talking about the Facebook Libra.
+And sorry, I thought you were talking about the [Facebook Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)).
 
 [[16:02]](https://www.youtube.com/watch?v=15MltoqMjZU&t=962s) **Kieren:**
-No, no, no, no. Yeah, the Millet associated meme. The Millet associated meme, gotcha.
+No, no, no, no. Yeah, the [Milei](https://en.wikipedia.org/wiki/Javier_Milei) associated meme. The Milei associated meme, gotcha.
 
 [[16:08]](https://www.youtube.com/watch?v=15MltoqMjZU&t=968s) **Bob:**
-There was a hog tear coin as well, wasn't there?
+There was a [Hawk Tuah coin](https://en.wikipedia.org/wiki/Haliey_Welch#Meme_coin_scandal) as well, wasn't there?
 
 [[16:11]](https://www.youtube.com/watch?v=15MltoqMjZU&t=971s) **Kieren:**
-Yeah, I think it was before, though. I feel like that was not the end, but yes, it's sort of, you know, I think they've kind of peaked. Pump.fund still seems to be doing lots and lots of launches in revenue, but no one is really talking that much about it anymore. And we're getting back to something like you either have to have tech or now you have to have revenue. And it's gotten almost like a mirror of the public equity markets in which people are, you know, something like when I talk at more length another time, I keep seeing criticism of, say, Uniswap because they generate a lot of fees. But a lot of those fees go directly to the lab company and they don't go to the protocol or and they have to turn the protocol fees on and would then start theoretically buying back the token.
+Yeah, I think it was before, though. I feel like that was not the end, but yes, it's sort of, you know, I think they've kind of peaked. [Pumped.fun](https://pumped.fun/) still seems to be doing lots and lots of launches in revenue, but no one is really talking that much about it anymore. And we're getting back to something like you either have to have tech or now you have to have revenue. And it's gotten almost like a mirror of the public equity markets in which people are, you know, something like when I talk at more length another time, I keep seeing criticism of, say, [Uniswap](https://app.uniswap.org/) because they generate a lot of fees. But a lot of those fees go directly to the Lab company and they don't go to the protocol or and they have to turn the protocol fees on and would then start theoretically buying back the token.
 
-Whereas folks like Hyperliquid, there's no lab skim and there are pretty big buybacks going on and the token price has gone up. And, you know, people argue Uniswap has a kind of conflict of interest there. But anyway, the point being, like, suddenly it all became about like revenue, US dollar denominated yields, like how to do not quite a SPAC.
+Whereas folks like [Hyperliquid](https://hyperfoundation.org/), there's no Lab skim and there are pretty big buybacks going on and the token price has gone up. And, you know, people argue [Uniswap](https://app.uniswap.org/) has a kind of conflict of interest there. But anyway, the point being, like, suddenly it all became about like revenue, US dollar denominated yields, like how to do not quite a [SPAC](https://en.wikipedia.org/wiki/Special-purpose_acquisition_company).
 
 Most of these treasury companies are an existing publicly traded company. And there's, you know, maybe not a formal takeover with a change of control, but usually like an injection of capital that the company is doing something else right now. And then it starts digital asset treasury operations.
 
-You know, like there was a panel, Tom Lee gave a lot of like numbers on how big his digital asset treasury company is, what chunk of ETH it holds, you know, now what the trend is, all that sort of thing. And they've, I guess, Michael Saylor kind of pioneered, I don't know if he was there, I don't think he was, some of the financial engineering that kind of creatively let him acquire as much Bitcoin as possible. And all these folks are then kind of in the, I would argue like part of the TradFi mindset, people make complicated products that sort of favor the house in a sense.
+You know, like there was a panel, [Tom Lee](https://en.wikipedia.org/wiki/Thomas_Lee_(analyst)) gave a lot of like numbers on how big [his digital asset treasury company](https://www.bitminetech.io/) is, what chunk of ETH it holds, you know, now what the trend is, all that sort of thing. And they've, I guess, [Michael Saylor](https://en.wikipedia.org/wiki/Michael_J._Saylor) kind of pioneered, I don't know if he was there, I don't think he was, some of the financial engineering that kind of creatively let him acquire as much Bitcoin as possible. And all these folks are then kind of in the, I would argue like part of the TradFi mindset, people make complicated products that sort of favor the house in a sense.
 
 So that, you know, no matter what, like the client has an idea, but the institution does okay, right? And some analog of that is going on, you know, people are purchasing, like a lot of the time you would just want to hold tokens directly as opposed to invest in a digital assets treasury. I guess I think the digital asset treasuries may be better than the ETFs.
 
@@ -305,19 +307,23 @@ The ETFs promise to do nothing and charge a fee where the digital asset treasuri
 
 It's a tremendous pain to be a public traded, say, U.S. company. It's expensive, there's a lot of compliance burden and so on. Tokens are out there, they get liquidity in some ways.
 
-You might want liquidity from the U.S. public equity markets for your token. You could do this by IPO-ing a company, like Coinbase is sort of a vehicle for that. But then you've got to like report on the extremely complicated, no doubt, operations of Coinbase and it's whatever, a thousand employees and, you know, all that.
+You might want liquidity from the U.S. public equity markets for your token. You could do this by IPO-ing a company, like [Coinbase](https://www.coinbase.com/) is sort of a vehicle for that. But then you've got to like report on the extremely complicated, no doubt, operations of [Coinbase](https://www.coinbase.com/) and it's whatever, a thousand employees and, you know, all that.
 
-Or you could just have a thing by the token. I mean, you like never have to IPO the labs company and you can kind of just get all of the capital without the much heavier reporting burden of being a publicly traded actual company. And this is like kind of genius.
+Or you could just have a thing by the token. I mean, you like never have to IPO the Labs company and you can kind of just get all of the capital without the much heavier reporting burden of being a publicly traded actual company. And this is like kind of genius.
 
-It's a great way to bring in more kind of bigger, more boring, more conservative capital while not changing the premise that much. So yeah, it's gotten, the suits are good at that. You know, and the digital asset treasuries provide a good wrapper for the thing that probably most of us would hold as spot.
+It's a great way to bring in more kind of bigger, more boring, more conservative capital while not changing the premise that much. So yeah, it's gotten, the suits are good at that. You know, and the digital asset treasuries provide a good wrapper for the thing that probably most of us would hold as Spot.
 
 [[20:43]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1243s) **Victor:**
-By the way, we have a comment from Shiva who says he loves your take on meme ecosystems. You know, not surprisingly, someone who has their own meme ecosystem. You got to hold all the memes, that's the key.
+By the way, we have a comment from [Shiba](https://x.com/Cryptotarzan19) who says he loves your take on meme ecosystems. You know, not surprisingly, someone who has their own meme ecosystem. 
 
-Shout out to you, Shiva. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), so what do you think about, you know, treasuries and stable coins?
+[[20:55]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1255s) **Kieren:**
+You got to hodl the memes, that's the key.
+
+[[20:57]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1257s) **Kieren:**
+Shout out to you, [Shiba](https://x.com/Cryptotarzan19). [Bob]({{ '/people/bob-summerwill/' | relative_url }}), so what do you think about, you know, treasuries and stablecoins?
 
 [[21:04]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1264s) **Bob:**
-Yeah, I mean, you know, I guess this is all sort of maturity. And it's a strange kind of feeling, you know, looking back on all of our joint experience, sort of on enterprise Ethereum efforts kicking off in 2016, 2017. And really the thought there that all of these public and private use cases could all be met by suitably modular codebases and thinking EVMs. And, you know, and here we are, you know, that you've got, you know, you've got Stripe announcing Tempo and having a, you know, a consortium of companies doing that kind of payments. You know, set up and then you've got, you know, NASDAQ announcing, you know, equities on chain again with a Besu derivative. And then you've got BASE and Coinbase. And, you know, all of these things are happening in a very similar kind of form to what we were shooting for all that time back.
+Yeah, I mean, you know, I guess this is all sort of maturity. And it's a strange kind of feeling, you know, looking back on all of our joint experience, sort of on [Enterprise Ethereum](https://entethalliance.org/) efforts kicking off in 2016, 2017. And really the thought there that all of these public and private use cases could all be met by suitably modular codebases and thinking EVMs. And, you know, and here we are, you know, that you've got, you know, you've got [Stripe](https://stripe.com/) announcing [Tempo](https://tempo.xyz/) and having a, you know, a consortium of companies doing that kind of payments. You know, set up and then you've got, you know, [NASDAQ](https://www.nasdaq.com/) announcing, you know, [equities on chain](https://finance.yahoo.com/news/nasdaq-seeks-sec-green-light-174216225.html) again with a [Besu](https://besu.hyperledger.org/) derivative. And then you've got [Base](https://www.base.org/) and [Coinbase](https://www.coinbase.com/). And, you know, all of these things are happening in a very similar kind of form to what we were shooting for all that time back.
 
 And that's, you know, while these things are kind of a bit boring, it is also quite amazing that we've got to that place that these very conservative incumbents have caught up without thinking, you know. It's pretty amazing.
 
@@ -327,23 +333,23 @@ Well, I think part of it and maybe one of the reasons as builders we find it bor
 [[23:02]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1382s) **Kieren:**
 At a time, you know, I think most much of the space was extremely eager for institutional approval, even with some, you know, nominal hostility to it. And I now feel the emotion that like I'm like, I almost don't want it. I'm like, get out of here.
 
-Like, I want I want it to go back. You know, I guess I'm happy maybe about the, you know, asset values, although it's not my primary motivation at all. But I hope that they don't because the thing you see with like, you know, the let's let's the Web2 world, while the Internet remains at least kind of open, the people use like six apps.
+Like, I want I want it to go back. You know, I guess I'm happy maybe about the, you know, asset values, although it's not my primary motivation at all. But I hope that they don't because the thing you see with like, you know, the let's let's the [Web2](https://en.wikipedia.org/wiki/Web_2.0) world, while the Internet remains at least kind of open, the people use like six apps.
 
-And so it's just pretty easy to affect the whole planet of users of the Internet just through these six apps. And I kind of it could easily happen that way in crypto, where crypto itself remains totally open. But like, as a for instance, so it's a company, we have a Coinbase account, which we use a little bit.
+And so it's just pretty easy to affect the whole planet of users of the Internet just through these six apps. And I kind of it could easily happen that way in crypto, where crypto itself remains totally open. But like, as a for instance, so it's a company, we have a [Coinbase](https://www.coinbase.com/) account, which we use a little bit.
 
-And they are way more difficult and onerous and making information requests all the time than any bank I've dealt with. It's bizarre. Like, they try to introduce a like, white list for like the accounts you could send out to this is like a month ago, or like, apparently, you could turn this feature off.
+And they are way more difficult and onerous and making information requests all the time than any bank I've dealt with. It's bizarre. Like, they try to introduce a like, whitelist for like the accounts you could send out to this is like a month ago, or like, apparently, you could turn this feature off.
 
-And it's for your protection, you know, in case, in case someone's gotten in there. But it's like, you're worse than the thing you said that you were like, setting out to destroy from a is it our money perspective. And that feels, you know, I'm happy that the Genius Act passed, I think, but it also has that feel to Coinbase itself is now in like a fight with the banks like, wait, we didn't mean we didn't mean you could do this, that we wanted all yield vans.
+And it's for your protection, you know, in case, in case someone's gotten in there. But it's like, you're worse than the thing you said that you were like, setting out to destroy from a is it our money perspective. And that feels, you know, I'm happy that the [GENIUS Act](https://en.wikipedia.org/wiki/GENIUS_Act) passed, I think, but it also has that feel too [Coinbase](https://www.coinbase.com/) itself is now in like a fight with the banks like, wait, we didn't mean we didn't mean you could do this, that we wanted all yield vans.
 
 So it's given me.
 
 [[25:22]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1522s) **Bob:**
-Yeah, well, I mean, I guess they do get leaned on more than the bank. So right, because they're they're kind of in this new energy area. So, you know, all of this stuff is just very rigid and defined and the borders never move on the bank side.
+Yeah, well, I mean, I guess they do get leaned on more than the banks, though, right? Because they're they're kind of in this new energy area. So, you know, all of this stuff is just very rigid and defined and the borders never move on the bank side.
 
-But then, you know, on a on a crypto exchange side, it's kind of a bit of both. And so they're always going to be moving around a bit. And they're always going to get wiped out.
+But then, you know, on a on a crypto exchange side, it's kind of a bit of both. And so they're always going to be moving around a bit. And they're always going to get whacked down.
 
 [[25:47]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1547s) **Kieren:**
-I think fintechs in general, they're like, maybe a little leaner, probably a little faster on things than the banks. And it almost feels like they're overzealous in terms of their compliance posture, because they feel that they can get kicked around in the way like the banks are just a little less worried. The banks are, you know, tons of them have been leaned on to write in very much the same way.
+I think fintechs in general, they're like, maybe a little leaner, probably a little faster on things than the banks. And it almost feels like they're overzealous in terms of their compliance posture, because they feel that they can get kicked around in the way like the banks are just a little less worried. The banks are, you know, tons of them have been leaned on too, right, in very much the same way.
 
 But it seems like a slower and less aggressive process somehow.
 
@@ -364,16 +370,18 @@ Yeah, and I feel like the treasury companies are a similar thing, right? Like al
 [[27:30]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1650s) **Kieren:**
 Yeah, things are happening fast. The turnover is still huge in the space. I would say there are still lots of good new projects that feel like they come out of nowhere and are pretty successful.
 
-Like I'm friends socially with the CEO of Lighter. And like he told me about it like a year and a half ago or two. Like I read the paper, I was like, okay, I kind of get it.
-
-Like circuits for matching and so on. It's like, it's huge now. Like over in the DEX wars are just sort of heating up.
+Like I'm friends socially with the CEO of [Lighter](https://lighter.xyz/). And like he told me about it like a year and a half ago or two. Like I read the paper, I was like, okay, I kind of get it.  Like circuits for matching and so on. It's like, it's huge now. Like over in the DEX wars are just sort of heating up.
 
 The perp DEX is, there's like a new perp DEX a minute. Yeah, I think, I guess the pace at which things can happen seems to just be accelerating. And the cycles, so I was talking to a friend who's kind of investor, kind of runs an incubator sort of thing.
 
 And he said that he's done better not thinking about it as a four-year cycle anymore. Because it's sort of, it feels like they're compressing and they're kind of mini cycles within the cycle. And yeah, I suppose just everything is heating up in that way.
 
-I'll, a friend of ours sort of made a joke. So in the US, probably in Canada, we do not have a booth day culture. Maybe, I'd heard that like, you know, That used to be.
+I'll, a friend of ours sort of made a joke. So in the US, probably in Canada, we do not have a [booth babe](https://en.wikipedia.org/wiki/Promotional_model) culture. Maybe, I'd heard that like, you know.
 
+[[29:07]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1747s) **Victor:**
+That used to be.
+
+[[29:08]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1748s) **Kieren:**
 Yes, we had one once.
 
 [[29:09]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1749s) **Victor:**
@@ -398,7 +406,7 @@ But yeah, I mean, I could see, I think the digital asset treasuries too are also
 
 There's a strange moment where like DeFi just worked. And this is part of the reason we really got into it. It definitely like only kind of worked through 2021, 2022, maybe even 2023.
 
-And then it just kind of functions and it's big. Like every week or so, I see like one of the Aave people tweet, like how big it would be compared to the U.S. banks. And it's like 47, 43, 36, you know, it's running.
+And then it just kind of functions and it's big. Like every week or so, I see like one of the [Aave](https://aave.com/) people tweet, like how big it would be compared to the U.S. banks. And it's like 47, 43, 36, you know, it's running.
 
 And so there's a feeling of inevitability that kicked in for me like a couple months ago that, you know, has I've never quite felt.
 
@@ -408,29 +416,29 @@ What about you, [Bob]({{ '/people/bob-summerwill/' | relative_url }})? What did 
 [[31:19]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1879s) **Bob:**
 I can't have been in the right bit of the building. I didn't see any booth babes. Where were they?
 
-I saw lots of people in like the costumes, like, you know, the mascots or what have you. But something else I was just thinking, which is good, talking about top signals is there wasn't an excessive ripple representation. So, because that's always a good top sign, right?
+I saw lots of people in like the costumes, like, you know, the mascots or what have you. But something else I was just thinking, which is good, talking about top signals is there wasn't an excessive [Ripple](https://ripple.com/) representation. So, because that's always a good top sign, right?
 
-Is if there's lots of interest in XRP, that signals new entries into the market.
+Is if there's lots of interest in [XRP](https://en.wikipedia.org/wiki/XRP_Ledger), that signals new entries into the market.
 
 [[32:02]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1922s) **Kieren:**
-I wonder if that's changed. It used to be like, the joke that I've both experienced in my face-to-face life and like on crypto Twitter, it's like when you're like, dentist or realtor friend asks you about what you think about Cardano or Ripple, then it's time to sell, you know.
+I wonder if that's changed. It used to be like, the joke that I've both experienced in my face-to-face life and like on crypto-twitter, it's like when you're like, dentist or realtor friend asks you about what you think about [Cardano](https://cardano.org/) or [Ripple](https://ripple.com/), then it's time to sell, you know.
 
 [[32:25]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1945s) **Bob:**
-There was plenty of Charles, but no Ripples.
+There was plenty of [Charles](https://en.wikipedia.org/wiki/Charles_Hoskinson), but no [Ripple](https://ripple.com/)-ers.
 
 [[32:32]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1952s) **Kieren:**
-Yeah, I wonder. I think BNB flipped XRP recently.
+Yeah, I wonder. I think [BNB](https://en.wikipedia.org/wiki/Binance#BNB) flipped [XRP](https://en.wikipedia.org/wiki/XRP_Ledger) recently.
 
 [[32:39]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1959s) **Bob:**
 They did, I just saw that. Yeah, up to number three.
 
 [[32:45]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1965s) **Victor:**
-Amazing. How are you guys feeling about like, you know, like having been in the space for so long that long-term projects like MetaMask are now launching a token?
+Amazing. How are you guys feeling about like, you know, like having been in the space for so long that long-term projects like [MetaMask](https://metamask.io/) are now launching a token?
 
 [[32:54]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1974s) **Kieren:**
 Oh, yeah, yeah. This is another part of the crazy. This is a good reminder.
 
-I think it basically just a lot was held back by uncertainty. And so like the high quality stuff, a strange thing about the Gensler era was that it felt like at least the eye of Sauron was on the good projects and the bad projects, in a sense, were sort of left to run. And the good ones, so like any industry, like if you looked at all of the businesses, most of them are bad.
+I think it basically just a lot was held back by uncertainty. And so like the high quality stuff, a strange thing about the [Gensler era](https://en.wikipedia.org/wiki/Gary_Gensler) was that it felt like at least the [eye of Sauron](https://en.wikipedia.org/wiki/Eye_of_Sauron_(disambiguation)) was on the good projects, and the bad projects, in a sense, were sort of left to run. And the good ones, so like any industry, like if you looked at all of the businesses, most of them are bad.
 
 Most of them go out of business. And if you imagine if you like made all the businesses publicly traded, most of the stocks would go to zero. So you would kind of expect in crypto that like most tokens are bad.
 
@@ -440,12 +448,12 @@ And then sometimes things will come out of the bottom and go into the top. But t
 
 And it left the bad stuff to run amok, contributing to the impression that the space was just like all scams. And like it might be all scams by number of projects, like the average project might be a scam or just not worth any value. But like the average business is like not a good business.
 
-But the big ones are good most of the time, not all the time. And they're kind of just being allowed out. You know, I got a [Circle](https://en.wikipedia.org/wiki/Circle_Internet_Group) IPO, good example, Metamask token, you know, it's like probably they should have had one a long time ago.
+But the big ones are good most of the time, not all the time. And they're kind of just being allowed out. You know, [Circle](https://en.wikipedia.org/wiki/Circle_Internet_Group) IPO, good example, [MetaMask](https://metamask.io/) token, you know, it's like probably they should have had one a long time ago.
 
 Like they've been using it for a long time. They probably wanted a token.
 
 [[35:08]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2108s) **Victor:**
-Well, I remember the height of this for me was when the SEC filed charges against Binance and Coinbase in the same week. It's like, we're just going to look at something with the word exchange in it and then go after that, right? It's like the most compliant exchange and the least compliant exchange.
+Well, I remember the height of this for me was when the SEC filed charges against [Binance](https://www.binance.com) and [Coinbase](https://www.coinbase.com/) in the same week. It's like, we're just going to look at something with the word exchange in it and then go after that, right? It's like the most compliant exchange and the least compliant exchange.
 
 [[35:27]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2127s) **Bob:**
 No, it is. I mean, the other thing that you have there was, yeah, it was like the good actors that were getting the legal action.
@@ -454,9 +462,11 @@ No, it is. I mean, the other thing that you have there was, yeah, it was like th
 Yes, exactly.
 
 [[35:37]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2137s) **Bob:**
-Basically, because the good actors were, you know, staying on shore and trying to work through the thing and get to a resolution. Whereas all the baddies are just like, yeah, we're out of here. We're not serving US people.
+Basically, because the good actors were, you know, staying on shore and trying to work through the thing and get to a resolution.
 
-Right, we're scum away. We're not even going to make any effort to be compliant of anything and you can't get us, you know. So it was almost by definition that the good actors were the ones that got whacked because they stayed around to get whacked and kept coming back for more and more whacking until, you know, the whacking ceased eventually.
+Whereas all the baddies are just like, "yeah, we're out of here. We're not serving US people.  Right, we'll scam away. We're not even going to make any effort to be compliant of anything and you can't get us", you know.
+
+So it was almost by definition that the good actors were the ones that got whacked because they stayed around to get whacked and kept coming back for more and more whacking until, you know, the whacking ceased eventually.
 
 But yeah, I mean, I think another crazy thing is I think we're going to have masses of ICOs like tons and tons of them coming up.
 
@@ -464,10 +474,7 @@ But yeah, I mean, I think another crazy thing is I think we're going to have mas
 Well, on that, I think we've crossed the 30-minute mark. I wanted to ask you guys, do you have any closing thoughts about [TOKEN2049](https://token2049.com) or where we're at in the overall state of blockchain?
 
 [[36:38]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2198s) **Kieren:**
-One thing I would say, I was reminded, food is excellent in Singapore. If you, for those who haven't, but there was a hawker market in the conference.
-
-[[36:48]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2208s) **Bob:**
-It was kind of crazy.
+One thing I would say, I was reminded, food is excellent in Singapore. If you, for those who haven't, but there was a [hawker market](https://en.wikipedia.org/wiki/Hawker_centre) in the conference.  It was kind of crazy.
 
 [[36:48]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2208s) **Kieren:**
 They like made one, you know, it was very cool. That's awesome. I'm pretty optimistic.
@@ -478,7 +485,7 @@ Again, for a couple of months, I've been feeling the inevitability kind of based
 
 And, you know, like, I think like people who said they'd never custody crypto, just like stood it up quickly. And, you know, it's probably too intermingled now to really remove the, you know, the next, you know, if sentiment changes towards crypto in the US and elsewhere. And then there's like a lot of thinking to do about what, you know, completing the product, so to speak.
 
-Like it's a strange thing in which retail was in for a while and maybe got burned kind of culminating with FTX. It probably hasn't come back all that much and the institutions are in now, which means that retail will eventually come back. And we cannot burn retail again, you know, like it just has to be better than, I think one of the things we think about is just the absolute experiences that totality has to be better than whatever service it's displacing, banking, you know, FX exchanges, whatever.
+Like it's a strange thing in which retail was in for a while and maybe got burned kind of [culminating with FTX](https://en.wikipedia.org/wiki/Bankruptcy_of_FTX). It probably hasn't come back all that much and the institutions are in now, which means that retail will eventually come back. And we cannot burn retail again, you know, like it just has to be better than, I think one of the things we think about is just the absolute experiences that totality has to be better than whatever service it's displacing, banking, you know, FX exchanges, whatever.
 
 It's not all financial services, obviously, but a lot of them are. And this includes things like making sure people don't lose the keys somehow or what have you. So there's like a needle that's right there, but I think that's gonna be a lot of what the next phase is about.
 
@@ -488,15 +495,17 @@ It's not all financial services, obviously, but a lot of them are. And this incl
 [[39:01]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2341s) **Bob:**
 Well, I mean, I think the way that that will happen for a lot of retail is that they're not gonna have their hands on directly. It'll all be through these instruments. So their experience is just, oh yeah, I've got a brokerage account and there's those in it as well, but they kind of, they look indistinguishable to, you know, to commodities or equities or bonds or anything else.
 
-It's just, yeah, there's some more financial instruments and then you go. So I think that's your sort of speculative retail, you know, crypto as an investment people. What I think is gonna be more interesting to watch is sort of the payments side, you know, especially with the Stripe project there, you know, if you get to a place where lots of just regular payment flows can be using crypto rather than fiat, that's really interesting, you know, that you can start getting real velocity of non-speculative use because everything really at this point has pretty much been speculation or, you know, a little bit of payments, but not really any large volume of payments, you know, early on it's like, you know, buy your coffee with Bitcoin and that didn't last very long and that kind of hasn't really come back. But really with the stable coins and these large, you know, integrations, you know, like PayPal as well, you know, PayPal are doing things, MasterCard have announced stuff. I'm sure, you know, all of these payment rails are gonna be joining in on the game and that really changes things.
+It's just, yeah, there's some more financial instruments and then you go. So I think that's your sort of speculative retail, you know, crypto as an investment people. What I think is gonna be more interesting to watch is sort of the payments side, you know, especially with the [Stripe project](https://tempo.xyz/) there, you know, if you get to a place where lots of just regular payment flows can be using crypto rather than fiat, that's really interesting, you know, that you can start getting real velocity of non-speculative use.
+
+Because everything really at this point has pretty much been speculation or, you know, a little bit of payments, but not really any large volume of payments, you know, early on it's like, you know, buy your coffee with Bitcoin and that didn't last very long and that kind of hasn't really come back. But really with the stablecoins and these large, you know, integrations, you know, like PayPal as well, you know, [PayPal are doing things](https://www.paypal.com/us/digital-wallet/manage-money/crypto/pyusd), MasterCard have [announced stuff](https://www.mastercard.com/global/en/business/payments/consumer-payments/next-gen-payments/digital-asset-solutions.html). I'm sure, you know, all of these payment rails are gonna be joining in on the game and that really changes things.
 
 [[40:45]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2445s) **Victor:**
-Yeah, and one question, like, are we going to DevConnect? I know me and [Bob]({{ '/people/bob-summerwill/' | relative_url }}) have already bought our tickets. [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), you're the holdout.
+Yeah, and one question, like, are we going to [DevConnect](https://devconnect.org/)? I know me and [Bob]({{ '/people/bob-summerwill/' | relative_url }}) have already bought our tickets. [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), you're the holdout.
 
 Can I get a commitment?
 
 [[40:54]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2454s) **Kieren:**
-I'm still a problem. One, I've never been to Argentina. I really do wanna go.
+I'm still a probable. One, I've never been to Argentina. I really do wanna go.
 
 But...
 
@@ -506,33 +515,37 @@ I really wanna see what's going on. Yeah, I haven't been to South America and I 
 So I'm just really curious to find out.
 
 [[41:17]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2477s) **Kieren:**
-Vitalik said he's more likely to get recognized in Buenos Aires than in the U.S. Yeah, well, and so if you like this content, please join us every week.
+[Vitalik](https://en.wikipedia.org/wiki/Vitalik_Buterin) said he's more likely to get recognized in Buenos Aires than in the U.S.
 
-[[41:27]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2487s) **Victor:**
-We have this at the same time. And follow us on Twitter, at stradomercada with an A and join our Telegram community. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), if they wanna hear more from you, where can they find you?
+[[41:22]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2482s) **Victor:**
+Yeah, well, and so if you like this content, please join us every week.
+
+We have this at the same time. And follow us on Twitter, at [@stratomercada](https://x.com/stratomercata) with an A and join our [Telegram community](https://t.me/stratomercata).
+
+[Bob]({{ '/people/bob-summerwill/' | relative_url }}), if they wanna hear more from you, where can they find you?
 
 [[41:40]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2500s) **Bob:**
-Yeah, so I'm just bobsummerwill, same as my name on Twitter.
+Yeah, so I'm just [@bobsummerwill](https://x.com/bobsummerwill), same as my name on Twitter.
 
 [[41:46]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2506s) **Victor:**
 And [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), where can people find you?
 
 [[41:50]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2510s) **Kieren:**
-kjameslubin, so shortened, but my name also on Twitter / X.
+[@kjameslubin](https://x.com/kjameslubin), so shortened, but my name also on Twitter / X.
 
 [[41:58]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2518s) **Victor:**
-And you can find me at vic4wong on Twitter. [Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) have both shamed me publicly because I have so few followers, even though I was an early adopter. So please, please connect to me.
+And you can find me at [@vic4wong](https://x.com/vic4wong) on Twitter. [Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) have both shamed me publicly because I have so few followers, even though I was an early adopter. So please, please connect to me.
 
 Love to hear from you.
 
 [[42:11]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2531s) **Bob:**
-What's the four about? What's the Vic four?
+What's the "4" about? What's the "vic4"?
 
 [[42:16]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2536s) **Victor:**
-So four is a number that no Chinese person likes because it sounds suspiciously like death. So it's, you know, back in the world of eight character usernames, I could always get vic4wong having an Asian name with the number four in it, like pretty much guaranteed that I could get it.
+So four is a number that no Chinese person likes because it [sounds suspiciously like death](https://en.wikipedia.org/wiki/Tetraphobia). So it's, you know, back in the world of eight character usernames, I could always get "vic4wong" having an Asian name with the number four in it, like pretty much guaranteed that I could get it.
 
 [[42:42]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2562s) **Kieren:**
-Always doing things the wong way.
+Always doing things the Wong way.
 
 [[42:44]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2564s) **Victor:**
 Exactly. I've never heard that joke before. Okay.
