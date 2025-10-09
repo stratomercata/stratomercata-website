@@ -327,9 +327,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--spacing-3xl);
-    background: 
-        linear-gradient(180deg, rgba(255, 247, 249, 0.95) 0%, rgba(243, 232, 255, 0.95) 100%),
-        url('/images/stratomercata.com/2025.10.07/lovable-uploads/74ce8343-acaf-41e9-9bb7-a99f53337158.png');
+    background: linear-gradient(180deg, rgba(255, 247, 249, 0.95) 0%, rgba(243, 232, 255, 0.95) 100%);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
