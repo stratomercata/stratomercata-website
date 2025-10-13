@@ -324,9 +324,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     line-height: var(--line-height);
     color: var(--text-dark);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-3xl) var(--spacing-3xl) var(--spacing-3xl);
+    margin: 0;
+    padding: 0;
     background: linear-gradient(180deg, rgba(255, 247, 249, 0.95) 0%, rgba(243, 232, 255, 0.95) 100%);
     background-size: cover;
     background-position: center;
@@ -465,6 +464,7 @@ nav a:hover {
  */
 main {
     margin-bottom: var(--spacing-6xl);
+    padding: 0 var(--spacing-3xl);
 }
 
 /**
@@ -1966,22 +1966,29 @@ main {
     position: relative;
     z-index: 1;
     background: transparent;
-    padding: var(--spacing-5xl);
+    padding: var(--spacing-3xl) 0;
     border-radius: var(--radius-lg);
-    max-width: 1000px;
-    margin: var(--spacing-5xl);
+    max-width: 100%;
+    margin: var(--spacing-5xl) 0;
 }
 
 /* Hero Text Styling */
 .hero-text {
     text-align: left;
+    max-width: 100%;
+}
+
+.hero-text h1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .hero-content {
-        margin: var(--spacing-3xl) var(--spacing-2xl);
-        padding: var(--spacing-3xl);
+        margin: var(--spacing-3xl) 0;
+        padding: var(--spacing-2xl) 0;
     }
     
     .hero-section {
@@ -2065,10 +2072,10 @@ main {
  */
 .strato-header {
     background: var(--bg-white);
-    padding: 16px 0;
+    padding: 12px 0;
     margin-bottom: 0;
     margin-top: 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
     position: relative;
     z-index: 100;
     width: 100vw;
@@ -2076,32 +2083,32 @@ main {
 }
 
 .strato-header-container {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing-3xl);
+    padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--spacing-3xl);
+    min-height: 56px;
 }
 
 .strato-logo {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
 
 .strato-logo a {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
-    color: var(--text-dark);
 }
 
 .strato-logo img {
-    height: 40px;
+    height: 32px;
     width: auto;
     border-radius: 0;
     box-shadow: none;
+    display: block;
 }
 
 .strato-logo-text {
@@ -2116,19 +2123,28 @@ main {
     color: var(--text-medium);
 }
 
+.strato-nav-group {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+}
+
 .strato-nav {
     display: flex;
     align-items: center;
-    gap: var(--spacing-5xl);
+    gap: 24px;
 }
 
 .strato-nav a {
     color: var(--text-dark);
     text-decoration: none;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     transition: color 0.2s ease;
     white-space: nowrap;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
 }
 
 .strato-nav a:hover {
@@ -2138,26 +2154,24 @@ main {
 .strato-actions {
     display: flex;
     align-items: center;
-    gap: var(--spacing-2xl);
+    gap: 12px;
+    height: 100%;
 }
 
 .strato-launch-btn {
     background: var(--primary-blue);
     color: var(--bg-white) !important;
-    padding: 10px 24px;
+    padding: 8px 20px;
     border-radius: 6px;
     text-decoration: none !important;
-    font-weight: 600;
-    font-size: 0.95em;
+    font-weight: 500;
+    font-size: 14px;
     transition: all 0.2s ease;
     white-space: nowrap;
-    display: inline-block;
 }
 
 .strato-launch-btn:hover {
     background: var(--primary-blue-dark);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 /* Mobile responsive header */
@@ -2289,10 +2303,11 @@ main {
 }
 
 .strato-footer-column h4 {
-    font-size: 1em;
+    font-size: 0.875rem;
     font-weight: 600;
     color: var(--text-dark);
     margin: 0 0 var(--spacing-2xl) 0;
+    text-align: left;
 }
 
 .strato-footer-column ul {
@@ -2308,7 +2323,7 @@ main {
 .strato-footer-column a {
     color: var(--text-medium);
     text-decoration: none;
-    font-size: 0.95em;
+    font-size: 0.875rem;
     transition: color 0.2s ease;
     display: flex;
     align-items: center;
@@ -2335,7 +2350,7 @@ main {
 
 .strato-footer-copyright {
     color: var(--text-medium);
-    font-size: 0.9em;
+    font-size: 0.875rem;
 }
 
 .strato-footer-legal {
@@ -2347,7 +2362,7 @@ main {
 .strato-footer-legal a {
     color: var(--text-medium);
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 0.875rem;
     transition: color 0.2s ease;
 }
 
