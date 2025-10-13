@@ -1,184 +1,106 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
-
-  <!--
-  =========================
-  Jekyll Default Layout: <head> Section
-  =========================
-  This section sets up the HTML <head> for every page using this layout.
-  For more on Jekyll layouts: https://jekyllrb.com/docs/layouts/
-  -->
-  <head>
-
-    <!--
-      CSS Stylesheets for custom embeds and site styling.
-      See: https://jekyllrb.com/docs/assets/
-    -->
-    <link rel="stylesheet" href="{{ '/assets/css/common.css' | relative_url }}">
-
-    <!--
-      Character encoding and responsive viewport.
-      See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-    -->
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--
-      Centralized SEO optimization
-      See: _includes/seo.html for all SEO meta tags, structured data, and social media optimization
-    -->
+    <title>{{ page.title | default: "STRATO Mercata" }}</title>
+    <meta name="description" content="{{ page.description | default: 'The easiest way to trade, and stake vaulted real-world assets.' }}">
+    <link rel="stylesheet" href="{{ '/assets/css/common.css' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     {% include seo.html %}
-
-    <!--
-      Google Analytics integration.
-      See: https://support.google.com/analytics/answer/1008080
-    -->
-    {% if site.google_analytics and site.google_analytics != "" %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '{{ site.google_analytics }}');
-    </script>
-    {% endif %}
-
-    <!--
-      Redirect from GitHub Pages to custom domain.
-      See: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
-    -->
-    <script>
-    if (window.location.hostname === "bobsummerwill.github.io") {
-        window.location.replace("https://www.earlydaysofeth.org" + window.location.pathname);
-    }
-    </script>
-
-    
-
-
-
-  </head>
-
-  <!--
-  =========================
-  Jekyll Default Layout: <body> Section
-  =========================
-  This section contains the main site header, navigation, content, and footer.
-  -->
-  <body>
-
-    <!-- Full-page Background Video -->
-    {% assign video_pages = "/" | split: "," %}
-    {% assign video_pages = video_pages | push: "/people/" %}
-    {% assign video_pages = video_pages | push: "/videos/" %}
-    {% assign video_pages = video_pages | push: "/articles/" %}
-    {% assign video_pages = video_pages | push: "/grid/" %}
-    {% assign show_video = false %}
-    {% if video_pages contains page.url %}
-      {% assign show_video = true %}
-    {% elsif page.url contains "/articles/" %}
-      {% assign show_video = true %}
-    {% elsif page.url contains "/people/" %}
-      {% assign show_video = true %}
-    {% elsif page.url contains "/videos/" %}
-      {% assign show_video = true %}
-    {% endif %}
-    {% if show_video %}
-    <video class="full-page-bg-video" autoplay loop muted playsinline>
-        <source src="{{ '/assets/videos/archive.org/ethereum.org/20140305192502/ethereum-bg-2014.webm' | relative_url }}" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-    {% endif %}
-
-    <!--
-      Site header with stratomercata.com style navigation.
-      See: https://jekyllrb.com/docs/navigation/
-    -->
-    <header class="strato-header">
-        <div class="strato-header-container">
-            <div class="strato-logo">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
                 <a href="{{ '/' | relative_url }}">
-                    <img src="{{ '/images/stratomercata.com/2025.10.11/strato-mercata-logo.png' | relative_url }}" alt="STRATO Mercata" />
+                    <img src="{{ '/images/stratomercata.com/2025.10.11/strato-mercata-logo.png' | relative_url }}" alt="STRATO mercata logo">
                 </a>
             </div>
-            <div class="strato-nav-group">
-                <nav class="strato-nav">
-                    <a href="{{ '/people/' | relative_url }}">People</a>
-                    <a href="{{ '/videos/' | relative_url }}">Videos</a>
-                    <a href="{{ '/articles/' | relative_url }}">Articles</a>
-                </nav>
-                <div class="strato-actions">
-                    <a href="https://marketplace.mercata.blockapps.net/marketplace/" class="strato-launch-btn" target="_blank" rel="noopener">Launch</a>
-                </div>
+            <div class="nav-links">
+                <a href="https://marketplace.mercata.blockapps.net/marketplace/" target="_blank" rel="noopener">Marketplace</a>
+                <a href="{{ '/articles/' | relative_url }}">Blog</a>
+                <a href="{{ '/videos/' | relative_url }}">Videos</a>
+                <a href="{{ '/people/' | relative_url }}">Team</a>
+                <a href="https://marketplace.mercata.blockapps.net/login/" target="_blank" rel="noopener" class="btn-login">Login</a>
+                <a href="https://marketplace.mercata.blockapps.net/login/" target="_blank" rel="noopener">Register</a>
             </div>
-        </div>
+        </nav>
     </header>
-    
-    <!--
-      Main content area where page/post content is rendered.
-      See: https://jekyllrb.com/docs/variables/#content
-    -->
+
     <main>
         {{ content }}
     </main>
-    
-    <!--
-      Site footer matching stratomercata.com design.
-    -->
-    <footer class="strato-footer">
-        <div class="strato-footer-container">
-            <div class="strato-footer-content">
-                <div class="strato-footer-logo">
-                    <img src="{{ '/images/stratomercata.com/2025.10.11/strato-mercata-logo.png' | relative_url }}" alt="STRATO Mercata" />
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="{{ '/' | relative_url }}">
+                        <img src="{{ '/images/stratomercata.com/2025.10.11/strato-mercata-logo.png' | relative_url }}" alt="STRATO mercata logo">
+                    </a>
                 </div>
-                
-                <div class="strato-footer-links">
-                    <div class="strato-footer-column">
-                        <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
                         <ul>
                             <li><a href="{{ '/articles/' | relative_url }}">Blog</a></li>
                             <li><a href="{{ '/articles/' | relative_url }}">News</a></li>
-                            <li><a href="{{ '/people/' | relative_url }}">Validators</a></li>
-                            <li><a href="https://docs.stratomercata.com" target="_blank" rel="noopener">Documentation</a></li>
+                            <li><a href="https://docs.stratomercata.com/" target="_blank" rel="noopener">Documentation</a></li>
                         </ul>
                     </div>
-                    
-                    <div class="strato-footer-column">
-                        <h4>Social Connect</h4>
+                    <div class="footer-section">
+                        <h3>Social Connect</h3>
                         <ul>
                             <li>
-                                <a href="https://www.stratomercata.com" target="_blank" rel="noopener">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                                <a href="https://stratomercata.com" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                                        <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                                    </svg>
                                     Website
                                 </a>
                             </li>
                             <li>
-                                <a href="https://x.com/stratomercata" target="_blank" rel="noopener">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                <a href="https://twitter.com/StratoMercata" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
                                     X (Previously Twitter)
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/stratomercata" target="_blank" rel="noopener">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                                    </svg>
                                     LinkedIn
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/@stratomercata" target="_blank" rel="noopener">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a2.998 2.998 0 00-2.112-2.12C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.386.566A2.998 2.998 0 00.502 6.186 31.26 31.26 0 000 12a31.26 31.26 0 00.502 5.814 2.998 2.998 0 002.112 2.12C4.6 20.5 12 20.5 12 20.5s7.4 0 9.386-.566a2.998 2.998 0 002.112-2.12A31.26 31.26 0 0024 12a31.26 31.26 0 00-.502-5.814zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+                                    </svg>
                                     YouTube
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/stratomercata" target="_blank" rel="noopener">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12 .5C5.73.5.98 5.21.98 11.42c0 4.82 3.14 8.9 7.49 10.34.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.05.66-3.69-1.29-3.69-1.29-.5-1.25-1.22-1.58-1.22-1.58-.99-.67.08-.66.08-.66 1.1.08 1.68 1.12 1.68 1.12.98 1.67 2.57 1.19 3.2.91.1-.7.38-1.19.69-1.46-2.44-.28-5-1.21-5-5.37 0-1.19.43-2.16 1.12-2.92-.11-.27-.49-1.37.11-2.86 0 0 .92-.29 3.01 1.11.88-.24 1.82-.36 2.76-.36.94 0 1.88.12 2.76.36 2.09-1.4 3.01-1.11 3.01-1.11.6 1.49.22 2.59.11 2.86.69.76 1.12 1.73 1.12 2.92 0 4.17-2.57 5.08-5.01 5.36.39.33.73.98.73 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.2.64.76.53 4.34-1.45 7.48-5.52 7.48-10.34C23.02 5.21 18.27.5 12 .5z" clip-rule="evenodd"/>
+                                    </svg>
                                     GitHub
                                 </a>
                             </li>
                             <li>
                                 <a href="https://t.me/stratomercata" target="_blank" rel="noopener">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M21.944 2.667c.19-.83-.4-1.192-1.023-.94L1.743 9.54c-.862.35-.853.833-.157 1.044l4.51 1.408 10.49-6.628c.496-.3.95-.138.577.162L8.76 14.001l-.293 4.646c.425 0 .614-.183.85-.402l2.043-1.975 4.247 3.1c.782.43 1.35.205 1.556-.724l2.781-13.979z"/>
+                                    </svg>
                                     Telegram
                                 </a>
                             </li>
@@ -186,116 +108,15 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="strato-footer-bottom">
-                <div class="strato-footer-copyright">
-                    Copyright 2025
-                </div>
-                <div class="strato-footer-legal">
-                    <a href="https://www.stratomercata.com/privacy" target="_blank" rel="noopener">Privacy & Terms</a>
-                    <a href="https://www.stratomercata.com/api-terms" target="_blank" rel="noopener">API Terms of Use</a>
-                    <a href="https://www.stratomercata.com/terms" target="_blank" rel="noopener">STRATO Mercata Terms</a>
+            <div class="footer-bottom">
+                <div class="footer-bottom-text">Copyright 2025</div>
+                <div class="footer-bottom-links">
+                    <a href="/privacy-terms.html">Privacy & Terms</a>
+                    <a href="/api-terms-of-use.html">API Terms of Use</a>
+                    <a href="/strato-mercata-terms-of-use.html">STRATO Mercata Terms of Use</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!--
-    HIDEABLE SECTION SUPPORT
-    ------------------------
-    Any page (post, person, video, etc.) can define a hideable section by using a Liquid capture block in the Markdown file:
-
-        {% capture hideable_section %}
-        ...content to hide...
-        {% endcapture %}
-
-    The default layout will automatically output this section wrapped in:
-        <div class="hideable-section" style="display:none">...</div>
-
-    A global JavaScript snippet will show all .hideable-section elements if the URL contains ?hidden=false.
-    This allows for dynamic, client-side toggling of sensitive or optional content for review or admin purposes.
-
-    No raw HTML or includes are needed in the Markdown file—just the capture block.
-    -->
-    <script>
-    // Show hideable sections if ?hidden=false is present in the URL
-    (function() {
-        var params = new URLSearchParams(window.location.search);
-        if (params.get('hidden') === 'false') {
-        document.querySelectorAll('.hideable-section').forEach(function(el) {
-            el.style.display = '';
-        });
-        }
-    })();
-    </script>
-
-        <!--
-        Handles click-to-play for DEVCON0 video section.
-        See: https://jekyllrb.com/docs/navigation/
-        https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
-        -->
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // For single person page
-            const thumbnailWrapper = document.querySelector('.devcon0-thumbnail-wrapper');
-            const videoPlayer = document.querySelector('.devcon0-video-player');
-            if (thumbnailWrapper && videoPlayer) {
-                const iframe = videoPlayer.querySelector('iframe');
-                thumbnailWrapper.addEventListener('click', function() {
-                    // Set the iframe src to start the video
-                    iframe.src = 'https://www.youtube.com/embed/_BvvUlKDqp0?start={{ page.devcon0 }}&autoplay=1';
-                    // Hide thumbnail and show video
-                    thumbnailWrapper.style.display = 'none';
-                    videoPlayer.style.display = 'block';
-                });
-                // Hover effect for play button
-                const playButton = thumbnailWrapper.querySelector('.play-button-overlay');
-                if (playButton) {
-                    thumbnailWrapper.addEventListener('mouseenter', function() {
-                        playButton.style.background = 'rgba(0,0,0,0.9)';
-                        playButton.style.transform = 'translate(-50%, -50%) scale(1.1)';
-                    });
-                    thumbnailWrapper.addEventListener('mouseleave', function() {
-                        playButton.style.background = 'rgba(0,0,0,0.8)';
-                        playButton.style.transform = 'translate(-50%, -50%) scale(1)';
-                    });
-                }
-            }
-
-            // For people index grid (multiple videos)
-            const thumbnailWrappers = document.querySelectorAll('.devcon0-thumbnail-wrapper-people');
-            thumbnailWrappers.forEach(function(wrapper) {
-                const img = wrapper.querySelector('img');
-                const videoContainer = wrapper.parentElement;
-                const videoPlayer = videoContainer.querySelector('.devcon0-video-player-people');
-                const iframe = videoPlayer.querySelector('iframe');
-                const playButton = wrapper.querySelector('.play-button-overlay-people');
-                // Add hover effects for play button
-                if (playButton) {
-                    wrapper.addEventListener('mouseenter', function() {
-                        playButton.style.background = 'rgba(0,0,0,0.9)';
-                        playButton.style.transform = 'translate(-50%, -50%) scale(1.1)';
-                    });
-                    wrapper.addEventListener('mouseleave', function() {
-                        playButton.style.background = 'rgba(0,0,0,0.8)';
-                        playButton.style.transform = 'translate(-50%, -50%) scale(1)';
-                    });
-                }
-                // Handle click to play video
-                wrapper.addEventListener('click', function() {
-                    const timestamp = img.getAttribute('data-devcon0-timestamp');
-                    if (timestamp && iframe) {
-                        // Set the iframe src to start the video with autoplay
-                        iframe.src = 'https://www.youtube.com/embed/_BvvUlKDqp0?start=' + timestamp + '&autoplay=1';
-                        // Hide thumbnail and show video
-                        wrapper.style.display = 'none';
-                        videoPlayer.style.display = 'block';
-                    }
-                });
-            });
-        });
-        </script>
-
-    </body>
-
+</body>
 </html>

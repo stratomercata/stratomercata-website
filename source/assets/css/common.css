@@ -1,2814 +1,465 @@
-/**
- * CSS Custom Properties (CSS Variables) - Design System Tokens
- * 
- * CSS Custom Properties provide a way to define reusable values throughout a stylesheet.
- * They follow the CSS Custom Properties specification and enable consistent theming.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
- * W3C Spec: https://www.w3.org/TR/css-variables-1/
- */
+/* Base Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  /**
-   * Color Palette - Modern fintech design system inspired by stratomercata.com
-   * 
-   * Uses vibrant blue primary color with light gradient backgrounds.
-   * Professional financial platform aesthetic with modern styling.
-   * 
-   * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
-   * WCAG Guidelines: https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
-   */
-  --primary-blue: #2563EB;           /* Modern vibrant blue */
-  --primary-blue-dark: #1D4ED8;      /* Darker blue for hover states */
-  --primary-blue-visited: #4F46E5;   /* Purple-blue for visited links */
-  --text-dark: #1F2937;              /* Dark gray text */
-  --text-medium: #4B5563;            /* Medium gray text */
-  --text-light: #6B7280;             /* Light gray for secondary content */
-  --text-lighter: #9CA3AF;           /* Lighter gray for metadata */
-  --bg-white: #FFFFFF;               /* Pure white */
-  --bg-light: #F9FAFB;               /* Very light gray */
-  --bg-lighter: #F3F4F6;             /* Light gray for cards */
-  --bg-gray: #E5E7EB;                /* Medium gray for forms */
-  --bg-section: #FEF3F9;             /* Light pink background */
-  --bg-code: #F3F4F6;                /* Code block background */
-  --bg-gradient-start: #FFF7F9;      /* Gradient start - light pink */
-  --bg-gradient-end: #F3E8FF;        /* Gradient end - light lavender */
-  --border-light: #E5E7EB;           /* Light border */
-  --border-medium: #D1D5DB;          /* Medium border */
-  --border-dark: #9CA3AF;            /* Dark border */
-  --border-table: #E5E7EB;           /* Table border */
-  --border-input: #D1D5DB;           /* Input border */
-  
-  /**
-   * Spacing Scale - 8px base unit system for consistent vertical rhythm
-   * 
-   * Uses a modular scale based on 8px increments for consistent spacing.
-   * This follows Material Design and iOS Human Interface Guidelines.
-   * 
-   * Reference: https://spec.fm/specifics/8-pt-grid
-   * Material Design: https://material.io/design/layout/spacing-methods.html
-   */
-  --spacing-xs: 2px;    /* 0.25 × base unit - fine adjustments */
-  --spacing-sm: 4px;    /* 0.5 × base unit - minimal spacing */
-  --spacing-md: 8px;    /* 1 × base unit - standard spacing */
-  --spacing-lg: 10px;   /* 1.25 × base unit - slightly larger */
-  --spacing-xl: 12px;   /* 1.5 × base unit - medium spacing */
-  --spacing-2xl: 15px;  /* ~2 × base unit - comfortable spacing */
-  --spacing-3xl: 20px;  /* 2.5 × base unit - section spacing */
-  --spacing-4xl: 25px;  /* ~3 × base unit - large spacing */
-  --spacing-5xl: 30px;  /* ~4 × base unit - major section spacing */
-  --spacing-6xl: 40px;  /* 5 × base unit - page-level spacing */
-  --spacing-embed: 18px; /* Embed component spacing - factored out common value */
-  
-  /**
-   * Typography Scale - Consistent font sizing system
-   * 
-   * Factored out common font sizes used throughout the design system.
-   * Based on modular scale for consistent visual hierarchy.
-   */
-  --font-size-small: 0.85em;    /* Small text for metadata */
-  --font-size-normal: 0.9em;    /* Slightly reduced normal text */
-  --font-size-medium: 0.95em;   /* Medium text for descriptions */
-  --font-size-large: 0.98em;    /* Large text for content */
-  --font-size-title: 1.13em;    /* Title text for cards and embeds */
-  
-  /**
-   * Common Background Colors - Standardized background system
-   * 
-   * Consolidates the #e8e8e8 background used across many card components
-   * and other common background patterns.
-   */
-  --bg-card: #e8e8e8;           /* Standard card background - replaces hardcoded values */
-  --bg-card-content: #444;      /* Card content text color */
-  --bg-card-text: #222;         /* Card title text color */
-  
-  /**
-   * Common Shadow System - Standardized elevation effects
-   * 
-   * Consolidates repeated shadow patterns used across interactive elements.
-   */
-  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15); /* Standard hover elevation */
-  --shadow-embed: 0 2px 8px rgba(0,0,0,0.04);  /* Embed component shadow */
-  --shadow-embed-inner: 0 1px 6px rgba(0,0,0,0.06); /* Inner embed shadow */
-  
-  /**
-   * Border Radius Scale - Consistent corner rounding system
-   * 
-   * Progressive border radius scale for different UI elements.
-   * Follows modern design principles with subtle rounded corners.
-   * 
-   * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
-   */
-  --radius-xs: 3px;     /* Minimal rounding for small elements */
-  --radius-sm: 4px;     /* Small rounding for buttons and inputs */
-  --radius-md: 6px;     /* Medium rounding for cards */
-  --radius-lg: 8px;     /* Large rounding for major components */
-  --radius-xl: 12px;    /* Extra large rounding for special elements */
-  --radius-round: 50%;  /* Perfect circle for avatars and icons */
-  
-  /**
-   * Box Shadow System - Layered elevation system
-   * 
-   * Three-tier shadow system for creating visual hierarchy and depth.
-   * Uses subtle shadows to avoid overwhelming the interface.
-   * 
-   * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
-   * Material Design Elevation: https://material.io/design/environment/elevation.html
-   */
-  --shadow-light: 0 2px 8px rgba(0,0,0,0.1);                                    /* Subtle elevation */
-  --shadow-medium: 0 4px 8px rgba(0,0,0,0.2);                                   /* Moderate elevation */
-  --shadow-heavy: 0 8px 32px 0 rgba(0,0,0,0.28), 0 1.5px 8px 0 rgba(0,0,0,0.18); /* High elevation */
-  
-  /**
-   * Animation and Transition System
-   * 
-   * Consistent timing functions and durations for smooth interactions.
-   * Uses CSS easing functions for natural motion.
-   * 
-   * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/transition
-   * Easing Functions: https://easings.net/
-   */
-  --transition-fast: all 0.3s ease;           /* General purpose transitions */
-  --transition-filter: filter 0.3s ease;     /* Image filter transitions */
-  --transition-opacity: opacity 0.3s ease;   /* Opacity changes */
-  --transition-bg: background-color 0.3s ease; /* Background color changes */
-  
-  /**
-   * Typography System - Font stacks and line height ratios
-   * 
-   * System font stack for optimal performance and native appearance.
-   * Line height ratios based on typographic best practices.
-   * 
-   * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
-   * System Fonts: https://systemfontstack.com/
-   */
-  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  --font-mono: 'Monaco', 'Consolas', monospace;  /* Monospace for code */
-  --line-height: 1.6;        /* Optimal reading line height */
-  --line-height-tight: 1.4;  /* Tighter line height for headings */
-  --line-height-loose: 1.7;  /* Looser line height for large text */
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/**
- * Utility Classes - Atomic CSS components for common patterns
- * 
- * Utility-first approach for consistent styling patterns.
- * Reduces CSS specificity conflicts and promotes reusability.
- * 
- * Reference: https://css-tricks.com/need-css-utility-library/
- * Atomic CSS: https://acss.io/
- */
-
-/**
- * Link Utilities - Consistent link styling across the site
- * 
- * Provides semantic link styling with proper focus and hover states.
- * Follows web accessibility guidelines for link identification.
- * 
- * WCAG Reference: https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html
- */
-.link-primary {
-  color: var(--primary-blue);
-  text-decoration: none;
-}
-
-.link-primary:hover {
-  text-decoration: underline;
-}
-
-.link-primary:visited {
-  color: var(--primary-blue-visited);
-}
-
-/**
- * Card Component - Reusable container with consistent styling
- * 
- * Implements card design pattern with subtle elevation and branded accent.
- * Uses flexbox for consistent internal spacing.
- * Includes hover animation for enhanced user interaction.
- * 
- * Reference: https://material.io/components/cards
- */
-.card {
-  margin-bottom: var(--spacing-5xl);
-}
-
-/**
- * Button Components - Interactive elements with consistent styling
- * 
- * Implements accessible button design with proper focus states.
- * Uses transform for micro-interactions and visual feedback.
- * 
- * Reference: https://www.w3.org/WAI/ARIA/apg/patterns/button/
- */
-.btn-primary {
-  display: inline-block;
-  background: var(--primary-blue);
-  color: var(--bg-white);
-  padding: var(--spacing-md) var(--spacing-2xl);
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  font-weight: 500;
-  transition: var(--transition-fast);
-}
-
-.btn-primary:hover {
-  background: var(--primary-blue-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-medium);
-}
-
-.btn-small {
-  padding: var(--spacing-sm) var(--spacing-xl);
-  font-size: 0.9em;
-}
-
-/**
- * Typography Utilities - Semantic text styling classes
- * 
- * Provides consistent text styling for different content types.
- * Maintains proper contrast ratios for accessibility.
- */
-.text-meta {
-  color: var(--text-light);
-  font-size: 0.9em;
-}
-
-.text-description {
-  color: var(--text-medium);
-  line-height: var(--line-height);
-}
-
-.section-header {
-  color: #333;
-  margin-top: 0;
-  margin-bottom: var(--spacing-3xl);
-}
-
-.border-top {
-  border-top: 1px solid var(--border-light);
-  padding-top: var(--spacing-3xl);
-}
-
-/**
- * Hover Animation Utility - Consistent hover elevation effect
- * 
- * Provides consistent box-shadow animation for interactive elements.
- * Uses Material Design elevation principles for visual feedback.
- * 
- * Reference: https://material.io/design/environment/elevation.html
- */
-.hover-lift {
-  transition: box-shadow 0.2s ease;
-}
-
-.hover-lift:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-/**
- * Card Layout Utility - Standard card appearance
- * 
- * Combines common card styling patterns into a reusable utility.
- * Includes background, padding, border radius, and brand accent.
- */
-.card-layout {
-  background: var(--bg-light);
-  padding: var(--spacing-4xl);
-  border-radius: var(--radius-lg);
-  border-left: var(--spacing-sm) solid var(--primary-blue);
-}
-
-/**
- * Brand Accent Utility - Left border brand accent
- * 
- * Provides consistent brand accent styling for content sections.
- * Uses primary brand color for visual hierarchy.
- */
-.brand-accent {
-  border-left: var(--spacing-sm) solid var(--primary-blue);
-}
-
-/**
- * Base Layout Styles - Fundamental page structure and typography
- * 
- * Establishes the basic layout grid, typography scale, and responsive behavior.
- * Uses semantic HTML5 elements with proper accessibility considerations.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout
- */
-
-/**
- * Footer Link Override - Specific styling for footer branding
- * 
- * Uses !important to override default link styles for footer branding.
- * High specificity required for third-party integration.
- */
-.footer-strato-link,
-.footer-strato-link:visited,
-.footer-strato-link:hover,
-.footer-strato-link:active {
-    color: var(--bg-white) !important;
-    font-weight: bold !important;
-    text-decoration: underline !important;
-}
-
-/**
- * Document Body - Main container with centered layout
- * 
- * Implements centered layout with max-width constraint.
- * Uses system font stack for optimal performance.
- * 
- * Reference: https://every-layout.dev/layouts/center/
- */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    line-height: var(--line-height);
-    color: var(--text-dark);
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(180deg, rgba(255, 247, 249, 0.95) 0%, rgba(243, 232, 255, 0.95) 100%);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  color: #374151;
+  background: linear-gradient(180deg, #fce9fc, #fbeffc, #f0efff);
+  min-height: 100vh;
 }
 
-/**
- * Site Header - Top navigation and branding area
- * 
- * Provides visual separation between header and main content.
- * Uses border-bottom for subtle visual hierarchy.
- */
-header {
-    margin-bottom: var(--spacing-5xl);
-    padding-bottom: var(--spacing-3xl);
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-/**
- * Main Heading - Primary page title styling
- * 
- * Uses brand color for visual hierarchy and recognition.
- * Removes default margins for precise control.
- */
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 10px;
-    margin-top: 5px;
-    color: #333;
-    font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+/* Header / Navigation */
+header nav {
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid #f3f4f6;
+  height: 72px;
 }
 
-h1 {
-    color: var(--primary-blue);
-    margin: 0;
-    font-weight: 700;
-    font-size: 2.5rem;
+header nav .logo img {
+  height: 2rem;
+  width: auto;
 }
 
-h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #333;
+header nav .nav-links {
+  display: none;
+  align-items: center;
+  gap: 2rem;
 }
 
-h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
+header nav .nav-links a,
+header nav .nav-links button {
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-/**
- * Global Link Styling - Base anchor tag styling for all links
- * 
- * Ensures all links throughout the site use the original 2014 ethereum.org colors
- * regardless of context or specific classes.
- */
-a {
-    color: var(--primary-blue);
-    text-decoration: underline;
+header nav .nav-links a:hover,
+header nav .nav-links button:hover {
+  color: #2563eb;
 }
 
-a:visited {
-    color: var(--primary-blue-visited);
+header nav .nav-links .btn-login {
+  background: #2563eb;
+  color: white;
+  padding: 0.375rem 1rem;
+  border-radius: 0.25rem;
 }
 
-a:hover {
-    color: var(--primary-blue);
-    text-decoration: underline;
+header nav .nav-links .btn-login:hover {
+  background: #1d4ed8;
 }
 
-/**
- * Site Description - Subtitle text styling
- * 
- * Provides secondary information with reduced visual weight.
- * Uses italic styling to differentiate from main content.
- */
-.site-description {
-    color: var(--text-light);
-    font-style: italic;
-    margin-top: 5px;
-}
-
-/**
- * Navigation Container - Main site navigation
- * 
- * Provides spacing separation from header content.
- * Contains flexbox navigation list.
- */
-nav {
-    margin-top: var(--spacing-3xl);
-}
-
-/**
- * Navigation List - Horizontal navigation menu
- * 
- * Uses flexbox for responsive horizontal layout.
- * Removes default list styling and provides consistent spacing.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
- */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+@media (min-width: 768px) {
+  header nav {
+    padding: 1rem 2rem;
+  }
+  header nav .nav-links {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-3xl);
+  }
 }
 
-/**
- * Navigation Links - Individual menu items
- * 
- * Consistent styling for all navigation links.
- * Uses brand color and medium font weight for emphasis.
- */
-nav a {
-    color: var(--primary-blue);
-    text-decoration: none;
-    font-weight: 500;
+@media (min-width: 1024px) {
+  header nav {
+    padding: 1rem 3rem;
+  }
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/**
- * Main Content Area - Primary content container
- * 
- * Provides bottom spacing to separate from footer.
- * Contains all page content below navigation.
- */
-main {
-    margin-bottom: var(--spacing-6xl);
-    padding: 0 var(--spacing-3xl);
-}
-
-/**
- * Site Footer - Bottom page information
- * 
- * Visually separated from main content with top border.
- * Centered text with reduced visual weight.
- */
+/* Footer */
 footer {
-    border-top: 1px solid var(--border-dark);
-    padding-top: var(--spacing-3xl);
-    text-align: center;
-    color: var(--text-light);
-    font-size: 0.9em;
+  background: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #f3f4f6;
 }
 
-/**
- * Image Styling - Responsive images with consistent styling
- * 
- * Ensures images are responsive and don't overflow containers.
- * Adds subtle styling with border radius and shadow.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
- */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-light);
+footer .footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-/**
- * Content Metadata - Secondary information styling
- * 
- * Used for dates, authors, and other supplementary information.
- * Reduced visual weight with smaller font size and lighter color.
- */
-.content-meta {
-    color: var(--text-light);
-    font-size: 0.9em;
-    margin-bottom: var(--spacing-3xl);
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-/**
- * Back Link Container - Navigation helper
- * 
- * Provides consistent spacing for back navigation links.
- * Used on detail pages to return to index pages.
- */
-.back-link {
-    margin-bottom: var(--spacing-3xl);
+footer .footer-logo {
+  margin-bottom: 2rem;
 }
 
-.back-link a {
-    color: var(--primary-blue);
-    text-decoration: none;
+footer .footer-logo img {
+  height: 2rem;
+  width: auto;
 }
 
-.back-link a:hover {
-    text-decoration: underline;
+footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-/**
- * Mobile Responsive Styles - Tablet and mobile adaptations
- * 
- * Adjusts layout and spacing for smaller screens.
- * Uses CSS media queries for responsive design.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
- */
-@media (max-width: 768px) {
-    body {
-        padding: var(--spacing-2xl);
-    }
-    nav ul {
-        flex-direction: column;
-        gap: var(--spacing-lg);
-    }
+footer .footer-section h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
 }
 
-/**
- * Article Content Styles - Article and blog article formatting
- * 
- * Provides consistent typography and spacing for long-form content.
- * Optimized for readability with proper line height and spacing.
- * 
- * Reference: https://practicaltypography.com/
- */
-.article-content h2 {
-    margin-top: var(--spacing-5xl);
-    margin-bottom: var(--spacing-2xl);
+footer .footer-section ul {
+  list-style: none;
 }
 
-.article-content p {
-    margin-bottom: var(--spacing-2xl);
+footer .footer-section ul li {
+  margin-bottom: 0.5rem;
 }
 
-.article-content ul,
-.article-content ol {
-    margin-bottom: var(--spacing-2xl);
-    padding-left: var(--spacing-5xl);
+footer .footer-section ul li a {
+  color: #6b7280;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.article-content li {
-    margin-bottom: 5px;
+footer .footer-section ul li a:hover {
+  color: #111827;
 }
 
-/**
- * Blockquote Styling - Emphasized quoted content
- * 
- * Uses left border accent and italic styling for visual distinction.
- * Follows typographic conventions for quoted material.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
- */
-.article-content blockquote {
-    border-left: var(--spacing-sm) solid var(--primary-blue);
-    padding-left: var(--spacing-3xl);
-    margin: var(--spacing-3xl) 0;
-    font-style: italic;
-    color: var(--text-light);
+footer .footer-section ul li a svg {
+  width: 1rem;
+  height: 1rem;
 }
 
-/**
- * Code Styling - Inline and block code formatting
- * 
- * Distinguishes code from regular text with background color and monospace font.
- * Provides consistent styling for both inline and block code elements.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code
- */
-.article-content code {
-    background-color: var(--bg-code);
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--radius-xs);
-    font-family: var(--font-mono);
-}
-
-.article-content pre {
-    background-color: var(--bg-code);
-    padding: var(--spacing-2xl);
-    border-radius: 5px;
-    overflow-x: auto;
-}
-
-.article-content pre code {
-    background: none;
-    padding: 0;
-}
-
-/**
- * Article Tags - Content categorization
- * 
- * Visual separation from main content with top border.
- * Provides metadata about post categories or topics.
- */
-.article-tags {
-    margin-top: var(--spacing-5xl);
-    padding-top: var(--spacing-3xl);
-    border-top: 1px solid var(--border-light);
-    color: var(--text-light);
-}
-
-.tag {
-    background-color: var(--bg-gray);
-    padding: var(--spacing-xs) var(--spacing-md);
-    border-radius: var(--spacing-xl);
-    font-size: 0.85em;
-}
-
-.article-description {
-    margin-top: var(--spacing-2xl);
-    padding: var(--spacing-2xl) 0;
-    font-size: 1.1em;
-    line-height: 1.5;
-    color: var(--text-medium);
-    font-style: italic;
-    margin-bottom: var(--spacing-3xl);
-}
-
-/**
- * Table of Contents - Navigation aid for long content
- * 
- * Provides quick navigation within long articles or pages.
- * Uses distinctive styling to separate from main content.
- * 
- * Reference: https://www.w3.org/WAI/tutorials/page-structure/headings/
- */
-.table-of-contents {
-    background: transparent;
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-3xl);
-    margin: var(--spacing-5xl) 0;
-    max-width: 600px;
-}
-
-.table-of-contents h2 {
-    margin: 0 0 var(--spacing-2xl) 0;
-    color: #333;
-    font-size: 1.3em;
-}
-
-.table-of-contents ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.table-of-contents li {
-    margin: var(--spacing-md) 0;
-    padding-left: var(--spacing-3xl);
-    position: relative;
-}
-
-/**
- * Custom List Bullets - Arrow indicators for TOC
- * 
- * Uses CSS pseudo-elements to create custom bullet points.
- * Provides visual consistency with brand styling.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/::before
- */
-.table-of-contents li:before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--primary-blue);
-    font-weight: bold;
-}
-
-.table-of-contents a {
-    color: var(--primary-blue);
-    text-decoration: none;
-    font-size: 0.95em;
-    line-height: var(--line-height-tight);
-}
-
-.table-of-contents a:hover {
-    text-decoration: underline;
-    color: var(--primary-blue-dark);
-}
-
-/**
- * People Grid Layout - Responsive card grid for person profiles
- * 
- * Uses CSS Grid for responsive layout that adapts to screen size.
- * Maintains consistent spacing and alignment across all cards.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
- */
-.people-list {
-    margin-top: var(--spacing-5xl);
-    margin-bottom: var(--spacing-6xl);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: var(--spacing-4xl);
-    max-width: 1200px;
-}
-
-/**
- * Person Card - Individual profile card component
- * 
- * Flexible card layout using CSS Flexbox for consistent alignment.
- * Includes photo, information, and action elements.
- * Includes hover animation for enhanced user interaction.
- */
-.person-card {
-    background: var(--bg-card);
-    padding: var(--spacing-lg);
-    border-radius: var(--radius-lg);
-    border-left: var(--spacing-sm) solid var(--primary-blue);
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
-}
-
-.person-card .person-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-lg);
-}
-
-.person-card .person-header:not(:has(.person-photo)) {
-    gap: var(--spacing-sm);
-}
-
-/**
- * Person Photo Container - Aspect ratio controlled image container
- * 
- * Uses CSS aspect-ratio and object-fit for consistent image display.
- * Implements grayscale filter with hover effect for visual interest.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
- */
-.person-photo {
-    position: relative !important;
-    width: 100% !important;
-    aspect-ratio: 1/1 !important;
-    overflow: hidden !important;
-    border-radius: var(--radius-lg) !important;
-    background: none !important;
-    border: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: block !important;
-}
-
-.person-photo img {
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
-    width: 122% !important;
-    height: 122% !important;
-    object-fit: cover !important;
-    object-position: center center !important;
-    border-radius: var(--radius-lg) !important;
-    filter: grayscale(100%) !important;
-    transition: var(--transition-filter) !important;
-    display: block !important;
-    margin: 0 !important;
-    max-width: none !important;
-    max-height: none !important;
-    transform: translate(-50%, -50%);
-}
-
-.person-photo img:hover {
-    filter: grayscale(0%);
-}
-
-/**
- * Person Information - Text content within person cards
- * 
- * Centered text layout with hierarchical typography.
- * Uses semantic heading structure for accessibility.
- */
-.person-info {
-    text-align: center;
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.person-info h3 {
-    margin: 0;
-    font-size: 1.2em;
-}
-
-.person-info h3 a {
-    color: var(--primary-blue);
-    text-decoration: none;
-}
-
-.person-info h3 a:hover {
-    text-decoration: underline;
-}
-
-.person-role {
-    font-weight: bold;
-    color: var(--text-medium);
-    margin-bottom: var(--spacing-sm);
-}
-
-.person-description,
-.person-excerpt {
-    color: var(--text-medium);
-    line-height: 1.5;
-    margin-bottom: 0;
-    font-size: 0.95em;
-}
-
-.person-dates {
-    font-style: italic;
-    color: var(--text-light);
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.person-info .person-description {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-/**
- * Social Links - Icon-based social media links
- * 
- * Circular icon buttons with hover effects.
- * Uses flexbox for consistent alignment and spacing.
- */
-.person-social-links-index {
-    margin-top: var(--spacing-sm);
-    margin-bottom: var(--spacing-sm);
-    display: block;
-    text-align: center;
-}
-
-.person-social-links-index a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    background: var(--border-table);
-    border-radius: var(--radius-round);
-    color: var(--text-light);
-    text-decoration: none;
-    transition: var(--transition-fast);
-}
-
-.person-social-links-index a:hover {
-    background: var(--primary-blue);
-    color: var(--bg-white);
-    transform: translateY(-1px);
-}
-
-.person-social-links-index svg {
-    width: 14px;
-    height: 14px;
-}
-
-/**
- * Interview Link - Call-to-action button for interviews
- * 
- * Prominent button styling to encourage engagement.
- * Uses micro-interactions for enhanced user experience.
- */
-.person-interview-link {
-    margin-top: var(--spacing-sm);
-    text-align: center;
-}
-
-.interview-link {
-    display: inline-block;
-    background: #007acc;
-    color: #fff !important;
-    padding: var(--spacing-sm) var(--spacing-xl);
-    border-radius: var(--radius-sm);
-    text-decoration: none;
-    font-size: 0.9em;
-    font-weight: 500;
-    transition: var(--transition-fast);
-}
-
-.interview-link:hover {
-    background: #005580;
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-medium);
-}
-
-/**
- * No Content State - Empty state messaging
- * 
- * Provides user feedback when no content is available.
- * Uses grid-column to span full width in grid layouts.
- */
-.no-content {
-    text-align: center;
-    color: var(--text-light);
-    font-style: italic;
-    padding: var(--spacing-6xl);
-    background: var(--bg-light);
-    border-radius: var(--radius-lg);
-    grid-column: 1 / -1;
-}
-
-/**
- * Responsive Grid Adjustments - Mobile layout adaptations
- * 
- * Adjusts grid and flex layouts for smaller screens.
- * Ensures content remains readable and accessible on mobile devices.
- */
-@media (max-width: 768px) {
-    .content-sections {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-5xl);
-    }
-    
-    .content-list li {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    
-    .date, .role {
-        white-space: normal;
-    }
-}
-
-/**
- * Hero Section - Landing page header content
- * 
- * Large visual area for primary page content and imagery.
- * Uses generous spacing for visual impact.
- */
-.hero-section {
-    margin-bottom: var(--spacing-6xl);
-}
-
-.hero-image {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: var(--spacing-3xl);
-    border-radius: var(--radius-lg);
-}
-
-.hero-content {
-    font-size: 1.1em;
-    line-height: var(--line-height-loose);
-}
-
-/**
- * Content Sections - Main page content areas
- * 
- * Structured content areas with consistent styling.
- * Uses card-like appearance for visual organization.
- */
-.content-sections {
-    margin-bottom: 50px;
-}
-
-.content-sections section {
-    background: transparent;
-    padding: var(--spacing-4xl);
-    border-radius: var(--radius-lg);
-    border-left: var(--spacing-sm) solid var(--primary-blue);
-    margin-bottom: var(--spacing-6xl);
-}
-
-/**
- * Content Tables - Structured data presentation
- * 
- * Accessible table styling with proper contrast and spacing.
- * Includes hover effects for better user interaction.
- * 
- * Reference: https://www.w3.org/WAI/tutorials/tables/
- */
-.content-table {
-    width: 100%;
-    max-width: 1000px;
-    border-collapse: collapse;
-    margin-bottom: var(--spacing-2xl);
-}
-
-.content-table th {
-    background: var(--primary-blue);
-    color: var(--bg-white);
-    padding: var(--spacing-xl);
-    text-align: left;
-    font-weight: 600;
-}
-
-.content-table th:first-child {
-    border-top-left-radius: var(--radius-sm);
-}
-
-.content-table th:last-child {
-    border-top-right-radius: var(--radius-sm);
-}
-
-.content-table td {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    border-bottom: none;
-}
-
-.content-table tr:hover {
-    background: transparent;
-}
-
-.content-table a {
-    color: var(--text-dark);
-    text-decoration: none;
-}
-
-.content-table a:hover {
-    color: var(--primary-blue);
-    text-decoration: underline;
-}
-
-.content-table td a {
-    color: var(--primary-blue);
-    text-decoration: underline;
-}
-
-.content-table td a:visited {
-    color: var(--primary-blue-visited);
-}
-
-.content-table td a:hover {
-    color: var(--primary-blue);
-    text-decoration: underline;
-}
-
-.content-sections h2 {
-    margin-top: 0;
-    margin-bottom: var(--spacing-3xl);
-}
-
-.content-sections h2 a {
-    color: var(--primary-blue);
-    text-decoration: none;
-}
-
-.content-sections h2 a:hover {
-    text-decoration: underline;
-}
-
-/**
- * Content Lists - Structured content navigation
- * 
- * Flexible list layout for content indexes and navigation.
- * Uses flexbox for responsive alignment and spacing.
- */
-.content-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 var(--spacing-2xl) 0;
-}
-
-.content-list li {
-    margin-bottom: var(--spacing-xl);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: var(--spacing-2xl);
-}
-
-.content-list a {
-    color: var(--text-dark);
-    text-decoration: none;
-    flex: 1;
-}
-
-.content-list a:hover {
-    color: var(--primary-blue);
-    text-decoration: underline;
-}
-
-.date, .role {
-    color: var(--text-light);
-    font-size: 0.9em;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.view-all {
-    color: var(--primary-blue);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.view-all:hover {
-    text-decoration: underline;
-}
-
-/**
- * Backstory Section - Contextual information area
- * 
- * Distinctive styling for background information and context.
- * Uses different background color to separate from main content.
- */
-.backstory {
-    background: transparent;
-    padding: var(--spacing-5xl);
-    border-radius: var(--radius-lg);
-    margin-top: var(--spacing-6xl);
-}
-
-.backstory h2 {
-    color: #333;
-    margin-top: 0;
-}
-
-.backstory ul {
-    margin-bottom: var(--spacing-3xl);
-}
-
-.backstory li {
-    margin-bottom: var(--spacing-md);
-}
-
-/**
- * Video Components - Video content display and interaction
- * 
- * Responsive video layout with thumbnail and metadata display.
- * Includes play button overlay and hover effects.
- */
-.videos-list {
-    margin-top: var(--spacing-5xl);
-}
-
-.video-card {
-    background: var(--bg-card);
-    padding: var(--spacing-2xl);
-    margin-bottom: var(--spacing-3xl);
-    border-radius: var(--radius-lg);
-    border-left: var(--spacing-sm) solid var(--primary-blue);
-    display: flex;
-    gap: var(--spacing-2xl);
-    transition: box-shadow 0.2s ease;
-}
-
-.video-card:hover {
-    box-shadow: var(--shadow-hover);
-}
-
-.video-thumbnail {
-    flex-shrink: 0;
-    width: 250px;
-    position: relative;
-}
-
-.video-thumbnail img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius-md);
-    transition: var(--transition-opacity);
-}
-
-.video-thumbnail:hover img {
-    opacity: 0.8;
-}
-
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: var(--bg-white);
-    width: 60px;
-    height: 60px;
-    border-radius: var(--radius-round);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--spacing-3xl);
-    transition: var(--transition-bg);
-}
-
-.video-thumbnail:hover .play-button {
-    background: rgba(0, 122, 204, 0.9);
-}
-
-.video-info {
-    flex: 1;
-    min-width: 0;
-}
-
-.video-info h3 {
-    margin: 0 0 var(--spacing-lg) 0;
-    font-size: 1.3em;
-}
-
-.video-info h3 a {
-    color: var(--primary-blue);
-    text-decoration: none;
-}
-
-.video-info h3 a:hover {
-    text-decoration: underline;
-}
-
-.video-meta {
-    color: var(--text-light);
-    font-size: 0.9em;
-    margin-bottom: var(--spacing-lg);
-}
-
-.episode-number {
-    font-weight: bold;
-    color: var(--primary-blue);
-}
-
-.release-date {
-    font-style: italic;
-}
-
-.video-guests {
-    color: var(--text-medium);
-    margin-bottom: var(--spacing-2xl);
-    font-size: 0.95em;
-}
-
-.video-description,
-.video-excerpt {
-    color: var(--text-medium);
-    line-height: var(--line-height);
-    margin-bottom: var(--spacing-2xl);
-}
-
-/**
- * Video Embed Components - Embedded video player styling
- * 
- * Responsive video embed with aspect ratio preservation.
- * Includes styling for video cards and Medium profile embeds.
- * Includes hover animation for enhanced user interaction.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
- */
-.video-embed-card {
-  margin: var(--spacing-embed) auto;
-  background: var(--bg-card);
-  border-radius: var(--spacing-xl);
-  box-shadow: var(--shadow-heavy);
-  border: 1.5px solid var(--border-medium);
-  padding: var(--spacing-xl);
-  width: 75%;
-  max-width: 900px;
+footer .footer-bottom {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #f3f4f6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: box-shadow 0.2s ease;
+  gap: 1rem;
 }
 
-.video-embed-card:hover {
-  box-shadow: var(--shadow-hover);
+footer .footer-bottom-text {
+  font-size: 0.875rem;
+  color: #6b7280;
 }
 
-.video-embed-responsive {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-}
-
-.video-embed-responsive iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius-lg);
-  border: none;
-  box-shadow: var(--shadow-light);
-  background: #000;
-}
-
-/**
- * Blog Embed Styling - External blog article integration
- * 
- * Styled cards for blog article and article embeds.
- * Uses consistent hover animation with other embed components.
- */
-.blog-embed-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-table);
-  border-radius: var(--radius-xl);
-  padding: 0;
-  margin: var(--spacing-embed) 0;
-  box-shadow: var(--shadow-embed);
-  overflow: hidden;
-  transition: box-shadow 0.2s ease;
-}
-
-.blog-embed-card:hover {
-  box-shadow: var(--shadow-hover) !important;
-}
-
-/* Video embed container within blog embed cards */
-.blog-embed-video-container {
-  width: 100%;
-  background: #e8e8e8;
+footer .footer-bottom-links {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 14px 0 10px 0;
+  gap: 1rem;
+  font-size: 0.875rem;
 }
 
-.blog-embed-video-wrapper {
-  width: 92%;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-  background: #e8e8e8;
-  border: 1px solid var(--border-table);
-  overflow: hidden;
-}
-
-.video-embed-minimal {
-  width: 100%;
-  aspect-ratio: 16/9;
-  border: none;
-  display: block;
-  background: #000;
-}
-
-/* Blog embed image container */
-.blog-embed-image-container {
-  width: 100%;
-  background: #e8e8e8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 0 10px 0;
-}
-
-.blog-embed-image {
-  width: 92%;
-  display: block;
-  object-fit: contain;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-}
-
-/* Blog embed content areas */
-.blog-embed-meta {
-  padding: 18px 18px 16px 18px;
-  background: #e8e8e8;
-}
-
-.blog-embed-title {
-  font-weight: bold;
-  font-size: 1.13em;
-  margin-bottom: 6px;
-  color: #222;
-}
-
-.blog-embed-title-with-padding {
-  font-weight: bold;
-  font-size: 1.13em;
-  margin-bottom: 6px;
-  color: #222;
-  padding: 0 18px;
-  background: #e8e8e8;
-}
-
-.blog-embed-description {
-  font-size: 0.98em;
-  color: #444;
-  margin-bottom: 6px;
-}
-
-.blog-embed-site {
-  color: var(--primary-blue);
-}
-
-.blog-embed-site-line {
-  font-size: 0.98em;
-  color: var(--text-light);
-  margin-bottom: 4px;
-}
-
-.blog-embed-site-line a {
-  color: var(--primary-blue);
-  text-decoration: underline;
-}
-
-.blog-embed-author {
-  color: var(--primary-blue);
-  text-decoration: underline;
-}
-
-.blog-embed-date {
-  color: var(--text-light);
-}
-
-.blog-embed-link {
-  color: var(--primary-blue);
-  word-break: break-all;
-}
-
-.blog-embed-meta-line {
-  font-size: 0.98em;
-  color: var(--text-light);
-  margin-bottom: 2px;
-}
-
-.blog-embed-meta-line-with-margin {
-  font-size: 0.98em;
-  color: var(--text-light);
-  margin-bottom: 4px;
-}
-
-/* Blog embed link styling */
-.blog-embed-link-wrapper {
-  color: inherit;
+footer .footer-bottom-links a {
+  color: #6b7280;
   text-decoration: none;
-  display: block;
 }
 
-/**
- * YouTube Embed Styling - YouTube video integration
- * 
- * Styled container for YouTube video embeds.
- * Uses consistent hover animation with other embed components.
- */
-.video-embed-content {
-  transition: box-shadow 0.2s ease;
+footer .footer-bottom-links a:hover {
+  color: #374151;
 }
 
-.video-embed-content:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
-}
-
-/**
- * Twitter Embed Styling - Twitter/X tweet integration
- * 
- * Styled container for Twitter tweet embeds.
- * Uses consistent hover animation with other embed components.
- */
-.twitter-tweet {
-  transition: box-shadow 0.2s ease;
-}
-
-.twitter-tweet:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
-}
-
-/**
- * DEVCON0 Video Embed Styling - DEVCON0 self-introduction videos
- * 
- * Styled containers for DEVCON0 video embeds on person pages.
- * Uses card-like appearance with consistent hover animation like other embeds.
- */
-.devcon0-section {
-  background: #e8e8e8 !important;
-  border: 1px solid var(--border-table) !important;
-  border-radius: var(--radius-lg) !important;
-  padding: var(--spacing-2xl) !important;
-  margin: 18px 0 0 0 !important;
-  margin-top: auto !important;
-  max-width: 420px !important;
-  transition: box-shadow 0.2s ease !important;
-  box-shadow: var(--shadow-light) !important;
-}
-
-.devcon0-section:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
-}
-
-.devcon0-section h4 {
-  margin: 0 0 var(--spacing-lg) 0 !important;
-  color: var(--text-medium) !important;
-  font-size: 0.95em !important;
-}
-
-/**
- * Medium Embed Styling - External content integration
- * 
- * Styled cards for Medium profile and content embeds.
- * Uses flexbox layout with hover effects.
- */
-.medium-embed {
-  margin: 18px 0;
-}
-
-.medium-embed a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  background: #e8e8e8;
-  border: 1px solid var(--border-table);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-light);
-  padding: var(--spacing-lg) var(--spacing-2xl);
-  max-width: 420px;
-  transition: box-shadow 0.2s ease;
-}
-
-.medium-embed a:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-.medium-profile-photo {
-  height: 80px;
-  width: 80px;
-  object-fit: cover;
-  border-radius: var(--radius-lg);
-  margin-right: 18px;
-  background: var(--bg-white);
-}
-
-.medium-profile-info {
-  color: #222;
-}
-
-.medium-profile-info .name {
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-bottom: var(--spacing-sm);
-}
-
-.medium-profile-info .desc {
-  font-size: 0.97em;
-  color: var(--text-medium);
-  margin-bottom: var(--spacing-sm);
-}
-
-.medium-profile-info .url {
-  font-size: 0.93em;
-  color: var(--text-lighter);
-}
-
-/**
- * Video Mobile Responsive - Mobile adaptations for video content
- * 
- * Stacks video thumbnail and info vertically on smaller screens.
- * Adjusts spacing and alignment for mobile viewing.
- */
-@media (max-width: 768px) {
-    .video-card {
-        flex-direction: column;
-    }
-    .video-thumbnail {
-        width: 100%;
-        max-width: 400px;
-        align-self: center;
-    }
-    .video-meta .release-date {
-        margin-left: 0;
-        display: block;
-        margin-top: 5px;
-    }
-}
-
-/**
- * Person Page Styles - Individual person profile pages
- * 
- * Detailed styling for person profile pages with photos, content, and links.
- * Includes responsive layout adjustments and social media integration.
- */
-.person-profile .content-meta {
-    margin-bottom: var(--spacing-4xl);
-}
-
-.person-role {
-    font-weight: bold;
-    color: var(--text-medium);
-    font-size: 1.1em;
-}
-
-.person-interview-link {
-    margin-top: 18px;
-    text-align: left;
-    margin-left: 0;
-}
-
-.person-card .person-interview-link {
-    text-align: center;
-}
-
-.interview-link {
-    display: inline-block;
-    background: #007acc;
-    color: #fff !important;
-    padding: var(--spacing-md) var(--spacing-2xl);
-    border-radius: var(--radius-md);
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 500;
-    transition: var(--transition-fast);
-}
-
-.interview-link:hover {
-    background: #005580;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
-}
-
-.person-photo-header {
-    max-width: 33.33%;
-    margin: 0 0 var(--spacing-3xl) 0;
-    text-align: left;
-}
-
-.person-photo-header img {
-    width: 100%;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-light);
-    filter: grayscale(100%);
-    transition: var(--transition-filter);
-    display: block;
-    margin: 0 auto;
-}
-
-.person-photo-header img:hover {
-    filter: grayscale(0%);
-}
-
-.person-description {
-    font-size: 1.1em;
-    color: var(--text-medium);
-    margin: var(--spacing-2xl) 0;
-    font-style: italic;
-}
-
-.person-dates {
-    font-style: italic;
-    color: var(--text-light);
-}
-
-.person-social-links {
-    margin: var(--spacing-2xl) 0;
-    display: flex;
-    gap: var(--spacing-xl);
-    align-items: center;
-}
-
-.person-social-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: var(--bg-gray);
-    border-radius: var(--radius-round);
-    color: var(--text-light);
-    text-decoration: none;
-    transition: var(--transition-fast);
-}
-
-.person-social-links a:hover {
-    background: var(--primary-blue);
-    color: var(--bg-white);
-    transform: translateY(-2px);
-}
-
-.person-social-links svg {
-    width: 18px;
-    height: 18px;
-}
-
-.person-photo {
-    float: right;
-    margin: 0 0 var(--spacing-3xl) var(--spacing-3xl);
-    max-width: 300px;
-}
-
-.person-photo img {
-    width: 100%;
-    border-radius: var(--radius-lg);
-}
-
-.person-content {
-    overflow: hidden;
-}
-
-.person-content h1,
-.person-content h2,
-.person-content h3,
-.person-content h4,
-.person-content h5,
-.person-content h6 {
-    color: #333;
-    margin-top: var(--spacing-4xl);
-    margin-bottom: var(--spacing-2xl);
-}
-
-.person-content p {
-    margin-bottom: var(--spacing-2xl);
-}
-
-.person-content ul,
-.person-content ol {
-    margin-bottom: var(--spacing-2xl);
-    padding-left: var(--spacing-5xl);
-}
-
-.person-links {
-    margin-top: var(--spacing-5xl);
-    padding-top: var(--spacing-3xl);
-    border-top: 1px solid var(--border-light);
-}
-
-.person-links h3 {
-    color: #333;
-    margin-bottom: var(--spacing-lg);
-}
-
-.person-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.person-links li {
-    margin-bottom: var(--spacing-md);
-}
-
-.person-links a {
-    color: var(--primary-blue);
-    text-decoration: none;
-}
-
-.person-links a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .person-photo {
-        float: none;
-        margin: 0 0 var(--spacing-3xl) 0;
-        max-width: 100%;
-    }
-}
-
-/**
- * Article Preview Components - Compact grid layout for articles
- * 
- * Responsive grid layout for article previews using less screen space.
- * Uses card layout with proper typography hierarchy and compact sizing.
- * Includes hover animation for enhanced user interaction.
- */
-.articles-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: var(--spacing-3xl);
-    margin-top: var(--spacing-3xl);
-}
-
-.article-preview {
-    background: #e8e8e8;
-    padding: var(--spacing-2xl);
-    border-radius: var(--radius-lg);
-    border-left: var(--spacing-sm) solid var(--primary-blue);
-    transition: box-shadow 0.2s ease;
-    height: fit-content;
-}
-
-.article-preview:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-.article-preview h2 {
-    margin-top: 0;
-    margin-bottom: var(--spacing-lg);
-    font-size: 1.2em;
-    line-height: 1.3;
-}
-
-.article-preview h2 a {
-    color: var(--primary-blue);
-    text-decoration: none;
-}
-
-.article-preview h2 a:hover {
-    text-decoration: underline;
-}
-
-.article-meta {
-    color: var(--text-light);
-    font-size: 0.85em;
-    margin-bottom: var(--spacing-lg);
-}
-
-.article-meta time {
-    font-style: italic;
-}
-
-.article-description,
-.article-excerpt {
-    color: var(--text-medium);
-    line-height: var(--line-height);
-    font-size: 0.95em;
+@media (min-width: 768px) {
+  footer .footer-content {
+    flex-direction: row;
+  }
+  
+  footer .footer-logo {
     margin-bottom: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  }
+  
+  footer .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.no-content {
-    text-align: center;
-    color: var(--text-light);
-    font-style: italic;
-    padding: var(--spacing-6xl);
-    background: var(--bg-light);
-    border-radius: var(--radius-lg);
-    grid-column: 1 / -1;
-}
-
-@media (max-width: 768px) {
-    .articles-list {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-2xl);
-    }
-    
-    .article-preview {
-        padding: var(--spacing-2xl);
-    }
-}
-
-/**
- * People Grid Components - Visual grid display of people photos
- * 
- * Responsive grid layout for displaying all people photos in a visual grid format.
- * Includes placeholder styling for people without photos and consistent hover effects.
- * Uses CSS Grid for responsive layout that adapts to screen size.
- * 
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
- */
-.people-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: var(--spacing-2xl);
-    padding: var(--spacing-3xl);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.grid-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 0 0 2px rgba(0,0,0,0.8);
-    transition: var(--transition-fast);
-    background: var(--bg-lighter);
-}
-
-.grid-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 0 2px rgba(0,0,0,1);
-}
-
-.grid-item img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    display: block;
-    filter: grayscale(100%);
-}
-
-.grid-item .name-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    color: var(--bg-white);
-    padding: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
-    font-size: 11px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 1.2;
-    opacity: 0;
-    transition: var(--transition-opacity);
-}
-
-.grid-item:hover .name-overlay {
-    opacity: 1;
-}
-
-.people-grid-header {
-    text-align: center;
-    margin-bottom: var(--spacing-5xl);
-}
-
-.people-grid-header p {
-    color: var(--text-light);
-    font-size: 1em;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.stats {
-    text-align: center;
-    margin-bottom: var(--spacing-3xl);
-    color: var(--text-lighter);
-    font-size: 0.9em;
-}
-
-/**
- * Full Page Background Video
- * 
- * Hidden to maintain clean STRATO Mercata design aesthetic.
- * Background gradient provides modern, professional appearance.
- */
-.full-page-bg-video {
-    display: none;
-}
-
-/**
- * Content Overlays - Ensure readability over video background
- * 
- * Adds semi-transparent backgrounds to content areas for better readability
- * over the background video.
- */
-body {
-    position: relative;
-}
-
-header {
-    background: transparent;
-}
-
-main {
-    background: transparent;
-}
-
+/* Homepage Styles */
 .hero-section {
-    position: relative;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 4rem 0;
 }
 
-/* Hero Content Container */
 .hero-content {
-    position: relative;
-    z-index: 1;
-    background: transparent;
-    padding: var(--spacing-3xl) 0;
-    border-radius: var(--radius-lg);
-    max-width: 100%;
-    margin: var(--spacing-5xl) 0;
-}
-
-/* Hero Text Styling */
-.hero-text {
-    text-align: left;
-    max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .hero-text h1 {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .hero-content {
-        margin: var(--spacing-3xl) 0;
-        padding: var(--spacing-2xl) 0;
-    }
-    
-    .hero-section {
-        min-height: 60vh;
-    }
+.hero-text p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  max-width: 32rem;
 }
 
-/**
- * Ethereum Logo Section - 2014 authentic branding recreation
- * 
- * Recreates the iconic diamond logo and typography from the original ethereum.org
- * with centered layout and period-appropriate styling.
- */
-.ethereum-logo-section {
-    text-align: center;
-    padding: var(--spacing-2xl) 0;
-    margin: var(--spacing-xl) 0;
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.ethereum-logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-2xl);
+.strato-button {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+  display: inline-block;
 }
 
-.ethereum-diamond {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.strato-button:hover {
+  background: #1d4ed8;
 }
 
-.ethereum-diamond img {
-    width: 180px;
-    height: auto;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background: none !important;
-    border: none !important;
+.strato-button-outline {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: transparent;
+  color: #2563eb;
+  text-decoration: none;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  display: inline-block;
 }
 
-.ethereum-diamond svg {
-    width: 180px;
-    height: auto;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+.strato-button-outline:hover {
+  border-color: #2563eb;
 }
 
-.ethereum-text {
-    font-family: 'RobotoRegular', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-    font-size: 2.2em;
-    font-weight: 400;
-    color: #333;
-    margin: 0;
-    letter-spacing: 0.25em;
-    text-transform: lowercase;
-    text-align: center;
-    line-height: 1.2;
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-    .ethereum-logo-section {
-        padding: var(--spacing-4xl) 0;
-    }
-    
-    .ethereum-diamond img,
-    .ethereum-diamond svg {
-        width: 120px;
-    }
-    
-    .ethereum-text {
-        font-size: 1.6em;
-    }
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
-/**
- * STRATO Mercata Header - Modern navigation header matching stratomercata.com
- * 
- * Clean, professional header with logo, navigation, and action button.
- * Responsive design that adapts to mobile screens.
- * Full-page width header that breaks out of body's max-width constraint.
- */
-.strato-header {
-    background: var(--bg-white);
-    padding: 16px 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-    position: relative;
-    z-index: 100;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-}
-
-.strato-header-container {
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: auto;
-}
-
-.strato-logo {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-}
-
-.strato-logo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.strato-logo img {
-    height: 32px;
-    width: auto;
-    border-radius: 0;
-    box-shadow: none;
-    display: block;
-}
-
-.strato-logo-text {
-    font-size: 1.3em;
-    font-weight: 700;
-    color: var(--text-dark);
-    letter-spacing: -0.02em;
-}
-
-.strato-logo-mercata {
-    font-weight: 400;
-    color: var(--text-medium);
-}
-
-.strato-nav-group {
-    display: flex;
-    align-items: baseline;
-    gap: 24px;
-}
-
-.strato-nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-.strato-nav a {
-    color: var(--text-dark);
-    text-decoration: none;
-    font-size: 0.875rem;
-    font-weight: 400;
-    transition: color 0.2s ease;
-    white-space: nowrap;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-}
-
-.strato-nav a:hover {
-    color: var(--primary-blue);
-}
-
-.strato-actions {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    height: 100%;
-}
-
-.strato-launch-btn {
-    background: var(--primary-blue);
-    color: var(--bg-white) !important;
-    padding: 10px 24px;
-    border-radius: 6px;
-    text-decoration: none !important;
-    font-weight: 500;
-    font-size: 0.875rem;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-}
-
-.strato-launch-btn:hover {
-    background: var(--primary-blue-dark);
-}
-
-/* Mobile responsive header */
-@media (max-width: 768px) {
-    .strato-header-container {
-        flex-wrap: wrap;
-        padding: 0 var(--spacing-2xl);
-        gap: var(--spacing-2xl);
-    }
-    
-    .strato-logo {
-        order: 1;
-    }
-    
-    .strato-actions {
-        order: 2;
-        margin-left: auto;
-    }
-    
-    .strato-nav {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: var(--spacing-3xl);
-        padding-top: var(--spacing-lg);
-        border-top: 1px solid var(--border-light);
-    }
-    
-    .strato-nav a {
-        font-size: 0.95em;
-    }
-    
-    .strato-launch-btn {
-        padding: 8px 18px;
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    .strato-logo-text {
-        font-size: 1.1em;
-    }
-    
-    .strato-nav {
-        gap: var(--spacing-2xl);
-    }
-    
-    .strato-nav a {
-        font-size: 0.9em;
-    }
-}
-
-/**
- * Header and Footer Utilities - Legacy header styling (kept for compatibility)
- * 
- * Provides reusable classes for site header and footer components.
- */
-.site-header-center {
-    text-align: center;
-}
-
-.site-header-title {
-    margin: 0;
-}
-
-.site-header-title a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.site-description-center {
-    margin: 0 auto 5px auto;
-    text-align: center;
-}
-
-.site-nav-flex {
-    display: flex;
-    justify-content: center;
-}
-
-.site-nav-list {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/**
- * STRATO Mercata Footer - Modern footer matching stratomercata.com
- * 
- * Clean footer with logo, Quick Links, Social Connect sections
- * and copyright/legal links at the bottom.
- */
-.strato-footer {
-    background: #F8F9FA;
-    padding: 60px 0 30px 0;
-    margin-top: var(--spacing-6xl);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-}
-
-.strato-footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-3xl);
-}
-
-.strato-footer-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--spacing-6xl);
-    margin-bottom: var(--spacing-5xl);
-}
-
-.strato-footer-logo img {
-    height: 50px;
-    width: auto;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-}
-
-.strato-footer-links {
-    display: grid;
+@media (min-width: 768px) {
+  .hero-content {
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-5xl);
-    justify-self: end;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+  }
 }
 
-.strato-footer-column h4 {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin: 0 0 var(--spacing-2xl) 0;
-    text-align: left;
+/* Featured Assets Section */
+.featured-section {
+  padding: 5rem 0;
 }
 
-.strato-footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.featured-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.strato-footer-column li {
-    margin-bottom: var(--spacing-lg);
+.assets-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
-.strato-footer-column a {
-    color: var(--text-medium);
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: color 0.2s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.asset-card {
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-.strato-footer-column a svg {
-    flex-shrink: 0;
+.asset-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.strato-footer-column a:hover {
-    color: var(--primary-blue);
+.asset-card img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.strato-footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: var(--spacing-3xl);
-    border-top: 1px solid var(--border-light);
-    flex-wrap: wrap;
-    gap: var(--spacing-2xl);
+.asset-card-content {
+  padding: 1.5rem;
 }
 
-.strato-footer-copyright {
-    color: var(--text-medium);
-    font-size: 0.875rem;
+.asset-card-content p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
 }
 
-.strato-footer-legal {
-    display: flex;
-    gap: var(--spacing-3xl);
-    flex-wrap: wrap;
+.asset-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #475569;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.375rem 2.5rem;
+  border: 1px solid #94a3b8;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
-.strato-footer-legal a {
-    color: var(--text-medium);
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: color 0.2s ease;
+.asset-card-link:hover {
+  background: #f1f5f9;
 }
 
-.strato-footer-legal a:hover {
-    color: var(--primary-blue);
+@media (min-width: 768px) {
+  .assets-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-/* Mobile responsive footer */
-@media (max-width: 768px) {
-    .strato-footer {
-        padding: 40px 0 20px 0;
-    }
-    
-    .strato-footer-content {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-5xl);
-    }
-    
-    .strato-footer-links {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-5xl);
-    }
-    
-    .strato-footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--spacing-2xl);
-    }
-    
-    .strato-footer-legal {
-        flex-direction: column;
-        gap: var(--spacing-lg);
-    }
+/* How It Works Section */
+.how-it-works-section {
+  padding: 5rem 0;
+  background: #f6fafb;
+  position: relative;
+  overflow: hidden;
 }
 
-/**
- * DEVCON0 Video Components - Self-introduction video styling
- * 
- * Reusable classes for DEVCON0 video sections on person pages.
- */
-.devcon0-header {
-    margin: 10px 0 8px 0;
-    font-size: 0.95em;
-    color: #555;
-    text-align: center;
+.how-it-works-section .process-label {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  color: #374151;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.devcon0-header-left {
-    margin: 10px 0 8px 0;
-    font-size: 0.95em;
-    color: #555;
+.how-it-works-section h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1f2937;
 }
 
-.devcon0-container {
-    position: relative;
-    margin: 10px 0;
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
-.devcon0-thumbnail-wrapper {
-    position: relative;
-    cursor: pointer;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.step-card {
+  padding: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+  text-align: center;
 }
 
-.devcon0-thumbnail-img {
-    width: 100%;
-    height: auto;
-    display: block;
+.step-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.devcon0-play-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0,0,0,0.8);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+.step-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.5rem;
+  background: #eff6ff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.devcon0-play-triangle {
-    width: 0;
-    height: 0;
-    border-left: 20px solid white;
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    margin-left: 4px;
+.step-icon img {
+  width: 2rem;
+  height: 2rem;
 }
 
-.devcon0-fallback {
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    overflow: hidden;
+.step-number {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 1rem;
 }
 
-.devcon0-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+.step-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.5;
 }
 
-.devcon0-video-player {
-    display: none;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/**
- * Interview Link SVG - Play button icon for interview links
- * 
- * Reusable SVG styling for interview call-to-action buttons.
- */
-.interview-svg {
-    vertical-align: middle;
-    margin-right: 7px;
-    margin-left: -2px;
-    display: inline-block;
-}
-
-/**
- * Wikipedia Icon - External link icon styling
- * 
- * Consistent styling for Wikipedia profile links.
- */
-.wikipedia-icon {
-    width: 16px;
-    height: 16px;
-    filter: brightness(0) saturate(100%);
-    opacity: 0.6;
-}
-
-/**
- * Video Metadata Utilities - Video page metadata styling
- * 
- * Styling for video release dates and host/guest information.
- */
-.video-release-date {
-    margin-bottom: 15px;
-}
-
-.video-hosts-guests {
-    margin-bottom: 15px;
-}
-
-/**
- * Person Card Utilities - Person profile card dimensions
- * 
- * Sizing utilities for person profile cards.
- */
-.person-card-size {
-    width: 33.33%;
-    min-width: 300px;
-    max-width: 400px;
-}
-
-/**
- * Grid Page Utilities - Grid page introduction section
- * 
- * Styling for the photo grid introduction section.
- */
-.grid-intro-section {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 8px;
-}
-
-.grid-back-link {
-    color: #2e86ab;
-}
-
-/**
- * 404 Page Utilities - Error page link styling
- * 
- * Styling for 404 page return link.
- */
-.error-page-link {
-    color: #007acc;
-    text-decoration: underline;
-}
-
-/**
- * Content Embed Utilities - Blog and content embed cards
- * 
- * Reusable classes for embedded content cards.
- */
-.content-embed-card {
-    max-width: 75%;
-}
-
-.content-embed-link-wrapper {
-    display: block;
-    text-decoration: none;
-}
-
-.content-embed-video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 0;
-}
-
-.content-embed-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.content-embed-meta {
-    padding: 12px;
-    background: white;
-}
-
-.content-embed-title {
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.content-embed-metadata {
-    font-size: 0.95em;
-    color: #666;
-}
-
-.content-embed-metadata-mb {
-    font-size: 0.95em;
-    color: #666;
-    margin-bottom: 4px;
-}
-
-.content-embed-description {
-    font-size: 0.98em;
-    color: #444;
-    margin-bottom: 6px;
-}
-
-.content-embed-author-link {
-    color: #007acc;
-    text-decoration: underline;
-}
-
-.content-embed-site-link {
-    color: #007acc;
-    text-decoration: underline;
-}
-
-.content-embed-url-text {
-    color: #007acc;
-    word-break: break-all;
-}
-
-/**
- * Twitter Embed Utilities - Twitter content width
- * 
- * Width control for embedded tweets.
- */
-.twitter-embed-container {
-    max-width: 75%;
-}
-
-/**
- * Heading Date Utilities - Date styling for index pages
- * 
- * Styling for date headings on people index.
- */
-.heading-date {
-    color: #333;
-}
-
-/**
- * Hideable Section Utility - JavaScript-controlled visibility
- * 
- * Hidden by default, shown via JavaScript.
- */
-.hideable-section {
-    display: none;
-}
-
-/**
- * Whitespace Utility - Preserved whitespace
- * 
- * For preserving spaces in inline text.
- */
-.whitespace-pre {
-    white-space: pre;
-}
-
-/**
- * DEVCON0 People Index Components - Multiple video sections on people/index.html
- * 
- * Reusable classes for DEVCON0 video sections that appear in grids.
- * Uses "-people" suffix to distinguish from single person page components.
- */
-.devcon0-video-container-people {
-    position: relative;
-    margin: 10px 0;
-}
-
-.devcon0-thumbnail-wrapper-people {
-    position: relative;
-    cursor: pointer;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.devcon0-thumbnail-img-people {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.play-button-overlay-people {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0,0,0,0.8);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.play-button-triangle-people {
-    width: 0;
-    height: 0;
-    border-left: 20px solid white;
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    margin-left: 4px;
-}
-
-.devcon0-fallback-people {
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    overflow: hidden;
-}
-
-.devcon0-iframe-people {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-}
-
-.devcon0-video-player-people {
-    display: none;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/**
- * Back-links Section - Automatic bidirectional linking
- * 
- * Displays pages that reference the current page, creating a web of connections.
- */
-.back-links-section {
-    margin-top: var(--spacing-6xl);
-    padding-top: var(--spacing-5xl);
-    border-top: 1px solid var(--border-light);
-}
-
-.back-links-section h2 {
-    color: var(--text-dark);
-    margin-top: 0;
-    margin-bottom: var(--spacing-lg);
-}
-
-.back-links-description {
-    color: var(--text-light);
-    font-size: 0.9em;
-    font-style: italic;
-    margin-bottom: var(--spacing-2xl);
-}
-
-.back-links-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.back-links-list li {
-    margin-bottom: var(--spacing-sm);
-    padding-left: var(--spacing-3xl);
-    position: relative;
-}
-
-.back-links-list li:before {
-    content: "←";
-    position: absolute;
-    left: 0;
-    color: var(--primary-blue);
-    font-weight: bold;
-}
-
-.back-links-list a {
-    color: var(--primary-blue);
-    text-decoration: none;
-}
-
-.back-links-list a:hover {
-    text-decoration: underline;
-}
-
-.back-link-type {
-    color: var(--text-lighter);
-    font-size: 0.85em;
-    margin-left: var(--spacing-sm);
-}
-
-@media (max-width: 768px) {
-    .footer-desktop {
-        display: none;
-    }
-    
-    .footer-mobile {
-        display: flex;
-    }
+@media (min-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
