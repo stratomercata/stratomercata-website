@@ -211,13 +211,13 @@ footer .footer-bottom-links a:hover {
 
 /* Homepage Styles */
 .hero-section {
-  padding: 4rem 0;
+  padding: 4rem 0 6rem 0;
 }
 
 .hero-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 3.75rem;
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
@@ -226,16 +226,17 @@ footer .footer-bottom-links a:hover {
 .hero-text h1 {
   font-size: 2.25rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1111111;
   margin-bottom: 1.5rem;
   color: #1f2937;
 }
 
 .hero-text p {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #4b5563;
   margin-bottom: 2rem;
   max-width: 32rem;
+  line-height: 1.6;
 }
 
 .hero-buttons {
@@ -281,15 +282,21 @@ footer .footer-bottom-links a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  height: 20rem;
 }
 
 .hero-image img {
   width: 100%;
-  height: auto;
-  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media (min-width: 768px) {
+  .hero-section {
+    padding: 4rem 0 8rem 0;
+  }
+  
   .hero-content {
     grid-template-columns: 1fr 1fr;
   }
@@ -297,11 +304,15 @@ footer .footer-bottom-links a:hover {
   .hero-text h1 {
     font-size: 3rem;
   }
+  
+  .hero-image {
+    height: 24rem;
+  }
 }
 
 /* Featured Assets Section */
 .featured-section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .featured-section h2 {
@@ -324,32 +335,39 @@ footer .footer-bottom-links a:hover {
   background: white;
   border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s;
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .asset-card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .asset-card img {
   width: 100%;
   height: auto;
+  max-height: 15rem;
+  object-fit: cover;
   display: block;
 }
 
 .asset-card-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .asset-card-content p {
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #0f172a;
   margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
 
 .asset-card-link {
@@ -372,13 +390,17 @@ footer .footer-bottom-links a:hover {
 
 @media (min-width: 768px) {
   .assets-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .asset-card img {
+    max-height: 15rem;
   }
 }
 
 /* How It Works Section */
 .how-it-works-section {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: #f6fafb;
   position: relative;
   overflow: hidden;
@@ -425,17 +447,19 @@ footer .footer-bottom-links a:hover {
 .step-icon {
   width: 4rem;
   height: 4rem;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1rem;
   background: #eff6ff;
   border-radius: 9999px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .step-icon img {
   width: 2rem;
   height: 2rem;
+  object-fit: contain;
 }
 
 .step-number {
@@ -446,10 +470,11 @@ footer .footer-bottom-links a:hover {
 }
 
 .step-card h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   color: #1f2937;
   line-height: 1.5;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 768px) {
