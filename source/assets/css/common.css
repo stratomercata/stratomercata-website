@@ -2072,7 +2072,7 @@ main {
  */
 .strato-header {
     background: var(--bg-white);
-    padding: 12px 0;
+    padding: 16px 0;
     margin-bottom: 0;
     margin-top: 0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
@@ -2088,7 +2088,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 56px;
+    min-height: auto;
 }
 
 .strato-logo {
@@ -2138,11 +2138,11 @@ main {
 .strato-nav a {
     color: var(--text-dark);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     transition: color 0.2s ease;
     white-space: nowrap;
-    line-height: 1;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
@@ -2161,11 +2161,11 @@ main {
 .strato-launch-btn {
     background: var(--primary-blue);
     color: var(--bg-white) !important;
-    padding: 8px 20px;
+    padding: 10px 24px;
     border-radius: 6px;
     text-decoration: none !important;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     transition: all 0.2s ease;
     white-space: nowrap;
 }
@@ -2299,7 +2299,8 @@ main {
 .strato-footer-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-6xl);
+    gap: var(--spacing-5xl);
+    justify-self: end;
 }
 
 .strato-footer-column h4 {
