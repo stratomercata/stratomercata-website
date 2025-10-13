@@ -326,7 +326,7 @@ body {
     color: var(--text-dark);
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-3xl);
+    padding: 0 var(--spacing-3xl) var(--spacing-3xl) var(--spacing-3xl);
     background: linear-gradient(180deg, rgba(255, 247, 249, 0.95) 0%, rgba(243, 232, 255, 0.95) 100%);
     background-size: cover;
     background-position: center;
@@ -2066,7 +2066,8 @@ main {
 .strato-header {
     background: var(--bg-white);
     padding: 16px 0;
-    margin-bottom: var(--spacing-5xl);
+    margin-bottom: 0;
+    margin-top: 0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     position: relative;
     z-index: 100;
@@ -2082,6 +2083,10 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-3xl);
+}
+
+.strato-logo {
+    flex-shrink: 0;
 }
 
 .strato-logo a {
@@ -2115,8 +2120,6 @@ main {
     display: flex;
     align-items: center;
     gap: var(--spacing-5xl);
-    flex: 1;
-    justify-content: center;
 }
 
 .strato-nav a {
