@@ -2057,7 +2057,158 @@ main {
 }
 
 /**
- * Header and Footer Utilities - Consistent header and footer styling
+ * STRATO Mercata Header - Modern navigation header matching stratomercata.com
+ * 
+ * Clean, professional header with logo, navigation, and action button.
+ * Responsive design that adapts to mobile screens.
+ * Full-page width header that breaks out of body's max-width constraint.
+ */
+.strato-header {
+    background: var(--bg-white);
+    padding: 16px 0;
+    margin-bottom: var(--spacing-5xl);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 100;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.strato-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-3xl);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-3xl);
+}
+
+.strato-logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.strato-logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.strato-logo-text {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.02em;
+}
+
+.strato-logo-mercata {
+    font-weight: 400;
+    color: var(--text-medium);
+}
+
+.strato-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-5xl);
+    flex: 1;
+    justify-content: center;
+}
+
+.strato-nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.strato-nav a:hover {
+    color: var(--primary-blue);
+}
+
+.strato-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+}
+
+.strato-launch-btn {
+    background: var(--primary-blue);
+    color: var(--bg-white) !important;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.strato-launch-btn:hover {
+    background: var(--primary-blue-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Mobile responsive header */
+@media (max-width: 768px) {
+    .strato-header-container {
+        flex-wrap: wrap;
+        padding: 0 var(--spacing-2xl);
+        gap: var(--spacing-2xl);
+    }
+    
+    .strato-logo {
+        order: 1;
+    }
+    
+    .strato-actions {
+        order: 2;
+        margin-left: auto;
+    }
+    
+    .strato-nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: var(--spacing-3xl);
+        padding-top: var(--spacing-lg);
+        border-top: 1px solid var(--border-light);
+    }
+    
+    .strato-nav a {
+        font-size: 0.95em;
+    }
+    
+    .strato-launch-btn {
+        padding: 8px 18px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .strato-logo-text {
+        font-size: 1.1em;
+    }
+    
+    .strato-nav {
+        gap: var(--spacing-2xl);
+    }
+    
+    .strato-nav a {
+        font-size: 0.9em;
+    }
+}
+
+/**
+ * Header and Footer Utilities - Legacy header styling (kept for compatibility)
  * 
  * Provides reusable classes for site header and footer components.
  */
@@ -2094,105 +2245,139 @@ main {
     list-style: none;
 }
 
-.footer-gradient {
-    background: linear-gradient(90deg, #007acc 0%, #005fa3 100%);
-    color: #fff;
-    padding: 32px 0 18px 0;
-    text-align: center;
-    border-top: none;
+/**
+ * STRATO Mercata Footer - Modern footer matching stratomercata.com
+ * 
+ * Clean footer with logo, Quick Links, Social Connect sections
+ * and copyright/legal links at the bottom.
+ */
+.strato-footer {
+    background: #F8F9FA;
+    padding: 60px 0 30px 0;
+    margin-top: var(--spacing-6xl);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.strato-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-3xl);
+}
+
+.strato-footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-6xl);
+    margin-bottom: var(--spacing-5xl);
+}
+
+.strato-footer-logo img {
+    height: 50px;
+    width: auto;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.strato-footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-6xl);
+}
+
+.strato-footer-column h4 {
     font-size: 1em;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0 0 var(--spacing-2xl) 0;
 }
 
-.footer-desktop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
+.strato-footer-column ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-.footer-mobile {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    margin: 0;
+.strato-footer-column li {
+    margin-bottom: var(--spacing-lg);
 }
 
-.footer-brand-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 6px;
-}
-
-.footer-brand-link {
-    display: flex;
-    align-items: center;
+.strato-footer-column a {
+    color: var(--text-medium);
     text-decoration: none;
-}
-
-.footer-brand-logo {
-    height: 40px;
-    width: 40px;
-    border-radius: 8px;
-    background: #fff;
-    padding: 4px;
-    margin-right: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-}
-
-.footer-brand-text {
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1em;
-    letter-spacing: 0.01em;
-}
-
-.footer-brand-text-block {
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1em;
-    letter-spacing: 0.01em;
-    display: block;
-}
-
-.footer-contribution-text {
-    color: #e6f2fa;
-    margin: 0;
-    font-size: 1em;
-}
-
-.footer-link {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.footer-mobile-brand-container {
+    font-size: 0.95em;
+    transition: color 0.2s ease;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 6px;
+    gap: 8px;
 }
 
-.footer-mobile-brand-link {
+.strato-footer-column a svg {
+    flex-shrink: 0;
+}
+
+.strato-footer-column a:hover {
+    color: var(--primary-blue);
+}
+
+.strato-footer-bottom {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    padding-top: var(--spacing-3xl);
+    border-top: 1px solid var(--border-light);
+    flex-wrap: wrap;
+    gap: var(--spacing-2xl);
+}
+
+.strato-footer-copyright {
+    color: var(--text-medium);
+    font-size: 0.9em;
+}
+
+.strato-footer-legal {
+    display: flex;
+    gap: var(--spacing-3xl);
+    flex-wrap: wrap;
+}
+
+.strato-footer-legal a {
+    color: var(--text-medium);
     text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.2s ease;
 }
 
-.footer-mobile-brand-logo {
-    height: 40px;
-    width: 40px;
-    border-radius: 8px;
-    background: #fff;
-    padding: 4px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+.strato-footer-legal a:hover {
+    color: var(--primary-blue);
+}
+
+/* Mobile responsive footer */
+@media (max-width: 768px) {
+    .strato-footer {
+        padding: 40px 0 20px 0;
+    }
+    
+    .strato-footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-5xl);
+    }
+    
+    .strato-footer-links {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-5xl);
+    }
+    
+    .strato-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-2xl);
+    }
+    
+    .strato-footer-legal {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
 }
 
 /**
