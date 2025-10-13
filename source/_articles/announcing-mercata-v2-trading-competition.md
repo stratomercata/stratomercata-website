@@ -9,7 +9,7 @@ categories: ["General", "Competition", "Mercata V2"]
 
 Our team has been busy at work on a complete revamp of the Mercata application. We are inviting the community to explore the new application and to participate in a trading and bug bounty competition ahead of the product relaunch.
 
-<img src="/images/stratomercata.com/2025.10.13/v2-competition-banner.png" alt="Mercata V2 Trading Competition" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/v2-competition-banner.png" alt="Mercata V2 Trading Competition" style="width: 50%;">
 
 🏆 **EACH PRIZE IS WORTH $500 (paid 50/50 in USDC and CATA)**
 
@@ -49,9 +49,9 @@ After logging in, you'll land on your **Portfolio Overview**, which includes:
 - **Borrowing Risk Level**: Visualized in a bar chart for clarity
 - **Pool Participation**: Overview of your activity across liquidity pools
 
-<img src="/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-14-38-10.png" alt="Portfolio Overview" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-14-38-10.png" alt="Portfolio Overview" style="width: 50%;">
 
-<img src="/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-14-39-41.png" alt="Portfolio Details" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-14-39-41.png" alt="Portfolio Details" style="width: 50%;">
 
 ## How to Trade and Participate
 
@@ -59,7 +59,7 @@ After logging in, you'll land on your **Portfolio Overview**, which includes:
 
 Use the new swap modal to trade USDST for real-world assets (RWAs) and crypto.
 
-<img src="/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-16-26-37.png" alt="Swap Modal" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-16-26-37.png" alt="Swap Modal" style="width: 50%;">
 
 Available pairs include:
 
@@ -75,7 +75,7 @@ Swaps update your portfolio and can be used as collateral for borrowing.
 
 Supply assets to increase your borrowing power, then borrow additional USDST or other assets. Your borrowing risk level, available borrowing power, and interest rate are all displayed in the Portfolio Overview.
 
-<img src="/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-16-27-59.png" alt="Borrow Interface" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-16-27-59.png" alt="Borrow Interface" style="width: 50%;">
 
 ### Participate in Liquidity Pools
 
@@ -84,7 +84,7 @@ Earn simulated yield by participating in:
 - The USDST lending pool
 - Swap pools for USDST paired with WBTC, ETH, GOLDST, or SILVST
 
-<img src="/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-20-52-00.png" alt="Liquidity Pools" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/Screenshot-from-2025-07-15-20-52-00.png" alt="Liquidity Pools" style="width: 50%;">
 
 ## Strategies to Try
 

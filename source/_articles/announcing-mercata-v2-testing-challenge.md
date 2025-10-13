@@ -13,7 +13,7 @@ Our long-awaited Mercata V2 contest is **starting tomorrow, Wednesday 17th Septe
 
 [**STRATO Mercata V2**](https://app.testnet.stratomercata.com/) is our completely revamped application, which is due to be released later this year. The contest is using our testnet running the latest pre-release version:
 
-<img src="/images/stratomercata.com/2025.10.13/Screenshot-2025-09-16-Dashboard.png" alt="Mercata V2 Dashboard" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/Screenshot-2025-09-16-Dashboard.png" alt="Mercata V2 Dashboard" style="width: 50%;">
 
 As was the case for the [first competition back in July](/blog/announcing-the-mercata-v2-trading-competition/), there is a dual focus on trading and testing, but the scope for testing feedback is more limited this time. We are **only** looking for reports on critical exploits and for major improvement suggestions. Bridging functionality between Ethereum's Sepolia testnet and the Mercata testnet has been added and is within scope for exploit testing.
 

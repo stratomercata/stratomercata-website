@@ -11,7 +11,7 @@ We are delighted to unveil the first iteration of STRATOSCAN, our public block e
 
 Check it out at **[https://stratoscan.stratomercata.com](https://stratoscan.stratomercata.com)**.
 
-<img src="/images/stratomercata.com/2025.10.13/stratoscan-screenshot.png" alt="STRATOSCAN Block Explorer" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/stratoscan-screenshot.png" alt="STRATOSCAN Block Explorer" style="width: 50%;">
 
 It features pages for:
 
