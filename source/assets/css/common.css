@@ -350,16 +350,15 @@ footer .footer-bottom-links a:hover {
 .asset-card img {
   width: 100%;
   height: auto;
-  max-height: 15rem;
-  object-fit: cover;
   display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: white;
 }
 
 .asset-card-content {
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  background: white;
 }
 
 .asset-card-content p {
@@ -391,10 +390,6 @@ footer .footer-bottom-links a:hover {
 @media (min-width: 768px) {
   .assets-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  
-  .asset-card img {
-    max-height: 15rem;
   }
 }
 
