@@ -13,7 +13,7 @@ body {
   font-family: var(--font-sans);
   line-height: 1.5;
   color: #374151;
-  background: linear-gradient(to bottom, #fce9fc, #fbeffc, #f0efff);
+  background: #ffffff;
   min-height: 100vh;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -1090,7 +1090,7 @@ footer .footer-bottom-links a:hover {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem 2rem 1.5rem;
 }
 
 main h2 {
