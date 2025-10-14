@@ -19,8 +19,8 @@ source: source
 
 title: "STRATO Mercata"
 description: "Easily earn on vaulted gold, silver & crypto. Get instant credit. Built by ETH veterans"
-baseurl: ""  # Empty for local development; GitHub Actions overrides for production
-url: "https://stratomercata.github.io"  # Production domain
+baseurl: ""  # Empty for custom domain at root
+url: "https://stratomercata.com"  # Production domain
 author: "Bob Summerwill"  # Default author for content and SEO
 
 # ============================================================================
