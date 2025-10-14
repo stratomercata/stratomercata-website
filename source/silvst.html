@@ -1,0 +1,1047 @@
+---
+layout: default
+title: SILVST | Digital Silver Backed by Physical Assets
+description: SILVST is a premium digital asset that combines the timeless value of physical silver with the innovation of blockchain technology.
+---
+
+<style>
+/* Modern gradient and styling from reference */
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+main {
+  background: transparent;
+}
+
+.container-padding {
+  padding: 0 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.premium-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  color: #6B7280;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(107, 114, 128, 0.2);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title .title-brand {
+  color: #1E3A8A;
+}
+
+.hero-title .title-highlight {
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #4B5563;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.btn-silver {
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+
+.btn-silver:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 114, 128, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: #1E3A8A;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #E5E7EB;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #F3F4F6;
+  border-color: #D1D5DB;
+}
+
+.price-widget {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.price-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+
+.price-display {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.price-unit {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin-left: 0.5rem;
+}
+
+.price-meta {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  margin-top: 0.5rem;
+}
+
+.hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Featured Asset Section */
+.featured-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+}
+
+.featured-badge-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.featured-inline-badge {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  background: #EDE9FE;
+  color: #3B82F6;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.featured-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 2px solid #6B7280;
+  transition: all 0.3s;
+}
+
+.featured-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.silver-icon-large {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.featured-badge {
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(107, 114, 128, 0.3);
+}
+
+.featured-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1E3A8A;
+  margin-bottom: 0.5rem;
+}
+
+.featured-card p {
+  color: #6B7280;
+  margin-bottom: 1rem;
+}
+
+.featured-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+.stat-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.stat-price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0.5rem 0;
+}
+
+.stat-apy {
+  font-size: 0.875rem;
+  color: #6B7280;
+  background: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+.btn-view-details {
+  width: 100%;
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+
+.btn-view-details:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 114, 128, 0.4);
+}
+
+.marketplace-link {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-marketplace {
+  display: inline-flex;
+  align-items: center;
+  background: #3B82F6;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-marketplace:hover {
+  background: #2563EB;
+  transform: translateY(-2px);
+}
+
+.btn-marketplace svg {
+  margin-left: 0.5rem;
+}
+
+/* How It Works Section */
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1E3A8A;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6B7280;
+  font-size: 1.125rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.step-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #3B82F6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.step-card h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.75rem;
+}
+
+.step-card p {
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+/* Info Section */
+.info-box {
+  background: #EDE9FE;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  margin: 3rem 0;
+}
+
+.info-box h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1E3A8A;
+  margin-bottom: 2rem;
+}
+
+.info-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .info-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.info-column h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #3B82F6;
+  margin-bottom: 1rem;
+}
+
+.info-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-column li {
+  padding: 0.5rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: #4B5563;
+}
+
+.info-column li:before {
+  content: "1.";
+  position: absolute;
+  left: 0;
+  color: #D97706;
+  font-weight: 600;
+}
+
+.info-column li:nth-child(2):before { content: "2."; }
+.info-column li:nth-child(3):before { content: "3."; }
+.info-column li:nth-child(4):before { content: "4."; }
+
+.note-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #FCD34D;
+}
+
+.note-box h4 {
+  font-weight: 600;
+  color: #1E3A8A;
+  margin-bottom: 0.75rem;
+}
+
+.note-box p {
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+/* Purchase Section */
+.purchase-section {
+  background: linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%);
+  padding: 4rem 0;
+  overflow: visible;
+}
+
+.purchase-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #9CA3AF;
+}
+
+.purchase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.purchase-header h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1E3A8A;
+}
+
+.silver-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.tvl-box {
+  background: linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #9CA3AF;
+  margin-bottom: 2rem;
+}
+
+.tvl-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.tvl-row:last-child {
+  margin-bottom: 0;
+}
+
+.tvl-label {
+  color: #4B5563;
+}
+
+.tvl-value {
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.btn-purchase {
+  width: 100%;
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  color: white;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+
+.btn-purchase:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 114, 128, 0.4);
+}
+
+.terms-text {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin: 1.5rem 0;
+}
+
+.terms-text a {
+  color: #6B7280;
+  text-decoration: underline;
+}
+
+.benefits-section {
+  border-top: 1px solid #E5E7EB;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.benefits-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.benefits-header h4 {
+  font-weight: 600;
+  color: #1E3A8A;
+}
+
+.learn-btn {
+  color: #6B7280;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learn-btn:hover {
+  text-decoration: underline;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  padding: 0.5rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: #4B5563;
+  font-size: 0.875rem;
+}
+
+.benefits-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #6B7280;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+/* Key Benefits Section */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: #6B7280;
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1E3A8A;
+  margin-bottom: 0.75rem;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-card p {
+  color: #6B7280;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.feature-highlight {
+  background: linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  margin-top: 3rem;
+  border: 1px solid #9CA3AF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .feature-content {
+    flex-direction: row;
+  }
+}
+
+.feature-icon-wrapper {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon-wrapper span {
+  color: #1E3A8A;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1E3A8A;
+  margin-bottom: 1rem;
+}
+
+.feature-text p {
+  color: #4B5563;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.feature-text a {
+  display: inline-block;
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.feature-text a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+</style>
+
+<section class="hero-section">
+  <div class="container-padding">
+    <div class="hero-grid">
+      <div>
+        <div class="premium-badge">Premium Digital Asset</div>
+        <h1 class="hero-title">
+          <span class="title-brand">SILVST:</span>
+          <span class="title-highlight">Digital Silver</span>
+          Backed by Physical Assets
+        </h1>
+        <p class="hero-description">
+          Buy any amount of silver through SILVST tokens, each representing a fraction of a 100 oz silver bar stored in secure, audited vaults. Experience the perfect balance between traditional asset security and cutting-edge blockchain technology.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://marketplace.mercata.blockapps.net/dp/silverst" class="btn-silver" target="_blank" rel="noopener">Buy Silver Now</a>
+          <a href="https://marketplace.mercata.blockapps.net/stake" class="btn-secondary" target="_blank" rel="noopener">How It Works</a>
+        </div>
+        <div class="price-widget">
+          <div class="price-header">
+            <h3>Silver Price</h3>
+            <div>
+              <span class="price-display">$0.00</span>
+              <span class="price-unit">per troy oz</span>
+            </div>
+          </div>
+          <div class="price-meta">
+            <span>Updated on Jul 23, 2025 at 06:20 AM</span><br>
+            <span style="font-style: italic; color: #9CA3AF;">Prices update hourly</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <a href="https://marketplace.mercata.blockapps.net/dp/silverst" target="_blank" rel="noopener">
+          <img src="{{ '/images/stratomercata.com/2025.10.13/silver-asset.png' | relative_url }}" alt="SILVST Token - Fractional Silver Ownership">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-section">
+  <div class="container-padding">
+    <div class="featured-badge-container">
+      <span class="featured-inline-badge">Buy Stakeable Items</span>
+    </div>
+    <h2 class="section-title">Featured Asset</h2>
+    <p class="section-subtitle">Discover our premium silver-backed token, representing fractional ownership in physical silver stored in secure vaults.</p>
+    
+    <div class="featured-card">
+      <div class="featured-header">
+        <div class="silver-icon-large">
+          <span>🥈</span>
+        </div>
+        <span class="featured-badge">Featured</span>
+      </div>
+      <h3>SILVST</h3>
+      <p>Silver - Fractional 100 oz Bars</p>
+      <div class="featured-stats">
+        <div class="stat-item">
+          <div class="stat-label">Owned By:</div>
+          <div class="stat-value">blockapps_metals</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">TVL:</div>
+          <div class="stat-value">$76,169.17</div>
+        </div>
+      </div>
+      <div class="stat-price">Price loading...</div>
+      <div class="stat-apy">Est. APY: 10%</div>
+      <a href="https://marketplace.mercata.blockapps.net/dp/silverst" class="btn-view-details" target="_blank" rel="noopener">View Details</a>
+    </div>
+
+    <div class="marketplace-link">
+      <a href="https://marketplace.mercata.blockapps.net" class="btn-marketplace" target="_blank" rel="noopener">
+        <span>Explore Marketplace</span>
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how-it-works">
+  <div class="container-padding">
+    <h2 class="section-title">How it Works</h2>
+    <p class="section-subtitle">Follow these simple steps to get started with staking your assets and earning rewards.</p>
+    
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-icon">🛒</div>
+        <h3>STEP 1</h3>
+        <p>Buy gold and silver tokens from our verified partners</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-icon">🔒</div>
+        <h3>Step 2</h3>
+        <p>The physical metals are added to our insured vault</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-icon">🔗</div>
+        <h3>Step 3</h3>
+        <p>Stake your tokens to access borrowing instantly</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <div class="step-icon">🏆</div>
+        <h3>Step 4</h3>
+        <p>Earn points to access our future governance token</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <h2>Understanding Staking & Borrowing</h2>
+      <div class="info-columns">
+        <div class="info-column">
+          <h4>How Staking Works</h4>
+          <ul>
+            <li>Choose how much silver to stake</li>
+            <li>Your silver is securely vaulted</li>
+            <li>Unstake anytime after repaying any loans</li>
+          </ul>
+        </div>
+        <div class="info-column">
+          <h4>How Borrowing Works</h4>
+          <ul>
+            <li>Stake your silver as collateral</li>
+            <li>Borrow up to 50% of staked value in USDST</li>
+            <li>Keep earning rewards while borrowed</li>
+            <li>Repay loan partially or fully anytime</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note-box">
+        <h4>Important Note</h4>
+        <p>Your staked silver remains locked until any borrowed amount is repaid. You can repay your loan partially or fully at any time. Once repaid, you can unstake your silver immediately.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="purchase-section">
+  <div class="container-padding">
+    <h2 class="section-title">Buy SILVST Tokens</h2>
+    <div style="min-height: 120px; margin-bottom: 3rem;">
+      <p class="section-subtitle">Start with any amount - even fractions of an ounce! Each SILVST token represents a portion of a 100 oz silver bar, allowing you to invest in exactly the amount you want.</p>
+      <p class="section-subtitle"><strong>Example:</strong> 0.5 SILVST = half an ounce of silver</p>
+    </div>
+
+    <div class="purchase-card">
+      <div class="purchase-header">
+        <div>
+          <h3>Current Price</h3>
+          <div style="height: 2rem; background: #E5E7EB; border-radius: 0.5rem; margin-top: 0.5rem; width: 8rem; animation: pulse 2s ease-in-out infinite;"></div>
+        </div>
+        <div class="silver-icon">S</div>
+      </div>
+
+      <div class="tvl-box">
+        <div class="tvl-row">
+          <span class="tvl-label">TVL:</span>
+          <span class="tvl-value">$76,169.17</span>
+        </div>
+        <div class="tvl-row">
+          <span class="tvl-label">Est. APY:</span>
+          <span class="tvl-value">10%</span>
+        </div>
+      </div>
+
+      <a href="https://marketplace.mercata.blockapps.net/dp/silverst" class="btn-purchase" target="_blank" rel="noopener">Purchase SILVST Now</a>
+
+      <div class="terms-text">
+        By proceeding, you agree to our 
+        <a href="{{ '/strato-mercata-terms-of-use/' | relative_url }}">Terms of Service</a> 
+        and 
+        <a href="{{ '/privacy-terms/' | relative_url }}">Privacy Policy</a>
+      </div>
+
+      <div class="benefits-section">
+        <div class="benefits-header">
+          <h4>Why Choose SILVST?</h4>
+          <a href="https://marketplace.mercata.blockapps.net/stake" class="learn-btn" target="_blank" rel="noopener">Learn About Staking</a>
+        </div>
+        <ul class="benefits-list">
+          <li>Start with any amount - no minimum required</li>
+          <li>100% backed by physical silver</li>
+          <li>Secure blockchain technology</li>
+          <li>Redeem for physical silver (100 oz minimum)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%);">
+  <div class="container-padding">
+    <h2 class="section-title">SILVST Benefits</h2>
+    <p class="section-subtitle">Experience the advantages of owning silver in a digital format while maintaining all the benefits of physical silver ownership.</p>
+    
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🏆</div>
+        <h4>Silver-Backed Stability</h4>
+        <p>Each SILVST token is backed 1:1 by physical silver, ensuring intrinsic value and stability.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🔒</div>
+        <h4>Secure & Audited</h4>
+        <p>Regular audit reports verify our silver reserves, ensuring full transparency and trust.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">⛓️</div>
+        <h4>Blockchain-Powered</h4>
+        <p>Built on STRATO Mercata blockchain for security, immutability, and decentralized ownership.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💱</div>
+        <h4>Instant Transferability</h4>
+        <p>Transfer your tokens 24/7 globally with minimal fees and no intermediaries.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🔄</div>
+        <h4>Redemption Option</h4>
+        <p>Redeem your tokens for physical silver delivery, subject to minimum limits and fees.</p>
+      </div>
+    </div>
+
+    <div class="feature-highlight">
+      <div class="feature-content">
+        <div class="feature-icon-wrapper">
+          <span>S</span>
+        </div>
+        <div class="feature-text">
+          <h3>The Silver Standard Reimagined</h3>
+          <p>SILVST combines the timeless value of silver with the innovation of blockchain technology, creating a new standard for digital asset ownership that's secure, transparent, and accessible.</p>
+          <a href="#how-it-works">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+</style>

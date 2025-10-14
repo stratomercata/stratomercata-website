@@ -3,13 +3,11 @@ title: "Announcing the Mercata V2 Trading Competition!"
 date: 2025-07-15
 author: "Bob Summerwill"
 description: "Our team has been busy at work on a complete revamp of the Mercata application. We are inviting the community to explore the new application and to participate in a trading and bug bounty competition."
-source_url: "https://www.stratomercata.com/blog/announcing-the-mercata-v2-trading-competition"
-categories: ["General", "Competition", "Mercata V2"]
+img: "/images/stratomercata.com/2025.10.13/v2-competition-banner.png"
+categories: ["General"]
 ---
 
 Our team has been busy at work on a complete revamp of the Mercata application. We are inviting the community to explore the new application and to participate in a trading and bug bounty competition ahead of the product relaunch.
-
-<img src="{{ site.baseurl }}/images/stratomercata.com/2025.10.13/v2-competition-banner.png" alt="Mercata V2 Trading Competition" style="width: 50%;">
 
 🏆 **EACH PRIZE IS WORTH $500 (paid 50/50 in USDC and CATA)**
 

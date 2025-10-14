@@ -2,7 +2,7 @@
 name: Maya Konaka
 role: VP, Product & Client Services
 category: leader
-photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-5-3-1.png
+photo: /images/stratomercata.com/2025.10.14/Group-5-3-1.png
 social:
   github: https://github.com/witmk
   linkedin: https://linkedin.com/in/maya-konaka

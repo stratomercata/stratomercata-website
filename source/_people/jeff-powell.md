@@ -2,7 +2,7 @@
 name: Jeff Powell
 role: VP, Sales
 category: leader
-photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-4-1.png
+photo: /images/stratomercata.com/2025.10.14/Group-4-1.png
 social:
   linkedin: https://linkedin.com/in/jeffry-powell
 description: VP of Sales at STRATO Mercata, driving business development and building strategic partnerships in the digital asset finance sector.

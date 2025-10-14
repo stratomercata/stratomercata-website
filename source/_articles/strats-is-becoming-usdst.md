@@ -3,8 +3,7 @@ title: "STRATs is Becoming USDST—Here's What You Need to Know"
 date: 2025-02-25
 author: "Jordan Cole"
 description: "Names matter. That's why we're changing STRATs to USDST—our stablecoin pegged 1:1 to the U.S. dollar."
-source_url: "https://www.stratomercata.com/blog/strats-is-becoming-usdst-heres-what-you-need-to-know"
-categories: ["Press Release", "STRATO", "Stablecoin"]
+categories: ["Press Release"]
 ---
 
 Names matter. That's why we're changing STRATs to USDST—our stablecoin pegged 1:1 to the U.S. dollar. It's an exciting shift that reflects our commitment to creating the most intuitive marketplace possible.

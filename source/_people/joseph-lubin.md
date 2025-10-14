@@ -2,7 +2,7 @@
 name: Joseph Lubin
 role: Advisor
 category: advisor
-photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-8.png
+photo: /images/stratomercata.com/2025.10.14/Group-8.png
 social:
   linkedin: https://linkedin.com/in/joseph-lubin-48406489
   twitter: https://x.com/ethereumjoseph

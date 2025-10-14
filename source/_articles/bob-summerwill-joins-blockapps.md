@@ -3,9 +3,8 @@ title: "Bob Summerwill Joins BlockApps as Head of Ecosystem"
 date: 2025-01-13
 author: "Bob Summerwill"
 description: "Announcement that Bob Summerwill has joined BlockApps  Head of Ecosystem."
-image: "/images/blockapps.net/2025.10.13/bob_summerwill.jpg"
-source_url: "https://blockapps.net/blog/bob-summerwill-joins-blockapps-as-key-industry-leader/"
-categories: ["Press Release", "Team", "BlockApps"]
+image: "/images/blockapps.net/2025.10.13/pow_summit.jpg"
+categories: ["Press Release"]
 ---
 
 BlockApps is excited to announce that Bob Summerwill has joined the team as Head of Ecosystem, bringing with him a wealth of experience in blockchain technology, software development and community building.
