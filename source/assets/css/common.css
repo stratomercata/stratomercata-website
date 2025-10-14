@@ -1035,6 +1035,11 @@ main p {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
+/* Person Detail Page Spacing */
+.person-content {
+  margin-top: 3rem;
+}
+
 @media (min-width: 1024px) {
   .blog-container {
     flex-direction: row;
