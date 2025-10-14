@@ -23,7 +23,7 @@ title: Videos
 -->
 <div class="videos-list">
     {% if site.videos and site.videos.size > 0 %}
-        {% assign sorted_videos = site.videos | sort: 'date' %}
+        {% assign sorted_videos = site.videos | sort: 'date' | reverse %}
     {% else %}
         {% assign sorted_videos = "" %}
     {% endif %}

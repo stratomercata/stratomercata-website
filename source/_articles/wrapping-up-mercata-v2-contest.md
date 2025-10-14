@@ -1,7 +1,7 @@
 ---
 title: "Wrapping Up the Mercata V2 Contest"
 date: 2025-09-24
-author: "Jordan Cole"
+author: "Michael Tan"
 description: "Yesterday, our long-awaited Mercata V2 Contest came to a close after a week of exciting trading and bug hunting on the Mercata testnet."
 source_url: "https://www.stratomercata.com/blog/wrapping-up-the-mercata-v2-contest"
 categories: ["General", "Competition", "Mercata V2"]
