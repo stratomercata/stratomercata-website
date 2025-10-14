@@ -47,7 +47,7 @@ bing_site_verification: ""  # Bing Webmaster Tools verification (add when availa
 # Configure web analytics tracking. The tracking code is automatically
 # included in all pages via the default layout.
 
-google_analytics: ""  # Google Analytics 4 tracking ID (add when available)
+google_analytics: "G-HZMGT8Q60M"  # Google Analytics 4 tracking ID
 
 # ============================================================================
 # Jekyll Build Settings
