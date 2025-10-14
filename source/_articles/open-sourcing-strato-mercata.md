@@ -3,7 +3,6 @@ title: "Open sourcing STRATO Mercata"
 date: 2025-01-14
 author: "Bob Summerwill"
 description: "Announcement of open-sourcing the STRATO Mercata platform, applications and tools."
-source_url: "https://blockapps.net/blog/open-sourcing-strato-mercata/"
 categories: ["Press Release"]
 ---
 

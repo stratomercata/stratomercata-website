@@ -1040,6 +1040,17 @@ main p {
   margin-top: 3rem;
 }
 
+/* Article Featured Image */
+.article-featured-image {
+  margin-bottom: 2rem;
+}
+
+.article-featured-image img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+}
+
 @media (min-width: 1024px) {
   .blog-container {
     flex-direction: row;

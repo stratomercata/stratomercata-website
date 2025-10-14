@@ -3,7 +3,6 @@ title: "Announcing the Mercata V2 'Trading and Testing Challenge'"
 date: 2025-09-16
 author: "Bob Summerwill"
 description: "Our long-awaited Mercata V2 contest is starting tomorrow, Wednesday 17th September 2025. The contest will start at 5pm Eastern time, during our 17th September Twitter Spaces."
-source_url: "https://www.stratomercata.com/blog/announcing-the-mercata-v2-trading-and-testing-challenge"
 categories: ["General"]
 ---
 
