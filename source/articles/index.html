@@ -3,17 +3,18 @@ layout: default
 title: Articles
 ---
 
+{% if site.articles and site.articles.size > 0 %}
+    {% assign articles_with_dates = site.articles | where_exp: "item", "item.date" %}
+    {% assign sorted_articles = articles_with_dates | sort: 'date' | reverse %}
+{% else %}
+    {% assign sorted_articles = "" %}
+{% endif %}
+
 <div class="blog-container">
     <div class="blog-main">
         <h1>Blogs & Articles</h1>
         
         <div class="blog-posts">
-            {% if site.articles and site.articles.size > 0 %}
-                {% assign articles_with_dates = site.articles | where_exp: "item", "item.date" %}
-                {% assign sorted_articles = articles_with_dates | sort: 'date' | reverse %}
-            {% else %}
-                {% assign sorted_articles = "" %}
-            {% endif %}
             
             {% for article in sorted_articles %}
             <article class="blog-post-card">
@@ -52,7 +53,11 @@ title: Articles
                     {% endif %}
                     
                     <div class="blog-post-footer">
-                        <span class="blog-post-category">General</span>
+                        {% if article.categories and article.categories.size > 0 %}
+                            <span class="blog-post-category">{{ article.categories | join: ", " }}</span>
+                        {% else %}
+                            <span class="blog-post-category">General</span>
+                        {% endif %}
                         <a href="{{ article.url | relative_url }}" class="blog-read-more">read more ›</a>
                     </div>
                 </div>
@@ -69,8 +74,7 @@ title: Articles
         <div class="sidebar-section">
             <h3>Recent Posts</h3>
             <ul class="recent-posts-list">
-                {% assign recent_articles = sorted_articles | limit: 5 %}
-                {% for article in recent_articles %}
+                {% for article in sorted_articles limit:5 %}
                 <li>
                     <a href="{{ article.url | relative_url }}">
                         {% if article.lowercase_title %}{{ article.lowercase_title }}{% else %}{{ article.title }}{% endif %}
