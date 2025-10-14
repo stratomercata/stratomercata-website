@@ -5,8 +5,17 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+
 :root {
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --primary-navy: #001B71;
+  --primary-blue: #3452FF;
+  --primary-red: #FF3300;
+  --secondary-purple: #6B36C4;
+  --secondary-yellow: #F0C452;
+  --secondary-cyan: #00AEEF;
+  --secondary-green: #36C487;
 }
 
 body {
@@ -19,6 +28,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
 }
 
 /* Container */
@@ -74,11 +87,11 @@ header nav .nav-links button {
 
 header nav .nav-links a:hover,
 header nav .nav-links button:hover {
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 header nav .nav-links .btn-login {
-  background: #2563eb;
+  background: var(--primary-blue);
   color: white;
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
@@ -89,7 +102,7 @@ header nav .nav-links .btn-login {
 }
 
 header nav .nav-links .btn-login:hover {
-  background: #1d4ed8;
+  background: var(--primary-navy);
 }
 
 /* Dropdown Navigation */
@@ -146,7 +159,7 @@ header nav .nav-dropdown .dropdown-menu a {
 
 header nav .nav-dropdown .dropdown-menu a:hover {
   background: #f9fafb;
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 /* Mobile Menu Toggle Button - Hidden by default, shown on mobile */
@@ -431,10 +444,10 @@ footer .footer-bottom-links a:hover {
 
 .hero-text h1 {
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #1f2937;
+  color: var(--primary-navy);
   letter-spacing: -0.025em;
 }
 
@@ -455,8 +468,8 @@ footer .footer-bottom-links a:hover {
 .strato-button {
   padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
-  font-weight: 500;
-  background: #2563eb;
+  font-weight: 700;
+  background: var(--primary-blue);
   color: white;
   text-decoration: none;
   border-radius: 0.25rem;
@@ -465,7 +478,7 @@ footer .footer-bottom-links a:hover {
 }
 
 .strato-button:hover {
-  background: #1d4ed8;
+  background: var(--primary-navy);
 }
 
 .strato-button-outline {
@@ -517,7 +530,7 @@ footer .footer-bottom-links a:hover {
 
   .hero-text h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 1;
     letter-spacing: -0.025em;
   }
@@ -554,8 +567,8 @@ footer .footer-bottom-links a:hover {
 
 .stat-value {
   font-size: 2rem;
-  font-weight: 700;
-  color: #2563eb;
+  font-weight: 800;
+  color: var(--primary-blue);
   line-height: 1;
 }
 
@@ -591,10 +604,10 @@ footer .footer-bottom-links a:hover {
 
 .start-growing-section h2 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: var(--primary-navy);
 }
 
 .section-subtitle {
@@ -632,19 +645,19 @@ footer .footer-bottom-links a:hover {
 .feature-icon {
   width: 3.5rem;
   height: 3.5rem;
-  background: #dbeafe;
+  background: linear-gradient(135deg, rgba(52, 82, 255, 0.1) 0%, rgba(0, 27, 113, 0.1) 100%);
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 .feature-card h3 {
   font-size: 1.5rem;
-  font-weight: 700;
-  color: #1f2937;
+  font-weight: 800;
+  color: var(--primary-navy);
   margin-bottom: 1rem;
 }
 
@@ -675,7 +688,7 @@ footer .footer-bottom-links a:hover {
   content: "→";
   position: absolute;
   left: 0;
-  color: #2563eb;
+  color: var(--primary-blue);
   font-weight: 600;
 }
 
@@ -684,20 +697,20 @@ footer .footer-bottom-links a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.875rem 1.75rem;
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-purple) 100%);
   color: white;
   text-decoration: none;
   border-radius: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   transition: all 0.3s;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 14px rgba(52, 82, 255, 0.3);
 }
 
 .feature-button:hover {
-  background: linear-gradient(135deg, #1d4ed8 0%, #6d28d9 100%);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-purple) 100%);
+  box-shadow: 0 6px 20px rgba(52, 82, 255, 0.4);
   transform: translateY(-2px);
 }
 
@@ -726,10 +739,10 @@ footer .footer-bottom-links a:hover {
 
 .why-mercata-section h2 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: var(--primary-navy);
 }
 
 .benefits-grid {
@@ -755,7 +768,7 @@ footer .footer-bottom-links a:hover {
 .benefit-icon {
   width: 4rem;
   height: 4rem;
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-purple) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -766,8 +779,8 @@ footer .footer-bottom-links a:hover {
 
 .benefit-card h3 {
   font-size: 1.25rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-weight: 700;
+  color: var(--primary-navy);
   margin-bottom: 0.75rem;
 }
 
@@ -798,7 +811,7 @@ footer .footer-bottom-links a:hover {
 /* Portfolio Security Section */
 .portfolio-security-section {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-blue) 100%);
   color: white;
   position: relative;
   overflow: hidden;
@@ -822,7 +835,7 @@ footer .footer-bottom-links a:hover {
 
 .portfolio-security-section h2 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 1rem;
   color: white;
@@ -859,7 +872,7 @@ footer .footer-bottom-links a:hover {
 
 .security-card h3 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
   margin-bottom: 1rem;
 }
@@ -1013,9 +1026,9 @@ footer .footer-bottom-links a:hover {
 
 .how-it-works-section h2 {
   font-size: 1.875rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 3rem;
-  color: #1f2937;
+  color: var(--primary-navy);
 }
 
 .steps-grid {
@@ -1044,7 +1057,7 @@ footer .footer-bottom-links a:hover {
   width: 4rem;
   height: 4rem;
   margin-bottom: 1rem;
-  background: #dbeafe;
+  background: linear-gradient(135deg, rgba(52, 82, 255, 0.1) 0%, rgba(0, 27, 113, 0.1) 100%);
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -1060,16 +1073,16 @@ footer .footer-bottom-links a:hover {
 
 .step-number {
   font-size: 0.875rem;
-  font-weight: 500;
-  color: #2563eb;
+  font-weight: 700;
+  color: var(--primary-blue);
   margin-bottom: 0.5rem;
   letter-spacing: 0.025em;
 }
 
 .step-card h3 {
   font-size: 1rem;
-  font-weight: 600;
-  color: #1f2937;
+  font-weight: 700;
+  color: var(--primary-navy);
   line-height: 1.5;
   margin-bottom: 0.75rem;
 }
@@ -1164,7 +1177,7 @@ main p {
 }
 
 .person-info h3 a:hover {
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 .person-role {
@@ -1194,7 +1207,7 @@ main p {
 }
 
 .person-social-links-index a:hover {
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 .person-social-links-index .wikipedia-icon {
@@ -1211,13 +1224,13 @@ main p {
   align-items: center;
   gap: 0.375rem;
   font-size: 0.875rem;
-  color: #2563eb;
+  color: var(--primary-blue);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .interview-link:hover {
-  color: #1d4ed8;
+  color: var(--primary-navy);
 }
 
 .interview-svg {
@@ -1332,7 +1345,7 @@ main p {
 }
 
 .blog-post-content h2 a:hover {
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 .video-card:hover .video-info h3 a {
@@ -1379,14 +1392,14 @@ main p {
 }
 
 .blog-read-more {
-  color: #2563eb;
+  color: var(--primary-blue);
   text-decoration: none;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .blog-read-more:hover {
-  color: #1d4ed8;
+  color: var(--primary-navy);
 }
 
 .blog-sidebar {
@@ -1437,7 +1450,7 @@ main p {
 }
 
 .recent-posts-list a:hover {
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 .sidebar-select {
@@ -1453,8 +1466,8 @@ main p {
 
 .sidebar-select:focus {
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(52, 82, 255, 0.1);
 }
 
 /* Person Detail Page Spacing */
@@ -1567,6 +1580,40 @@ main p {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
+.video-info {
+  padding: 1.5rem;
+}
+
+.video-info h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.video-info h3 a {
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.video-card:hover .video-info h3 a {
+  color: var(--primary-blue);
+}
+
+.video-meta {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.video-description,
+.video-excerpt {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
 @media (min-width: 768px) {
   /* Video-specific: horizontal layout on desktop */
   .video-card {
@@ -1608,7 +1655,7 @@ main p {
 }
 
 .back-link a:hover {
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 article header {
@@ -1637,7 +1684,7 @@ article .content-meta a {
 }
 
 article .content-meta a:hover {
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 article .blog-description {
@@ -1701,6 +1748,13 @@ article .blog-content a,
 article .blog-content a:hover,
 .video-content a:hover {
   color: #1d4ed8;
+  article .article-content a {
+  color: var(--primary-blue);
+  text-decoration: underline;
+}
+
+article .article-content a:hover {
+  color: var(--primary-navy);
 }
 
 article .blog-content img,
@@ -1789,7 +1843,7 @@ article .blog-tags .tag {
 }
 
 .category-list a:hover {
-  color: #2563eb;
+  color: var(--primary-blue);
 }
 
 .category-count {
@@ -2024,4 +2078,5 @@ article .blog-tags .tag {
     display: block;
     margin: 18px 9px;
   }
+}
 }
