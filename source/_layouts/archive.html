@@ -1,18 +1,26 @@
 ---
 layout: default
-title: Articles
 ---
 
 {% if site.articles and site.articles.size > 0 %}
     {% assign articles_with_dates = site.articles | where_exp: "item", "item.date" %}
-    {% assign sorted_articles = articles_with_dates | sort: 'date' | reverse %}
+    {% assign target_year_month = page.year | append: "-" | append: page.month %}
+    {% assign archive_articles = "" | split: "" %}
+    {% for article in articles_with_dates %}
+        {% assign article_year_month = article.date | date: "%Y-%m" %}
+        {% if article_year_month == target_year_month %}
+            {% assign archive_articles = archive_articles | push: article %}
+        {% endif %}
+    {% endfor %}
+    {% assign sorted_articles = archive_articles | sort: 'date' | reverse %}
 {% else %}
     {% assign sorted_articles = "" %}
 {% endif %}
 
 <div class="blog-container">
     <div class="blog-main">
-        <h1>Blogs & Articles</h1>
+        <h1>{{ page.month_name }} {{ page.year }}</h1>
+        <p style="font-size: 0.875rem; color: #6B7280; margin-top: -0.5rem; margin-bottom: 2rem;">{{ sorted_articles.size }} posts</p>
         
         <div class="blog-posts">
             
@@ -64,8 +72,8 @@ title: Articles
             </article>
             {% endfor %}
             
-            {% if site.articles.size == 0 %}
-            <p class="no-content">No articles have been published yet. Check back soon!</p>
+            {% if sorted_articles.size == 0 %}
+            <p class="no-content">No articles found for this period.</p>
             {% endif %}
         </div>
     </div>

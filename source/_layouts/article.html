@@ -46,6 +46,13 @@ layout: default
         <meta itemprop="image" content="{{ page.image | absolute_url }}">
         {% endif %}
     </header>
+    
+    {% if page.img %}
+    <div class="article-featured-image">
+        <img src="{{ page.img | relative_url }}" alt="{{ page.title }}" itemprop="image">
+    </div>
+    {% endif %}
+    
     {% if page.embed.url %}
       {% include content-embed.html
         url=page.embed.url

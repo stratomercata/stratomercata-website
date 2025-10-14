@@ -2,7 +2,7 @@
 name: Aaron Wright
 role: Advisor
 category: advisor
-photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-9.png
+photo: /images/stratomercata.com/2025.10.14/Group-9.png
 social:
   linkedin: https://linkedin.com/in/aaron-wright
   twitter: https://x.com/awrigh01

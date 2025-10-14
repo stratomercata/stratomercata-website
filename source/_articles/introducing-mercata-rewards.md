@@ -4,7 +4,7 @@ date: 2025-05-29
 author: "Jordan Cole"
 description: "STRATO Mercata is reimagining how users interact with real-world assets by combining the familiarity of gold and silver with the speed and utility of a decentralized financial system."
 source_url: "https://www.stratomercata.com/blog/introducing-mercata-rewards-earn-cata-for-every-real-asset-move"
-categories: ["General", "CATA", "Rewards", "Governance"]
+categories: ["General"]
 ---
 
 STRATO Mercata is reimagining how users interact with real-world assets by combining the familiarity of gold and silver with the speed and utility of a decentralized financial system. As the first Layer 1 blockchain purpose-built for vault-backed tokenization, STRATO Mercata simplifies depositing, staking, borrowing, and redeeming physical assets. Now, with the launch of the Mercata Rewards Program, each of these actions earns CATA Points. These points grant access to the upcoming CATA governance token, enabling users to influence platform direction and deepen their engagement with tokenized assets.

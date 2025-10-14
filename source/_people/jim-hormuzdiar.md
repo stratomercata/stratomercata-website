@@ -3,7 +3,7 @@ name: Jim Hormuzdiar
 role: Co-Founder & CTO
 category: leader
 cofounder: true
-photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-2-2-1.png
+photo: /images/stratomercata.com/2025.10.14/Group-2-2-1.png
 social:
   twitter: https://x.com/JamshidHormuz
   linkedin: https://linkedin.com/in/james-hormuzdiar-b276778

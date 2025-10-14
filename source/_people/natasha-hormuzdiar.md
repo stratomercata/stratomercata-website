@@ -2,7 +2,7 @@
 name: Natasha Hormuzdiar
 role: In House Counsel
 category: leader
-photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-7-1.png
+photo: /images/stratomercata.com/2025.10.14/Group-7-1.png
 social:
   linkedin: https://linkedin.com/in/natasha-hormuzdiar-617547124
 description: In House Counsel at STRATO Mercata, providing legal guidance and ensuring compliance in the rapidly evolving digital asset finance landscape.

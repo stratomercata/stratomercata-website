@@ -4,7 +4,7 @@ date: 2025-05-23
 author: "Bob Summerwill"
 description: "During the STRATO Mercata quarterly offsite last month, each team member worked on AI-assisted coding projects. The AI assisted coding tools are progressing at breakneck speed, and the utility and productivity gains are frankly stunning."
 source_url: "https://www.stratomercata.com/blog/introducing-gary-and-his-friends-ai-coding-projects-from-strato-mercata"
-categories: ["General", "AI", "Development", "Open Source"]
+categories: ["General"]
 ---
 
 During the STRATO Mercata quarterly offsite last month each of the team members worked on AI-assisted coding projects for the week that we were together in Brooklyn. I **[tweeted about my own project](https://x.com/BobSummerwill/status/1913281826736771457)** at the time, but in this blog post I will start to introduce some of the other projects.

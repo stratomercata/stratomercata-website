@@ -4,7 +4,7 @@ date: 2025-09-24
 author: "Michael Tan"
 description: "Yesterday, our long-awaited Mercata V2 Contest came to a close after a week of exciting trading and bug hunting on the Mercata testnet."
 source_url: "https://www.stratomercata.com/blog/wrapping-up-the-mercata-v2-contest"
-categories: ["General", "Competition", "Mercata V2"]
+categories: ["General"]
 ---
 
 Yesterday, our long-awaited **Mercata V2 Contest** came to a close after a week of exciting trading and bug hunting on the Mercata testnet. From September 17th to 23rd, our community put the pre-release version of Mercata V2 through its paces, stress-testing the new bridge between Ethereum Sepolia and Mercata, trading across major assets, and searching for critical exploits.

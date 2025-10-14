@@ -4,7 +4,7 @@ date: 2025-07-07
 author: "Bob Summerwill"
 description: "We are delighted to unveil the first iteration of STRATOSCAN, our public block explorer!"
 source_url: "https://www.stratomercata.com/blog/stratoscan-new-public-block-explorer"
-categories: ["General", "Infrastructure", "Tools"]
+categories: ["General"]
 ---
 
 We are delighted to unveil the first iteration of STRATOSCAN, our public block explorer!

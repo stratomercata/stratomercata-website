@@ -2,7 +2,7 @@
 name: Jeremy Millar
 role: Advisor
 category: advisor
-photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-10.png
+photo: /images/stratomercata.com/2025.10.14/Group-10.png
 social:
   twitter: https://x.com/OldDawgNewTrix
   linkedin: https://linkedin.com/in/jemillar

@@ -4,7 +4,7 @@ date: 2025-04-15
 author: "Jordan Cole"
 description: "We've been conditioned to think about gold in terms of safety. Stability. Hedging against chaos. But what if gold could be more than just a store of value?"
 source_url: "https://www.stratomercata.com/blog/introducing-goldst-a-new-era-for-gold-and-for-you"
-categories: ["General", "Gold", "GOLDST", "RWA"]
+categories: ["General"]
 ---
 
 We've been conditioned to think about gold in terms of safety. Stability. Hedging against chaos.
