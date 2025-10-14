@@ -2,82 +2,103 @@
 layout: default
 title: Articles
 ---
-<!--
-  Articles Index Page
-  =========================
-  This page lists all articles about STRATO Mercata.
-  - Jekyll Collections: https://jekyllrb.com/docs/collections/
-  - Liquid Templating: https://shopify.github.io/liquid/
-  - HTML5: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
-  - CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
--->
 
-
-<h1>Articles</h1>
-
-<p>
-  A collection of articles about STRATO Mercata, covering platform features, updates, and insights into building the future of digital asset finance.
-</p>
-
-<div class="articles-list">
-    {% if site.articles and site.articles.size > 0 %}
-        {% assign articles_with_dates = site.articles | where_exp: "item", "item.date" %}
-        {% assign sorted_articles = articles_with_dates | sort: 'date' | reverse %}
-    {% else %}
-        {% assign sorted_articles = "" %}
-    {% endif %}
-    {% for article in sorted_articles %}
-    <div class="article-card">
-        {% if article.img %}
-            <div class="article-thumbnail">
-                <a href="{{ article.url | relative_url }}">
-                    <img src="{{ article.img }}" alt="{{ article.title }}" />
-                </a>
-            </div>
-        {% endif %}
+<div class="blog-container">
+    <div class="blog-main">
+        <h1>Blogs & Articles</h1>
         
-        <div class="article-info">
-            <h3><a href="{{ article.url | relative_url }}">{% if article.lowercase_title %}{{ article.lowercase_title }}{% else %}{{ article.title }}{% endif %}{% if article.alias %} ("{{ article.alias }}"){% endif %}</a></h3>
-            
-            <div class="article-meta">
-                {% if article.date %}
-                    <time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: "%B %d, %Y" }}</time>
-                {% endif %}
-                {% if article.author %}
-                    {% assign person_found = false %}
-                    {% assign person_url = '' %}
-                    {% assign person_display_name = article.author %}
-                    {% for person in site.people %}
-                      {% if person.name == article.author %}
-                        {% assign person_found = true %}
-                        {% assign person_url = person.url %}
-                        {% assign person_display_name = person.name %}
-                      {% endif %}
-                    {% endfor %}
-                    by
-                    {% if person_found %}
-                      <a href="{{ person_url | relative_url }}">{{ person_display_name }}</a>
-                    {% else %}
-                      {{ article.author }}
-                    {% endif %}
-                {% endif %}
-            </div>
-            
-            {% if article.description %}
-            <p class="article-description">
-                {% include auto_link.html content=article.description %}
-            </p>
+        <div class="blog-posts">
+            {% if site.articles and site.articles.size > 0 %}
+                {% assign articles_with_dates = site.articles | where_exp: "item", "item.date" %}
+                {% assign sorted_articles = articles_with_dates | sort: 'date' | reverse %}
             {% else %}
-            <p class="article-excerpt">
-                {% assign excerpt = article.content | strip_html | truncatewords: 50 %}
-                {% include auto_link.html content=excerpt %}
-            </p>
+                {% assign sorted_articles = "" %}
+            {% endif %}
+            
+            {% for article in sorted_articles %}
+            <article class="blog-post-card">
+                {% if article.img %}
+                <div class="blog-post-image">
+                    <a href="{{ article.url | relative_url }}">
+                        <img src="{{ article.img }}" alt="{{ article.title }}" />
+                    </a>
+                </div>
+                {% endif %}
+                
+                <div class="blog-post-content">
+                    <h2>
+                        <a href="{{ article.url | relative_url }}">
+                            {% if article.lowercase_title %}{{ article.lowercase_title }}{% else %}{{ article.title }}{% endif %}
+                        </a>
+                    </h2>
+                    
+                    <div class="blog-post-meta">
+                        {% if article.date %}
+                            <time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: "%B %d, %Y" }}</time>
+                        {% endif %}
+                        {% if article.author %}
+                            / {{ article.author }}
+                        {% endif %}
+                    </div>
+                    
+                    {% if article.description %}
+                    <p class="blog-post-excerpt">
+                        {{ article.description }}
+                    </p>
+                    {% else %}
+                    <p class="blog-post-excerpt">
+                        {{ article.content | strip_html | truncatewords: 50 }}
+                    </p>
+                    {% endif %}
+                    
+                    <div class="blog-post-footer">
+                        <span class="blog-post-category">General</span>
+                        <a href="{{ article.url | relative_url }}" class="blog-read-more">read more ›</a>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+            
+            {% if site.articles.size == 0 %}
+            <p class="no-content">No articles have been published yet. Check back soon!</p>
             {% endif %}
         </div>
     </div>
-    {% endfor %}
     
-    {% if site.articles.size == 0 %}
-    <p class="no-content">No articles have been published yet. Check back soon!</p>
-    {% endif %}
+    <aside class="blog-sidebar">
+        <div class="sidebar-section">
+            <h3>Recent Posts</h3>
+            <ul class="recent-posts-list">
+                {% assign recent_articles = sorted_articles | limit: 5 %}
+                {% for article in recent_articles %}
+                <li>
+                    <a href="{{ article.url | relative_url }}">
+                        {% if article.lowercase_title %}{{ article.lowercase_title }}{% else %}{{ article.title }}{% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <div class="sidebar-section">
+            <h3>Categories</h3>
+            <select class="sidebar-select">
+                <option>Select Category</option>
+                <option>General</option>
+                <option>Press Release</option>
+            </select>
+        </div>
+        
+        <div class="sidebar-section">
+            <h3>Archives</h3>
+            <select class="sidebar-select">
+                <option>Select Month</option>
+                <option>September 2025</option>
+                <option>July 2025</option>
+                <option>May 2025</option>
+                <option>April 2025</option>
+                <option>February 2025</option>
+            </select>
+        </div>
+    </aside>
 </div>
