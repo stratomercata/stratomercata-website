@@ -5,6 +5,7 @@ category: leader
 cofounder: true
 photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-2-2-1.png
 social:
+  twitter: https://x.com/JamshidHormuz
   linkedin: https://linkedin.com/in/james-hormuzdiar-b276778
   github: https://github.com/jamshidh
 description: Co-Founder and Chief Technology Officer at BlockApps and STRATO Mercata, architecting enterprise-grade blockchain solutions since 2014.

@@ -5,6 +5,7 @@ category: leader
 cofounder: true
 photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-3-2-1.png
 social:
+  twitter: https://x.com/kjameslubin
   linkedin: https://linkedin.com/in/kjameslubin
   github: https://github.com/kjameslubin
 description: CEO of BlockApps and STRATO Mercata, pioneering enterprise blockchain solutions since 2014 and building the future of digital asset finance.

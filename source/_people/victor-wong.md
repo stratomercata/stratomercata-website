@@ -5,6 +5,7 @@ category: leader
 cofounder: true
 photo: https://wordpress-1404432-5563778.cloudwaysapps.com/wp-content/uploads/2024/06/Group-1-3-1.png
 social:
+  twitter: https://x.com/vic4wong
   github: https://github.com/vic4wong
   linkedin: https://linkedin.com/in/vic4wong
 description: Chief Product Officer and Co-Founder at BlockApps and STRATO Mercata, designing innovative DeFi products that bridge traditional and digital assets.
