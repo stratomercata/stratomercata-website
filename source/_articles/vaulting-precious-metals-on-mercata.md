@@ -4,7 +4,7 @@ date: 2025-02-06
 author: "Jordan Cole"
 description: "At STRATO Mercata, we're redefining how you collect real-world assets. With our vault-backed staking for physical gold and silver, we've made it easier, safer, and more rewarding to own precious metals."
 source_url: "https://www.stratomercata.com/blog/vaulting-precious-metals-on-mercata-the-trust-you-deserve"
-img: "{{ '/images/stratomercata.com/2025.10.14/Now-available-for-staking-2-1024x576.jpg' | relative_url }}"
+img: "/images/stratomercata.com/2025.10.14/Now-available-for-staking-2-1024x576.jpg"
 categories: ["General"]
 ---
 

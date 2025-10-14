@@ -21,7 +21,7 @@ title: Articles
                 {% if article.img %}
                 <div class="blog-post-image">
                     <a href="{{ article.url | relative_url }}">
-                        <img src="{{ article.img }}" alt="{{ article.title }}" />
+                        <img src="{{ article.img | relative_url }}" alt="{{ article.title }}" />
                     </a>
                 </div>
                 {% endif %}
