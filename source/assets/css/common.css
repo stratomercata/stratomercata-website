@@ -1408,3 +1408,126 @@ article .blog-tags .tag {
   margin-top: -0.5rem;
   margin-bottom: 2rem;
 }
+
+/* Video embed spacing improvements */
+.video-episode .content-embed-container {
+  margin: 3rem 0;
+  padding: 2rem 0;
+}
+
+.video-episode .content-embed-container iframe {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.video-content {
+  margin-top: 3rem;
+}
+
+.video-hosts-guests {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.episode-hosts,
+.episode-guests {
+  margin-bottom: 0.5rem;
+}
+
+.episode-hosts a,
+.episode-guests a,
+.video-hosts-guests a {
+  color: #2563eb !important;
+  text-decoration: underline !important;
+}
+
+.episode-hosts a:hover,
+.episode-guests a:hover,
+.video-hosts-guests a:hover {
+  color: #1d4ed8 !important;
+  text-decoration: underline !important;
+}
+
+/* Blog Embed Card Styling - Matches EarlyDaysOfEthereum */
+.blog-embed-card,
+.content-embed-card {
+  background: #e8e8e8;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 0;
+  margin: 18px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+  max-width: 50%;
+}
+
+.blog-embed-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+}
+
+.blog-embed-video-container {
+  width: 100%;
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0 10px 0;
+}
+
+.blog-embed-video-wrapper {
+  width: 92%;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  background: #e8e8e8;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-embed-minimal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  background: transparent;
+}
+
+.blog-embed-meta {
+  padding: 18px 18px 16px 18px;
+  background: #e8e8e8;
+}
+
+.blog-embed-title {
+  font-weight: bold;
+  font-size: 1.13em;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.content-embed-metadata {
+  font-size: 0.98em;
+  color: #666;
+}
+
+.blog-embed-author {
+  color: #333;
+  text-decoration: underline;
+}
+
+.blog-embed-date {
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .video-episode .content-embed-container {
+    margin: 4rem 0;
+    padding: 3rem 0;
+  }
+}
