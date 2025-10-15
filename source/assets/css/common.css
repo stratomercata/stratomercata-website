@@ -22,7 +22,7 @@ body {
   font-family: var(--font-sans);
   line-height: 1.5;
   color: #374151;
-  background: #ffffff;
+  background: #fafafa;
   min-height: 100vh;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header / Navigation */
 header {
-  background: #ffffff;
+  background: #fafafa;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -286,7 +286,7 @@ header nav .nav-dropdown .dropdown-menu a:hover {
 
 /* Footer */
 footer {
-  background: #ffffff;
+  background: #fafafa;
   padding-top: 3rem;
   padding-bottom: 1.5rem;
   border-top: 1px solid #f3f4f6;
