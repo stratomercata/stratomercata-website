@@ -50,6 +50,34 @@ bing_site_verification: ""  # Bing Webmaster Tools verification (add when availa
 google_analytics: "G-HZMGT8Q60M"  # Google Analytics 4 tracking ID
 
 # ============================================================================
+# Social Media Configuration
+# ============================================================================
+# Social media accounts and links for SEO, Open Graph, and structured data.
+# These values are used throughout the site for:
+# - Social media meta tags (Twitter Cards, Open Graph, LinkedIn)
+# - Schema.org structured data (sameAs links for organization)
+# - Default author attribution
+#
+# Note: These are skipped only for hidden people profiles (page.hidden: true)
+# to prevent privacy leaks. All other pages include these social references.
+
+social:
+  # LinkedIn company page username (used in linkedin:owner meta tag)
+  linkedin: "stratomercata"
+  
+  # Twitter/X account configuration
+  twitter:
+    username: "stratomercata"  # Used for twitter:site and twitter:creator tags
+  
+  # Social media profile links (used in Schema.org Organization structured data)
+  # These appear in search results and help establish site authority
+  links:
+    - "https://twitter.com/stratomercata"
+    - "https://www.linkedin.com/company/stratomercata"
+    - "https://github.com/stratomercata"
+    - "https://t.me/stratomercata"
+
+# ============================================================================
 # Jekyll Build Settings
 # ============================================================================
 # These settings control how Jekyll processes and builds your site.

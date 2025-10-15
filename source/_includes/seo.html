@@ -115,8 +115,8 @@
 {% endcomment %}
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@{{ site.twitter.username | default: 'bobsummerwill' }}">
-<meta name="twitter:creator" content="@{{ page.twitter_creator | default: site.twitter.username | default: 'bobsummerwill' }}">
+<meta name="twitter:site" content="@{{ site.twitter.username }}">
+<meta name="twitter:creator" content="@{{ page.twitter_creator | default: site.twitter.username }}">
 <meta name="twitter:title" content="{{ seo_title }}">
 <meta name="twitter:description" content="{{ seo_description }}">
 <meta name="twitter:image" content="{{ seo_image }}">
@@ -126,9 +126,14 @@
   =========================
   LinkedIn-specific tags
   =========================
+  LinkedIn reads Open Graph tags by default, but these provide additional
+  control for LinkedIn sharing and company page association.
 {% endcomment %}
 
-<meta property="linkedin:owner" content="{{ site.social.linkedin | default: 'bobsummerwill' }}">
+<meta property="linkedin:owner" content="{{ site.social.linkedin }}">
+<meta property="linkedin:title" content="{{ seo_title }}">
+<meta property="linkedin:description" content="{{ seo_description }}">
+<meta property="linkedin:image" content="{{ seo_image }}">
 {% endunless %}
 
 {% comment %}
