@@ -876,6 +876,10 @@ footer .footer-bottom-links a:hover {
   max-width: 90%;
 }
 
+.feature-card-full-width {
+  grid-column: 1 / -1;
+}
+
 @media (min-width: 768px) {
   .features-grid-modern {
     grid-template-columns: repeat(2, 1fr);
@@ -931,6 +935,8 @@ footer .footer-bottom-links a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
   border: 1px solid #e5e7eb;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .investment-card:hover {
@@ -969,6 +975,7 @@ footer .footer-bottom-links a:hover {
   list-style: none;
   padding: 0;
   margin: 0 0 2rem 0;
+  flex-grow: 1;
 }
 
 .investment-features li {
