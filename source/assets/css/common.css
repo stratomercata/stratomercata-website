@@ -678,6 +678,35 @@ footer .footer-bottom-links a:hover {
   opacity: 0.4;
 }
 
+.pattern-squares {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pattern-squares::before,
+.pattern-squares::after {
+  content: '';
+  position: absolute;
+  border: 2px solid currentColor;
+}
+
+.pattern-squares::before {
+  width: 120px;
+  height: 120px;
+  bottom: -40px;
+  right: -20px;
+  transform: rotate(15deg);
+}
+
+.pattern-squares::after {
+  width: 80px;
+  height: 80px;
+  bottom: 30px;
+  right: 60px;
+  transform: rotate(-10deg);
+}
+
 .card-decorative-icon {
   position: absolute;
   bottom: 1.5rem;
@@ -710,6 +739,30 @@ footer .footer-bottom-links a:hover {
 
 @media (min-width: 768px) {
   .feature-card-cyan .card-decorative-icon {
+    display: block;
+  }
+}
+
+.card-decorative-icon-right {
+  position: absolute;
+  bottom: .5rem;
+  right: 0;
+  opacity: 1;
+  display: none;
+}
+
+.card-decorative-icon-right img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.feature-card-full-width .card-decorative-pattern {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .card-decorative-icon-right {
     display: block;
   }
 }
