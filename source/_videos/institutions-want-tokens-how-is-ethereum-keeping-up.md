@@ -8,7 +8,6 @@ embed:
   url: https://www.youtube.com/embed/CNavXFv3ats
 ---
 
-The financial world is experiencing a seismic shift as institutions increasingly recognize the value of tokenization. From tokenized treasuries to real-world assets, traditional finance is embracing blockchain technology at an unprecedented pace. But as this institutional wave builds, a critical question emerges: Is Ethereum ready to handle this transformation?
 ## Transcript
 
 We suggest that you start at the [Bob introduction](#bob-introduction).
