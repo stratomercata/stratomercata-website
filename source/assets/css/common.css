@@ -534,6 +534,8 @@ footer .footer-bottom-links a:hover {
   background: #ffffff;
   padding: 3rem 0;
   border-bottom: 1px solid #f3f4f6;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .stats-container {
@@ -688,6 +690,19 @@ footer .footer-bottom-links a:hover {
   height: 100px;
 }
 
+.card-decorative-icon img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.feature-card-cyan .card-decorative-icon {
+  position: absolute;
+  bottom: .5rem;
+  left: 0;
+  opacity: 1;
+}
+
 .card-content-modern {
   position: relative;
   z-index: 1;
@@ -831,21 +846,23 @@ footer .footer-bottom-links a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
-  background: linear-gradient(90deg, var(--primary-blue) 0%, #e93322 100%);
-  color: white;
+  background: var(--secondary-yellow);
+  color: var(--primary-navy);
   text-decoration: none;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   font-weight: 700;
   font-size: 1rem;
   transition: all 0.3s;
   width: 100%;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(52, 82, 255, 0.3);
+  box-shadow: 0 4px 14px rgba(240, 196, 82, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .investment-button:hover {
-  background: linear-gradient(90deg, var(--primary-navy) 0%, #d42e1f 100%);
-  box-shadow: 0 6px 20px rgba(52, 82, 255, 0.4);
+  background: #e0b442;
+  box-shadow: 0 6px 20px rgba(240, 196, 82, 0.5);
   transform: translateY(-2px);
 }
 
