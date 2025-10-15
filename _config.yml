@@ -76,12 +76,12 @@ kramdown:
 # - Perfect for content that isn't blog posts but needs organization
 
 collections:
-  # Articles Collection (_articles/ folder)
+  # Blog Collection (_blog/ folder)
   # Purpose: Platform updates, announcements, and educational content
   # Example files: platform-launch.md, trading-guide.md
-  articles:
-    output: true  # Generate individual pages for each article
-    permalink: /articles/:name/  # URL pattern: /articles/platform-launch/
+  blog:
+    output: true  # Generate individual pages for each blog post
+    permalink: /blog/:name/  # URL pattern: /blog/platform-launch/
   
   # People Collection (_people/ folder) 
   # Purpose: Team member profiles and contributor biographies
@@ -114,11 +114,11 @@ collections:
 # - Both approaches work identically, but path-based is more readable
 
 defaults:
-  # Articles get the "article" layout automatically
-  # Without this: You'd need "layout: article" in every article file
-  # With this: Jekyll adds it automatically to all files in _articles/
-  - scope: { path: "_articles" }
-    values: { layout: "article" }
+  # Blog posts get the "blog" layout automatically
+  # Without this: You'd need "layout: blog" in every blog file
+  # With this: Jekyll adds it automatically to all files in _blog/
+  - scope: { path: "_blog" }
+    values: { layout: "blog" }
   
   # People get the "person" layout automatically  
   # Without this: You'd need "layout: person" in all people files
@@ -145,7 +145,7 @@ plugins:
 # ============================================================================
 # How This All Works Together
 # ============================================================================
-# 1. Collections organize your content into logical groups (people, articles, videos)
+# 1. Collections organize your content into logical groups (people, blog, videos)
 # 2. Defaults automatically assign the correct layout to each content type
 # 3. Your centralized SEO system (_includes/seo.html) provides different 
 #    optimizations for each collection type

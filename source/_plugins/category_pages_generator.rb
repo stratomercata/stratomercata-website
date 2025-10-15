@@ -1,11 +1,11 @@
 # Category Pages Generator Plugin
 # 
-# This plugin automatically generates category pages for articles during the Jekyll build.
-# For each unique category found in articles, it creates a page at /articles/category/[category-slug]/
+# This plugin automatically generates category pages for blog posts during the Jekyll build.
+# For each unique category found in blog posts, it creates a page at /blog/category/[category-slug]/
 #
-# Example: If articles have categories ["General", "Press Release"], it generates:
-# - /articles/category/general/
-# - /articles/category/press-release/
+# Example: If blog posts have categories ["General", "Press Release"], it generates:
+# - /blog/category/general/
+# - /blog/category/press-release/
 
 module Jekyll
   class CategoryPageGenerator < Generator
@@ -13,21 +13,21 @@ module Jekyll
     priority :low
 
     def generate(site)
-      # Only proceed if we have articles
-      unless site.collections.key?('articles')
-        puts "CategoryPageGenerator: No 'articles' collection found"
+      # Only proceed if we have blog posts
+      unless site.collections.key?('blog')
+        puts "CategoryPageGenerator: No 'blog' collection found"
         return
       end
       
-      articles = site.collections['articles'].docs
-      puts "CategoryPageGenerator: Found #{articles.size} articles"
+      blog_posts = site.collections['blog'].docs
+      puts "CategoryPageGenerator: Found #{blog_posts.size} blog posts"
       
-      # Collect all unique categories from all articles
+      # Collect all unique categories from all blog posts
       categories = Set.new
-      articles.each do |article|
-        if article.data['categories']
+      blog_posts.each do |post|
+        if post.data['categories']
           # Handle both array and string categories
-          cats = article.data['categories']
+          cats = post.data['categories']
           cats = [cats] unless cats.is_a?(Array)
           cats.each { |cat| categories.add(cat.to_s.strip) if cat }
         end
@@ -45,9 +45,9 @@ module Jekyll
       
       # Generate archive pages by month/year
       archives = Hash.new(0)
-      articles.each do |article|
-        if article.data['date']
-          date = article.data['date']
+      blog_posts.each do |post|
+        if post.data['date']
+          date = post.data['date']
           year_month = date.strftime('%Y-%m')
           archives[year_month] += 1
         end
@@ -71,7 +71,7 @@ module Jekyll
       @base = base
       
       # Set the directory and filename for this archive page
-      @dir = File.join('articles', 'archive', year, month)
+      @dir = File.join('blog', 'archive', year, month)
       @name = 'index.html'
       
       # Initialize the page
@@ -106,7 +106,7 @@ module Jekyll
       category_slug = category.downcase.gsub(/[^\w\s-]/, '').gsub(/[\s_]+/, '-')
       
       # Set the directory and filename for this category page
-      @dir = File.join('articles', 'category', category_slug)
+      @dir = File.join('blog', 'category', category_slug)
       @name = 'index.html'
       
       # Initialize the page

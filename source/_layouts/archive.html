@@ -2,78 +2,78 @@
 layout: default
 ---
 
-{% if site.articles and site.articles.size > 0 %}
-    {% assign articles_with_dates = site.articles | where_exp: "item", "item.date" %}
+{% if site.blog and site.blog.size > 0 %}
+    {% assign blog_with_dates = site.blog | where_exp: "item", "item.date" %}
     {% assign target_year_month = page.year | append: "-" | append: page.month %}
-    {% assign archive_articles = "" | split: "" %}
-    {% for article in articles_with_dates %}
-        {% assign article_year_month = article.date | date: "%Y-%m" %}
-        {% if article_year_month == target_year_month %}
-            {% assign archive_articles = archive_articles | push: article %}
+    {% assign archive_posts = "" | split: "" %}
+    {% for post in blog_with_dates %}
+        {% assign post_year_month = post.date | date: "%Y-%m" %}
+        {% if post_year_month == target_year_month %}
+            {% assign archive_posts = archive_posts | push: post %}
         {% endif %}
     {% endfor %}
-    {% assign sorted_articles = archive_articles | sort: 'date' | reverse %}
+    {% assign sorted_posts = archive_posts | sort: 'date' | reverse %}
 {% else %}
-    {% assign sorted_articles = "" %}
+    {% assign sorted_posts = "" %}
 {% endif %}
 
 <div class="blog-container">
     <div class="blog-main">
         <h1>{{ page.month_name }} {{ page.year }}</h1>
-        <p style="font-size: 0.875rem; color: #6B7280; margin-top: -0.5rem; margin-bottom: 2rem;">{{ sorted_articles.size }} posts</p>
+        <p style="font-size: 0.875rem; color: #6B7280; margin-top: -0.5rem; margin-bottom: 2rem;">{{ sorted_posts.size }} posts</p>
         
         <div class="blog-posts">
             
-            {% for article in sorted_articles %}
+            {% for post in sorted_posts %}
             <article class="blog-post-card">
-                {% if article.img %}
+                {% if post.img %}
                 <div class="blog-post-image">
-                    <a href="{{ article.url | relative_url }}">
-                        <img src="{{ article.img }}" alt="{{ article.title }}" />
+                    <a href="{{ post.url | relative_url }}">
+                        <img src="{{ post.img }}" alt="{{ post.title }}" />
                     </a>
                 </div>
                 {% endif %}
                 
                 <div class="blog-post-content">
                     <h2>
-                        <a href="{{ article.url | relative_url }}">
-                            {% if article.lowercase_title %}{{ article.lowercase_title }}{% else %}{{ article.title }}{% endif %}
+                        <a href="{{ post.url | relative_url }}">
+                            {% if post.lowercase_title %}{{ post.lowercase_title }}{% else %}{{ post.title }}{% endif %}
                         </a>
                     </h2>
                     
                     <div class="blog-post-meta">
-                        {% if article.date %}
-                            <time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: "%B %d, %Y" }}</time>
+                        {% if post.date %}
+                            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
                         {% endif %}
-                        {% if article.author %}
-                            / {{ article.author }}
+                        {% if post.author %}
+                            / {{ post.author }}
                         {% endif %}
                     </div>
                     
-                    {% if article.description %}
+                    {% if post.description %}
                     <p class="blog-post-excerpt">
-                        {{ article.description }}
+                        {{ post.description }}
                     </p>
                     {% else %}
                     <p class="blog-post-excerpt">
-                        {{ article.content | strip_html | truncatewords: 50 }}
+                        {{ post.content | strip_html | truncatewords: 50 }}
                     </p>
                     {% endif %}
                     
                     <div class="blog-post-footer">
-                        {% if article.categories and article.categories.size > 0 %}
-                            <span class="blog-post-category">{{ article.categories | join: ", " }}</span>
+                        {% if post.categories and post.categories.size > 0 %}
+                            <span class="blog-post-category">{{ post.categories | join: ", " }}</span>
                         {% else %}
                             <span class="blog-post-category">General</span>
                         {% endif %}
-                        <a href="{{ article.url | relative_url }}" class="blog-read-more">read more ›</a>
+                        <a href="{{ post.url | relative_url }}" class="blog-read-more">read more ›</a>
                     </div>
                 </div>
             </article>
             {% endfor %}
             
-            {% if sorted_articles.size == 0 %}
-            <p class="no-content">No articles found for this period.</p>
+            {% if sorted_posts.size == 0 %}
+            <p class="no-content">No posts found for this period.</p>
             {% endif %}
         </div>
     </div>
@@ -82,10 +82,10 @@ layout: default
         <div class="sidebar-section">
             <h3>Recent Posts</h3>
             <ul class="recent-posts-list">
-                {% for article in sorted_articles limit:5 %}
+                {% for post in sorted_posts limit:5 %}
                 <li>
-                    <a href="{{ article.url | relative_url }}">
-                        {% if article.lowercase_title %}{{ article.lowercase_title }}{% else %}{{ article.title }}{% endif %}
+                    <a href="{{ post.url | relative_url }}">
+                        {% if post.lowercase_title %}{{ post.lowercase_title }}{% else %}{{ post.title }}{% endif %}
                     </a>
                 </li>
                 {% endfor %}
@@ -94,15 +94,15 @@ layout: default
         
         <div class="sidebar-section">
             <h3>Categories</h3>
-            {% assign all_categories = site.articles | map: "categories" | join: "," | split: "," | uniq | sort %}
+            {% assign all_categories = site.blog | map: "categories" | join: "," | split: "," | uniq | sort %}
             <ul class="category-list">
-                <li><a href="{{ '/articles/' | relative_url }}">All Articles</a></li>
+                <li><a href="{{ '/blog/' | relative_url }}">All Posts</a></li>
                 {% for category in all_categories %}
                     {% if category != "" %}
                         {% assign cat_slug = category | strip | downcase | replace: " ", "-" | replace: "'", "" %}
-                        {% assign cat_count = site.articles | where_exp: "item", "item.categories contains category" | size %}
+                        {% assign cat_count = site.blog | where_exp: "item", "item.categories contains category" | size %}
                         <li>
-                            <a href="{{ '/articles/category/' | append: cat_slug | append: '/' | relative_url }}">
+                            <a href="{{ '/blog/category/' | append: cat_slug | append: '/' | relative_url }}">
                                 {{ category | strip }}
                                 <span class="category-count">({{ cat_count }})</span>
                             </a>
@@ -114,10 +114,10 @@ layout: default
         
         <div class="sidebar-section">
             <h3>Archives</h3>
-            {% assign articles_with_dates = site.articles | where_exp: "item", "item.date" | sort: 'date' | reverse %}
+            {% assign blog_with_dates = site.blog | where_exp: "item", "item.date" | sort: 'date' | reverse %}
             {% assign archive_list = "" | split: "" %}
-            {% for article in articles_with_dates %}
-                {% assign year_month = article.date | date: "%Y-%m" %}
+            {% for post in blog_with_dates %}
+                {% assign year_month = post.date | date: "%Y-%m" %}
                 {% unless archive_list contains year_month %}
                     {% assign archive_list = archive_list | push: year_month %}
                 {% endunless %}
@@ -132,13 +132,13 @@ layout: default
                     {% assign month_index = month | minus: 1 %}
                     {% assign month_name = month_names[month_index] %}
                     {% assign archive_count = 0 %}
-                    {% for article in articles_with_dates %}
-                        {% assign article_year_month = article.date | date: "%Y-%m" %}
-                        {% if article_year_month == year_month %}
+                    {% for post in blog_with_dates %}
+                        {% assign post_year_month = post.date | date: "%Y-%m" %}
+                        {% if post_year_month == year_month %}
                             {% assign archive_count = archive_count | plus: 1 %}
                         {% endif %}
                     {% endfor %}
-                    <option value="{{ '/articles/archive/' | append: year | append: '/' | append: month | append: '/' | relative_url }}">{{ month_name }} {{ year }} ({{ archive_count }})</option>
+                    <option value="{{ '/blog/archive/' | append: year | append: '/' | append: month | append: '/' | relative_url }}">{{ month_name }} {{ year }} ({{ archive_count }})</option>
                 {% endfor %}
             </select>
         </div>
