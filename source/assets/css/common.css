@@ -696,11 +696,22 @@ footer .footer-bottom-links a:hover {
   object-fit: contain;
 }
 
+.feature-card-cyan .card-decorative-pattern {
+  display: block;
+}
+
 .feature-card-cyan .card-decorative-icon {
   position: absolute;
   bottom: .5rem;
   left: 0;
   opacity: 1;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .feature-card-cyan .card-decorative-icon {
+    display: block;
+  }
 }
 
 .card-content-modern {
