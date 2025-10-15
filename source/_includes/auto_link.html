@@ -223,8 +223,8 @@ while ensuring clean, valid HTML output.
     {%- assign link_replacement = '<a href="' | append: person_url | append: '">' | append: other_person.name | append: '</a>' -%}
   {%- endif -%}
   
-  {%- comment -%}Replace person names, but protect instances within existing article/video links{%- endcomment -%}
-  {%- assign temp_content = body_content -%}
+  {%- comment -%}Replace person names, but protect instances within existing blog/video links{%- endcomment -%}
+  {%- assign temp_content = body_content -%}blog
   
   {%- comment -%}First, temporarily replace blog post and video links that contain this person's name{%- endcomment -%}
   {%- assign protected_links = "" | split: "" -%}

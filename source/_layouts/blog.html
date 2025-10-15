@@ -37,7 +37,7 @@ layout: default
             {% endif %}
         </div>
         {% if page.description %}
-        <div class="article-description" itemprop="description">
+        <div class="blog-description" itemprop="description">
             {{ page.description }}
         </div>
         <meta itemprop="description" content="{{ page.description }}">
@@ -48,7 +48,7 @@ layout: default
     </header>
     
     {% if page.img %}
-    <div class="article-featured-image">
+    <div class="blog-featured-image">
         <img src="{{ page.img | relative_url }}" alt="{{ page.title }}" itemprop="image">
     </div>
     {% endif %}
@@ -65,12 +65,12 @@ layout: default
       %}
     {% endif %}
 
-    <div class="article-content" itemprop="articleBody">
+    <div class="blog-content" itemprop="articleBody">
         {% include auto_link.html content=content %}
     </div>
     
     {% if page.tags and page.tags.size > 0 %}
-    <div class="article-tags">
+    <div class="blog-tags">
         <strong>Tags:</strong>
         {% for tag in page.tags %}
             <span class="tag" itemprop="keywords">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}

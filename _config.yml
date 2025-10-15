@@ -70,7 +70,7 @@ kramdown:
 # a content type with its own folder, URL structure, and processing rules.
 # 
 # How Collections Work:
-# - Files go in folders named _[collection-name]/ (e.g., _people/, _articles/)
+# - Files go in folders named _[collection-name]/ (e.g., _people/, _blog/)
 # - Each .md file becomes a webpage with its own URL
 # - Collections can be accessed in templates as site.[collection-name]
 # - Perfect for content that isn't blog posts but needs organization

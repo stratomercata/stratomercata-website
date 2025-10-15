@@ -10,7 +10,7 @@ The official website for STRATO Mercata - a platform to easily earn on vaulted g
 
 - **Team Profiles**: Biographies and profiles of STRATO Mercata team members
 - **Video Content**: Show episodes, contest announcements, and platform demonstrations
-- **Articles**: Platform updates, announcements, and educational content
+- **Blog**: Platform updates, announcements, and educational content
 - **Platform Information**: Details about trading, lending, and borrowing on real-world assets
 
 ---
@@ -28,12 +28,12 @@ stratomercata-website/
 ├── .github/workflows/         # GitHub Actions for deployment
 │   └── jekyll-gh-pages.yml    # Deployment workflow (sets URL & baseurl)
 └── source/                    # Jekyll source directory
-    ├── _layouts/              # Page templates (default, person, article, video)
+    ├── _layouts/              # Page templates (default, person, blog, video)
     ├── _includes/             # Reusable components (auto_link, embeds, SEO)
-    ├── _articles/             # Article collection (Markdown files)
+    ├── _blog/                 # Blog collection (Markdown files)
     ├── _people/               # People collection (Markdown files)
     ├── _videos/               # Video collection (Markdown files)
-    ├── articles/index.html    # Articles listing page
+    ├── blog/index.html        # Blog listing page
     ├── people/index.html      # People listing page
     ├── videos/index.html      # Videos listing page
     ├── assets/css/            # Stylesheets
@@ -85,7 +85,7 @@ The development server includes:
 
 The site uses three Jekyll collections:
 
-### Articles (`_articles/`)
+### Blog (`_blog/`)
 Platform updates, announcements, and educational content about STRATO Mercata.
 
 ### People (`_people/`)
@@ -208,7 +208,7 @@ You can also trigger deployment manually from the Actions tab in GitHub.
 
 ### Auto-linking System
 
-The site includes an auto-linking system (`source/_includes/auto_link.html`) that automatically converts mentions of people, articles, and videos to links:
+The site includes an auto-linking system (`source/_includes/auto_link.html`) that automatically converts mentions of people, blog posts, and videos to links:
 
 ```markdown
 Bob Summerwill spoke about blockchain.
@@ -222,7 +222,7 @@ Automatically becomes:
 The system processes content in priority order:
 1. **Hidden People** - Removes/redacts links to hidden profiles
 2. **Videos** - Links video titles to their pages
-3. **Articles** - Links article titles to their pages
+3. **Blog Posts** - Links blog post titles to their pages
 4. **People** - Links person names (with conflict detection to avoid nested links)
 
 ### Relative URLs
