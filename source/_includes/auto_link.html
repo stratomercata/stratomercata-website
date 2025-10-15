@@ -224,7 +224,7 @@ while ensuring clean, valid HTML output.
   {%- endif -%}
   
   {%- comment -%}Replace person names, but protect instances within existing blog/video links{%- endcomment -%}
-  {%- assign temp_content = body_content -%}blog
+  {%- assign temp_content = body_content -%}
   
   {%- comment -%}First, temporarily replace blog post and video links that contain this person's name{%- endcomment -%}
   {%- assign protected_links = "" | split: "" -%}
