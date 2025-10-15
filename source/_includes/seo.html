@@ -23,13 +23,14 @@
 
 {% assign seo_url = page.url | absolute_url %}
 
-{% comment %} Smart image selection {% endcomment %}
-{% assign seo_image = page.image | default: page.photo %}
+{% comment %} Smart image selection - prioritize page-specific images {% endcomment %}
+{% comment %} Check img (used by blog/video posts), then photo (used by people profiles) {% endcomment %}
+{% assign seo_image = page.img | default: page.photo %}
 {% unless seo_image %}
   {% if page.collection == 'people' %}
-    {% assign seo_image = "/images/archive.org/ethdev.com/20151210143340/ethdev-team_1200x630.png" %}
+    {% assign seo_image = "/images/stratomercata.com/2025.10.15/strato-mercata-people-og-image.png" %}
   {% else %}
-    {% assign seo_image = "/images/archive.org/ethereum.org/20140428062102/internetarchive_ethereum.org_20140428062102.png" %}
+    {% assign seo_image = "/images/stratomercata.com/2025.10.15/strato-mercata-og-image.png" %}
   {% endif %}
 {% endunless %}
 
