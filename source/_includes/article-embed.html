@@ -1,11 +1,11 @@
-{% assign article_name = include.name | strip_html %}
-{% assign found_article = null %}
+{% assign post_name = include.name | strip_html %}
+{% assign found_post = null %}
 
-{% for article in site.articles %}
-  {% if article.title == article_name %}
-    {% assign found_article = article %}
+{% for post in site.blog %}
+  {% if post.title == post_name %}
+    {% assign found_post = post %}
     {% break %}
   {% endif %}
 {% endfor %}
 
-{% if found_article %}{% if found_article.embed.url %}{% assign embed_date = found_article.date | date: "%B %d, %Y" %}{% include content-embed.html url=found_article.url img=found_article.embed.img site=found_article.embed.site title=found_article.title author=found_article.author date=embed_date description=found_article.description %}{% else %}<a href="{{ found_article.url | relative_url }}">{{ article_name }}</a>{% endif %}{% else %}<div class="error">Article not found: "{{ article_name }}"</div>{% endif %}
+{% if found_post %}{% if found_post.embed.url %}{% assign embed_date = found_post.date | date: "%B %d, %Y" %}{% include content-embed.html url=found_post.url img=found_post.embed.img site=found_post.embed.site title=found_post.title author=found_post.author date=embed_date description=found_post.description %}{% else %}<a href="{{ found_post.url | relative_url }}">{{ post_name }}</a>{% endif %}{% else %}<div class="error">Blog post not found: "{{ post_name }}"</div>{% endif %}
