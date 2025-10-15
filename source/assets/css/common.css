@@ -850,6 +850,50 @@ footer .footer-bottom-links a:hover {
   flex-direction: column;
 }
 
+.investment-card-with-bg {
+  background-image: url('/images/stratomercata.com/2025.10.11/home-card-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.investment-card-with-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.investment-card-with-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.investment-card-with-bg-gold {
+  background-image: url('/images/stratomercata.com/2025.10.11/home-card-background2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.investment-card-with-bg-gold::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.investment-card-with-bg-gold > * {
+  position: relative;
+  z-index: 1;
+}
+
 .investment-card:hover {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
   transform: translateY(-4px);
