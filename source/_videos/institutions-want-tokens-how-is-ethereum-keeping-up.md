@@ -32,39 +32,40 @@ We suggest that you start at the [Bob introduction](#bob-introduction).
 <br>
 
 [[0:02]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2s) **Redwan:**
-What are you using? I use WeStream. We try to do something, and it's streamed on Twitter.
+What are you using? I use [Restream](https://restream.io). We try to do something, and it's streamed on Twitter.  I think YouTube and LinkedIn at the same time.
 
-I think YouTube and LinkedIn at the same time.
+[[0:10]](https://www.youtube.com/watch?v=CNavXFv3ats&t=10s) **Victor:**
+So we're using [Streamyard](https://streamyard.com/) too. We're using Streamyard, and I'm just stuck with JavaScript.
 
-[[0:10]](https://www.youtube.com/watch?v=CNavXFv3ats&t=10s) **Bob:**
-So we're using StreamYard, too. We're using StreamYard, and I'm just stuck with JavaScript. We have been screwing around with different tools trying to find anything that seems a bit non-conferential.
-
-Yeah.
+[[0:16]](https://www.youtube.com/watch?v=CNavXFv3ats&t=16s) **Bob:**
+We have been screwing around with different tools trying to find anything that seems a bit.
 
 [[0:26]](https://www.youtube.com/watch?v=CNavXFv3ats&t=26s) **Redwan:**
-I'll share the one. I don't know if you've tried this one, but this one looks pretty cool, pretty great. Because you're thinking, there must be good software for this, right?
+I'll share the one. I don't know if you've tried this one, but this one looks pretty cool, pretty great.
 
-[[0:33]](https://www.youtube.com/watch?v=CNavXFv3ats&t=33s) **Bob:**
-It's such a common need. Isn't there just an answer that just works?
+[[0:30]](https://www.youtube.com/watch?v=CNavXFv3ats&t=30s) **Bob:**
+Because you're thinking, there must be good software for this, right?  It's such a common need. Isn't there just an answer that just works?
 
 [[0:39]](https://www.youtube.com/watch?v=CNavXFv3ats&t=39s) **Redwan:**
 But the thing is, those platforms, they're not built with interoperability in mind.
 
 [[0:43]](https://www.youtube.com/watch?v=CNavXFv3ats&t=43s) **Bob:**
-They don't like it.
+They don't like it.  They want to trap you in.
 
 [[0:44]](https://www.youtube.com/watch?v=CNavXFv3ats&t=44s) **Redwan:**
-They want to trap you in. Yeah, exactly. X, especially.
-
-So that's against our vision.
+ Yeah, exactly. X, especially.  So that's against our vision.
 
 [[0:50]](https://www.youtube.com/watch?v=CNavXFv3ats&t=50s) **Kieren:**
 On X, there isn't even a means to download the bloody audio. Yeah. Why would you want to download it?
 
 [[0:57]](https://www.youtube.com/watch?v=CNavXFv3ats&t=57s) **Redwan:**
-You know, that's something, I guess, the next step in maybe like five years. You want to use it somewhere else? Five, ten years.
+You know, that's something, I guess, the next step in maybe like five years.
 
-Are you seeing somebody else? Be able to own your data, you know, on those platforms. Even on a query or just access.
+[[1:00]](https://www.youtube.com/watch?v=CNavXFv3ats&t=60s) **Bob:**
+You want to use it somewhere else?  Are you seeing somebody else?
+
+[[1:04]](https://www.youtube.com/watch?v=CNavXFv3ats&t=64s) **Redwan:**
+Be able to own your data, you know, on those platforms. Even on a query or just access.
 
 Something I love about Google is, like, I can go, I can activate, you know, like the tracking, you know? But at least I can go and say, what did I do that week? I went in front of that restaurant or that store.
 
@@ -72,7 +73,7 @@ It was pretty nice. And I can go and see and check. I have access to that.
 
 It can be helpful. But most of the things, they have like thousands of data, but they don't even share it with you.
 
-[[1:31]](https://www.youtube.com/watch?v=CNavXFv3ats&t=91s) **Bob:**
+[[1:31]](https://www.youtube.com/watch?v=CNavXFv3ats&t=91s) **Victor:**
 Yeah, exactly.
 
 [[1:33]](https://www.youtube.com/watch?v=CNavXFv3ats&t=93s) **Redwan:**
@@ -86,41 +87,59 @@ I find it quite well.
 
 <br>
 
-[[1:38]](https://www.youtube.com/watch?v=CNavXFv3ats&t=98s) **Bob:**
-501, oh, yeah. We are live, so we are live. No, no, no, I'm ready.
+[[1:38]](https://www.youtube.com/watch?v=CNavXFv3ats&t=98s) **Victor:**
+5:01, oh, yeah. We are live, so we are live. No, no, no, I'm ready.
 
-No, but that was a good cold intro, right? So we have a very special guest today, but a special format because all of us for Django Live in real life. In the same room.
+No, but that was a good cold intro, right? So we have a very special guest today, but a special format because all of us together for a change in real life. In the same room.
 
-[[1:58]](https://www.youtube.com/watch?v=CNavXFv3ats&t=118s) **Victor:**
+[[1:58]](https://www.youtube.com/watch?v=CNavXFv3ats&t=118s) **Bob:**
 In the same room.
 
-[[1:59]](https://www.youtube.com/watch?v=CNavXFv3ats&t=119s) **Bob:**
+[[1:59]](https://www.youtube.com/watch?v=CNavXFv3ats&t=119s) **Victor:**
 And you are a special guest. Do you want to intro? Yeah, sure.
 
-So, yeah, we have here today with us Rebwan Meslam. Yes. Meslam, who is the executive director of the EA, the Enterprise Ethereum Alliance, which all of us at this table have had a hand and a part in over the years.
+[[2:02]](https://www.youtube.com/watch?v=CNavXFv3ats&t=122s) **Bob:**
+So, yeah, we have here today with us Redwan Meslem, Meslem, who is the Executive Director of the EEA, the Enterprise Ethereum Alliance, which all of us at this table have had a hand and a part in over the years.
 
+[[2:21]](https://www.youtube.com/watch?v=CNavXFv3ats&t=141s) **Kieren:**
 Healthy run.
 
 [[2:22]](https://www.youtube.com/watch?v=CNavXFv3ats&t=142s) **Victor:**
 Yes, exactly.
 
-[[2:23]](https://www.youtube.com/watch?v=CNavXFv3ats&t=143s) **Bob:**
-So, yeah, it's like it's eight years now. It was in 2017. Yeah, February 2017 was the launch date on the 28th.
+[[2:23]](https://www.youtube.com/watch?v=CNavXFv3ats&t=143s) **Kieren:**
+So, yeah, it's like it's eight years now.
 
-There was pre-work solidly before, at least three months, maybe more. There were meetings I was part of in December and January. There were, I mean, those were the first big meetings, right, you know, with whatever, 30, 40 people, crazy amounts.
+[[2:26]](https://www.youtube.com/watch?v=CNavXFv3ats&t=146s) **Bob:**
+It was in 2017. Yeah, February 2017 was the launch date on the 28th.
 
-But yeah, like it really started probably at DEF CON 2, really. Those were the discussions. So that was Shanghai, October.
+[[2:30]](https://www.youtube.com/watch?v=CNavXFv3ats&t=150s) **Kieren:**
+There was pre-work solidly before, at least three months, maybe more.
 
-There was the kickoff meeting at the JP Morgan office, which was pretty big. And even before, they were the closed door meetings at Microsoft. Right, so that public launch was February.
+[[2:34]](https://www.youtube.com/watch?v=CNavXFv3ats&t=154s) **Bob:**
+There were meetings I was part of in December and January. There were, I mean, those were the first big meetings, right, you know, with whatever, 30, 40 people, crazy amounts.
 
-It was February. But December, there was an internal like one. And then JP Morgan was in January of 2017.
+But yeah, like it really started probably at DEVCON 2, really. Those were the discussions. So that was Shanghai, October.
 
-But yeah, like a lot of those initial contacts have happened at DEF CON 2 in October the previous year. Well, in the DEF CON 2. Oh, yes.
+[[2:56]](https://www.youtube.com/watch?v=CNavXFv3ats&t=176s) **Kieren:**
+There was the kickoff meeting at the JP Morgan office, which was pretty big. And even before, they were the closed door meetings at Microsoft.
 
-Yeah, so like basically there was a lot of conversations there about figuring out how to bring on enterprises too. And there were a lot of interested parties. And yeah, like the group of people, which was I think about six people that were interested, met at like a Starbucks just off site.
+[[3:07]](https://www.youtube.com/watch?v=CNavXFv3ats&t=187s) **Bob:**
+Right, so that public launch was February.
 
-And that was sort of the idea formation thing about the... And then Matt spoke of NewCo held a little bar side event as well, which we have some technical issues. Oh, okay.
+But December, there was an internal like one. And then JP Morgan was in January of 2017.
 
+But yeah, like a lot of those initial contacts had happened at DEVCON 2 in October the previous year.
+
+[[3:26]](https://www.youtube.com/watch?v=CNavXFv3ats&t=206s) **Victor:**
+Well, in the DEVCON 2. Yeah, so like basically there was a lot of conversations there about figuring out how to bring on enterprises too. And there were a lot of interested parties. And yeah, like the group of people, which was I think about six people that were interested, met at like a Starbucks just off site.
+
+And that was sort of the idea formation thing about the...
+
+[[3:58]](https://www.youtube.com/watch?v=CNavXFv3ats&t=238s) **Bob:**
+And then [Matt Spoke](https://x.com/MattSpoke) of [Nuco](https://web.archive.org/web/20180320181516/https://nuco.io/) held a little bar side event as well, which we have some technical issues. Oh, okay.
+
+[[4:16]](https://www.youtube.com/watch?v=CNavXFv3ats&t=256s) **Victor:**
 Hold on a second. I'm just going to push you. Insist to tell everybody.
 
 We have a technical issue, everybody. I can, I will fix that. Oh, did I?
@@ -129,38 +148,83 @@ I messed up the Twitter. You did a bad one. Yeah, I did a bad one.
 
 So everyone, please join us on YouTube. Spaces at 5 a.m. Right.
 
-[[4:35]](https://www.youtube.com/watch?v=CNavXFv3ats&t=275s) **Victor:**
-Yes.
-
 [[4:36]](https://www.youtube.com/watch?v=CNavXFv3ats&t=276s) **Bob:**
-But yeah, Matt spoke, held a little event at one of the bars upstairs, which I went to and there were various others there. If you went to that as well. I didn't go to that one.
+But yeah, [Matt Spoke](https://x.com/MattSpoke), held a little event at one of the bars upstairs, which I went to and there were various others there. If you went to that as well.
+
+[[4:45]](https://www.youtube.com/watch?v=CNavXFv3ats&t=285s) **Victor:**
+I didn't go to that one.
 
 So I think it's, I think the main thing was that, yeah, so I think the main thing, I'm going to try and fix this right now on Twitter. Live technical support, see if I can resolve it right now. If not, I did choose a...
 
-But also parallel in that, because I was still working for the Ethereum Foundation at the time was that there was like an enterprise slack set up there, which was actually started by Vitalik, who afterwards said people kept badgering him about enterprise stuff. That's right. So at some point he just dumped them all in a stack, in a slack and run away.
+[[5:09]](https://www.youtube.com/watch?v=CNavXFv3ats&t=309s) **Bob:**
+But also parallel in that, because I was still working for the [Ethereum Foundation](https://ethereum.foundation) at the time was that there was like an enterprise Slack set up there, which was actually started by Vitalik, who afterwards said people kept badgering him about enterprise stuff. So at some point he just dumped them all in a stack, in a Slack and ran away.
 
 Yeah. That was the technique. So that was not quite the same group.
 
-It was a larger group that's slightly different. Nuko was part of that. Nuko was part of that.
+It was a larger group that's slightly different.
+
+[[5:41]](https://www.youtube.com/watch?v=CNavXFv3ats&t=341s) **Victor:**
+[Nuco](https://web.archive.org/web/20180320181516/https://nuco.io/) was part of that.
 
 Also... By the way, we should introduce ourselves. We should.
 
-Yeah, hi, I'm Bobson Wilson. I'm head of ecosystem at StratoMercado. Kim James-Levin, CEO of Blockups.
+[[5:49]](https://www.youtube.com/watch?v=CNavXFv3ats&t=349s) **Bob:**
+Yeah, hi, I'm Bob Summerwill. I'm Head of Ecosystem at STRATO Mercata.
 
-Victor Wong. Creators of StratoMercado. Yeah, and Victor Wong, chief product officer of Blockups.
+[[5:56]](https://www.youtube.com/watch?v=CNavXFv3ats&t=356s) **Kieren:**
+Kieren James-Lubin, CEO of [BlockApps](https://blockapps.net).
 
-So, sorry, back... But yeah, Amos as well. Do you remember that?
+[[5:56]](https://www.youtube.com/watch?v=CNavXFv3ats&t=358s) **Victor:**
+Victor Wong.
 
-Yeah. Oh yeah. We should check in on, I haven't thought of Amos until...
+[[5:59]](https://www.youtube.com/watch?v=CNavXFv3ats&t=356s) **Kieren:**
+Creators of STRATO Mercata.
 
-No. In like several years until the moment. So the interesting thing about what they were doing, so that was like some Taiwan bank consortium thing.
+[[6:00]](https://www.youtube.com/watch?v=CNavXFv3ats&t=358s) **Victor:**
+Yeah, and Victor Wong, Chief Product Officer of [BlockApps](https://blockapps.net).
 
-But then they did like work on like Chinese cryptography and stuff. Like they've got differing requirements, right? And the master chain, which was in Russia, that was like a spare bank thing.
+So, sorry, back...
 
-Spare bank was paid for the consumption.
+[[6:06]](https://www.youtube.com/watch?v=CNavXFv3ats&t=358s) **Bob:**
+But yeah, [AMIS](https://www.amis.com/) as well. Do you remember that?
+
+[[6:10]](https://www.youtube.com/watch?v=CNavXFv3ats&t=410s) **Kieren:**
+Yeah. Oh yeah. We should check in on, I haven't thought of [AMIS](https://www.amis.com/) until...
+
+No. In like several years until the moment.
+
+[[6:16]](https://www.youtube.com/watch?v=CNavXFv3ats&t=416s) **Bob:**
+So the interesting thing about what they were doing, so that was like some Taiwan bank consortium thing.
+
+But then they did like work on like Chinese cryptography and stuff. Like they've got differing requirements, right? And Masterchain, which was in Russia, that was like a [Sberbank](https://www.sberbank.com/) thing.
+
+{% include content-embed.html
+  url="https://cointelegraph.com/news/blockchain-revolution-in-russia-bank-of-russia-tests-masterchain"
+  title="Blockchain revolution in Russia: Bank of Russia tests MasterChain"
+  site="Cointelegraph"
+%}
+
+{% include content-embed.html
+  src="https://www.youtube.com/embed/ka93x3xDAkg"
+  url="https://www.youtube.com/watch?v=ka93x3xDAkg"
+  img="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=717/https://s3.cointelegraph.com/storage/uploads/view/64d02c317d463a581bbab940f42cf78b.jpg"
+  title="Masterchain - Russian blockchain platform"
+%}
+
+{% include content-embed.html
+  src="https://www.youtube.com/embed/faVnsBRLAL4"
+  url="https://www.youtube.com/watch?v=faVnsBRLAL4"
+  title="Masterchain blockchain platform overview"
+%}
+
+{% include content-embed.html
+  src="https://www.youtube.com/embed/7PpQS4hQP9A"
+  url="https://www.youtube.com/watch?v=7PpQS4hQP9A"
+  title="Masterchain platform demonstration"
+%}
 
 [[6:44]](https://www.youtube.com/watch?v=CNavXFv3ats&t=404s) **Redwan:**
-I have a question for you, it's interesting. Because you have, you know, I was not at the EE at that time. And so it's very interesting for me to, you know, what were the hopes and really excitement that you see, you know, you were part of those early conversations, this was created, 13, I think, companies.
+I have a question for you, it's interesting. Because you have, you know, I was not at the EEA at that time. And so it's very interesting for me to, you know, what were the hopes and really excitement that you see, you know, you were part of those early conversations, this was created, 13, I think, companies.
 
 It's like a pretty, it was a pretty big event, you know. As you mentioned, you know, like JP Morgan and everything, all those big names coming into the ecosystem. And what were the hopes and really like the overall like atmosphere, you know, when the year was created, I think?
 
