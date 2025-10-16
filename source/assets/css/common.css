@@ -1504,11 +1504,23 @@ article .blog-tags .tag {
   background: #e8e8e8;
 }
 
-.blog-embed-title {
+.blog-embed-title,
+.blog-embed-title-with-padding {
   font-weight: bold;
   font-size: 1.13em;
   margin-bottom: 6px;
   color: #222;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.blog-embed-title-with-padding {
+  padding: 18px 18px 0 18px;
+}
+
+.blog-embed-description {
+  margin-bottom: 12px;
 }
 
 .content-embed-metadata {
