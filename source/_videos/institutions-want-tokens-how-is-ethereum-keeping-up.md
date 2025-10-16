@@ -4,6 +4,7 @@ date: 2025-10-15
 hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin"]
 guests: ["Redwan Meslem"]
 description: "We were joined by Redwan Meslem, the Executive Director of the Enterprise Ethereum Alliance, and talked about the history of the EEA and about the present institutional landscape"
+thumbnail: https://img.youtube.com/vi/CNavXFv3ats/maxresdefault.jpg
 embed:
   url: https://www.youtube.com/embed/CNavXFv3ats
 ---
