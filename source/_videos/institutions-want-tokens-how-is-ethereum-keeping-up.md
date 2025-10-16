@@ -588,7 +588,9 @@ I'm also on LinkedIn and Twitter and try to post, you know, like often some few 
 Like, and I think bridging, you know, like the Ethereum world with a traditional finance also like something that we're pretty excited to do in a couple of weeks. Yeah, that's awesome. We'll be also in Singapore FinTech Week next month, in DEF CON in Argentina, and we'll be also in Abu Dhabi for Finance Week.
 
 [[49:09]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2949s) **Bob:**
- Not the German spelling of it. Yeah.
+Cool. And Bob, where can people find you? So yeah, I'm on Twitter.
+
+Says my name, Bob Summerville with a W-I-L-L, not Ville, not Summerville. Not the German spelling of it. Yeah.
 
 Karen? K. James Lubin on X, YouTube, et cetera.
 
