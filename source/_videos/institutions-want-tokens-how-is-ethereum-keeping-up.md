@@ -545,9 +545,6 @@ It's probably like the asbestos, isn't it? It's just going to take years to sort
 
 I will say, I think we're almost at 45 minutes. Revlon has been very generous with this time. I think they asked, do you have any final thoughts you want to share?
 
-[[43:10]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2590s) **Redwan:**
-Well, actually on Fabric, I know like IBM is working on a bridge between Fabric to, it's called Fabric X, to Ethereum.
-
 [[43:19]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2599s) **Bob:**
 So you can see that- Right, well, one of their big sell at New York Blockchain Week in 2018 was their EVM integration. Right, that they did the- Yeah, they did a channel or something. About 3.js or whatever, that they did do this bunching together. And that was using Burrow, right? Because you've got the Burrow, Burrow went into Hyperledger before Bellu, and that was the continuation of that, RSDB, Bonax, OnUend, that was never made net compatible though. But there was that Go EVM within Hyperledger under the same licensing, so they could wham those together.
 
