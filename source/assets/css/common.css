@@ -475,7 +475,9 @@ footer .footer-bottom-links a:hover {
   text-decoration: none;
   border-radius: 2rem;
   transition: all 0.3s;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   box-shadow: 0 4px 14px rgba(240, 196, 82, 0.4);
@@ -485,6 +487,15 @@ footer .footer-bottom-links a:hover {
   background: #e0b442;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(240, 196, 82, 0.5);
+}
+
+.strato-button-large svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.strato-button-large:hover svg {
+  transform: translateX(4px);
 }
 
 .hero-image {
@@ -950,6 +961,11 @@ footer .footer-bottom-links a:hover {
   flex-shrink: 0;
   margin-top: 0.125rem;
   color: var(--primary-blue);
+  transition: transform 0.3s ease;
+}
+
+.investment-features li:hover svg {
+  transform: translateX(4px);
 }
 
 .investment-button {
@@ -979,6 +995,11 @@ footer .footer-bottom-links a:hover {
 
 .investment-button svg {
   flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.investment-button:hover svg {
+  transform: translateX(4px);
 }
 
 @media (min-width: 768px) {
@@ -2184,6 +2205,11 @@ article .blog-tags .tag {
 
 .telegram-button svg {
   flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.telegram-button:hover svg {
+  transform: translateX(4px);
 }
 
 @media (min-width: 768px) {
