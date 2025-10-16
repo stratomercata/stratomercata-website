@@ -106,7 +106,11 @@ title: Blog
         
         <div class="sidebar-section">
             <h3>Archives</h3>
-            {% assign blog_with_dates = site.blog | where_exp: "item", "item.date" | sort: 'date' | reverse %}
+            {% if site.blog and site.blog.size > 0 %}
+                {% assign blog_with_dates = site.blog | where_exp: "item", "item.date" | sort: 'date' | reverse %}
+            {% else %}
+                {% assign blog_with_dates = "" | split: "" %}
+            {% endif %}
             {% assign archive_list = "" | split: "" %}
             {% for post in blog_with_dates %}
                 {% assign year_month = post.date | date: "%Y-%m" %}
