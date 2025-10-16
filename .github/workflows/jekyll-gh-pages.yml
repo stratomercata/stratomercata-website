@@ -5,6 +5,10 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+  
+  # Runs on pull requests to test builds before merging
+  pull_request:
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -48,8 +52,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
-  # Deployment job
+  # Deployment job (only runs on push to main, not on PRs)
   deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
