@@ -201,26 +201,32 @@ But then they did like work on like Chinese cryptography and stuff. Like they've
 {% include content-embed.html
   url="https://cointelegraph.com/news/blockchain-revolution-in-russia-bank-of-russia-tests-masterchain"
   title="Blockchain revolution in Russia: Bank of Russia tests MasterChain"
+  description="Bank of Russia has introduced Masterchain, an Ethereum-based Blockchain prototype created to serve interests of the financial market actors."
+  img="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1434/https://s3.cointelegraph.com/storage/uploads/view/64d02c317d463a581bbab940f42cf78b.jpg"
   site="Cointelegraph"
+  author="Alicia Naumoff"
+  date="2016-10-13"
 %}
 
 {% include content-embed.html
   src="https://www.youtube.com/embed/ka93x3xDAkg"
-  url="https://www.youtube.com/watch?v=ka93x3xDAkg"
-  img="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=717/https://s3.cointelegraph.com/storage/uploads/view/64d02c317d463a581bbab940f42cf78b.jpg"
-  title="Masterchain - Russian blockchain platform"
+  title="A Fast and Scalable Blockchain for Enterprise Users"
+  author="Jan Xie"
+  date="2017-11-26"
 %}
 
 {% include content-embed.html
   src="https://www.youtube.com/embed/faVnsBRLAL4"
-  url="https://www.youtube.com/watch?v=faVnsBRLAL4"
-  title="Masterchain blockchain platform overview"
+  title="Pluggable Crypto Layer: Introducing Government-approved cryptography to Ethereum"
+  author="Kirill Ivkushkin"
+  date="2017-11-26"
 %}
 
 {% include content-embed.html
   src="https://www.youtube.com/embed/7PpQS4hQP9A"
-  url="https://www.youtube.com/watch?v=7PpQS4hQP9A"
-  title="Masterchain platform demonstration"
+  title="Advancing Ethereum in Permissioned Networks: Integrating PBFT into Quorum"
+  author="Tyrone Lobban and Yu-Te Lin"
+  date="2017-11-26"
 %}
 
 [[6:44]](https://www.youtube.com/watch?v=CNavXFv3ats&t=404s) **Redwan:**
