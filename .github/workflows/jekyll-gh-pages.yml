@@ -65,9 +65,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
   
-  # Preview deployment (runs on pull requests)
+  # Preview deployment (runs on pull requests in forks only, not upstream)
   deploy-preview:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' && github.repository_owner != 'stratomercata'
     environment:
       name: pr-preview-${{ github.event.pull_request.number }}
       url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-${{ github.event.pull_request.number }}
