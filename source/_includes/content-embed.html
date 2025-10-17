@@ -39,8 +39,8 @@
           </div>
         {% endif %}
         {% if include.author or include.date %}
-          <div class="content-embed-metadata">
-            {% if include.author %}by {% assign matched_person = nil %}{% for person in site.people %}{% if person.name == include.author %}{% assign matched_person = person %}{% break %}{% endif %}{% endfor %}{% if matched_person %}<a href="{{ matched_person.url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>{% else %}<span class="blog-embed-author">{{ include.author }}</span>{% endif %}{% endif %}{% if include.date %}{% if include.author %}, {% endif %}<span class="blog-embed-date">{{ include.date }}</span>{% endif %}
+          <div class="content-embed-metadata content-embed-metadata-mb">
+            {% if include.author %}by {% assign matched_person = nil %}{% for person in site.people %}{% if person.name == include.author %}{% assign matched_person = person %}{% break %}{% endif %}{% endfor %}{% if matched_person %}<a href="{{ matched_person.url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>{% else %}<span class="blog-embed-author">{{ include.author }}</span>{% endif %}{% endif %}{% if include.date %}{% if include.author %}, {% endif %}<span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
           </div>
         {% endif %}
       </div>
@@ -86,10 +86,10 @@
           {% endfor %}
           {% if matched_person %}
             by <a href="{{ matched_person.url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>
-            {% if include.date %} , <span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
+            {% if include.date %}, <span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
           {% elsif include.author %}
             by <span class="blog-embed-author">{{ include.author }}</span>
-            {% if include.date %} , <span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
+            {% if include.date %}, <span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
           {% elsif include.date %}
             <span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>
           {% endif %}
@@ -100,9 +100,6 @@
           {% if include.author %}by {% assign matched_person = nil %}{% for person in site.people %}{% if person.name == include.author %}{% assign matched_person = person %}{% break %}{% endif %}{% endfor %}{% if matched_person %}<a href="{{ matched_person.url }}" class="blog-embed-author content-embed-author-link">{{ include.author }}</a>{% else %}<span class="blog-embed-author">{{ include.author }}</span>{% endif %}{% endif %}{% if include.date %}{% if include.author %}, {% endif %}<span class="blog-embed-date">{{ include.date | date: "%B %d, %Y" }}</span>{% endif %}
         </div>
       {% endif %}
-      {% unless include.img %}
-        <span class="blog-embed blog-embed-link content-embed-url-text">{{ include.url }}</span>
-      {% endunless %}
     </div>
   {% endif %}
 </div>
