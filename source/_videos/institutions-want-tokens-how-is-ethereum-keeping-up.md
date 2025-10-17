@@ -18,6 +18,14 @@ We suggest that you start at the [Bob introduction](#bob-introduction).
     <ul style="margin-left: 2em;">
         <li><a href="#small-talk-waiting-for-attendees">Small talk. Waiting for attendees</a></li>
         <li><a href="#bob-introduction">Bob introduction</a></li>
+        <li><a href="#history-of-eea-formation">History of EEA formation</a></li>
+        <li><a href="#early-enterprise-blockchain-landscape">Early enterprise blockchain landscape</a></li>
+        <li><a href="#current-institutional-landscape">Current institutional landscape - Sibos and Swift</a></li>
+        <li><a href="#technical-maturity-and-capabilities">Technical maturity and capabilities</a></li>
+        <li><a href="#rwas-and-tokenization">RWAs and tokenization</a></li>
+        <li><a href="#competitive-landscape">Competitive landscape</a></li>
+        <li><a href="#ethereum-as-the-standard">Ethereum as the standard</a></li>
+        <li><a href="#closing-thoughts">Closing thoughts and where to find more</a></li>
     </ul>
 </div>
 
@@ -380,6 +388,14 @@ Well, I think there was another parallel thing that was happening. At that [DEVC
 
 And we actually had a design for, yeah, yeah, yeah.
 
+<a id="early-enterprise-blockchain-landscape"></a>
+
+<br>
+
+### Early enterprise blockchain landscape
+
+<br>
+
 [[13:31]](https://www.youtube.com/watch?v=CNavXFv3ats&t=811s) **Redwan:**
 You broke up for me quite a lot there, [Victor]({{ '/people/victor-wong/' | relative_url }}), I think that's a very cool parallel. Like you've set the stage pretty well for like, you know, where it's coming from.
 
@@ -402,6 +418,14 @@ I mean, I don't know if it's like, no, there is, but there were some interesting
   title='Sibos'
   img='https://www.finextra.com/finextra-images/top_pics/xl/sibos2022amsterdamlogocmykvertical.jpg'
 %}
+
+<a id="current-institutional-landscape"></a>
+
+<br>
+
+### Current institutional landscape - Sibos and Swift
+
+<br>
 
 [[14:28]](https://www.youtube.com/watch?v=CNavXFv3ats&t=868s) **Bob:**
 Yeah, we should mention that because like, you were just at [Sibos](https://www.sibos.com/) and you're dealing with like, what we think of as tried by institutional players. And that's, you know, where you have a lot of communication. So like, what were your impressions about where they're at with that?
@@ -538,6 +562,14 @@ Yeah, yeah, yeah. They actually exactly the same thing, but it's just in a diffe
   img='https://hrf.org/wp-content/uploads/2024/11/Latest-Web-Header-CBDC-Silver-Anthem-press-release-V1-1.png'
 %}
 
+<a id="technical-maturity-and-capabilities"></a>
+
+<br>
+
+### Technical maturity and capabilities
+
+<br>
+
 [[21:36]](https://www.youtube.com/watch?v=CNavXFv3ats&t=1296s) **Bob:**
 And- It's just the issuer.
 
@@ -654,6 +686,14 @@ Like Nike was the first to like sell a ton of NFTs. And then you're seeing like,
 
 And somehow there's kind of like a merger going on. And, you know, this is a, creating good top line revenue for investment banks and, you know, et cetera, et cetera. So like, is your, is your sense that people want the efficiency to compete or like, are they starting to think about it as like a new revenue line or, you know, like a transformed revenue line or something?
 
+<a id="rwas-and-tokenization"></a>
+
+<br>
+
+### RWAs and tokenization
+
+<br>
+
 [[31:45]](https://www.youtube.com/watch?v=CNavXFv3ats&t=1905s) **Redwan:**
 Well, that's a billion trillion dollar question right there. I don't have like the answer. What I could say is I see, I see how, like, I think if you look at, you know, operational optimization, it's more than that.
 
@@ -710,6 +750,14 @@ That's some of the work that is being done as we speak. And that's gonna really 
 We wanna look at everything, which I think it's absolutely fair. And I would do the same if I were in their shoe. So, okay, well, they have some different assessment, you know, criteria and they say, well, we're gonna take this chain, this chain, this chain, this chain.
 
 And then we'll see.
+
+<a id="competitive-landscape"></a>
+
+<br>
+
+### Competitive landscape
+
+<br>
 
 [[37:22]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2242s) **Bob:**
 I mean, beyond EVM, I mean, you've obviously got competition between Ethereum and other EVM flavors. What is the competition outside of that? Because I know there's, you know, you've obviously got competition within that, but are institutions doing non-EVM things as well?
@@ -804,6 +852,14 @@ So you can see that- Right, well, one of their big sell at New York Blockchain W
 
 And I mean, that's seven years ago. So yeah, I'm sure that they need to have an even better EVM story these days.
 
+<a id="ethereum-as-the-standard"></a>
+
+<br>
+
+### Ethereum as the standard
+
+<br>
+
 [[44:21]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2661s) **Redwan:**
 To answer your question, and EVM and Ethereum is really the standard as everyone, that's what they're saying. You go through some different stages, you have the [Chief Innovation Officer (Tom Zschach)](https://x.com/tomzschach) of [Swift](https://www.Swift.com/) and some different institutions. They understand that.
 
@@ -843,6 +899,14 @@ It's not a private company. There's no CEO of internet.
 Yeah, it's [Linus](https://en.wikipedia.org/wiki/Linus_Torvalds), right?
 
 So that's something that is like catching up more and more and the more we're going, that's also like the mission of what we do at [EEA](https://entethalliance.org), going to have this conversation, doing events, like bringing some people together from like a few events that we do when we try to really mix like DeFi, traditional finance institution, like pure Ethereum players and have all those people talking together. That's how we make that moving forward.
+
+<a id="closing-thoughts"></a>
+
+<br>
+
+### Closing thoughts and where to find more
+
+<br>
 
 [[48:09]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2889s) **Bob:**
 Well, on that note, I think we'll wrap up, but where can people find more about you and [EEA](https://entethalliance.org) in general?
