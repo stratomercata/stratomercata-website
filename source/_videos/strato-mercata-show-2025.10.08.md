@@ -132,15 +132,13 @@ You can tell [Bob]({{ '/people/bob-summerwill/' | relative_url }}), [Bob]({{ '/p
 [[3:12]](https://www.youtube.com/watch?v=15MltoqMjZU&t=192s) **Victor:**
 Yes, so we've been building since the launch of Ethereum and continue to follow this journey. So you'll get hopefully no shilling and a lot of good historical context about what we're going to talk about today. And today we are going to talk about the highlights from [TOKEN2049](https://token2049.com).
 
-<div style="max-width: 50%;">
 {% include content-embed.html 
-   img="https://token2049.nyc3.cdn.digitaloceanspaces.com/Singapore/Partners/T2049%20SG25%20Don%20Trump%20Jr.jpg"
+   img="https://console.kr-asia.com/wp-content/uploads/2023/09/Token2049-Singapore-2023.png"
    url="https://www.token2049.com/"
    title="TOKEN2049"
    description="The World's Largest Crypto Event"
    site="token2049.com"
 %}
-</div>
 
 And was it more boring or more crazy in terms of the blockchain world? Joining me is Bob Summerwill. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), you want to do a quick intro?
 
@@ -207,7 +205,6 @@ But yeah, and also, you know, like tons of other Congress people and state level
 
 It's like getting into these boring ETF, you know, treasury company, government level adoption sort of stuff that's happened earlier than on the Bitcoin side than more generally. But yeah, also, I mean, obviously, like the Trumps have got their [World Liberty](https://worldlibertyfinancial.com/) nonsense going on and got to be pumping that one.
 
-<div style="max-width: 50%;">
 {% include content-embed.html 
    img="https://www.reuters.com/resizer/v2/556OJE5NPNLZJBOJU7SSGUDTYM.jpg?auth=40be8fa5ceb85557e88bdab42c5a2ab901fcd6540aec9aa1fe5e7fcdd469c102&height=1005&width=1920&quality=80&smart=true"
    url="https://worldlibertyfinancial.com/"
@@ -215,7 +212,6 @@ It's like getting into these boring ETF, you know, treasury company, government 
    description="Digital assets and decentralized finance platform"
    site="worldlibertyfinancial.com"
 %}
-</div>
 
 <a id="boring-or-crazy"></a>
 
@@ -327,7 +323,6 @@ And sorry, I thought you were talking about the [Facebook Libra](https://en.wiki
 [[16:02]](https://www.youtube.com/watch?v=15MltoqMjZU&t=962s) **Kieren:**
 No, no, no, no. Yeah, the [Milei](https://en.wikipedia.org/wiki/Javier_Milei) associated meme. The Milei associated meme, gotcha.
 
-<div style="max-width: 50%;">
 {% include content-embed.html 
    img="https://ichef.bbci.co.uk/news/1024/cpsprodpb/f27c/live/7325f3b0-ed48-11ef-ae3e-e51fb268b1dc.jpg.webp"
    url="https://www.bbc.com/news/articles/cp9x9j89evxo"
@@ -335,7 +330,6 @@ No, no, no, no. Yeah, the [Milei](https://en.wikipedia.org/wiki/Javier_Milei) as
    description="President Javier Milei is facing legal action over his promotion of the $LIBRA cryptocurrency"
    site="bbc.com"
 %}
-</div>
 
 [[16:08]](https://www.youtube.com/watch?v=15MltoqMjZU&t=968s) **Bob:**
 There was a [Hawk Tuah coin](https://en.wikipedia.org/wiki/Haliey_Welch#Meme_coin_scandal) as well, wasn't there?
@@ -349,7 +343,7 @@ Most of these treasury companies are an existing publicly traded company. And th
 
 You know, like there was a panel, [Tom Lee](https://en.wikipedia.org/wiki/Thomas_Lee_(analyst)) gave a lot of like numbers on how big [his digital asset treasury company](https://www.bitminetech.io/) is, what chunk of ETH it holds, you know, now what the trend is, all that sort of thing. And they've, I guess, [Michael Saylor](https://en.wikipedia.org/wiki/Michael_J._Saylor) kind of pioneered, I don't know if he was there, I don't think he was, some of the financial engineering that kind of creatively let him acquire as much Bitcoin as possible. And all these folks are then kind of in the, I would argue like part of the TradFi mindset, people make complicated products that sort of favor the house in a sense.
 
-<img src="{{ '/images/personal/bob-summerwill/2025.10.01/tom-lee-token2049.jpeg' | relative_url }}" alt="Tom Lee at TOKEN2049" style="width: 33%;">
+<img src="{{ '/images/personal/bob-summerwill/photos/2025.10.01/tom-lee-token2049.jpeg' | relative_url }}" alt="Tom Lee at TOKEN2049" style="width: 33%;">
 
 So that, you know, no matter what, like the client has an idea, but the institution does okay, right? And some analog of that is going on, you know, people are purchasing, like a lot of the time you would just want to hold tokens directly as opposed to invest in a digital assets treasury. I guess I think the digital asset treasuries may be better than the ETFs.
 
@@ -379,7 +373,6 @@ Shout out to you, [Shiba](https://x.com/Cryptotarzan19). [Bob]({{ '/people/bob-s
 [[21:04]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1264s) **Bob:**
 Yeah, I mean, you know, I guess this is all sort of maturity. And it's a strange kind of feeling, you know, looking back on all of our joint experience, sort of on [Enterprise Ethereum](https://entethalliance.org/) efforts kicking off in 2016, 2017.
 
-<div style="max-width: 50%;">
 {% include content-embed.html 
    img="https://entethalliance.org/wp-content/uploads/2025/04/Hero-Website-1.png"
    url="https://entethalliance.org/"
@@ -387,11 +380,9 @@ Yeah, I mean, you know, I guess this is all sort of maturity. And it's a strange
    description="The leading nonprofit driving Enterprise Ethereum Adoption"
    site="entethalliance.org"
 %}
-</div>
 
 And really the thought there that all of these public and private use cases could all be met by suitably modular codebases and thinking EVMs. And, you know, and here we are, you know, that you've got, you know, you've got [Stripe](https://stripe.com/) announcing [Tempo](https://tempo.xyz/) and having a, you know, a consortium of companies doing that kind of payments.
 
-<div style="max-width: 50%;">
 {% include content-embed.html 
    url="https://fortune.com/crypto/2025/09/04/stripe-paradigm-tempo-blockchain-stablecoins-matt-huang-payments/"
    img="https://fortune.com/img-assets/wp-content/uploads/2025/09/GettyImages-938151664-e1756997857474.jpg?w=1440&q=90"
@@ -399,11 +390,9 @@ And really the thought there that all of these public and private use cases coul
    description="Stripe announces Tempo, a consortium blockchain for payments"
    site="fortune.com"
 %}
-</div>
 
 You know, set up and then you've got, you know, [NASDAQ](https://www.nasdaq.com/) announcing, you know, [equities on chain](https://finance.yahoo.com/news/nasdaq-seeks-sec-green-light-174216225.html) again with a [Besu](https://besu.hyperledger.org/) derivative.
 
-<div style="max-width: 50%;">
 {% include content-embed.html 
    url="https://finance.yahoo.com/news/nasdaq-seeks-sec-green-light-174216225.html"
    img="https://s.yimg.com/ny/api/res/1.2/mszbNOaIAQ_FhbHSVEVUng--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUzOA--/https://media.zenfs.com/en/cryptonews_us_711/5ec146b49ba01566ee0551beaebb4496"
@@ -411,7 +400,6 @@ You know, set up and then you've got, you know, [NASDAQ](https://www.nasdaq.com/
    description="Nasdaq announces plans to launch blockchain-based equities on chain"
    site="finance.yahoo.com"
 %}
-</div>
 
 And then you've got [Base](https://www.base.org/) and [Coinbase](https://www.coinbase.com/). And, you know, all of these things are happening in a very similar kind of form to what we were shooting for all that time back.
 
@@ -466,7 +454,6 @@ Yeah, things are happening fast. The turnover is still huge in the space. I woul
 
 Like I'm friends socially with the CEO of [Lighter](https://lighter.xyz/). And like he told me about it like a year and a half ago or two. Like I read the paper, I was like, okay, I kind of get it.  Like circuits for matching and so on. It's like, it's huge now. Like over in the DEX wars are just sort of heating up.
 
-<div style="max-width: 50%;">
 {% include content-embed.html 
    url="https://lighter.xyz/"
    img="https://pbs.twimg.com/profile_banners/1604942990417580032/1758207995/1080x360"
@@ -474,7 +461,6 @@ Like I'm friends socially with the CEO of [Lighter](https://lighter.xyz/). And l
    description="High-performance decentralized exchange with circuit-based matching"
    site="lighter.xyz"
 %}
-</div>
 
 
 The perp DEX is, there's like a new perp DEX a minute. Yeah, I think, I guess the pace at which things can happen seems to just be accelerating. And the cycles, so I was talking to a friend who's kind of investor, kind of runs an incubator sort of thing.
@@ -540,7 +526,7 @@ I wonder if that's changed. It used to be like, the joke that I've both experien
 [[32:25]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1945s) **Bob:**
 There was plenty of [Charles](https://en.wikipedia.org/wiki/Charles_Hoskinson), but no [Ripple](https://ripple.com/)-ers.
 
-<img src="{{ '/images/personal/bob-summerwill/2025.10.01/charles-token2049.jpeg' | relative_url }}" alt="Charles Hoskinson at TOKEN2049" style="width: 33%;">
+<img src="{{ '/images/personal/bob-summerwill/photos/2025.10.01/charles-token2049.jpeg' | relative_url }}" alt="Charles Hoskinson at TOKEN2049" style="width: 33%;">
 
 [[32:32]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1952s) **Kieren:**
 Yeah, I wonder. I think [BNB](https://en.wikipedia.org/wiki/Binance#BNB) flipped [XRP](https://en.wikipedia.org/wiki/XRP_Ledger) recently.
@@ -626,7 +612,6 @@ Because everything really at this point has pretty much been speculation or, you
 [[40:45]](https://www.youtube.com/watch?v=15MltoqMjZU&t=2445s) **Victor:**
 Yeah, and one question, like, are we going to [DevConnect](https://devconnect.org/)? I know me and [Bob]({{ '/people/bob-summerwill/' | relative_url }}) have already bought our tickets. [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), you're the holdout.
 
-<div style="max-width: 50%;">
 {% include content-embed.html 
    url="https://devconnect.org/"
    img="https://pbs.twimg.com/media/G2kH4V3aAAAGPgA?format=jpg&name=large"
@@ -634,7 +619,6 @@ Yeah, and one question, like, are we going to [DevConnect](https://devconnect.or
    description="Ethereum developer conference and collaborative week"
    site="devconnect.org"
 %}
-</div>
 
 Can I get a commitment?
 
