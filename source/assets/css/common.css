@@ -1562,3 +1562,13 @@ article .blog-tags .tag {
     padding: 3rem 0;
   }
 }
+
+/* Mobile: Make embeds full width */
+@media (max-width: 767px) {
+  .blog-embed-card,
+  .content-embed-card {
+    width: calc(100% - 18px);
+    display: block;
+    margin: 18px 9px;
+  }
+}
