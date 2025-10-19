@@ -104,7 +104,7 @@ Okay. So, yeah, maybe we start. So, yeah.
 
 <a id="bob-introduction"></a>
 
-## Bob introduction
+### Bob introduction
 
 [[9:12]](https://www.youtube.com/watch?v=rSfw2sgHVJE&t=552s) **Bob:**
 Okay. Hi, everyone. Good to have you here.
@@ -117,7 +117,7 @@ The focus for V2 is really about high quality, hard assets, specifically gold an
 
 <a id="victor-takeover"></a>
 
-## Victor takes over
+### Victor takes over
 
 [[10:33]](https://www.youtube.com/watch?v=rSfw2sgHVJE&t=633s) **Victor:**
 Hey, [Bob]({{ '/people/bob-summerwill/' | relative_url }}). We're getting some feedback that your audio is coming in choppy for some reason, but mine seems to be okay. So, why don't I take it over from what you said?
@@ -135,7 +135,7 @@ Now, what you're seeing on your screen right now is an overview of the new V2 ap
 
 <a id="prizes"></a>
 
-## Prizes
+### Prizes
 
 [[12:23]](https://www.youtube.com/watch?v=rSfw2sgHVJE&t=743s) **Victor:**
 We took as much of that feedback as we could to bring you this new version of the contest. Now, in this version of the contest, there are still going to be three prizes as there were before, but they're for slightly different things.
@@ -151,7 +151,7 @@ And then we have an exploit prize. So, if anyone finds an exploit that could pos
 
 <a id="bridging-assets"></a>
 
-## Bridging assets
+### Bridging assets
 
 [[13:38]](https://www.youtube.com/watch?v=rSfw2sgHVJE&t=818s) **Victor:**
 The way the process works is slightly different. So, I just want to kind of walk everyone through that a little bit. So, for the trading prize, what we are doing is we are first providing you assets that will be on [Sepolia](https://ethereum.org/developers/docs/networks/#sepolia) and you'll have to bridge those assets in.
@@ -186,7 +186,7 @@ And then you can also participate in the pools as well. So, you can either provi
 
 <a id="special-events"></a>
 
-## Special events
+### Special events
 
 [[16:24]](https://www.youtube.com/watch?v=rSfw2sgHVJE&t=970s) **Victor:**
 And one other thing we want to mention is that to kind of give a good simulation of real life, throughout the contest on the [Telegram channel](https://t.me/stratomercata), we will announce special events that will happen that will impact various things on the contest and the prices of assets on the contest. So, we will announce sort of sudden airdrops where the first couple of people that respond will get additional tokens. We will announce sudden price shifts and we will announce also, you know, other things that, you know, some positions might be liquidatable on the contest.
@@ -207,7 +207,7 @@ But, yes, we'll get you some wired headphones, [Bob]({{ '/people/bob-summerwill/
 
 <a id="wrap-up"></a>
 
-## Wrap up
+### Wrap up
 
 So, we look forward, the contest will run until the following Tuesday at 5pm.  So, everyone, we look forward to seeing you participate in the contest. We look forward to seeing any of your comments. And please provide whatever feedback that you have on the [Telegram feed](https://t.me/stratomercata).
 

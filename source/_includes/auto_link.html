@@ -31,8 +31,14 @@ while ensuring clean, valid HTML output.
   {%- if forloop.first -%}
     {%- assign new_body = part -%}
   {%- else -%}
-    {%- comment -%}Check if this link is to a people page{%- endcomment -%}
+    {%- comment -%}Check if this link is to a LOCAL people page (not external URLs){%- endcomment -%}
+    {%- assign is_local_people_link = false -%}
     {%- if part contains '/people/' -%}
+      {%- unless part contains 'http://' or part contains 'https://' -%}
+        {%- assign is_local_people_link = true -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- if is_local_people_link -%}
       {%- assign link_parts = part | split: '">' -%}
       {%- if link_parts.size > 1 -%}
         {%- assign href_part = link_parts[0] -%}
