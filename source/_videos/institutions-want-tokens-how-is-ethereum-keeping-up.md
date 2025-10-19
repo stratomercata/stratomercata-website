@@ -29,15 +29,9 @@ We suggest that you start at the [Bob introduction](#bob-introduction).
     </ul>
 </div>
 
-<br><br>
-
 <a id="small-talk-waiting-for-attendees"></a>
 
-<br>
-
 ### Small talk. Waiting for attendees
-
-<br>
 
 [[0:02]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2s) **Redwan:**
 What are you using? I use [Restream](https://restream.io). We try to do something, and it's streamed on Twitter.  I think YouTube and LinkedIn at the same time.
@@ -89,11 +83,10 @@ I find it quite well.
 
 <a id="bob-introduction"></a>
 
-<br>
 
 ### Bob introduction
 
-<br>
+
 
 [[1:38]](https://www.youtube.com/watch?v=CNavXFv3ats&t=98s) **Victor:**
 5:01, oh, yeah. We are live, so we are live. No, no, no, I'm ready.
@@ -390,11 +383,10 @@ And we actually had a design for, yeah, yeah, yeah.
 
 <a id="early-enterprise-blockchain-landscape"></a>
 
-<br>
 
 ### Early enterprise blockchain landscape
 
-<br>
+
 
 [[13:31]](https://www.youtube.com/watch?v=CNavXFv3ats&t=811s) **Redwan:**
 You broke up for me quite a lot there, [Victor]({{ '/people/victor-wong/' | relative_url }}), I think that's a very cool parallel. Like you've set the stage pretty well for like, you know, where it's coming from.
@@ -421,11 +413,10 @@ I mean, I don't know if it's like, no, there is, but there were some interesting
 
 <a id="current-institutional-landscape"></a>
 
-<br>
 
 ### Current institutional landscape - Sibos and Swift
 
-<br>
+
 
 [[14:28]](https://www.youtube.com/watch?v=CNavXFv3ats&t=868s) **Bob:**
 Yeah, we should mention that because like, you were just at [Sibos](https://www.sibos.com/) and you're dealing with like, what we think of as tried by institutional players. And that's, you know, where you have a lot of communication. So like, what were your impressions about where they're at with that?
@@ -564,11 +555,10 @@ Yeah, yeah, yeah. They actually exactly the same thing, but it's just in a diffe
 
 <a id="technical-maturity-and-capabilities"></a>
 
-<br>
 
 ### Technical maturity and capabilities
 
-<br>
+
 
 [[21:36]](https://www.youtube.com/watch?v=CNavXFv3ats&t=1296s) **Bob:**
 And- It's just the issuer.
@@ -688,11 +678,10 @@ And somehow there's kind of like a merger going on. And, you know, this is a, cr
 
 <a id="rwas-and-tokenization"></a>
 
-<br>
 
 ### RWAs and tokenization
 
-<br>
+
 
 [[31:45]](https://www.youtube.com/watch?v=CNavXFv3ats&t=1905s) **Redwan:**
 Well, that's a billion trillion dollar question right there. I don't have like the answer. What I could say is I see, I see how, like, I think if you look at, you know, operational optimization, it's more than that.
@@ -753,11 +742,10 @@ And then we'll see.
 
 <a id="competitive-landscape"></a>
 
-<br>
 
 ### Competitive landscape
 
-<br>
+
 
 [[37:22]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2242s) **Bob:**
 I mean, beyond EVM, I mean, you've obviously got competition between Ethereum and other EVM flavors. What is the competition outside of that? Because I know there's, you know, you've obviously got competition within that, but are institutions doing non-EVM things as well?
@@ -854,11 +842,10 @@ And I mean, that's seven years ago. So yeah, I'm sure that they need to have an 
 
 <a id="ethereum-as-the-standard"></a>
 
-<br>
 
 ### Ethereum as the standard
 
-<br>
+
 
 [[44:21]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2661s) **Redwan:**
 To answer your question, and EVM and Ethereum is really the standard as everyone, that's what they're saying. You go through some different stages, you have the [Chief Innovation Officer (Tom Zschach)](https://x.com/tomzschach) of [Swift](https://www.Swift.com/) and some different institutions. They understand that.
@@ -902,11 +889,10 @@ So that's something that is like catching up more and more and the more we're go
 
 <a id="closing-thoughts"></a>
 
-<br>
 
 ### Closing thoughts and where to find more
 
-<br>
+
 
 [[48:09]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2889s) **Bob:**
 Well, on that note, I think we'll wrap up, but where can people find more about you and [EEA](https://entethalliance.org) in general?
