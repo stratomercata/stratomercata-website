@@ -131,7 +131,7 @@ But yeah, like it really started probably at [DEVCON 2](https://www.earlydaysofe
 [[2:56]](https://www.youtube.com/watch?v=CNavXFv3ats&t=176s) **Kieren:**
 There was the kickoff meeting at the [JP Morgan](https://www.jpmorgan.com) office, which was pretty big. And even before, they were the closed door meetings at Microsoft.
 
-<img src='{{ site.baseurl }}/images/blockapps.net/2025.10.13/enteth20170110_withv.jpg" alt="Enterprise Ethereum Alliance Launch" style="width: 50%;">
+<img src="{{ site.baseurl }}/images/blockapps.net/2025.10.13/enteth20170110_withv.jpg" alt="Enterprise Ethereum Alliance Launch" style="width: 50%;">
 
 [[3:07]](https://www.youtube.com/watch?v=CNavXFv3ats&t=187s) **Bob:**
 Right, so that public launch was February.
@@ -139,8 +139,6 @@ Right, so that public launch was February.
 But December, there was an internal like one. And then JP Morgan was in January of 2017.
 
 But yeah, like a lot of those initial contacts had happened at [DEVCON 2](https://www.earlydaysofeth.org/articles/devcon2) in October the previous year.
-
-![Enterprise Ethereum Alliance Launch]({{ site.baseurl }}/images/blockapps.net/2025.10.13/enteth20170110_withv.jpg){: style="width: 50%;"}
 
 [[3:26]](https://www.youtube.com/watch?v=CNavXFv3ats&t=206s) **Victor:**
 Well, in the [DEVCON 2](https://www.earlydaysofeth.org/articles/devcon2). Yeah, so like basically there was a lot of conversations there about figuring out how to bring on enterprises too. And there were a lot of interested parties. And yeah, like the group of people, which was I think about six people that were interested, met at like a Starbucks just off site.
