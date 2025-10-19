@@ -884,7 +884,9 @@ main p {
   gap: 3rem;
 }
 
-.blog-post-card {
+/* Shared Content Card Base Styles */
+.blog-post-card,
+.video-card {
   background: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -892,8 +894,15 @@ main p {
   transition: box-shadow 0.2s;
 }
 
-.blog-post-card:hover {
+.blog-post-card:hover,
+.video-card:hover {
   box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog-specific: vertical layout on all screens */
+.blog-post-card {
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-post-image {
@@ -908,11 +917,14 @@ main p {
   object-fit: cover;
 }
 
-.blog-post-content {
+/* Shared Content Info/Meta Styles */
+.blog-post-content,
+.video-info {
   padding: 2rem;
 }
 
-.blog-post-content h2 {
+.blog-post-content h2,
+.video-info h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #1f2937;
@@ -921,7 +933,14 @@ main p {
   line-height: 1.3;
 }
 
-.blog-post-content h2 a {
+.video-info h3 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-content h2 a,
+.video-info h3 a {
   color: #1f2937;
   text-decoration: none;
 }
@@ -930,17 +949,34 @@ main p {
   color: #2563eb;
 }
 
-.blog-post-meta {
+.video-card:hover .video-info h3 a {
+  color: #2563eb;
+}
+
+.blog-post-meta,
+.video-meta {
   font-size: 0.875rem;
   color: #6b7280;
   margin-bottom: 1rem;
 }
 
-.blog-post-excerpt {
+.video-meta {
+  margin-bottom: 0.75rem;
+}
+
+.blog-post-excerpt,
+.video-description,
+.video-excerpt {
   font-size: 1rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+}
+
+.video-description,
+.video-excerpt {
+  font-size: 0.875rem;
+  margin-bottom: 0;
 }
 
 .blog-post-footer {
@@ -1083,18 +1119,10 @@ main p {
   margin-bottom: 3rem;
 }
 
+/* Video-specific: vertical on mobile, horizontal on desktop */
 .video-card {
   display: flex;
   flex-direction: column;
-  background: white;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s;
-}
-
-.video-card:hover {
-  box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.1);
 }
 
 .video-thumbnail {
@@ -1153,41 +1181,8 @@ main p {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.video-info {
-  padding: 1.5rem;
-}
-
-.video-info h3 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-}
-
-.video-info h3 a {
-  color: #1f2937;
-  text-decoration: none;
-}
-
-.video-card:hover .video-info h3 a {
-  color: #2563eb;
-}
-
-.video-meta {
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin-bottom: 0.75rem;
-}
-
-.video-description,
-.video-excerpt {
-  font-size: 0.875rem;
-  color: #4b5563;
-  line-height: 1.6;
-}
-
 @media (min-width: 768px) {
+  /* Video-specific: horizontal layout on desktop */
   .video-card {
     flex-direction: row;
   }
@@ -1267,6 +1262,7 @@ article .blog-description {
   font-style: italic;
 }
 
+/* Shared Content Body Styles - applies to both blog and video detail pages */
 article .blog-content,
 .video-content {
   font-size: 1rem;
@@ -1274,7 +1270,8 @@ article .blog-content,
   color: #374151;
 }
 
-article .blog-content h2 {
+article .blog-content h2,
+.video-content h2 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #1f2937;
@@ -1282,7 +1279,8 @@ article .blog-content h2 {
   margin-bottom: 1rem;
 }
 
-article .blog-content h3 {
+article .blog-content h3,
+.video-content h3 {
   font-size: 1.25rem;
   font-weight: 600;
   color: #1f2937;
