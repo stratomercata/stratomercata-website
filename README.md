@@ -59,8 +59,10 @@ This is the standard Jekyll approach for GitHub Pages sites.
 
 ### Prerequisites
 
-- Ruby 3.3+ (install via [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io/))
+- Ruby 3.3+ or Ruby 3.4+ (install via [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io/))
 - Bundler: `gem install bundler`
+
+**Note for Ruby 3.4+**: The `Gemfile` includes compatibility gems (`base64`, `logger`, `bigdecimal`) required for Jekyll 3.10.0 on Ruby 3.4+.
 
 ### Setup & Run
 
@@ -183,7 +185,9 @@ Visit http://localhost:4000/videos/ to verify the new video appears correctly.
 
 ## Deployment
 
-### Automatic Deployment
+This site can be deployed to either **GitHub Pages** (current setup) or **Netlify** (alternative with PR preview support).
+
+### GitHub Pages (Current Setup)
 
 The site automatically deploys to GitHub Pages when changes are pushed to the `main` branch.
 
@@ -197,6 +201,32 @@ The GitHub Actions workflow (`.github/workflows/jekyll-gh-pages.yml`):
    ```
    The `url` setting from `_config.yml` is used automatically
 5. Uploads and deploys the site
+
+### Netlify Deployment (Alternative)
+
+Netlify provides zero-config Jekyll support with automatic PR preview deployments.
+
+**Benefits:**
+- Automatic PR preview deployments (each PR gets a unique preview URL)
+- Faster build times
+- Unlimited bandwidth on free tier
+- Zero configuration needed (auto-detects Jekyll)
+
+**Setup:**
+1. Go to https://app.netlify.com
+2. Click "Add new site" → "Import an existing project"
+3. Choose GitHub and select your repository
+4. Netlify auto-detects Jekyll settings
+5. Click "Deploy site"
+
+**PR Previews:**
+- Enabled by default
+- Each PR gets: `deploy-preview-{PR#}--{site}.netlify.app`
+- Rebuilds automatically on every commit
+- Preview URL posted as GitHub comment
+
+**Ruby 3.4 Compatibility:**
+The `Gemfile` includes all required compatibility gems for Netlify's Ruby 3.4 environment.
 
 ### Manual Deployment
 
@@ -257,6 +287,22 @@ Contributions are welcome! Please:
 3. Commit your changes (`git commit -m 'Add new feature'`)
 4. Push to the branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
+
+### Git Remote Setup
+
+**Main repository:**
+- `upstream` → https://github.com/stratomercata/stratomercata-website
+
+**Your fork:**
+- `origin` → https://github.com/YOUR_USERNAME/stratomercata-website
+
+To sync your fork with upstream:
+```bash
+git fetch upstream
+git checkout main
+git merge upstream/main
+git push origin main
+```
 
 For major changes, please open an issue first to discuss what you would like to change.
 
