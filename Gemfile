@@ -7,6 +7,7 @@ gem "kramdown-parser-gfm", "~> 1.1"
 # Ruby 3.4+ compatibility - these gems are no longer included by default
 gem "base64"
 gem "logger"
+gem "bigdecimal"
 
 # Jekyll plugins
 group :jekyll_plugins do
