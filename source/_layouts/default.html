@@ -24,16 +24,6 @@
                 <span></span>
             </button>
             <div class="nav-links">
-                <div class="nav-dropdown">
-                    <a href="#" class="dropdown-toggle">Products ▾</a>
-                    <div class="dropdown-menu">
-                        <div class="dropdown-menu-inner">
-                            <a href="{{ '/goldst/' | relative_url }}">GOLDST</a>
-                            <a href="{{ '/silvst/' | relative_url }}">SILVST</a>
-                            <a href="{{ '/usdst/' | relative_url }}">USDST</a>
-                        </div>
-                    </div>
-                </div>
                 <a href="{{ '/blog/' | relative_url }}">Blog</a>
                 <a href="{{ '/videos/' | relative_url }}">Videos</a>
                 <a href="{{ '/people/' | relative_url }}">Team</a>
@@ -130,8 +120,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
         const navLinks = document.querySelector('.nav-links');
-        const navDropdown = document.querySelector('.nav-dropdown');
-        
+
         if (mobileMenuToggle && navLinks) {
             // Toggle mobile menu
             mobileMenuToggle.addEventListener('click', function(e) {
@@ -140,35 +129,18 @@
                 navLinks.classList.toggle('active');
                 document.body.classList.toggle('menu-open');
             });
-            
-            // Handle dropdown on mobile
-            if (navDropdown) {
-                const dropdownToggle = navDropdown.querySelector('.dropdown-toggle');
-                if (dropdownToggle) {
-                    dropdownToggle.addEventListener('click', function(e) {
-                        // On mobile, toggle dropdown instead of following link
-                        if (window.innerWidth < 768) {
-                            e.preventDefault();
-                            navDropdown.classList.toggle('active');
-                        }
-                    });
-                }
-            }
-            
+
             // Close menu when clicking outside
             document.addEventListener('click', function(event) {
                 if (!event.target.closest('nav')) {
                     mobileMenuToggle.classList.remove('active');
                     navLinks.classList.remove('active');
                     document.body.classList.remove('menu-open');
-                    if (navDropdown) {
-                        navDropdown.classList.remove('active');
-                    }
                 }
             });
-            
-            // Close menu when clicking a navigation link (but not dropdown toggle)
-            const navLinkItems = navLinks.querySelectorAll('a:not(.dropdown-toggle)');
+
+            // Close menu when clicking a navigation link
+            const navLinkItems = navLinks.querySelectorAll('a');
             navLinkItems.forEach(link => {
                 link.addEventListener('click', function() {
                     mobileMenuToggle.classList.remove('active');
