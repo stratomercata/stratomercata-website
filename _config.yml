@@ -85,6 +85,7 @@ social:
 markdown: kramdown  # Markdown processor (kramdown is Jekyll's default)
 highlighter: rouge  # Syntax highlighter for code blocks
 permalink: /:categories/:year/:month/:day/:title/  # URL structure for blog posts
+future: true  # Publish posts with future dates (useful for scheduling content)
 
 # Kramdown-specific settings
 kramdown:

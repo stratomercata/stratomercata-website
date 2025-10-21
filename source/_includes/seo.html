@@ -17,7 +17,22 @@
   {% assign seo_title = seo_title | append: " - " | append: site.title %}
 {% endif %}
 
-{% assign seo_description = page.description | default: page.excerpt | strip_html | truncate: 160 | default: site.description %}
+{% comment %} Remove markdown links [text](url) and convert to plain text {% endcomment %}
+{% assign seo_description = page.description | default: page.excerpt | strip_html %}
+{% comment %} Replace markdown link pattern [text](url) with just text {% endcomment %}
+{% assign seo_description = seo_description | replace: '](', '__LINK_SEPARATOR__' %}
+{% assign parts = seo_description | split: '__LINK_SEPARATOR__' %}
+{% assign cleaned = '' %}
+{% for part in parts %}
+  {% assign before_paren = part | split: ')' | first %}
+  {% assign cleaned = cleaned | append: before_paren %}
+  {% if forloop.last == false %}
+    {% assign after_paren = part | split: ')' | shift %}
+    {% assign rest = after_paren | join: ')' %}
+    {% assign cleaned = cleaned | append: rest %}
+  {% endif %}
+{% endfor %}
+{% assign seo_description = cleaned | replace: '[', '' | truncate: 160 | default: site.description %}
 
 {% assign seo_author = page.author | default: site.author %}
 

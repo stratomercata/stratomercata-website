@@ -2,7 +2,7 @@
 title: "Mercata V2 Contest: Winners Announced!"
 date: 2025-09-24
 hosts: ["Kieren James-Lubin", "Victor Wong", "Jaime Gonzalez", "Michael Tan"]
-description: "Twitter Spaces which announced the winners of the second Mercata V2 competition"
+description: "A week after the kickoff, the [second Mercata V2 competition](/blog/announcing-mercata-v2-testing-challenge/) came to a close, and we announced the winners in this Spaces"
 embed:
   url: https://www.youtube.com/embed/X4ikRJhB-CQ
 ---
