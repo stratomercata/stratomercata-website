@@ -2,17 +2,11 @@
 name: Jeremy Millar
 role: Advisor
 category: advisor
-photo: /images/stratomercata.com/2025.10.14/Group-10.png
+photo: /images/irishtechnews.ie/2018.07.18/jeremy-millar.jpeg
 social:
   twitter: https://x.com/OldDawgNewTrix
   linkedin: https://linkedin.com/in/jemillar
-description: Advisor to STRATO Mercata, blockchain strategist and early Ethereum contributor, bringing deep expertise in decentralized technology and digital asset markets.
+description: Key early mover in enterprise adoption of Ethereum, serving as Chief of Staff at [Consensys](https://consensys.io/) 2016-2019.
 ---
 
-Jeremy Millar is an Advisor to [STRATO Mercata](https://stratomercata.com), bringing extensive experience in blockchain strategy and digital asset markets.
-
-As an early contributor to the Ethereum ecosystem and a veteran of the blockchain industry, Jeremy has worked with numerous blockchain projects and enterprises, helping them navigate the complex landscape of decentralized technology.
-
-Jeremy's advisory role at STRATO Mercata focuses on strategic positioning, market development, and ecosystem growth, leveraging his deep understanding of blockchain markets and user behavior.
-
-His insights help STRATO Mercata make informed decisions about product direction, partnerships, and market opportunities in the rapidly evolving digital asset finance space.
+Jeremy Millar is a blockchain executive specializing in Ethereum ecosystem development. He served as Chief of Staff and CSO at [Consensys](https://consensys.io/) (2016–2019), was a key driver of Ethereum's enterprise adoption, and was a founding board member of the [Enterprise Ethereum Alliance](https://entethalliance.com) (EEA). Previously an investment banker at Goldman Sachs, founding partner at Magister Advisors and Java architect at Oracle.

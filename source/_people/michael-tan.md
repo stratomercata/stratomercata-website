@@ -7,7 +7,7 @@ social:
   website: https://www.michaelbtan.com
   github: https://github.com/michaelbtan
   linkedin: https://linkedin.com/in/michaelbtan
-description: Software Engineer at STRATO Mercata, building innovative blockchain solutions and contributing to the development of secure, scalable digital asset platforms.
+description: Building innovative blockchain solutions and contributing to the development of secure, scalable digital asset platforms.
 ---
 
 Michael Tan is a Software Engineer at [STRATO Mercata](https://stratomercata.com), contributing his technical expertise to building the future of digital asset finance.

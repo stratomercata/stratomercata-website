@@ -6,7 +6,7 @@ photo: /images/linkedin.com/2025.10.07/ariya-amarjargal.png
 social:
   github: https://github.com/aariya50
   linkedin: https://linkedin.com/in/ariya-amarjargal
-description: Software Engineer at STRATO Mercata, developing innovative blockchain solutions and building secure infrastructure for digital asset finance.
+description: Developing innovative blockchain solutions and building secure infrastructure for digital asset finance.
 ---
 
 Ariya Amarjargal is a Software Engineer at [STRATO Mercata](https://stratomercata.com), contributing technical expertise to the development of the platform.

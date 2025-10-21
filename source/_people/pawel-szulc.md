@@ -7,7 +7,7 @@ social:
   website: https://encodepanda.com/
   twitter: https://x.com/EncodePanda
   github: https://github.com/EncodePanda
-description: Software Engineer at STRATO Mercata, developing blockchain solutions and contributing to the platform's secure and scalable infrastructure.
+description: Developing blockchain solutions and contributing to the platform's secure and scalable infrastructure.
 ---
 
 Pawel Szulc is a Software Engineer at [STRATO Mercata](https://stratomercata.com), bringing expertise in functional programming and distributed systems to the team.

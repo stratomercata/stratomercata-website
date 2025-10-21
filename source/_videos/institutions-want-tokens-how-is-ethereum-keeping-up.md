@@ -317,7 +317,7 @@ So that was a permissioned Ethereum client off POC5 pre-mainnet. Yeah. Mid-2014 
 So yeah, like, you know, it was all a bit smished apart, but it was like the time is right for us to work together because we've all got the same needs.
 
 [[9:07]](https://www.youtube.com/watch?v=CNavXFv3ats&t=547s) **Kieren:**
-Us too. We had our own client and it got used in a bunch of the ConsenSys consulting engagements at that time.
+Us too. We had our own client and it got used in a bunch of the [Consensys](https://consensys.io/) consulting engagements at that time.
 
 And we started even then kind of tuning it for enterprise. And so I guess the idea was like, well, maybe enterprises won't adopt if there isn't a standard for all of this new stuff that they need that's above and beyond the base.
 

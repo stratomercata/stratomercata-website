@@ -6,7 +6,7 @@ photo: /images/linkedin.com/2025.10.07/hasan-alqassab.png
 social:
   github: https://github.com/HT7x
   linkedin: https://linkedin.com/in/hasan-alqassab
-description: Software Engineer at STRATO Mercata, developing blockchain infrastructure and building secure solutions for digital asset finance.
+description: Developing blockchain infrastructure and building secure solutions for digital asset finance.
 ---
 
 Hasan Alqassab is a Software Engineer at [STRATO Mercata](https://stratomercata.com), contributing technical expertise to the platform's development.
