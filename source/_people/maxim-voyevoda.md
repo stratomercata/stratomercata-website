@@ -6,7 +6,7 @@ photo: https://avatars.githubusercontent.com/u/13859065
 social:
   linkedin: https://linkedin.com/in/mvoyevoda
   github: https://github.com/mvoyevoda
-description: Software Engineer at STRATO Mercata, building blockchain solutions and contributing to the technical infrastructure of the digital asset platform.
+description: Building blockchain solutions and contributing to the technical infrastructure of the digital asset platform.
 ---
 
 Maxim Voyevoda is a Software Engineer at [STRATO Mercata](https://stratomercata.com), contributing to the development of the platform's technical infrastructure.

@@ -3,12 +3,12 @@ name: Victor Wong
 role: Co-Founder & CPO
 category: leader
 cofounder: true
-photo: /images/stratomercata.com/2025.10.14/Group-1-3-1.png
+photo: /images/personal/victor-wong/2025.10.21/victor-wong.jpg
 social:
   twitter: https://x.com/vic4wong
   github: https://github.com/vic4wong
   linkedin: https://linkedin.com/in/vic4wong
-description: Chief Product Officer and Co-Founder at BlockApps and STRATO Mercata, designing innovative DeFi products that bridge traditional and digital assets.
+description: Designing innovative DeFi products that bridge traditional and digital assets.
 ---
 
 Victor Wong is the Chief Product Officer and Co-Founder of [BlockApps](https://blockapps.net) and [STRATO Mercata](https://stratomercata.com), with over a decade of experience in blockchain product development.

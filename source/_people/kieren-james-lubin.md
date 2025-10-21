@@ -3,12 +3,12 @@ name: Kieren James-Lubin
 role: Co-Founder & CEO
 category: leader
 cofounder: true
-photo: /images/stratomercata.com/2025.10.14/Group-3-2-1.png
+photo: /images/personal/kieren-james-lubin/2025.10.21/kieren-james-lubin.jpg
 social:
   twitter: https://x.com/kjameslubin
   linkedin: https://linkedin.com/in/kjameslubin
   github: https://github.com/kjameslubin
-description: CEO of BlockApps and STRATO Mercata, pioneering enterprise blockchain solutions since 2014 and building the future of digital asset finance.
+description: Early Ethereum contributor, pioneered Enterprise Blockchain and left it behind, consumer DeFi & RWAs.
 ---
 
 Kieren James-Lubin is the CEO of [BlockApps](https://blockapps.net) and [STRATO Mercata](https://stratomercata.com), bringing over a decade of blockchain industry leadership.
