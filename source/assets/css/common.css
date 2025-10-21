@@ -1543,6 +1543,15 @@ main p {
   display: block;
 }
 
+/* Person detail page photo - make consistent with blog/video */
+.person-card-size .person-photo img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 9999px;
+  object-fit: cover;
+  width: auto;
+}
+
 @media (min-width: 768px) {
   article .blog-content img,
   .video-content img {
