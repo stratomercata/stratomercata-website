@@ -8,6 +8,15 @@ embed:
   url: https://www.youtube.com/embed/2BR6nodzzos
 ---
 
+## Agenda (draft)
+
+- Intros / Welcome
+- The New Corporate Chains (Tempo, etc)
+- A brief history of Corporate Chains (private blockchains, BaaS, Libra, etc) and why they wanted to launch
+- The L1 vs L2 choice, the pluses and minus or both?
+- Opinion: Are Corpo chain the future or DOA?
+- Outro: Where can we find us, Teaser for Next week
+
 ## Transcript
 
 Coming afer the broadcast
