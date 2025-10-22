@@ -1,5 +1,5 @@
 ---
-name: Jeffrey Powell
+name: Jeffry Powell
 role: VP, Head of Business Development
 category: leader
 photo: /images/personal/jeff-powell/2025.10.20/jeff-powell-headshot.png
