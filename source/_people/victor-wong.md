@@ -3,7 +3,7 @@ name: Victor Wong
 role: Co-Founder & CPO
 category: leader
 cofounder: true
-photo: /images/personal/victor-wong/2025.10.21/victor-wong.jpg
+photo: /images/personal/victor-wong/2025.10.21/victor-wong.png
 social:
   twitter: https://x.com/vic4wong
   github: https://github.com/vic4wong
