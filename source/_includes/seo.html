@@ -20,18 +20,29 @@
 {% comment %} Remove markdown links [text](url) and convert to plain text {% endcomment %}
 {% assign seo_description = page.description | default: page.excerpt | strip_html %}
 {% comment %} Replace markdown link pattern [text](url) with just text {% endcomment %}
-{% assign seo_description = seo_description | replace: '](', '__LINK_SEPARATOR__' %}
-{% assign parts = seo_description | split: '__LINK_SEPARATOR__' %}
+{% comment %} Step 1: Replace ]( with a unique marker {% endcomment %}
+{% assign seo_description = seo_description | replace: '](', '###LINKSTART###' %}
+{% comment %} Step 2: Split on the marker to separate text from URLs {% endcomment %}
+{% assign parts = seo_description | split: '###LINKSTART###' %}
 {% assign cleaned = '' %}
 {% for part in parts %}
-  {% assign before_paren = part | split: ')' | first %}
-  {% assign cleaned = cleaned | append: before_paren %}
-  {% if forloop.last == false %}
-    {% assign after_paren = part | split: ')' | shift %}
-    {% assign rest = after_paren | join: ')' %}
-    {% assign cleaned = cleaned | append: rest %}
+  {% comment %} For each part, everything before the first ) is the URL to remove {% endcomment %}
+  {% assign segments = part | split: ')' %}
+  {% if forloop.first %}
+    {% comment %} First part has no URL prefix, just add it {% endcomment %}
+    {% assign cleaned = cleaned | append: part %}
+  {% else %}
+    {% comment %} Subsequent parts: skip the URL (first segment), keep the rest {% endcomment %}
+    {% assign segments_size = segments | size %}
+    {% if segments_size > 1 %}
+      {% for segment in segments offset: 1 %}
+        {% assign cleaned = cleaned | append: segment %}
+        {% unless forloop.last %}{% assign cleaned = cleaned | append: ')' %}{% endunless %}
+      {% endfor %}
+    {% endif %}
   {% endif %}
 {% endfor %}
+{% comment %} Step 3: Remove any remaining [ characters {% endcomment %}
 {% assign seo_description = cleaned | replace: '[', '' | truncate: 160 | default: site.description %}
 
 {% assign seo_author = page.author | default: site.author %}
