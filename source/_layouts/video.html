@@ -22,18 +22,40 @@ layout: default
 </div>
 
 <article class="video-episode">
-    <header>
+    <!--
+      Video header card - Contains video embed, title, and date
+    -->
+    <div class="content-embed-card video-header-card">
+        {% if page.embed.url %}
         <!--
-          Video title and meta information (release date, hosts, guests).
-          - Jekyll Front Matter: https://jekyllrb.com/docs/front-matter/
+          Video player embed
         -->
-        <h1>{% if page.lowercase_title %}{{ page.lowercase_title }}{% else %}{{ page.title }}{% endif %}</h1>
-        <div class="content-meta">
+        <div class="video-embed-wrapper">
+            <div class="video-embed-responsive">
+                <iframe src="{{ page.embed.url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        {% endif %}
+
+        <!--
+          Video title and date
+        -->
+        <div class="video-header-info">
+            <h1>{% if page.lowercase_title %}{{ page.lowercase_title }}{% else %}{{ page.title }}{% endif %}</h1>
             {% if page.date %}
                 <div class="release-date video-release-date">
                     <em>{{ page.date | date: "%B %d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}</em>
                 </div>
             {% endif %}
+        </div>
+    </div>
+
+    <header>
+        <!--
+          Video meta information (hosts, guests, description).
+          - Jekyll Front Matter: https://jekyllrb.com/docs/front-matter/
+        -->
+        <div class="content-meta">
             {% if page.hosts and page.hosts.size > 0 or page.guests and page.guests.size > 0 %}
             <div class="video-hosts-guests">
                 {% if page.hosts and page.hosts.size > 0 %}
@@ -121,24 +143,6 @@ layout: default
         </div>
         {% endif %}
     </header>
-    
-    <!--
-      Video player embed card
-    -->
-    {% if page.embed.url %}
-        <div class="content-embed-container">
-            {% assign formatted_date = page.date | date: "%B %d, %Y" %}
-            
-            {% include content-embed.html
-                src=page.embed.url
-                img=page.img
-                title=page.title
-                author=page.author
-                date=formatted_date
-                description=page.description
-            %}
-        </div>
-    {% endif %}
     
     <!--
       Main video content, with auto-linking for videos, blogs, and people.
