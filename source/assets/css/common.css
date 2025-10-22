@@ -1943,6 +1943,8 @@ article .blog-tags .tag {
   width: 900px !important;
   max-width: 900px !important;
   display: block !important;
+  background: #f8f9fa !important;
+  border: 1px solid #e5e7eb !important;
 }
 
 .video-embed-wrapper {
@@ -1969,6 +1971,7 @@ article .blog-tags .tag {
 .video-header-info {
   padding: 1.5rem 2rem;
   text-align: left;
+  background: #ffffff;
 }
 
 .video-header-info h1 {
