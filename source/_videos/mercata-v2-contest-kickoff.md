@@ -2,7 +2,7 @@
 title: "Mercata V2 Contest Kickoff: Bridge, Trade, Triumph"
 date: 2025-09-17
 hosts: ["Bob Summerwill", "Victor Wong"]
-description: "Twitter Spaces which kicked off the second Mercata V2 competition"
+description: "In mid-September 2025 we announced and kicked off the [second Mercata V2 competition](/blog/announcing-mercata-v2-testing-challenge/), this time with a dual focus on trading and reporting vulnerabilities."
 embed:
   url: https://www.youtube.com/embed/rSfw2sgHVJE
 ---

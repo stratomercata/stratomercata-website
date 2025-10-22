@@ -115,22 +115,29 @@ layout: default
             </div>
             {% endif %}
         </div>
+        {% if page.description %}
+        <div class="video-description">
+            {{ page.description | markdownify }}
+        </div>
+        {% endif %}
     </header>
     
     <!--
       Video player embed card
     -->
     {% if page.embed.url %}
-        {% assign formatted_date = page.date | date: "%B %d, %Y" %}
-        
-        {% include content-embed.html
-            src=page.embed.url
-            img=page.img
-            title=page.title
-            author=page.author
-            date=formatted_date
-            description=page.description
-        %}
+        <div class="content-embed-container">
+            {% assign formatted_date = page.date | date: "%B %d, %Y" %}
+            
+            {% include content-embed.html
+                src=page.embed.url
+                img=page.img
+                title=page.title
+                author=page.author
+                date=formatted_date
+                description=page.description
+            %}
+        </div>
     {% endif %}
     
     <!--

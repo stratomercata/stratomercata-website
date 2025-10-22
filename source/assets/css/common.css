@@ -1554,7 +1554,8 @@ main p {
 
 @media (min-width: 768px) {
   article .blog-content img,
-  .video-content img {
+  .video-content img,
+  .person-content img {
     max-width: 50%;
   }
 }

@@ -2,7 +2,7 @@
 title: "State of Blockchain - More Boring or More Crazy"
 date: 2025-10-08
 hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin"]
-description: "Reflections on TOKEN2049 in Singapore"
+description: "Bob and Kieren both attended TOKEN2049 in Singapore, a huge event.  What was the vibe?  Was it more boring (DATs) or more crazy (ICOs etc)?"
 embed:
   url: https://www.youtube.com/embed/15MltoqMjZU
 ---

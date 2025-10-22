@@ -3,7 +3,7 @@ title: "Institutions Want Tokens - How is Ethereum Keeping Up?"
 date: 2025-10-15
 hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin"]
 guests: ["Redwan Meslem"]
-description: "We were joined by [Redwan Meslem](https://x.com/RedoudouM), the Executive Director of the [Enterprise Ethereum Alliance](https://entethalliance.org), and talked about the history of the [EEA](https://entethalliance.org) and about the present institutional landscape"
+description: "We were joined by [Redwan Meslem](https://x.com/RedoudouM), the Executive Director of the [Enterprise Ethereum Alliance](https://entethalliance.org), and talked about the history of the [EEA](https://entethalliance.org) and about the present institutional landscape."
 img: https://img.youtube.com/vi/CNavXFv3ats/maxresdefault.jpg
 embed:
   url: https://www.youtube.com/embed/CNavXFv3ats
