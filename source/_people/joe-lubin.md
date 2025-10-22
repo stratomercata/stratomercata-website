@@ -2,7 +2,7 @@
 name: Joe Lubin
 role: Advisor
 category: advisor
-photo: /images/everipedia.org/2025.10.21/joe-lubin.webp
+photo: /images/everipedia.org/2025.10.21/joe-lubin.png
 social:
   linkedin: https://linkedin.com/in/joseph-lubin-48406489
   twitter: https://x.com/ethereumjoseph

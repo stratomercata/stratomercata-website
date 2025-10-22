@@ -2,7 +2,7 @@
 name: Jeremy Millar
 role: Advisor
 category: advisor
-photo: /images/irishtechnews.ie/2018.07.18/jeremy-millar.jpeg
+photo: /images/irishtechnews.ie/2018.07.18/jeremy-millar.png
 social:
   twitter: https://x.com/OldDawgNewTrix
   linkedin: https://linkedin.com/in/jemillar
