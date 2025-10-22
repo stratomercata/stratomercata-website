@@ -43,8 +43,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 1.5rem;
 }
 
-/* Header / Navigation */
-header {
+/* Header / Navigation - only make the site navigation header sticky */
+body > header {
   background: #fafafa;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   position: sticky;

@@ -5,6 +5,29 @@ hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin"]
 description: "Bob and Kieren both attended TOKEN2049 in Singapore, a huge event.  What was the vibe?  Was it more boring (DATs) or more crazy (ICOs etc)?"
 embed:
   url: https://www.youtube.com/embed/15MltoqMjZU
+toc:
+  - title: "Small talk.  Waiting for attendees"
+    anchor: "small-talk"
+  - title: "Victor's introduction"
+    anchor: "introduction"
+  - title: "Big themes"
+    anchor: "big-themes"
+  - title: "Boring or crazy?"
+    anchor: "boring-or-crazy"
+  - title: "Enterprise blockchain maturity"
+    anchor: "enterprise-maturity"
+  - title: "Institutional approval"
+    anchor: "institutional-approval"
+  - title: "Booth babes"
+    anchor: "booth-babes"
+  - title: "Top signals"
+    anchor: "top-signals"
+  - title: "Return of retail"
+    anchor: "return-of-retail"
+  - title: "Devconnect"
+    anchor: "devconnect"
+  - title: "Socials"
+    anchor: "socials"
 ---
 
 [Bob]({{ '/people/bob-summerwill/' | relative_url }}), [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), [Jaime]({{ '/people/jaime-gonzalez/' | relative_url }}) and [Michael]({{ '/people/michael-tan/' | relative_url }}) were all in Singapore last week for the [TOKEN2049](https://token2049.com) mega-conference.
@@ -16,22 +39,7 @@ embed:
 
 We suggest that you start at the [Victor's introduction](#introduction).
 
-<div class="table-of-contents">
-    <h2>Contents</h2>
-    <ul>
-        <li><a href="#small-talk">Small talk.  Waiting for attendees</a></li>
-        <li><a href="#introduction">Victor's introduction</a></li>
-        <li><a href="#big-themes">Big themes</a></li>
-        <li><a href="#boring-or-crazy">Boring or crazy?</a></li>
-        <li><a href="#enterprise-maturity">Enterprise blockchain maturity</a></li>
-        <li><a href="#institutional-approval">Institutional approval</a></li>
-        <li><a href="#booth-babes">Booth babes</a></li>
-        <li><a href="#top-signals">Top signals</a></li>
-        <li><a href="#return-of-retail">Return of retail</a></li>
-        <li><a href="#devconnect">Devconnect</a></li>
-        <li><a href="#socials">Socials</a></li>
-    </ul>
-</div>
+{% include table-of-contents.html %}
 
 <a id="small-talk"></a>
 

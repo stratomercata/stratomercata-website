@@ -1,0 +1,31 @@
+{% comment %}
+  Table of Contents Include
+  =========================
+  Generates a formatted table of contents from page.toc data
+
+  Usage:
+    {% include table-of-contents.html %}
+
+  Expects page.toc to be an array of objects with:
+    - title: The display text for the section
+    - anchor: The anchor link (without #)
+    - optional: timestamp for video sections
+{% endcomment %}
+
+{% if page.toc and page.toc.size > 0 %}
+<div class="table-of-contents">
+    <h2>Contents</h2>
+    <ul style="margin-left: 2em;">
+        {% for item in page.toc %}
+        <li>
+            <a href="#{{ item.anchor }}">
+                {{ item.title }}
+                {% if item.timestamp %}
+                <span class="toc-timestamp">[{{ item.timestamp }}]</span>
+                {% endif %}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

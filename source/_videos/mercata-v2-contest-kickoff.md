@@ -5,6 +5,21 @@ hosts: ["Bob Summerwill", "Victor Wong"]
 description: "In mid-September 2025 we announced and kicked off the [second Mercata V2 competition](/blog/announcing-mercata-v2-testing-challenge/), this time with a dual focus on trading and reporting vulnerabilities."
 embed:
   url: https://www.youtube.com/embed/rSfw2sgHVJE
+toc:
+  - title: "Small talk. Waiting for attendees"
+    anchor: "small-talk-waiting-for-attendees"
+  - title: "Bob introduction"
+    anchor: "bob-introduction"
+  - title: "Victor takes over"
+    anchor: "victor-takeover"
+  - title: "Prizes"
+    anchor: "prizes"
+  - title: "Bridging assets"
+    anchor: "bridging-assets"
+  - title: "Special events"
+    anchor: "special-events"
+  - title: "Wrap up"
+    anchor: "wrap-up"
 ---
 
 Our long-awaited [Mercata V2 contest]("https://www.stratomercata.com/blog/announcing-the-mercata-v2-trading-and-testing-challenge") started at 5pm ET on Wednesday 17th September 2025.  The winners will be announced on our 24th September Twitter Spaces exactly a week later.
@@ -18,18 +33,7 @@ Here are [instructions to get started](https://www.stratomercata.com/blog/announ
 
 We suggest that you start at the [Bob introduction](#bob-introduction).
 
-<div class="table-of-contents">
-    <h2>Contents</h2>
-    <ul>
-        <li><a href="#small-talk-waiting-for-attendees">Small talk. Waiting for attendees</a></li>
-        <li><a href="#bob-introduction">Bob introduction</a></li>
-        <li><a href="#victor-takeover">Victor takes over</a></li>
-        <li><a href="#prizes">Prizes</a></li>
-        <li><a href="#bridging-assets">Bridging assets</a></li>
-        <li><a href="#special-events">Special events</a></li>
-        <li><a href="#wrap-up">Wrap up</a></li>
-    </ul>
-</div>
+{% include table-of-contents.html %}
 
 <a id="small-talk-waiting-for-attendees"></a>
 
