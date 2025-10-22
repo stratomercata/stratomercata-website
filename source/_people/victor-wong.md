@@ -15,13 +15,13 @@ Victor is Co-Founder and Chief Product Officer at [BlockApps](https://blockapps.
 
 An early contributor to Ethereum and [Consensys](https://consensys.io), his key achievements include co-creating Blockchain-as-a-Service, helping with the establishment of the [Enterprise Ethereum Alliance](https://entethalliance.com), and developing some of the first real-world assets on private Ethereum blockchains.
 
+These assets supported Fortune 500 companies and governments in the mining, real estate, and agriculture sectors. Before his involvement in Web3, Victor was the tech founder of SmarTots, a mobile family startup, and Speak2Me, a language learning social network.
+
 {% include content-embed.html
-  src="https://www.coindesk.com/markets/2016/09/23/worlds-largest-mining-company-to-use-blockchain-for-supply-chain"
-  img="https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2F1ed78e46a0c051dc13610578fbcc4d955d5585be-1500x1000.jpg%3Fauto%3Dformat&w=1920&q=75"
+  url='https://www.coindesk.com/markets/2016/09/23/worlds-largest-mining-company-to-use-blockchain-for-supply-chain'
+  img='https://dbp0g3jqhvl0zy.archive.ph/IyFwF/cf3e724d2dcd837789474fa97ee765b13e280a7c.avif'
   title="World's Largest Mining Company to Use Blockchain for Supply Chain"
   site="Coindesk"
   author="Pete Rizzo"
   date="September 23, 2016"
 %}
-
-These assets supported Fortune 500 companies and governments in the mining, real estate, and agriculture sectors. Before his involvement in Web3, Victor was the tech founder of SmarTots, a mobile family startup, and Speak2Me, a language learning social network.
