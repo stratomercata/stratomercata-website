@@ -1815,7 +1815,9 @@ article .blog-content a,
 article .blog-content a:hover,
 .video-content a:hover {
   color: #1d4ed8;
-  article .article-content a {
+}
+
+article .article-content a {
   color: var(--primary-blue);
   text-decoration: underline;
 }
@@ -2211,6 +2213,56 @@ article .blog-tags .tag {
   }
 }
 
+/* Video content embeds should be full width cards */
+.video-content .blog-embed-card,
+.video-content .content-embed-card {
+  width: 100% !important;
+  max-width: 800px !important;
+  display: block !important;
+  margin: 2rem 0 !important;
+  background: #f8f9fa !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  padding: 0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+  overflow: hidden !important;
+  transition: none !important;
+}
+
+/* Remove hover effects from video content embeds */
+.video-content .blog-embed-card:hover,
+.video-content .content-embed-card:hover {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+  transform: none !important;
+}
+
+/* Fix link styling in video content embeds */
+.video-content .blog-embed-link-wrapper {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block !important;
+}
+
+.video-content .blog-embed-link-wrapper:hover {
+  text-decoration: none !important;
+}
+
+/* Ensure proper image styling in video content cards */
+.video-content .blog-embed-image-container {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.video-content .blog-embed-meta {
+  padding: 1rem !important;
+  background: #ffffff !important;
+}
+
+.video-content .blog-embed-title-with-padding {
+  background: #ffffff !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+}
+
 /* Mobile: Make embeds full width */
 @media (max-width: 767px) {
   .blog-embed-card,
@@ -2220,7 +2272,7 @@ article .blog-tags .tag {
     margin: 18px 9px;
   }
 }
-}
+
 /* Telegram CTA Section */
 .telegram-cta-section {
   background: #fafafa;
