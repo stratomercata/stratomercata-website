@@ -17,6 +17,7 @@ An early contributor to Ethereum and [Consensys](https://consensys.io), his key 
 
 {% include content-embed.html
   src="https://www.coindesk.com/markets/2016/09/23/worlds-largest-mining-company-to-use-blockchain-for-supply-chain"
+  img="https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2F1ed78e46a0c051dc13610578fbcc4d955d5585be-1500x1000.jpg%3Fauto%3Dformat&w=1920&q=75"
   title="World's Largest Mining Company to Use Blockchain for Supply Chain"
   site="Coindesk"
   author="Pete Rizzo"
