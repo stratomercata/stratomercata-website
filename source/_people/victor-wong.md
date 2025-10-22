@@ -11,10 +11,16 @@ social:
 description: Designing innovative DeFi products that bridge traditional and digital assets.
 ---
 
-Victor Wong is the Chief Product Officer and Co-Founder of [BlockApps](https://blockapps.net) and [STRATO Mercata](https://stratomercata.com), with over a decade of experience in blockchain product development.
+Victor is Co-Founder and Chief Product Officer at [BlockApps](https://blockapps.net) and [STRATO Mercata](https://stratomercata.com).  He is a blockchain veteran with over a decade of experience driving mainstream adoption.
 
-As a co-founder of BlockApps since 2014, Victor has been instrumental in shaping the company's product vision and strategy, focusing on creating practical blockchain solutions for enterprise and consumer applications.
+An early contributor to Ethereum and [Consensys](https://consensys.io), his key achievements include co-creating Blockchain-as-a-Service, helping with the establishment of the [Enterprise Ethereum Alliance](https://entethalliance.com), and developing some of the first real-world assets on private Ethereum blockchains.
 
-At STRATO Mercata, Victor leads product development, designing innovative features that make it easy for users to earn on vaulted assets like gold and silver while accessing instant credit. His focus is on creating intuitive, secure, and user-friendly DeFi products that appeal to both traditional finance users and crypto enthusiasts.
+{% include content-embed.html
+  src="https://www.coindesk.com/markets/2016/09/23/worlds-largest-mining-company-to-use-blockchain-for-supply-chain"
+  title="World's Largest Mining Company to Use Blockchain for Supply Chain"
+  site="Coindesk"
+  author="Pete Rizzo"
+  date="September 23, 2016"
+%}
 
-Victor's expertise spans product design, blockchain architecture, and user experience, helping to build products that make digital assets more accessible and useful for everyone.
+These assets supported Fortune 500 companies and governments in the mining, real estate, and agriculture sectors. Before his involvement in Web3, Victor was the tech founder of SmarTots, a mobile family startup, and Speak2Me, a language learning social network.
