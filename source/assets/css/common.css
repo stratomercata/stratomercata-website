@@ -47,9 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   background: #fafafa;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 50;
+  position: relative;
   border-bottom: 1px solid #f3f4f6;
 }
 
@@ -1942,7 +1940,7 @@ article .blog-tags .tag {
 .video-episode .content-embed-container {
   margin: 3rem auto;
   padding: 2rem 0;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .video-episode .content-embed-container iframe {
@@ -2140,6 +2138,7 @@ article .blog-tags .tag {
   .video-episode .content-embed-container {
     margin: 4rem 0;
     padding: 3rem 0;
+    max-width: 50%;
   }
 }
 /* Telegram CTA Section */
