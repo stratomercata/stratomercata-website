@@ -1942,12 +1942,20 @@ article .blog-tags .tag {
 .video-episode .content-embed-container {
   margin: 3rem auto;
   padding: 2rem 0;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .video-episode .content-embed-container iframe {
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Content embeds in video/blog content - 100% mobile, 50% desktop */
+.video-content .blog-embed-card,
+.video-content .content-embed-card,
+.blog-content .blog-embed-card,
+.blog-content .content-embed-card {
+  max-width: 100%;
 }
 
 /* Video transcript section spacing */
@@ -2137,9 +2145,19 @@ article .blog-tags .tag {
 }
 
 @media (min-width: 768px) {
+  /* Header video - 50% on desktop */
   .video-episode .content-embed-container {
     margin: 4rem 0;
     padding: 3rem 0;
+    max-width: 50%;
+  }
+  
+  /* Content embeds in body - 50% on desktop */
+  .video-content .blog-embed-card,
+  .video-content .content-embed-card,
+  .blog-content .blog-embed-card,
+  .blog-content .content-embed-card {
+    max-width: 50%;
   }
 }
 /* Telegram CTA Section */
