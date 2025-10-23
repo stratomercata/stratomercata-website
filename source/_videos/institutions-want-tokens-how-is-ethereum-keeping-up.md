@@ -7,27 +7,34 @@ description: "We were joined by [Redwan Meslem](https://x.com/RedoudouM), the Ex
 img: https://img.youtube.com/vi/CNavXFv3ats/maxresdefault.jpg
 embed:
   url: https://www.youtube.com/embed/CNavXFv3ats
+table_of_contents:
+  - link: "#small-talk-waiting-for-attendees"
+    title: "Small talk. Waiting for attendees"
+  - link: "#bob-introduction"
+    title: "Bob introduction"
+  - link: "#history-of-eea-formation"
+    title: "History of EEA formation"
+  - link: "#early-enterprise-blockchain-landscape"
+    title: "Early enterprise blockchain landscape"
+  - link: "#current-institutional-landscape"
+    title: "Current institutional landscape - Sibos and Swift"
+  - link: "#technical-maturity-and-capabilities"
+    title: "Technical maturity and capabilities"
+  - link: "#rwas-and-tokenization"
+    title: "RWAs and tokenization"
+  - link: "#competitive-landscape"
+    title: "Competitive landscape"
+  - link: "#ethereum-as-the-standard"
+    title: "Ethereum as the standard"
+  - link: "#closing-thoughts"
+    title: "Closing thoughts and where to find more"
 ---
 
 ## Transcript
 
 We suggest that you start at the [Bob introduction](#bob-introduction).
 
-<div class="table-of-contents">
-    <h2>Contents</h2>
-    <ul style="margin-left: 2em;">
-        <li><a href="#small-talk-waiting-for-attendees">Small talk. Waiting for attendees</a></li>
-        <li><a href="#bob-introduction">Bob introduction</a></li>
-        <li><a href="#history-of-eea-formation">History of EEA formation</a></li>
-        <li><a href="#early-enterprise-blockchain-landscape">Early enterprise blockchain landscape</a></li>
-        <li><a href="#current-institutional-landscape">Current institutional landscape - Sibos and Swift</a></li>
-        <li><a href="#technical-maturity-and-capabilities">Technical maturity and capabilities</a></li>
-        <li><a href="#rwas-and-tokenization">RWAs and tokenization</a></li>
-        <li><a href="#competitive-landscape">Competitive landscape</a></li>
-        <li><a href="#ethereum-as-the-standard">Ethereum as the standard</a></li>
-        <li><a href="#closing-thoughts">Closing thoughts and where to find more</a></li>
-    </ul>
-</div>
+<!-- TABLE_OF_CONTENTS -->
 
 <a id="small-talk-waiting-for-attendees"></a>
 
