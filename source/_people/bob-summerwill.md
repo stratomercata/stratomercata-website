@@ -2,7 +2,7 @@
 name: Bob Summerwill
 role: Head of Ecosystem
 category: leader
-photo: /images/blockapps.net/2025.10.13/bob_summerwill.jpg
+photo: /images/personal/bob-summerwill/photos/2025.10.23/bob-summerwill.png
 social:
   github: https://github.com/bobsummerwill
   twitter: https://x.com/bobsummerwill
