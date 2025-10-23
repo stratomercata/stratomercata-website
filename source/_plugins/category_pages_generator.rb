@@ -62,6 +62,34 @@ module Jekyll
       end
       
       puts "CategoryPageGenerator: Generated #{archives.size} archive pages"
+
+      # Generate archive pages for videos by month/year
+      unless site.collections.key?('videos')
+        puts "CategoryPageGenerator: No 'videos' collection found"
+        return
+      end
+
+      video_posts = site.collections['videos'].docs
+      puts "CategoryPageGenerator: Found #{video_posts.size} videos"
+
+      video_archives = Hash.new(0)
+      video_posts.each do |video|
+        if video.data['date']
+          date = video.data['date']
+          year_month = date.strftime('%Y-%m')
+          video_archives[year_month] += 1
+        end
+      end
+
+      puts "CategoryPageGenerator: Found #{video_archives.size} video archive periods"
+
+      video_archives.each do |year_month, count|
+        year, month = year_month.split('-')
+        site.pages << VideoArchivePage.new(site, site.source, year, month)
+        puts "CategoryPageGenerator: Creating video archive page for #{year_month}"
+      end
+
+      puts "CategoryPageGenerator: Generated #{video_archives.size} video archive pages"
     end
   end
 
@@ -101,17 +129,17 @@ module Jekyll
     def initialize(site, base, category)
       @site = site
       @base = base
-      
+
       # Create URL-friendly slug from category name
       category_slug = category.downcase.gsub(/[^\w\s-]/, '').gsub(/[\s_]+/, '-')
-      
+
       # Set the directory and filename for this category page
       @dir = File.join('blog', 'category', category_slug)
       @name = 'index.html'
-      
+
       # Initialize the page
       self.process(@name)
-      
+
       # Set page data first
       self.data = {
         'layout' => 'category',
@@ -120,7 +148,39 @@ module Jekyll
         'category_slug' => category_slug,
         'is_category_page' => true
       }
-      
+
+      # Set empty content (layout will handle it)
+      self.content = ''
+    end
+  end
+
+  class VideoArchivePage < Page
+    def initialize(site, base, year, month)
+      @site = site
+      @base = base
+
+      # Set the directory and filename for this video archive page
+      @dir = File.join('videos', 'archive', year, month)
+      @name = 'index.html'
+
+      # Initialize the page
+      self.process(@name)
+
+      # Create readable month name
+      month_names = ['', 'January', 'February', 'March', 'April', 'May', 'June',
+                     'July', 'August', 'September', 'October', 'November', 'December']
+      month_name = month_names[month.to_i]
+
+      # Set page data
+      self.data = {
+        'layout' => 'video-archive',
+        'title' => "#{month_name} #{year}",
+        'year' => year,
+        'month' => month,
+        'month_name' => month_name,
+        'is_video_archive_page' => true
+      }
+
       # Set empty content (layout will handle it)
       self.content = ''
     end
