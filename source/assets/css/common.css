@@ -1736,8 +1736,8 @@ main p {
 }
 
 article header {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -1938,8 +1938,8 @@ article .blog-tags .tag {
 
 /* Video embed spacing improvements */
 .video-episode .content-embed-container {
-  margin: 3rem auto;
-  padding: 2rem 0;
+  margin: 1.5rem auto;
+  padding: 0;
   max-width: 100%;
 }
 
@@ -1969,8 +1969,8 @@ article .blog-tags .tag {
   background: #f9fafb;
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
-  padding: 1.5rem;
-  margin: 2rem 0 3rem 0;
+  padding: 1.25rem;
+  margin: 1.5rem 0 2rem 0;
 }
 
 .table-of-contents h2 {
@@ -2136,8 +2136,8 @@ article .blog-tags .tag {
 
 @media (min-width: 768px) {
   .video-episode .content-embed-container {
-    margin: 4rem 0;
-    padding: 3rem 0;
+    margin: 2rem 0;
+    padding: 0;
     max-width: 50%;
   }
 }
