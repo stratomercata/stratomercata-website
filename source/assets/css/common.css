@@ -1940,7 +1940,7 @@ article .blog-tags .tag {
 .video-episode .content-embed-container {
   margin: 3rem auto;
   padding: 2rem 0;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .video-episode .content-embed-container iframe {
@@ -2138,6 +2138,7 @@ article .blog-tags .tag {
   .video-episode .content-embed-container {
     margin: 4rem 0;
     padding: 3rem 0;
+    max-width: 50%;
   }
 }
 /* Telegram CTA Section */
