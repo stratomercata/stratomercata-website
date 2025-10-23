@@ -1191,7 +1191,10 @@ main p {
   margin-bottom: 3rem;
 }
 
-.person-card {
+/* Shared Card Styling - Used by person cards and embed cards */
+.person-card,
+.blog-embed-card,
+.content-embed-card {
   background: white;
   border-radius: 0.5rem;
   padding: 1.5rem;
@@ -1199,8 +1202,17 @@ main p {
   transition: box-shadow 0.2s;
 }
 
-.person-card:hover {
+.person-card:hover,
+.blog-embed-card:hover,
+.content-embed-card:hover {
   box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Embed card specific spacing */
+.blog-embed-card,
+.content-embed-card {
+  overflow: hidden;
+  margin: 1.5rem 0;
 }
 
 .person-header {
@@ -1815,13 +1827,6 @@ article .blog-content a,
 article .blog-content a:hover,
 .video-content a:hover {
   color: #1d4ed8;
-  article .article-content a {
-  color: var(--primary-blue);
-  text-decoration: underline;
-}
-
-article .article-content a:hover {
-  color: var(--primary-navy);
 }
 
 article .blog-content img,
@@ -2024,26 +2029,7 @@ article .blog-tags .tag {
   text-decoration: underline !important;
 }
 
-/* Blog Embed Card Styling - Matches EarlyDaysOfEthereum */
-.blog-embed-card,
-.content-embed-card {
-  background: #e8e8e8;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
-  padding: 0;
-  margin: 18px 9px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  overflow: hidden;
-  transition: box-shadow 0.2s ease;
-  width: calc(50% - 18px);
-  display: inline-block;
-  vertical-align: top;
-}
-
-.blog-embed-card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
-}
-
+/* Embed Card Content Styling */
 .blog-embed-image-container {
   width: 100%;
   height: 200px;
@@ -2062,19 +2048,16 @@ article .blog-tags .tag {
 
 .blog-embed-video-container {
   width: 100%;
-  background: #e8e8e8;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 0 10px 0;
+  margin-bottom: 1rem;
 }
 
 .blog-embed-video-wrapper {
-  width: 92%;
-  border-radius: 8px;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-  background: #e8e8e8;
-  border: 1px solid #e9ecef;
+  width: 100%;
+  border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
   padding-bottom: 56.25%;
@@ -2093,41 +2076,64 @@ article .blog-tags .tag {
 }
 
 .blog-embed-meta {
-  padding: 18px 18px 16px 18px;
-  background: #e8e8e8;
+  background: white;
 }
 
 .blog-embed-title,
 .blog-embed-title-with-padding {
-  font-weight: bold;
-  font-size: 1.13em;
-  margin-bottom: 6px;
-  color: #222;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
 }
 
 .blog-embed-title-with-padding {
-  padding: 18px 18px 0 18px;
+  margin-bottom: 1rem;
 }
 
 .blog-embed-description {
-  margin-bottom: 12px;
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
 }
 
 .content-embed-metadata {
-  font-size: 0.98em;
-  color: #666;
+  font-size: 0.875rem;
+  color: #6b7280;
 }
 
-.blog-embed-author {
-  color: #333;
+.content-embed-metadata-mb {
+  margin-bottom: 0.5rem;
+}
+
+.blog-embed-author,
+.content-embed-author-link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.blog-embed-author:hover,
+.content-embed-author-link:hover {
+  color: #1d4ed8;
   text-decoration: underline;
 }
 
 .blog-embed-date {
-  color: #666;
+  color: #6b7280;
+}
+
+.content-embed-site-link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.content-embed-site-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
 @media (min-width: 768px) {
@@ -2135,17 +2141,6 @@ article .blog-tags .tag {
     margin: 4rem 0;
     padding: 3rem 0;
   }
-}
-
-/* Mobile: Make embeds full width */
-@media (max-width: 767px) {
-  .blog-embed-card,
-  .content-embed-card {
-    width: calc(100% - 18px);
-    display: block;
-    margin: 18px 9px;
-  }
-}
 }
 /* Telegram CTA Section */
 .telegram-cta-section {
