@@ -1379,10 +1379,17 @@ main p {
   background: #f3f4f6;
 }
 
-.blog-post-thumbnail img {
+.blog-post-thumbnail a {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.blog-post-thumbnail img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1686,15 +1693,29 @@ main p {
   .video-thumbnail,
   .blog-post-thumbnail {
     width: 180px;
+    height: 101px;
     padding-bottom: 0;
-    height: auto;
-    min-height: 101px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #f3f4f6;
   }
 
   .video-thumbnail a,
   .blog-post-thumbnail a {
-    position: relative;
-    padding-bottom: 56.25%;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .blog-post-thumbnail img,
+  .video-thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
   }
 
   .video-info,
