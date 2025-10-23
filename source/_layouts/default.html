@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/common.css' | relative_url }}">
     <link rel="icon" type="image/png" href="{{ '/favicon.ico' | relative_url }}">
     {% include seo.html %}
+    {% if jekyll.environment == "production" %}
     <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=74ce1a8e"></script>
+    {% endif %}
 </head>
 <body>
     <header>

@@ -5,6 +5,17 @@ hosts: ["Kieren James-Lubin", "Victor Wong", "Jaime Gonzalez", "Michael Tan"]
 description: "A week after the kickoff, the [second Mercata V2 competition](/blog/announcing-mercata-v2-testing-challenge/) came to a close, and we announced the winners in this Spaces"
 embed:
   url: https://www.youtube.com/embed/X4ikRJhB-CQ
+table_of_contents:
+  - link: "#small-talk-waiting-for-attendees"
+    title: "Small talk. Waiting for attendees"
+  - link: "#victor-introduction"
+    title: "Victor's introduction"
+  - link: "#trading-prize"
+    title: "Trading prize"
+  - link: "#exploit-and-suggestion"
+    title: "Exploit and improvement suggestion prizes"
+  - link: "#wrapup"
+    title: "Wrap-up, heading to TOKEN2049"
 ---
 
 
@@ -16,16 +27,7 @@ Our long-awaited [Mercata V2 contest]("https://www.stratomercata.com/blog/announ
 
 We suggest that you start at the [Victor's introduction](#victor-introduction).
 
-<div class="table-of-contents">
-    <h2>Contents</h2>
-    <ul>
-        <li><a href="#small-talk-waiting-for-attendees">Small talk. Waiting for attendees</a></li>
-        <li><a href="#victor-introduction">Victor's introduction</a></li>
-        <li><a href="#trading-prize">Trading prize</a></li>
-        <li><a href="#exploit-and-suggestion">Exploit and improvement suggestion prizes</a></li>
-        <li><a href="#wrapup">Wrap-up, heading to TOKEN2049</a></li>
-    </ul>
-</div>
+<!-- TABLE_OF_CONTENTS -->
 
 <a id="small-talk-waiting-for-attendees"></a>
 
