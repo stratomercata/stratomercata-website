@@ -17,49 +17,38 @@ title: Blog
         <div class="blog-posts">
             
             {% for post in sorted_blog %}
-            <article class="blog-post-card">
+            <article class="blog-post-card {% unless post.img %}no-image{% endunless %}">
                 {% if post.img %}
-                <div class="blog-post-image">
+                <div class="blog-post-thumbnail">
                     <a href="{{ post.url | relative_url }}">
                         <img src="{{ post.img | relative_url }}" alt="{{ post.title }}" />
                     </a>
                 </div>
                 {% endif %}
-                
-                <div class="blog-post-content">
-                    <h2>
+
+                <div class="blog-post-info">
+                    <h3>
                         <a href="{{ post.url | relative_url }}">
                             {% if post.lowercase_title %}{{ post.lowercase_title }}{% else %}{{ post.title }}{% endif %}
                         </a>
-                    </h2>
-                    
+                    </h3>
+
                     <div class="blog-post-meta">
                         {% if post.date %}
-                            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-                        {% endif %}
-                        {% if post.author %}
-                            / {{ post.author }}
+                            <span class="release-date">{{ post.date | date: "%B %d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}</span>
                         {% endif %}
                     </div>
-                    
+
                     {% if post.description %}
-                    <p class="blog-post-excerpt">
-                        {{ post.description }}
+                    <p class="blog-post-description">
+                        {% include auto_link.html content=post.description %}
                     </p>
                     {% else %}
                     <p class="blog-post-excerpt">
-                        {{ post.content | strip_html | truncatewords: 50 }}
+                        {% assign excerpt = post.content | strip_html | truncatewords: 40 %}
+                        {% include auto_link.html content=excerpt %}
                     </p>
                     {% endif %}
-                    
-                    <div class="blog-post-footer">
-                        {% if post.categories and post.categories.size > 0 %}
-                            <span class="blog-post-category">{{ post.categories | join: ", " }}</span>
-                        {% else %}
-                            <span class="blog-post-category">General</span>
-                        {% endif %}
-                        <a href="{{ post.url | relative_url }}" class="blog-read-more">read more ›</a>
-                    </div>
                 </div>
             </article>
             {% endfor %}
