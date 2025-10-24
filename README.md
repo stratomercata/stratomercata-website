@@ -4,7 +4,7 @@ The official website for STRATO Mercata - a platform to easily earn on vaulted g
 
 ## About This Project
 
-**STRATO Mercata** (https://stratomercata.github.io/stratomercata-website) is a Jekyll-based static website that serves as the primary web presence for STRATO Mercata. The site features video content, team member profiles, and information about the platform's capabilities.
+**STRATO Mercata** is a Jekyll-based static website that serves as the primary web presence for STRATO Mercata. The site features video content, team member profiles, and information about the platform's capabilities.
 
 ### What You'll Find Here
 
@@ -23,10 +23,8 @@ This is a static site built with Jekyll 4.3+ and deployed via GitHub Pages.
 
 ```
 stratomercata-website/
-├── _config.yml                # Jekyll configuration (environment-agnostic)
+├── _config.yml                # Jekyll configuration
 ├── Gemfile                    # Ruby dependencies
-├── .github/workflows/         # GitHub Actions for deployment
-│   └── jekyll-gh-pages.yml    # Deployment workflow (sets URL & baseurl)
 └── source/                    # Jekyll source directory
     ├── _layouts/              # Page templates (default, person, blog, video)
     ├── _includes/             # Reusable components (auto_link, embeds, SEO)
@@ -44,14 +42,10 @@ stratomercata-website/
 ### Configuration Philosophy
 
 The `_config.yml` file contains production settings:
-- **`baseurl: "/stratomercata-website"`**: GitHub Pages subpath
-- **`url: "https://stratomercata.github.io"`**: Production domain
+- **`baseurl: ""`**: Empty for custom domain at root
+- **`url: "https://stratomercata.com"`**: Production domain
 
-For local development, Jekyll's `serve` command automatically overrides these:
-- Sets `url` to `http://localhost:4000`
-- Sets `baseurl` to empty string
-
-This is the standard Jekyll approach for GitHub Pages sites.
+For local development, Jekyll's `serve` command automatically overrides the `url` setting to `http://localhost:4000`.
 
 ---
 
@@ -185,24 +179,7 @@ Visit http://localhost:4000/videos/ to verify the new video appears correctly.
 
 ## Deployment
 
-This site can be deployed to either **GitHub Pages** (current setup) or **Netlify** (alternative with PR preview support).
-
-### GitHub Pages (Current Setup)
-
-The site automatically deploys to GitHub Pages when changes are pushed to the `main` branch.
-
-The GitHub Actions workflow (`.github/workflows/jekyll-gh-pages.yml`):
-1. Checks out the repository
-2. Sets up Ruby and installs dependencies
-3. Configures GitHub Pages settings
-4. Builds the site with dynamic baseurl:
-   ```bash
-   bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-   ```
-   The `url` setting from `_config.yml` is used automatically
-5. Uploads and deploys the site
-
-### Netlify Deployment (Alternative)
+### Netlify Deployment
 
 Netlify provides zero-config Jekyll support with automatic PR preview deployments.
 
@@ -227,10 +204,6 @@ Netlify provides zero-config Jekyll support with automatic PR preview deployment
 
 **Ruby 3.4 Compatibility:**
 The `Gemfile` includes all required compatibility gems for Netlify's Ruby 3.4 environment.
-
-### Manual Deployment
-
-You can also trigger deployment manually from the Actions tab in GitHub.
 
 ---
 
