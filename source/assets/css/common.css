@@ -2165,6 +2165,28 @@ article .blog-tags .tag {
     max-width: 50%;
   }
 }
+
+/* Responsive Embed Width Control */
+.blog-embed-card,
+.content-embed-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Twitter embed container responsive width */
+.twitter-embed-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .blog-embed-card,
+  .content-embed-card,
+  .twitter-embed-container {
+    width: 50%;
+    max-width: 50%;
+  }
+}
 /* Telegram CTA Section */
 .telegram-cta-section {
   background: #fafafa;

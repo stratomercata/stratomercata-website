@@ -9,8 +9,7 @@
   For Twitter embed docs: https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview
 -->
 {% assign twitter_url = include.url | replace: "x.com", "twitter.com" %}
-{% assign embed_width = layout.embed-content-width | default: "75%" %}
-<div style="max-width: {{ embed_width }};">
+<div class="twitter-embed-container">
   <blockquote class="twitter-tweet" data-conversation="none">
     <p lang="en" dir="ltr">
       <a href="{{ twitter_url }}">{{ twitter_url }}</a>
