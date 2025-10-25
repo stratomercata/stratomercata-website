@@ -34,7 +34,14 @@ layout: default
                     <em>{{ page.date | date: "%B %d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}</em>
                 </div>
             {% endif %}
-            {% if page.hosts and page.hosts.size > 0 or page.guests and page.guests.size > 0 %}
+            {% assign show_hosts_or_guests = false %}
+            {% if page.hosts and page.hosts.size > 0 %}
+                {% assign show_hosts_or_guests = true %}
+            {% endif %}
+            {% if page.guests and page.guests.size > 0 %}
+                {% assign show_hosts_or_guests = true %}
+            {% endif %}
+            {% if show_hosts_or_guests %}
             <div class="video-hosts-guests">
                 {% if page.hosts and page.hosts.size > 0 %}
                     {% assign visible_hosts = "" | split: "" %}
