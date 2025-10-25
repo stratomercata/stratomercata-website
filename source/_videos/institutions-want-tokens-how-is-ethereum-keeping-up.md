@@ -612,6 +612,7 @@ Like the four points that you had in the [ARC paper](https://www.circle.com/blog
   url='https://www.circle.com/blog/introducing-arc-an-open-layer-1-blockchain-purpose-built-for-stablecoin-finance'
   title='Introducing Arc: An Open Layer-1 Blockchain Purpose-Built for Stablecoin Finance'
   img='https://cdn.prod.website-files.com/67116d0daddc92483c812ead/68961fad0ee4f552ba5641e3_Blog_Arc-launch-p-1080.jpg'
+  date="2015-08-12"
 %}
 
 So really like now, like the technology, when they come up and say, well, I need to make sure like this is private. I need to make sure like this is going to, you know, be like be executed in a seamless way. Also like the decentralization, it's more about the way they look at it.
