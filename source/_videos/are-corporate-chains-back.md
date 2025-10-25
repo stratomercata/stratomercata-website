@@ -1,23 +1,41 @@
 ---
 title: "Are Corporate Chains Back?"
 date: 2025-10-22
-guests: ["Redwan Meslem"]
+hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin"]
 description: "The [Tempo](https://tempo.xyz) blockchain was [announced](https://tempo.xyz/launch-announcement) in September 2025.  It is an L1 payments chain backed by a consortium led by [Stripe](https://stripe.com), and is leaching talent from the Ethereum ecosystem, with Dankrad Feist as the [most recent example](https://x.com/dankrad/status/1979133618254405775).  Are permissioned corporate chains back?"
 img: https://img.youtube.com/vi/2BR6nodzzos/maxresdefault.jpg
 embed:
   url: https://www.youtube.com/embed/2BR6nodzzos
+table_of_contents:
+  - link: "#introductions"
+    title: "Introductions"
+  - link: "#the-new-corporate-chains"
+    title: "The new corporate chains - Tempo, Circle Arc, and others"
+  - link: "#ethereum-alignment-and-competition"
+    title: "Ethereum alignment and competition"
+  - link: "#blockapps-early-corporate-chain-history"
+    title: "BlockApps early corporate chain history"
+  - link: "#corporate-inbound-and-baas"
+    title: "Corporate inbound and Blockchain as a Service"
+  - link: "#libra-announcement"
+    title: "Libra announcement and consortium"
+  - link: "#why-libra-failed"
+    title: "Why Libra failed"
+  - link: "#first-era-failures"
+    title: "Why the first era of corporate chains didn't work"
+  - link: "#future-predictions"
+    title: "Are corporate chains the future or DOA?"
 ---
 
-## Agenda (draft)
-
-- Intros / Welcome
-- The New Corporate Chains (Tempo, etc)
-- A brief history of Corporate Chains (private blockchains, BaaS, Libra, etc) and why they wanted to launch
-- The L1 vs L2 choice, the pluses and minus or both?
-- Opinion: Are Corpo chain the future or DOA?
-- Outro: Where can we find us, Teaser for Next week
-
 ## Transcript
+
+We suggest that you start at the [introductions](#introductions).
+
+<!-- TABLE_OF_CONTENTS -->
+
+<a id="introductions"></a>
+
+### Introductions
 
 [[00:00]](https://www.youtube.com/watch?v=2BR6nodzzos&t=0s) **Bob:**
 Okay, the stream is live.
@@ -54,6 +72,10 @@ It moves really slow.
 It does. It takes time to do stuff, but you just kind of keep it running in the background. Anyways, today's topic, getting us back to the topic at hand, is basically our corporate chains back.
 
 And we obviously have some intimate knowledge about this, having been part of the rise and perhaps fall and maybe the rise again of corporate chains. Hey, Lewis, nice to have you. But maybe you can, maybe Bob, you can give us an outline of the new corporate chains, like what's happening currently, and then we can look back over the history of corporate chains.
+
+<a id="the-new-corporate-chains"></a>
+
+### The new corporate chains - Tempo, Circle Arc, and others
 
 [[02:17]](https://www.youtube.com/watch?v=2BR6nodzzos&t=137s) **Bob:**
 Yeah, well, I mean, you know, the red hot action at the moment is really about Tempo. You know, so Tempo was announced on September the 4th by Stripe and a consortium that they got together, which just reading initial members as well as Stripe themselves, including Anthropic, Coupang, I don't know who those are, I'm not going to say all these, Deutsche Bank, DoorDash, Mercury Bank, OpenAI, Revolut, Shopify and Visa. So yeah, I mean, you got Shopify and Visa, you know, you're doing pretty well on that payment side.
@@ -116,6 +138,10 @@ I mean, it's very hypocritical as well for libertarian types. Because it's like,
 
 Permissionless chains, yeah, but not like that.
 
+<a id="ethereum-alignment-and-competition"></a>
+
+### Ethereum alignment and competition
+
 [[09:07]](https://www.youtube.com/watch?v=2BR6nodzzos&t=547s) **Kieren:**
 Everything here, just in this one approved location. Yeah. So I think it's a little bit a repeat of that phenomenon.
 
@@ -128,6 +154,10 @@ I know you've worked on this very directly, Bob, for the Ethereum software. Some
 Part of it's also, like, a lot of the Ethereum people did well enough to either launch the next thing on Ethereum or launch the next thing not on Ethereum and didn't really have any need for a job, per se, at some point. And so you'd expect something new to come and maybe try to cannibalize the old thing. It's a strange sort of religiosity also.
 
 And I think we experienced it even in, like, back in 2015, even, like, any deviation from Ethereum principles was looked discant.
+
+<a id="blockapps-early-corporate-chain-history"></a>
+
+### BlockApps early corporate chain history
 
 [[10:56]](https://www.youtube.com/watch?v=2BR6nodzzos&t=656s) **Victor:**
 Well, maybe that's sort of a good transition. Maybe we can, you know, we, as BlockApps and Strato, went in, you know, with the Haskell implementation of Ethereum, went in a corporal chain direction. Maybe, like, you can talk about why we did that and what happened there.
@@ -193,6 +223,10 @@ And it was sort of a strange mix. It's like you get, I think there's like a barb
 
 And we would get the inbound from those really big companies and, you know, I think that even that era, you know, I bet they're all doing AI now and maybe that adoption is going, it's probably mixed. But there was a moment there where it was like screaming urgent demand.
 
+<a id="corporate-inbound-and-baas"></a>
+
+### Corporate inbound and Blockchain as a Service
+
 [[17:21]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1041s) **Victor:**
 Yeah, I know it's a part of that also, it's like when we launched Blockchain as a Service with Microsoft and we made it easy to effectively build your own test nets on clouds, everyone started doing it, right? And the interesting thing is at that time, the real development seemed to be happening by these corporates in these innovation labs versus, you know, independent devs.
 
@@ -249,6 +283,10 @@ Was it? Okay. Um, there we go.
 
 As a resident historian of all things Blockchain.
 
+<a id="libra-announcement"></a>
+
+### Libra announcement and consortium
+
 [[21:51]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1311s) **Bob:**
 There we go. June the 18th, 2019. Oh, I was not right.
 
@@ -292,6 +330,10 @@ Right.
 
 [[24:37]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1477s) **Kieren:**
 People started making regulator noise and they dropped, I think maybe Visa, too.
+
+<a id="why-libra-failed"></a>
+
+### Why Libra failed
 
 [[24:43]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1483s) **Victor:**
 So I guess that gets into the question, like, why didn't that work, right? Like, and I think we touched, like, I recall Mark Zuckerberg having to like talk to Congress.
@@ -380,6 +422,10 @@ That's what you're paying.
 
 [[32:07]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1927s) **Kieren:**
 It's quite a bit of overhead.
+
+<a id="first-era-failures"></a>
+
+### Why the first era of corporate chains didn't work
 
 [[32:08]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1928s) **Victor:**
 So why do you guys, and you know, that's part of the answer, and I'm just kind of curious from you guys, I have my own view, is like, why do you think the first era of corporate chains didn't work?
@@ -477,6 +523,10 @@ And so we concluded you definitely just had to turn the thing on and let them co
 And it's like, what's going to make the most money? Like, Ethereum's got a lot of assets on it. Maybe you can get some of them.
 
 Maybe you should just sit there. But, you know, if there's something you're just bumping your head against and you can't quite figure out how to, you might have to, you know, go leave, which is, you know, plenty of people have experienced that.
+
+<a id="future-predictions"></a>
+
+### Are corporate chains the future or DOA?
 
 [[42:52]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2572s) **Victor:**
 Yeah, and it's true for any real platform, like the app stores, right? Everyone, you know, myself included, we built for iOS first because they figured out payment, they figured out micropayments really quickly so we could get paid for what we did, right? So, okay, here's a question that we'll close out on.
