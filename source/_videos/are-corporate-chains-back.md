@@ -57,7 +57,7 @@ Yes, exactly. Okay, we seem to be also live on X, so welcome everyone to another
 Mutual support group.
 
 [[00:34]](https://www.youtube.com/watch?v=2BR6nodzzos&t=34s) **Victor:**
-Yes, exactly.  With the builders from [STRATO Mercata](https://stratomercata.com), I'm Victor Wong. I am Founder and Chief Oroduct Officer at [STRATO Mercata](https://stratomercata.com). [Bob]({{ '/people/bob-summerwill/' | relative_url }}), who are you?
+Yes, exactly.  With the builders from [STRATO Mercata](https://stratomercata.com), I'm Victor Wong. I am Founder and Chief Product Officer at [STRATO Mercata](https://stratomercata.com). [Bob]({{ '/people/bob-summerwill/' | relative_url }}), who are you?
 
 [[00:45]](https://www.youtube.com/watch?v=2BR6nodzzos&t=45s) **Bob:**
 Hello, I'm Head of Ecosystem.
@@ -66,7 +66,7 @@ Hello, I'm Head of Ecosystem.
 And [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), who are you?
 
 [[00:50]](https://www.youtube.com/watch?v=2BR6nodzzos&t=50s) **Kieren:**
-Kieren James-Lubin, CEO, once a coder, long time off. Code a little again. Vibecoding era has been great for making an occasional fix here and there.
+Kieren James-Lubin, CEO, once a coder, long time off. Code a little again. [Vibe coding](https://en.wikipedia.org/wiki/Vibe_coding) era has been great for making an occasional fix here and there.
 
 But soon we'll be back just doing commercial stuff.
 
