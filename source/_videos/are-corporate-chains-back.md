@@ -29,8 +29,6 @@ table_of_contents:
 
 ## Transcript
 
-We suggest that you start at the [introductions](#introductions).
-
 <!-- TABLE_OF_CONTENTS -->
 
 <a id="introductions"></a>
@@ -306,7 +304,10 @@ So we met up. We got introduced by a previous co-founder of [Jim]({{ '/people/ji
 
 And we met up in Berkeley, probably the first time, maybe August or September, or thereabouts. By the way, since then, [Jim]({{ '/people/jim-hormuzdiar/' | relative_url }}) continues to have a client, a habit of building a full client to try to understand a piece of blockchain software. At some point, we were looking into the state of zero-knowledge proofs, and he built a, I believe, full-syncing [ZCash](https://z.cash/) client.
 
-It's definitely missing some features, but we still have that somewhere. As you do.
+It's definitely missing some features, but we still have that somewhere.
+
+[[13:03]](https://www.youtube.com/watch?v=2BR6nodzzos&t=783s) **Bob:**
+As you do.
 
 [[13:05]](https://www.youtube.com/watch?v=2BR6nodzzos&t=785s) **Victor:**
 As you do, yeah.
@@ -314,13 +315,22 @@ As you do, yeah.
 [[13:06]](https://www.youtube.com/watch?v=2BR6nodzzos&t=786s) **Kieren:**
 As one does, as one does. So yeah, we should revisit this at some later date. So yeah, so we met up, he started coding, and it got to the point of functional and syncing with the fairly primitive early testnets pretty quickly.
 
-And we didn't quite intend to turn it into a business right at the beginning. But the three of us, that's [Victor]({{ '/people/victor-wong/' | relative_url }}), [Jim]({{ '/people/jim-hormuzdiar/' | relative_url }}), and I met up. January 2015, had a bunch of conferences that I've done, I've spoken about at other times, we can link people to the early days of [Ethereum](https://ethereum.org) 1, perhaps.
+And we didn't quite intend to turn it into a business right at the beginning. But the three of us, that's [Victor]({{ '/people/victor-wong/' | relative_url }}), [Jim]({{ '/people/jim-hormuzdiar/' | relative_url }}), and I met up. January 2015, had a bunch of conferences that I've done, I've spoken about at other times, we can link people to the [Early Days of Ethereum one](https://www.earlydaysofeth.org/videos/episode001/), perhaps?
 
 That helped kind of galvanize the effort. But I think what we had was always like a pragmatic attitude, right? And so shortly after that, one of the first things we built, we found like the API interaction style to be a little odd.
 
-Like the JSON RPC, the Web3 library, we're kind of like all other APIs are like this, where this is a REST API. We were kind of looking at [Chain.com](https://chain.com/). I think Chain actually sponsored the conference that we did, or spoke or something.
+Like the [JSON RPC](https://ethereum.github.io/execution-apis/api-documentation/), the [Web3 library](https://web3js.readthedocs.io), we're kind of like all other APIs are like this, where this is a [REST](https://en.wikipedia.org/wiki/REST) API. We were kind of looking at [Chain.com](https://chain.com/). I think [Chain](https://chain.com/) actually sponsored the conference that we did, or spoke or something.
 
-And it was a good like talk where it was like, well, we've got these 20 great use cases that people are doing out there in the world. Oh, and they're all on chain. You know, chain also fairly soon after that seemed to go a corpo chain direction.
+{% include content-embed.html
+  url='https://web.archive.org/web/20161221193900mp_/http://conferences.oreilly.com/bitcoin-blockchain-2015/public/schedule/speaker/193534'
+  title='O\'Reilly Bitcoin & Blockchain Conference 2015 - Speaker'
+  img='https://web.archive.org/web/20150501202133im_/http://cdn.oreillystatic.com/en/assets/1/event/130/bitcoin2015_video_placeholder.jpg'
+  date='2015-07-25'
+%}
+
+And it was a good like talk where it was like, well, we've got these 20 great use cases that people are doing out there in the world. Oh, and they're all on chain. You know, [Chain](https://chain.com/) also fairly soon after that seemed to go a corpo chain direction.
+
+*(Bob: So Chain were indeed sponsors for this event, and their CEO, [Adam Ludwin](https://www.lud.win/) spoke on "Building with Bitcoin: 10 Stories in 10 Minutes".  Here are [the slides](https://web.archive.org/web/20150210170938/http://cdn.oreillystatic.com/en/assets/1/event/130/Building%20with%20Bitcoin_%2010%20Stories%20in%2010%20Minutes%20Presentation.pdf_). The event was mainly organized by [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) and [Lorne Lantz](https://x.com/lornestar), who together booked most of the speakers, did the intermissions and created the content arc.)*
 
 [[14:48]](https://www.youtube.com/watch?v=2BR6nodzzos&t=888s) **Bob:**
 Was that sort of like a UTXO [Bitcoin](https://bitcoin.org)-y like? Because I know...
@@ -338,7 +348,7 @@ We want it though. We really want it. We like this API you've got.
 
 Give it to us. We've got transactions to settle right now with our suppliers. And it all went way slower than that.
 
-But it was like the market was actually like screaming at you for a minute there in a way that, you know, the world feels much different now. Like I think it is certainly true that to like in the, I don't know, 70s or 80s or whatever, it was common for like the Department of Defense or some giant bank or something to be your first customer. And much later, it's sort of more of the opposite that you'd get like bottoms up devs, small companies first, and then later really big guys.
+But it was like the market was actually like screaming at you for a minute there in a way that, you know, the world feels much different now. Like I think it is certainly true that to like in the, I don't know, 70s or 80s or whatever, it was common for like the [Department of Defense](https://en.wikipedia.org/wiki/United_States_Department_of_Defense) or some giant bank or something to be your first customer. And much later, it's sort of more of the opposite that you'd get like bottoms up devs, small companies first, and then later really big guys.
 
 And it was sort of a strange mix. It's like you get, I think there's like a barbell effect where really big companies have a lot of excess cash to investigate new technologies. And then you get startups, you know, and that was the feeling.
 
@@ -351,8 +361,24 @@ And we would get the inbound from those really big companies and, you know, I th
 [[17:21]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1041s) **Victor:**
 Yeah, I know it's a part of that also, it's like when we launched Blockchain as a Service with Microsoft and we made it easy to effectively build your own test nets on clouds, everyone started doing it, right? And the interesting thing is at that time, the real development seemed to be happening by these corporates in these innovation labs versus, you know, independent devs.
 
+{% include content-embed.html
+  src="https://www.youtube.com/embed/x8jIUg5jXjg"
+  title="DEVCON1: Microsoft Announcing Ethereum Blockchain as a Service (ETH BaaS) on Azure Cloud"
+  site="https://www.youtube.com/@EthereumProtocol"
+  author="Ethereum"
+  date="November 10, 2015"
+%}
+
+{% include content-embed.html
+  src="https://www.youtube.com/embed/ExsTb0iglcs"
+  title="DEVCON 1: BlockApps STRATO - Victor Wong, Kieren James-Lubin, Jim Hormuzdiar"
+  site="https://www.youtube.com/@EthereumProtocol"
+  author="Ethereum"
+  date="November 10, 2015"
+%}
+
 [[17:45]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1065s) **Kieren:**
-Yeah, that's right. It felt like, okay, they would come to you with like a PowerPoint describing the like billion plus dollar problem that they had. This is after all the NDAs were signed and all that sort of thing.
+Yeah, that's right. It felt like, okay, they would come to you with like a [PowerPoint](https://en.wikipedia.org/wiki/Microsoft_PowerPoint) describing the like billion plus dollar problem that they had. This is after all the NDAs were signed and all that sort of thing.
 
 This was like very convincing. It was like, you know, some of the use cases were bad, but a lot of them are like, oh, okay, like you have some like really complicated multi-organization settlement problem that you handle with spreadsheets or some ancient system and it costs a ton of money. And if you actually could upgrade it, it would be way better potentially.
 
@@ -366,26 +392,32 @@ And I think part of it was at that early time, they couldn't hold ETH. So they w
 [[19:28]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1168s) **Kieren:**
 I know, yeah, I totally forgot. It was like, treasury doesn't know what to do. It's pretty much like, you know, but no, we've got our procedures.
 
-We can't, you know, it has to get in the ERP. We can't have like a line item for that. And, you know, it was like, it just not so.
+We can't, you know, it has to get in the [ERP](https://en.wikipedia.org/wiki/Enterprise_resource_planning). We can't have like a line item for that. And, you know, it was like, it just not so.
 
 [[19:45]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1185s) **Bob:**
-I mean, I remember with [ErisDB](https://github.com/eris-ltd/erisdb), you know, who became [Monax](https://monax.io/) and so on, you know, there. So they started in 2014 as well, when it was still on POC5 before the main net. And there you had a situation of a company being set up by lawyers who, you know, really loved the smart contract functionality, but nothing to do with ETH.
+I mean, I remember with [ErisDB](https://web.archive.org/web/20250903224504/https://erisindustries.com/components/erisdb.html), you know, who became [Monax](https://web.archive.org/web/20170321124508/https://monax.io/) and so on, you know, there. So they started in 2014 as well, when it was still on POC5 before the mainnet. And there you had a situation of a company being set up by lawyers who, you know, really loved the smart contract functionality, but nothing to do with ETH.
 
-It's like ETH is probably in legal security. Like we don't want to get anywhere near that. It's like, so it really was the, you know, the blockchain, not [Bitcoin](https://bitcoin.org) being the phrase at the time.
+It's like ETH is probably an illegal security. Like we don't want to get anywhere near that. It's like, so it really was the, you know, the "blockchain, not [Bitcoin](https://bitcoin.org)" being the phrase at the time.
 
-Though blockchain, not [Ethereum](https://ethereum.org), not ETH.
+Though "Blockchain, not [Ethereum](https://ethereum.org)", "not ETH".
 
 [[20:25]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1225s) **Victor:**
-But the one thing that was really interesting, like when we launched that blockchain as a service and it got on Azure, like we had thousands of people spinning up stuff and then a good number of them reaching out to us. And I will say the use cases that didn't seem speculative did come from these corporates, right? Like the CurrentsPoint, it's like, like we did get contacted by sort of smaller groups, but they were like, oh, well, we just want to launch our own token and sell it.
+But the one thing that was really interesting, like when we launched that blockchain as a service and it got on [Azure](https://azure.microsoft.com), like we had thousands of people spinning up stuff and then a good number of them reaching out to us. And I will say the use cases that didn't seem speculative did come from these corporates, right? Like to [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }})'s point, it's like, like we did get contacted by sort of smaller groups, but they were like, oh, well, we just want to launch our own token and sell it.
 
 Like that, those are all those use cases.
 
 [[20:58]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1258s) **Kieren:**
 And then- Well, I mean, that came a little later, actually. I think that took a, once a couple of ICOs had happened, like suddenly everyone wanted to pay someone to build their thing for an ICO. But that was kind of more like 2016 to 2018 phenomenon, I would say.
 
-Yeah, that's true. The corporates came first, actually, which was- Yeah, exactly.
+[[21:14]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1274s) **Victor:**
+Yeah, that's true.
 
-[[21:18]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1278s) **Victor:**
+[[21:15]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1275s) **Kieren:**
+The corporates came first, actually, which was
+
+[[21:16]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1276s) **Victor:**
+Yeah, exactly.
+
 And so, I mean, you know, that was our experience. And shortly afterwards, and [Bob]({{ '/people/bob-summerwill/' | relative_url }}), you might have the timing, [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) by [Facebook](https://facebook.com/) came along and they were doing their own thing. Do you know the time?
 
 Yeah, [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) was 18, 17. Yeah, we launched Blockchain as a Service in 2015, right?
@@ -400,28 +432,44 @@ So I'm feeling like it was 2016 that [Libra](https://en.wikipedia.org/wiki/Diem_
 No, it was later, I think.
 
 [[21:44]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1304s) **Victor:**
-Was it? Okay. Um, there we go.
+Was it?
 
-As a resident historian of all things Blockchain.
+[[21:47]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1307s) **Bob:**
+Okay. Um, there we go.
+
+[[21:48]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1308s) **Victor:**
+As our resident historian of all things blockchain.
 
 <a id="libra-announcement"></a>
 
 ### Libra announcement and consortium
 
 [[21:51]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1311s) **Bob:**
-There we go. June the 18th, 2019. Oh, I was not right.
+There we go. June the 18th, 2019.
 
-Okay, so yeah, at that point, [Meta](https://meta.com/), then [Facebook](https://facebook.com/), this was before they'd even turned into [Meta](https://meta.com/), you know, announced it, which is a stablecoin project intended for global payments via its applications, sorry, via its apps. So what you have there, I mean, the other thing worth saying about Libra is Libra is not an EVM project. You know, they had their, I guess, you know, they're like happening like five years later.
+{% include content-embed.html
+  url='https://www.nytimes.com/2019/06/18/technology/facebook-cryptocurrency-libra.html'
+  title='Facebook Plans Global Financial System Based on Cryptocurrency'
+  img='https://static01.nyt.com/images/2019/06/19/sports/19facecoin-sub/19facecoin-sub-superJumbo-v2.jpg?quality=75&auto=webp'
+  author="Mike Isaac and Nathaniel Popper"
+  date='2019-06-18'
+%}
+
+[[21:54]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1314s) **Victor:**
+Oh, I was not right.
+
+[[21:56]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1316s) **Bob:**
+Okay, so yeah, at that point, [Meta](https://meta.com/), then [Facebook](https://facebook.com/) (this was before they'd even turned into [Meta](https://meta.com/)), you know, announced it, which is a stablecoin project intended for global payments via its applications, sorry, via its apps. So what you have there, I mean, the other thing worth saying about [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) is [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) is not an EVM project. You know, they had their, I guess, you know, they're like happening like five years later.
 
 So it's like, you know, let's apply all of our learnings of what's worked and what has not worked over that five year period, especially about smart contract security and, you know, having a constrained model.
 
 [[22:43]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1363s) **Kieren:**
-Their language seems pretty good to me, actually, but no one uses it. We're stuck with Solidity. It will be the JavaScript slash [COBOL](https://gnucobol.sourceforge.io/) of the crypto age.
+Their language seems pretty good to me, actually, but no one uses it. We're stuck with [Solidity](https://www.soliditylang.org/). It will be the [JavaScript](https://en.wikipedia.org/wiki/JavaScript) slash [COBOL](https://en.wikipedia.org/wiki/COBOL) of the crypto age.  We're never getting rid of this thing.
 
-We're never getting rid of this thing.
+*(Bob - so 'their language' is [Move](https://en.wikipedia.org/wiki/Diem_(digital_currency)#Move) whose development has continued and evolved within the two primary Diem technical successor projects, [Aptos](https://github.com/move-language/move-on-aptos) and [Sui](https://github.com/move-language/move-sui))*
 
 [[22:56]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1376s) **Victor:**
-Well, and, you know, like, I think the EVM has become the standard, right? Like that's just, you know, I mean, Redwan was mentioning that last week. And I think that that is true, basically, to a certain degree.
+Well, and, you know, like, I think the EVM has become the standard, right? Like that's just, you know, I mean, [Redwan](https://x.com/RedoudouM), was mentioning that [last week]({{ '/videos/institutions-want-tokens-how-is-ethereum-keeping-up/' | relative_url }}). And I think that that is true, basically, to a certain degree.
 
 [[23:08]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1388s) **Bob:**
 Yeah, yeah. I mean, I think it's the JavaScript. It's the C.
@@ -614,7 +662,7 @@ He should know that whatever I have really exists. You should be able- he should
 
 And the regulator should somehow be able to see all of this, at least in a financial services setting. And it mostly can't do that still. I kind of can't really tell.
 
-Like, I think ZCash is the closest and then there are various ZK things both on, as like, a lot of the ZK is for efficiency, like throughput as compared for privacy at this time. But mostly that use case still can't really be done. There's some hints that there's like a [Cosmos](https://cosmos.network/), which you never hear about, project that kind of does that.
+Like, I think [ZCash](https://z.cash/) is the closest and then there are various ZK things both on, as like, a lot of the ZK is for efficiency, like throughput as compared for privacy at this time. But mostly that use case still can't really be done. There's some hints that there's like a [Cosmos](https://cosmos.network/), which you never hear about, project that kind of does that.
 
 I have a summary, I think I've sent you before, but it's still not there, but they are using it, right? [Stripe](https://stripe.com) is moving money around the world. I also think it's like the rigidity of the mentality actually being a big factor.
 
@@ -798,13 +846,7 @@ Thanks.
   date='2018-04-04'
 %}
 
-{% include content-embed.html
-  url='https://www.nytimes.com/2019/06/18/technology/facebook-cryptocurrency-libra.html'
-  title='Facebook Plans Global Financial System Based on Cryptocurrency'
-  img='https://static01.nyt.com/images/2019/06/19/sports/19facecoin-sub/19facecoin-sub-superJumbo-v2.jpg?quality=75&auto=webp'
-  author="Mike Isaac and Nathaniel Popper"
-  date='2019-06-18'
-%}
+
 
 {% include content-embed.html
   url='https://www.coindesk.com/markets/2019/10/09/new-libra-fork-will-create-permissionless-stablecoin-free-of-corporate-control'
