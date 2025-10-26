@@ -302,10 +302,10 @@ And that was not announced at the time of [DEVCON](https://www.earlydaysofeth.or
   date='2016-10-03'
 %}
 
-That happened just before the [EEA](https://entethalliance.org) started. But yeah, you got all of this stuff brewing up, I mean, for years earlier. Like if you think of like [ErisDB](https://erisindustries.com/components/erisdb.html) that became [Monax](https://web.archive.org/web/20170321124508/https://monax.io/), that became [Hyperledger Burrow](https://github.com/hyperledger-archives/burrow).
+That happened just before the [EEA](https://entethalliance.org) started. But yeah, you got all of this stuff brewing up, I mean, for years earlier. Like if you think of like [ErisDB](https://web.archive.org/web/20250903224504/https://erisindustries.com/components/erisdb.html) that became [Monax](https://web.archive.org/web/20170321124508/https://monax.io/), that became [Hyperledger Burrow](https://github.com/hyperledger-archives/burrow).
 
 {% include content-embed.html
-  url='https://erisindustries.com/components/erisdb.html'
+  url='https://web.archive.org/web/20250903224504/https://erisindustries.com/components/erisdb.html'
   img='/images/blockchain-finance.com/2025.10.16/erisdb.png'
   title='ErisDB'
   site='erisindustries.com'
@@ -931,7 +931,7 @@ Right, well, one of their big sell at New York Blockchain Week in 2018 was their
 Yeah, they did a channel or something.
 
 [[43:37]](https://www.youtube.com/watch?v=CNavXFv3ats&t=2515s) **Bob:**
-[fab3.js](https://hyperledger.github.io/fabric-sdk-node/) or whatever, that they did do this munging together. And that was using [Burrow](https://github.com/hyperledger-archives/burrow), right? Because you've got the [Burrow](https://github.com/hyperledger-archives/burrow), [Burrow](https://github.com/hyperledger-archives/burrow) went into [Hyperledger](https://www.lfdecentralizedtrust.org/) before [Besu](https://github.com/hyperledger/besu), and that was the continuation of that, [ErisDB](https://erisindustries.com/components/erisdb.html) / [Monax](https://web.archive.org/web/20170321124508/https://monax.io/) / [Hyperledger Burrow](https://github.com/hyperledger-archives/burrow), that was never mainnet compatible though. But there was that Go EVM within [Hyperledger](https://www.lfdecentralimungzedtrust.org/) under the same licensing, so they could wham those together.
+[fab3.js](https://hyperledger.github.io/fabric-sdk-node/) or whatever, that they did do this munging together. And that was using [Burrow](https://github.com/hyperledger-archives/burrow), right? Because you've got the [Burrow](https://github.com/hyperledger-archives/burrow), [Burrow](https://github.com/hyperledger-archives/burrow) went into [Hyperledger](https://www.lfdecentralizedtrust.org/) before [Besu](https://github.com/hyperledger/besu), and that was the continuation of that, [ErisDB](https://web.archive.org/web/20250903224504/https://erisindustries.com/components/erisdb.html) / [Monax](https://web.archive.org/web/20170321124508/https://monax.io/) / [Hyperledger Burrow](https://github.com/hyperledger-archives/burrow), that was never mainnet compatible though. But there was that Go EVM within [Hyperledger](https://www.lfdecentralimungzedtrust.org/) under the same licensing, so they could wham those together.
 
 ![Fabric EVM at Consensus 2018]({{ site.baseurl }}/images/personal/bob-summerwill/photos/2018.05.15/MVIMG_20180515_154836.jpg){: style="width: 50%;"}
 
