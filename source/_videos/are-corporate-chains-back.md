@@ -93,14 +93,14 @@ Yeah, well, I mean, you know, the red hot action at the moment is really about [
   title='Introducing Tempo, the payments-first blockchain'
   img='https://www.ledgerinsights.com/wp-content/uploads/2022/10/stripe-810x524.jpg'
   date="2025-09-04"
-  author="Matt Huang"
+  author='Matt Huang'
 %}
 
 ... and a consortium that they got together, which just reading initial members as well as [Stripe](https://stripe.com) themselves, including [Anthropic](https://anthropic.com), [Coupang](https://coupang.com), I don't know who those are, I'm not going to say all these, [Deutsche Bank](https://deutsche-bank.com), [DoorDash](https://doordash.com), [Mercury Bank](https://mercury.com), [OpenAI](https://openai.com), [Revolut](https://revolut.com), [Shopify](https://shopify.com) and [Visa](https://visa.com). So yeah, I mean, you got [Shopify](https://shopify.com) and [Visa](https://visa.com), you know, you're doing pretty well on that payment side.
 
 {% include twitter-embed.html url="https://x.com/matthuang/status/1963633381859852514" %}
 
-And yeah, I mean, I guess, especially where a lot of this tension has come in on the [Ethereum](https://ethereum.org) side is, you know, this is going to be another EVM chain. So it's kind of like, thanks for the work, guys, we'll do a corporate version now. And, you know, so specifically, [Paradigm](https://www.paradigm.xyz/) are a big part of this.
+And yeah, I mean, I guess, especially where a lot of this tension has come in on the [Ethereum](https://ethereum.org) side is, you know, this is going to be another [EVM](https://ethereum.org/developers/docs/evm/) chain. So it's kind of like, thanks for the work, guys, we'll do a corporate version now. And, you know, so specifically, [Paradigm](https://www.paradigm.xyz/) are a big part of this.
 
 Now, [Paradigm](https://www.paradigm.xyz/) have spent the last few years kind of building up [Ethereum](https://ethereum.org) stack stuff, you know, kind of being semi well behaved participants within the [Ethereum](https://ethereum.org) ecosystem, carry out a few, you know, VC nasty moments, but essentially building a, you know, hey, we've built a really good new Rust client, right, we do some of the best tooling, you know, with Foundry, right, what you had going on in earlier years, right, we've made a better one. And I think there's about three or four areas where they built sort of [Ethereum](https://ethereum.org) stack stuff, almost like, hey, [here's a full stack, [Ethereum](https://ethereum.org), you know, stack](https://www.paradigm.xyz/oss).
 
@@ -186,7 +186,7 @@ And I mean, you've had [Binance chain](https://bnbchain.org/) chain, you know, [
   title='Introducing Unichain'
   img='https://docs.unichain.org/og/og.png'
   date="2024-10-10"
-  author="Uniswap Labs"
+  author='Uniswap Labs'
 %}
 
 Yeah.
@@ -228,7 +228,7 @@ I think what it means, I mean, it's a strange thing that's going on in which- Le
   title='Bitcoin Maximalism, Currency, Platform, and Network Effects'
   img='https://blog.ethereum.org/_next/image?url=%2Fimages%2Feth-org.jpeg&w=1080&q=75'
   date="2014-11-20"
-  author="Vitalik Buterin"
+  author='Vitalik Buterin'
 %}
 
 Everything after is a scam. And we should all put our energy into [Bitcoin](https://bitcoin.org), but also never really add anything to [Bitcoin](https://bitcoin.org). Maybe very slowly add small things around the margin.
@@ -276,7 +276,7 @@ So we may be partly to blame for this.
   title='Early Days of Ethereum - Episode 1'
   img='https://img.youtube.com/vi/V2BJX9OkDNo/maxresdefault.jpg'
   date="2024-01-15"
-  author="Bob Summerwill"
+  author='Bob Summerwill'
 %}
 
 [[11:20]](https://www.youtube.com/watch?v=2BR6nodzzos&t=680s) **Kieren:**
@@ -333,7 +333,7 @@ And it was a good like talk where it was like, well, we've got these 20 great us
 *(Bob: So Chain were indeed sponsors for this event, and their CEO, [Adam Ludwin](https://www.lud.win/) spoke on "Building with Bitcoin: 10 Stories in 10 Minutes".  Here are [the slides](https://web.archive.org/web/20150210170938/http://cdn.oreillystatic.com/en/assets/1/event/130/Building%20with%20Bitcoin_%2010%20Stories%20in%2010%20Minutes%20Presentation.pdf_). The event was mainly organized by [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) and [Lorne Lantz](https://x.com/lornestar), who together booked most of the speakers, did the intermissions and created the content arc.)*
 
 [[14:48]](https://www.youtube.com/watch?v=2BR6nodzzos&t=888s) **Bob:**
-Was that sort of like a UTXO [Bitcoin](https://bitcoin.org)-y like? Because I know...
+Was that sort of like a [UTXO](https://www.investopedia.com/terms/u/utxo.asp) [Bitcoin](https://bitcoin.org)-y like? Because I know...
 
 [[14:55]](https://www.youtube.com/watch?v=2BR6nodzzos&t=895s) **Kieren:**
 I assume so. Yeah, I think they probably either forked one of the [Bitcoin](https://bitcoin.org) clients or maybe they started from scratch. But first, definitely they were trying to be the [Bitcoin](https://bitcoin.org) developer API.
@@ -365,7 +365,7 @@ Yeah, I know it's a part of that also, it's like when we launched Blockchain as 
   src="https://www.youtube.com/embed/x8jIUg5jXjg"
   title="DEVCON1: Microsoft Announcing Ethereum Blockchain as a Service (ETH BaaS) on Azure Cloud"
   site="https://www.youtube.com/@EthereumProtocol"
-  author="Ethereum"
+  author='Ethereum'
   date="November 10, 2015"
 %}
 
@@ -451,7 +451,7 @@ There we go. June the 18th, 2019.
   url='https://www.nytimes.com/2019/06/18/technology/facebook-cryptocurrency-libra.html'
   title='Facebook Plans Global Financial System Based on Cryptocurrency'
   img='https://static01.nyt.com/images/2019/06/19/sports/19facecoin-sub/19facecoin-sub-superJumbo-v2.jpg?quality=75&auto=webp'
-  author="Mike Isaac and Nathaniel Popper"
+  author='Mike Isaac and Nathaniel Popper'
   date='2019-06-18'
 %}
 
@@ -459,7 +459,7 @@ There we go. June the 18th, 2019.
 Oh, I was not right.
 
 [[21:56]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1316s) **Bob:**
-Okay, so yeah, at that point, [Meta](https://meta.com/), then [Facebook](https://facebook.com/) (this was before they'd even turned into [Meta](https://meta.com/)), you know, announced it, which is a stablecoin project intended for global payments via its applications, sorry, via its apps. So what you have there, I mean, the other thing worth saying about [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) is [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) is not an EVM project. You know, they had their, I guess, you know, they're like happening like five years later.
+Okay, so yeah, at that point, [Meta](https://meta.com/), then [Facebook](https://facebook.com/) (this was before they'd even turned into [Meta](https://meta.com/)), you know, announced it, which is a stablecoin project intended for global payments via its applications, sorry, via its apps. So what you have there, I mean, the other thing worth saying about [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) is [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) is not an [EVM](https://ethereum.org/developers/docs/evm/) project. You know, they had their, I guess, you know, they're like happening like five years later.
 
 So it's like, you know, let's apply all of our learnings of what's worked and what has not worked over that five year period, especially about smart contract security and, you know, having a constrained model.
 
@@ -469,17 +469,17 @@ Their language seems pretty good to me, actually, but no one uses it. We're stuc
 *(Bob - so 'their language' is [Move](https://en.wikipedia.org/wiki/Diem_(digital_currency)#Move) whose development has continued and evolved within the two primary Diem technical successor projects, [Aptos](https://github.com/move-language/move-on-aptos) and [Sui](https://github.com/move-language/move-sui))*
 
 [[22:56]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1376s) **Victor:**
-Well, and, you know, like, I think the EVM has become the standard, right? Like that's just, you know, I mean, [Redwan](https://x.com/RedoudouM), was mentioning that [last week]({{ '/videos/institutions-want-tokens-how-is-ethereum-keeping-up/' | relative_url }}). And I think that that is true, basically, to a certain degree.
+Well, and, you know, like, I think the [EVM](https://ethereum.org/developers/docs/evm/) has become the standard, right? Like that's just, you know, I mean, [Redwan](https://x.com/RedoudouM), was mentioning that [last week]({{ '/videos/institutions-want-tokens-how-is-ethereum-keeping-up/' | relative_url }}). And I think that that is true, basically, to a certain degree.
 
 [[23:08]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1388s) **Bob:**
-Yeah, yeah. I mean, I think it's the JavaScript. It's the C.
+Yeah, yeah. I mean, I think it's the [JavaScript](https://en.wikipedia.org/wiki/JavaScript). It's the [C](https://en.wikipedia.org/wiki/C_(programming_language))).
 
 It's good enough that stuff got made on it and it's never going away. Yeah. It's going to be, you know, this stuff is going to be there forever.
 
-Or like Unix.
+Or like [Unix](https://en.wikipedia.org/wiki/Unix).
 
 [[23:21]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1401s) **Victor:**
-But Libra had, sorry, yeah. But the launch of Libra, they had super high profile partners, if I recall.
+But [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) had, sorry, yeah. But the launch of [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)), they had super high profile partners, if I recall.
 
 [[23:29]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1409s) **Kieren:**
 Very similar, actually, to the kind of, it was mostly like payment networks and notably no banks. It felt like a tech company disintermediation play. Like, well, if we just had these stables, then we wouldn't have to have the bank accounts at the edge, too.
@@ -487,25 +487,33 @@ Very similar, actually, to the kind of, it was mostly like payment networks and 
 And we could just, and I think this is kind of what killed it, right? Like the banks each called up their representative and just screamed about big tech, you know, monopoly power.
 
 [[24:07]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1447s) **Bob:**
-So here's a list. So [Facebook](https://facebook.com/), [Uber](https://uber.com/), [Spotify](https://spotify.com/), [Andreessen Horowitz](https://a16z.com/), I don't know why they would be in there. [Anchorage Bank](https://anchorage.com/), Decisional Custody, [Lyft](https://lyft.com/), [Zappo](https://zappos.com/), [Coinbase](https://coinbase.com/), [Union Square Ventures](https://usv.com/).
+So here's a list. So [Facebook](https://facebook.com/), [Uber](https://uber.com/), [Spotify](https://spotify.com/), [Andreessen Horowitz](https://a16z.com/), I don't know why they would be in there. [Anchorage Bank](https://anchorage.com/), [Lyft](https://lyft.com/), [Xapo](https://www.xapobank.com/), [Coinbase](https://coinbase.com/), [Union Square Ventures](https://usv.com/).
 
 So yeah, it's actually a crappier list by far than [Tempo](https://tempo.xyz).
 
 [[24:32]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1472s) **Kieren:**
-You know, MasterCard was in until like the last second.
+You know, [Mastercard](https://mastercard.com/) was in until like the last second.
 
 [[24:36]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1476s) **Bob:**
 Right.
 
 [[24:37]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1477s) **Kieren:**
-People started making regulator noise and they dropped, I think maybe Visa, too.
+People started making regulator noise and they dropped, I think maybe [Visa](https://visa.com/), too.
 
 <a id="why-libra-failed"></a>
 
 ### Why Libra failed
 
 [[24:43]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1483s) **Victor:**
-So I guess that gets into the question, like, why didn't that work, right? Like, and I think we touched, like, I recall [Mark Zuckerberg](https://facebook.com/zuck) having to like talk to Congress.
+So I guess that gets into the question, like, why didn't that work, right? Like, and I think we touched, like, I recall [Mark Zuckerberg](https://en.wikipedia.org/wiki/Mark_Zuckerberg) having to like talk to [Congress](https://en.wikipedia.org/wiki/United_States_Congress).
+
+{% include content-embed.html
+  url='https://www.theverge.com/interface/2019/10/24/20929265/mark-zuckerberg-libra-hearing-congress-backlash'
+  title="After this week's hearing, Libra really might be in trouble"
+  img='https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/19314251/1182969985.jpg.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=750'
+  author='Casey Newton'
+  date='2019-10-24'
+%}
 
 [[24:56]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1496s) **Bob:**
 I just found these exits. So the major exits out of that were [PayPal](https://paypal.com/), [Visa](https://visa.com/), [Mastercard](https://mastercard.com/), [Stripe](https://stripe.com).
@@ -513,43 +521,69 @@ I just found these exits. So the major exits out of that were [PayPal](https://p
 [[25:04]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1504s) **Victor:**
 Right, yeah.
 
-[[25:05]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1505s) **Bob:**
-eBay. And they all, like, dropped out real super fast, didn't they? And I mean, I think there was a mixture of things.
+{% include content-embed.html
+  url='https://www.theverge.com/2019/10/11/20910330/mastercard-stripe-ebay-facebook-libra-association-withdrawal-cryptocurrency'
+  title="Facebook's Libra Association crumbling as Visa, Mastercard, Stripe, and others exit"
+  img='https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/16677181/VRG_ILLO_3512_001.jpg'
+  author='Russell Brandom'
+  date='2019-10-11'
+%}
 
-This is my thoughts. Maybe you guys have got different thoughts. Firstly, everyone hated [Facebook](https://facebook.com/) because they just had the Cambridge Analytica stuff.
+[[25:05]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1505s) **Bob:**
+[eBay](https://www.ebay.com). And they all, like, dropped out real super fast, didn't they? And I mean, I think there was a mixture of things.
+
+This is my thoughts. Maybe you guys have got different thoughts. Firstly, everyone hated [Facebook](https://facebook.com/) because they just had the [Cambridge Analytica stuff](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal).
+
+{% include content-embed.html
+  url='https://www.nytimes.com/2018/04/04/us/politics/cambridge-analytica-scandal-fallout.html'
+  title='Cambridge Analytica and Facebook: The Scandal and the Fallout So Far'
+  img='https://static01.nyt.com/images/2018/03/21/business/00cambridgestory6/merlin_135756423_8ac3aeb6-7781-4912-b9e5-fd7210e35170-superJumbo.jpg?quality=75&auto=webp'
+  author='Nicholas Confessore'
+  date='2018-04-04'
+%}
 
 It's like, we're not going to trust you, you guys, like, no. But then the second one was like regulatory stuff because it was going to be like a, because it was kind of going up against the dollar, right? It was this, it was like, why are we going to have a basket of things?
 
-So it wasn't just a straight stable coin. It's like, oh, we're kind of having a go at the US dollar.
+So it wasn't just a straight stablecoin. It's like, oh, we're kind of having a go at the US dollar.
 
 [[25:46]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1546s) **Kieren:**
 And they cut the banks out of it too. That's the third point. Like, and it's also like, the banks are fond of making their, I guess they're called market utilities.
 
 They're bank owned industry cabals, like the [Swift](https://swift.com/), the [DTCC](https://dtcc.com/). A lot of the exchanges are like this. I guess even the, I don't really understand how they work.
 
-Even the Fed is bank owned. But it basically like, the banks pooled a bunch of capital a long time ago. And they set up this thing that you kind of have to use.
+Even the [Fed](https://en.wikipedia.org/wiki/Federal_Reserve) is bank owned. But it basically like, the banks pooled a bunch of capital a long time ago. And they set up this thing that you kind of have to use.
 
-And the profits from using that thing go back to them. And it's also like a choke point, and like under other circumstances, you would have some sort of antitrust issue in doing this. Like, it's kind of like definitionally collusion.
+And the profits from using that thing go back to them. And it's also like a chokepoint, and like under other circumstances, you would have some sort of antitrust issue in doing this. Like, it's kind of like definitionally collusion.
 
 But you also need these things, right? To make the whole thing function. But it seemed like when tech attempted to do that itself, like the banks still had the ear of the relevant parties and shut it down.
 
 [[27:01]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1621s) **Bob:**
 But I mean, that's happening here again, right? It's almost the same people. And it's basically saying, right, you know, the banks and the credit card companies to a lesser degree, like own these pipes.
 
-And we had to like sit on top kind of thing and service. Yeah. How about like if us fintech, techie companies, the Silicon Valley ones instead, how about- I think it would be cool if it happened.
+And we had to like sit on top kind of thing and service. Yeah. How about like if us Fintech, techie companies, the [Silicon Valley](https://en.wikipedia.org/wiki/Silicon_Valley) ones instead, how about?
 
-[[27:34]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1654s) **Kieren:**
-By the way, I always thought, though I'm a bit of a big tech hater, I always thought Libra was at least cool. Like it would be interesting.
+[[27:31]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1654s) **Kieren:**
+I think it would be cool if it happened.
+
+By the way, I always thought, though I'm a bit of a Big Tech hater, I always thought [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) was at least cool. Like it would be interesting.
 
 [[27:44]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1664s) **Victor:**
-Yeah, I mean, the technology behind it, you know, it was UTXO based, but it seemed pretty good. Like they did a good job from the technology side.
+Yeah, I mean, the technology behind it, you know, it was [UTXO](https://www.investopedia.com/terms/u/utxo.asp) based, but it seemed pretty good. Like they did a good job from the technology side.
 
 [[27:54]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1674s) **Bob:**
-Yeah, yeah, I think so. And not just doing like sort of a lazy job, I guess. Because talking about some of those earlier phases, it's like, right, oh, we're going to take [Bitcoin](https://bitcoin.org) and it's an enterprise [Bitcoin](https://bitcoin.org).
+Yeah, yeah, I think so. And not just doing like sort of a lazy job, I guess. Because talking about some of those earlier phases, it's like, right, oh, we're going to take [Bitcoin](https://bitcoin.org) and it's an Enterprise [Bitcoin](https://bitcoin.org).
 
-OK, and then it's like, right, sort of same deal on the EVMs. But because they were that many years later, it was sort of almost like a clean room kind of effort. I think actually [R3](https://r3.com/) did this with [Corda](https://corda.net/), right? They did some really good blogs, right, from [Richard General Brown](https://x.com/gendal), sort of saying, hey, we looked at all of the things that these existing techs are doing and, you know, whatever, there's these four or five different elements.
+OK, and then it's like, right, sort of same deal on the [EVM](https://ethereum.org/developers/docs/evm/)s. But because they were that many years later, it was sort of almost like a clean room kind of effort. I think actually [R3](https://r3.com/) did this with [Corda](https://corda.net/), right? They did some really good blogs, right, from [Richard General Brown](https://x.com/gendal), sort of saying, hey, we looked at all of the things that these existing techs are doing and, you know, whatever, there's these four or five different elements.
 
-And for our scenario, we need three of them, but we could do something else completely different. You know, a different kind of solution. I think that kind of happened with Libra as well.
+{% include content-embed.html
+  url='https://gendal.me/2017/12/04/not-all-business-blockchain-platforms-are-alike-to-succeed-they-need-to-reimagine-business-computing/'
+  img="https://miro.medium.com/1*EFNG4museflkdpWBW1yuzw.jpeg"
+  title='Not all business blockchain platforms are alike – To succeed, they need to re-imagine business computing'
+  author='Richard Gendal Brown'
+  date='2017-12-04'
+%}
+
+And for our scenario, we need three of them, but we could do something else completely different. You know, a different kind of solution. I think that kind of happened with [Libra](https://en.wikipedia.org/wiki/Diem_(digital_currency)) as well.
 
 It's like, let's get some brainiacs.
 
@@ -561,11 +595,13 @@ Yes, [Fabric](https://github.com/hyperledger/fabric) is a funny case too. I thin
 
 They came at it with different approaches. Like, I really tried to, I always liked [Corda](https://corda.net/) too. It was clean.
 
-I actually find the UTXO stuff, especially enhanced UTXO, to be aesthetically pleasing. I think even [Avalanche](https://avax.network/) has one of those and no one uses it. And when you really pressed, like the [Corda](https://corda.net/) people were like, we're compliant.
+I actually find the [UTXO](https://www.investopedia.com/terms/u/utxo.asp) stuff, especially enhanced [UTXO](https://www.investopedia.com/terms/u/utxo.asp), to be aesthetically pleasing. I think even [Avalanche](https://avax.network/) has one of those and no one uses it.
+
+And when you really pressed, like the [Corda](https://corda.net/) people were like, we're compliant.
 
 We've got privacy. You know, we've got, and what you had was like a central ordering thing and no privacy whatsoever if you wanted to double spend protection. And it was like, it was still cool and clean.
 
-And I liked their state facts and this and that, but largely spoken mirrors. [Fabric](https://github.com/hyperledger/fabric) was not good. You know, it was like a hack together.
+And I liked their state facts and this and that, but largely smoke and mirrors. [Fabric](https://github.com/hyperledger/fabric) was not good. You know, it was like a hack together.
 
 Like if you think about what a system integrator would build, it's like, well, we've got a [Kafka](https://kafka.apache.org/) thing. We've got this other thing. We've got a little bit of inter-process communication.
 
@@ -575,8 +611,12 @@ We've got an API, like that's what it was. It was like, I don't think there was 
 You mean like something [IBM](https://ibm.com/) might build?
 
 [[30:24]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1824s) **Kieren:**
-Yes. It's like, well, if you just kind of put this thing with that thing and there's a consensus, it's kind of like a blockchain. You'll never get sacked for buying it either.
+Yes. It's like, well, if you just kind of put this thing with that thing and there's a consensus, it's kind of like a blockchain.
 
+[[30:35]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1835s) **Bob:**
+You'll never get sacked for buying it either.
+
+[[30:38]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1838s) **Kieren:**
 Yeah. You won't get stuck. It's open source.
 
 [[30:42]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1842s) **Victor:**
@@ -585,7 +625,17 @@ Yeah. And I think one of the common things was like all of those things had no t
 Yeah.
 
 [[31:03]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1863s) **Bob:**
-Well, I mean, you know, the model that you had, right, for all of these is, well, these are running within a consortium which already has legal agreements, you know, so we don't need to be permissionless because we know who's done the bad shit and we've got a contract and we'll sue you or whatever. And if you have got that situation, well, there's a whole lot of simplification that you can do, you know, if you look at proof of work in particular, you know, and what that overhead that you have on [Bitcoin](https://bitcoin.org) or [Ethereum](https://ethereum.org) at that time is incredibly expensive way of doing things, you know, versus the simpler approaches. Like the stats I saw from a thing [Colin Platt](https://x.com/colingplatt) did in around 2018 was like, he worked out it was maybe as much as 100 million times more expensive to do stuff on the EVM versus a single AWS node that you're running yourself where you've obviously got complete trust, but that's like the overhead, right?
+Well, I mean, you know, the model that you had, right, for all of these is, well, these are running within a consortium which already has legal agreements, you know, so we don't need to be permissionless because we know who's done the bad shit and we've got a contract and we'll sue you or whatever. And if you have got that situation, well, there's a whole lot of simplification that you can do, you know, if you look at [Proof of Work](https://en.wikipedia.org/wiki/Proof_of_work) in particular, you know, and what that overhead that you have on [Bitcoin](https://bitcoin.org) or [Ethereum](https://ethereum.org) at that time is incredibly expensive way of doing things, you know, versus the simpler approaches.
+
+Like the stats I saw from a thing [Colin Platt](https://x.com/colingplatt) did in around 2018 was like, he worked out it was maybe as much as 100 million times more expensive to do stuff on the [EVM](https://ethereum.org/developers/docs/evm/) versus a single AWS node that you're running yourself where you've obviously got complete trust, but that's like the overhead, right?
+
+{% include content-embed.html
+  url='https://medium.com/@colin_/analysing-costs-benefits-of-public-blockchains-with-data-104ec5f7d7e0'
+  title='Analysing Costs & Benefits of Public Blockchains with Data'
+  img='https://miro.medium.com/v2/resize:fit:720/format:webp/0*0fMDCWlSczQe8M7c.'
+  author='Colin Platt'
+  date='2018-04-10'
+%}
 
 That's what you're paying.
 
@@ -597,7 +647,7 @@ It's quite a bit of overhead.
 ### Why the first era of corporate chains didn't work
 
 [[32:08]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1928s) **Victor:**
-So why do you guys, and you know, that's part of the answer, and I'm just kind of curious from you guys, I have my own view, is like, why do you think the first era of corporate chains didn't work?
+So why do you guys, and you know, that's part of the answer, and I'm just kind of curious from you guys, I have my own view, is like, why do you think the first era of corpo chains didn't work?
 
 [[32:19]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1939s) **Kieren:**
 I think the biggest factor is that the organizations were not ready to behave in a blockchainy way. And at the time that manifested in feature requests, like it's missing X. Can my competitors see my customers?
@@ -825,7 +875,7 @@ Thanks.
   url='https://www.coindesk.com/business/2025/04/02/wall-street-giant-dtcc-unveils-tokenized-collateral-platform-in-crypto-push'
   title='Wall Street Giant DTCC Unveils Tokenized Collateral Platform in Crypto Push'
   img='https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2Fdf7f652470cec99d780a4421238b72e152be1176-1440x1080.jpg%3Fauto%3Dformat&w=1920&q=75'
-  author="Krisztian Sandor"
+  author='Krisztian Sandor'
   date='2025-04-02'
 %}
 
@@ -834,24 +884,15 @@ Thanks.
   url='https://www.ofnumbers.com/2015/04/06/consensus-as-a-service-a-brief-report-on-the-emergence-of-permissioned-distributed-ledger-systems/'
   title='Consensus-as-a-service: a brief report on the emergence of permissioned, distributed ledger systems'
   img='/images/ofnumbers.com/2025.10.22/centralized-decentralized-distributed.png'
-  author="Tim Swanson"
+  author='Tim Swanson'
   date='2015-04-06'
 %}
-
-{% include content-embed.html
-  url='https://www.nytimes.com/2018/04/04/us/politics/cambridge-analytica-scandal-fallout.html'
-  title='Cambridge Analytica and Facebook: The Scandal and the Fallout So Far'
-  img='https://static01.nyt.com/images/2018/03/21/business/00cambridgestory6/merlin_135756423_8ac3aeb6-7781-4912-b9e5-fd7210e35170-superJumbo.jpg?quality=75&auto=webp'
-  author="Nicholas Confessore"
-  date='2018-04-04'
-%}
-
 
 
 {% include content-embed.html
   url='https://www.coindesk.com/markets/2019/10/09/new-libra-fork-will-create-permissionless-stablecoin-free-of-corporate-control'
   title='OpenLibra Plans to Launch Permissionless Fork of Facebook’s Stablecoin'
   img='https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2F145e79ebf4bc43ce3d9e2071b7486e6abde1bea6-1370x1026.png%3Fauto%3Dformat&w=1920&q=75'
-  author="Christine Kim"
+  author='Christine Kim'
   date='2019-10-09'
 %}
