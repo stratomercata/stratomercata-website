@@ -672,19 +672,19 @@ And that's what they would have needed to do. And instead it was like, they had 
 
 And it sort of, it led to like a strangulation where you would kind of just need to like let it bloom a little bit. And that's what the public chains did. They also had the incentive mechanism and it's not like there's a ton of corporate usage of public chains now, although I guess there's like institutional style financial usage that's now quite large.
 
-But even for like, I think you'll see some corporate operational stuff, which again, the like stable coin, you know, global clearing remittance, settlement remittance stuff is starting to get there. I think that will happen the way I described, as opposed to, again, like these folks all have done extremely heavy IT implementations. Like I've heard that at least in the era when Oracle and SAP were big at it, on average, an ERP implementation takes 5% of global revenue, no matter the size.
+But even for like, I think you'll see some corporate operational stuff, which again, the like stablecoin, you know, global clearing remittance, settlement remittance stuff is starting to get there. I think that will happen the way I described, as opposed to, again, like these folks all have done extremely heavy IT implementations. Like I've heard that at least in the era when [Oracle](https://oracle.com) and [SAP](https://sap.com) were big at it, on average, an [ERP](https://en.wikipedia.org/wiki/Enterprise_resource_planning) implementation takes 5% of global revenue, no matter the size.
 
 So like the bigger you are, just like, I think [Victor]({{ '/people/victor-wong/' | relative_url }}), maybe you mentioned to me once like working on one for like a full decade.
 
 [[36:06]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2166s) **Victor:**
-When I started at a company, they had already been working on an SAP implementation. And when I left six years later, they were still working on it. So it was just like, yeah, the project.
+When I started at a company, they had already been working on an [SAP](https://sap.com) implementation. And when I left six years later, they were still working on it. So it was just like, yeah, the project.
 
 [[36:22]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2182s) **Kieren:**
 It's hard to do things incrementally in corporate, but in part, it's because it's super complicated and very regulated and whatever, but it's also mentality too. Like, just kind of like turn it on and then just start it. I mentioned this is what happened with the cloud.
 
 Like they're like, all right, let me just do this one little thing. And it's easy. And you keep just putting more and more on there.
 
-And now you have like, I think like [JP Morgan](https://jpmorgan.com/) turned almost all of its on-prem stuff off and it's all on [Amazon](https://amazon.com/) or all on, you know? So I think that was the problem. And the consortium model really means you gotta like pre-think and have like multi-party agreements with everybody.
+And now you have like, I think like [JP Morgan](https://jpmorgan.com/) turned almost all of its on-prem stuff off and it's all on [Amazon](https://aws.amazon.com) or all on, you know? So I think that was the problem. And the consortium model really means you gotta like pre-think and have like multi-party agreements with everybody.
 
 And like, then it's, you know, the negotiation was endless. It's hard to do the data modeling. You know, I think that was the problem at its core.
 
@@ -698,17 +698,31 @@ Yeah, I mean, I think a lot of it is just technical maturity as well. You know, 
 
 And, you know, and I mean, that's how [Quorum](https://consensys.net/quorum/) like came into existence was that, you know, [Amber](https://x.com/AmberBaldet) and the team at [JP Morgan](https://jpmorgan.com/) wanted to do something and without like a privacy story, it was never gonna get approved. Like they wouldn't be allowed to do anything. So it was like, okay, well, what's the thing we could do?
 
-Okay, we can have a private database and like that can be offered around the side and you just do hashes on the main net and, you know, the other bits are permissioned. So it's kind of like, you know, there's a workaround for it. But, you know, they did that with open eyes knowing like the ZK stuff is coming late, but it's not there.
+Okay, we can have a [private database](https://github.com/Consensys/constellation) and like that can be offered around the side and you just do hashes on the main net and, you know, the other bits are permissioned. So it's kind of like, you know, there's a workaround for it. But, you know, they did that with open eyes knowing like the ZK stuff is coming late, but it's not there.
+
+*(Bob: So that private database was [Constellation](https://github.com/Consensys/constellation), which ran as a separate process in tandom with a Geth-fork - [GoQuorum](https://github.com/Consensys/Quorum))*
+
+{% include content-embed.html
+  url='https://fortune.com/2016/10/04/jp-morgan-chase-blockchain-ethereum-quorum/'
+  title='JPMorgan Chase Reveals It\'s Developing a Blockchain Based on Ethereum'
+  img='https://www.ledgerinsights.com/wp-content/uploads/2018/05/Depositphotos_169974804_m-2015-810x525.jpg'
+  author='Jeff John Roberts'
+  date='2016-10-04'
+%}
 
 We have to do some hacky thing. Otherwise, we're literally not gonna be allowed to do anything.
 
+{% include twitter-embed.html url="https://x.com/pmylund/status/1598094336226656256" %}
+
+I mean, there was also a story that ...
+
 [[38:21]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2301s) **Victor:**
-I mean, this was also a story that- I think that's true too.
+I think that's true too.
 
 [[38:25]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2305s) **Kieren:**
 While I agree with you, I still think everyone who found that deficiency none of them solved it better really than what exists in the public chains out there today. I keep asking the AIs and looking around the internet on the state of ZK, having still not really there, maybe a little bit, you know, and the enterprises all want the following permissioning model. Like, I should be able to send value to [Victor]({{ '/people/victor-wong/' | relative_url }}).
 
-He should know that whatever I have really exists. You should be able- he should be able to send it on to you. You should be able to verify that [Victor]({{ '/people/victor-wong/' | relative_url }}) had it, but not know that it came from me or how much he has total.
+He should know that whatever I have really exists. You should be able- he should be able to send it on to you. You should be able to verify that [Victor]({{ '/people/victor-wong/' | relative_url }}) had it, but not know that it came from me or how much he has, total.
 
 And the regulator should somehow be able to see all of this, at least in a financial services setting. And it mostly can't do that still. I kind of can't really tell.
 
@@ -726,14 +740,37 @@ So that's...
 [[40:23]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2423s) **Victor:**
 Well, I kind of think the fundamental problem from my point of view is like they don't think of themselves like communities and they don't want to share, right? So like when I talk about tokenomics, I think tokenomics provides you a system where participants can get everything. So not to go into names of the projects, but we built some very large consortium chains.
 
-And then at some point, every single one of those chains said, oh, well, we need data from this source that this group of people have. And then the question is like, well, why would that group shippers or whatever provide that data? And there are always answers like, oh, we'll just force them to do it.
+And then at some point, every single one of those chains said, oh, well, we need data from this source that this group of people have. And then the question is like, well, why would that group - shippers or whatever - provide that data? And there are always answers like, oh, we'll just force them to do it.
 
 But it never worked.
 
 [[41:10]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2470s) **Kieren:**
 This is a big reason. And I guess this is in part what I meant by mentality. But yes, the incentive alignment specifically was a huge problem where like a lot of the time, it's like either one of them wants the thing way more than the others and is willing to pay for it.
 
-Yeah. Or like, this is like the [Walmart](https://walmart.com/), [IBM](https://ibm.com/) thing that didn't do anything. Or a bunch of parties have roughly equal interest in the thing, but then like no one really wants to pay for it.
+Yeah. Or like, this is like the [Walmart](https://walmart.com/), [IBM](https://ibm.com/) thing that didn't do anything.
+
+{% include content-embed.html
+  url='https://www.forbes.com/sites/astanley/2018/10/08/ready-to-rumble-ibm-launches-food-trust-blockchain-for-commercial-use/'
+  title='Ready To Rumble: IBM Launches Food Trust Blockchain For Commercial Use'
+  img='https://specials-images.forbesimg.com/dam/imageserve/1045633280/960x0.jpg?fit=scale'
+  author='Andy Stanley'
+  date='2018-10-08'
+%}
+
+[[41:34]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2494s) **Bob:**
+
+[Maersk](https://maersk.com) as well ...
+
+{% include content-embed.html
+  url='https://www.forbes.com/sites/michaeldelcastillo/2018/08/09/ibm-maersk-blockchain-platform-adds-92-clients-as-part-of-global-launch-1/'
+  title='IBM, Maersk Blockchain Platform Adds 92 Clients As Part Of Global Launch'
+  img='https://specials-images.forbesimg.com/imageserve/176619985/960x0.jpg?fit=scale'
+  author='Michael del Castillo'
+  date='2018-08-09'
+%}
+
+[[41:36]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2496s) **Kieren:**
+Or a bunch of parties have roughly equal interest in the thing, but then like no one really wants to pay for it.
 
 It's like, it gets treated like a utility, like, well, let's pay cost recovery in, you know, and like, it's slow. There's not the urgency to get those sort of things done. And in both cases, you have big trouble attracting like the rest of the value chain, right?
 
@@ -741,16 +778,16 @@ And so we concluded you definitely just had to turn the thing on and let them co
 
 And it's like, what's going to make the most money? Like, [Ethereum](https://ethereum.org)'s got a lot of assets on it. Maybe you can get some of them.
 
-Maybe you should just sit there. But, you know, if there's something you're just bumping your head against and you can't quite figure out how to, you might have to, you know, go leave, which is, you know, plenty of people have experienced that.
+Maybe you should just sit there. But, you know, if there's something you're just bumping your head against and you can't quite figure out how to, you might have to, you know, go leave, which is, you know, plenty of people have experienced that, like ourselves.
+
+[[42:52]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2572s) **Victor:**
+Yeah, and it's true for any real platform, like the app stores, right? Everyone, you know, myself included, we built for [iOS](https://developer.apple.com/ios/) first because they figured out payment, they figured out micropayments really quickly so we could get paid for what we did, right? So, okay, here's a question that we'll close out on.
 
 <a id="future-predictions"></a>
 
 ### Are corporate chains the future or DOA?
 
-[[42:52]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2572s) **Victor:**
-Yeah, and it's true for any real platform, like the app stores, right? Everyone, you know, myself included, we built for [iOS](https://developer.apple.com/ios/) first because they figured out payment, they figured out micropayments really quickly so we could get paid for what we did, right? So, okay, here's a question that we'll close out on.
-
-Are the new round of corporate chains the future or are they DOA based on similar problems? I'll start with [Bob]({{ '/people/bob-summerwill/' | relative_url }}) on this one.
+Are the new round of corpo chains the future or are they DOA based on similar problems? I'll start with [Bob]({{ '/people/bob-summerwill/' | relative_url }}) on this one.
 
 [[43:21]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2601s) **Bob:**
 They are not solving the same problems as truly permissionless ecosystems. However, it's not a winner-takes-all either. So I think maybe the losers here are gonna be the banks, that they can get their business eaten a lot easier than this can cannibalize [Bitcoin](https://bitcoin.org) or [Ethereum](https://ethereum.org), I think.
@@ -759,9 +796,9 @@ They are not solving the same problems as truly permissionless ecosystems. Howev
 Okay. [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}), your verdict, DOA or are they the future?
 
 [[43:55]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2635s) **Kieren:**
-I think we'll get a couple long-lived corporate chains. I agree with that. I think they'll be semi-niche.
+I think we'll get a couple long-lived corpo chains. I agree with that. I think they'll be semi-niche.
 
-I mean, I think of [Swift](https://swift.com/) as a corporate chain. Yes. [DTCC](https://dtcc.com/) corporate chain.
+I mean, I think of [Swift](https://swift.com/) as a corpo chain. Yes. [DTCC](https://dtcc.com/) corpo chain.
 
 They just happen to not be using a blockchain and both of them are sort of trying to, right? So we're not gonna completely get rid of that. I think they won't go huge.
 
@@ -797,21 +834,21 @@ Yeah. So my view is that the projects that might succeed in this space have to h
 I don't think this like idea of like the bigger names who have all together, like, you know, we've experienced this. That just slows everything down to your point.
 
 [[47:19]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2839s) **Kieren:**
-A lot of grandstanding legal departments.
+A lot of grandstanding. Legal departments.
 
 [[47:21]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2841s) **Victor:**
-It sounds good, but operationally it's terrible. But the other thing is that they have to have that sort of community mindset from the start. I think things like Base and [Binance Chain](https://bnbchain.org/) have been able to do this because they brought a Web3 mentality, even though they drilled it at first.
+It sounds good, but operationally it's terrible. But the other thing is that they have to have that sort of community mindset from the start. I think things like [Base](https://base.org/) and [Binance Chain](https://bnbchain.org/) have been able to do this because they brought a Web3 mentality, even though they drilled it at first.
 
 And so I think the projects are likely to kind of evolve on those projects. That'd be my prediction.
 
 [[47:50]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2870s) **Bob:**
-And I guess also because, you know, their customer base are crypto-y people. You know, it's a similar kind of group. And they understand those demands, right?
+And I guess also because, you know, their customer base are crypto-y people. You know, it's a similar kind of group.
 
-[[48:00]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2880s) **Victor:**
-Yeah, like people will be going for retail.
+[[47:57]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2879s) **Victor:**
+And they understand those demands, right?
 
-[[48:02]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2882s) **Bob:**
-It's going to be normal retail, you know, [Apple Pay](https://apple.com/apple-pay/), [Tempo](https://tempo.xyz) Pay.
+[[48:00]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2880s) **Bob:**
+Yeah, like people will be going for retail.  It's going to be normal retail, you know, [Apple Pay](https://apple.com/apple-pay/), [Tempo](https://tempo.xyz) Pay.
 
 [[48:06]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2886s) **Kieren:**
 Yeah, you're not going to know you're using [Tempo](https://tempo.xyz), most likely. It could. Yeah, I guess the banks could really suffer or it could be the credit card networks that really suffer.
@@ -829,11 +866,13 @@ So if you want to find us, we're always doing this every week. But if you want t
 
 *(Bob - Here's [the clip](https://www.youtube.com/watch?v=15MltoqMjZU&t=2531s) where I asked that)*
 
+Bob has posted that on our Telegram.
+
 > **Victor:** So four is a number that no Chinese person likes because it sounds suspiciously like death.
 > So it's, you know, back in the world of eight character usernames, I could always get "vic4wong" having an
 > Asian name with the number four in it, like pretty much guaranteed that I could get it.
 
-Bob has posted that on our Telegram. Thanks. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), where can people find you for if they want to hear more from you?
+Thanks. [Bob]({{ '/people/bob-summerwill/' | relative_url }}), where can people find you for if they want to hear more from you?
 
 [[49:07]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2947s) **Bob:**
 So yeah, again, X. So Bob, Summer Will. So Summer, like the season.  Will, like write your will. That's [me](https://x.com/bobsummerwill).
@@ -852,47 +891,3 @@ Thanks, guys.
 
 [[49:31]](https://www.youtube.com/watch?v=2BR6nodzzos&t=2971s) **Victor:**
 Thanks.
-
-
-## Links
-
-
-
-----
-
-----
-
-
-----
-
-
-
-----
-
-
-
-{% include content-embed.html
-  url='https://www.coindesk.com/business/2025/04/02/wall-street-giant-dtcc-unveils-tokenized-collateral-platform-in-crypto-push'
-  title='Wall Street Giant DTCC Unveils Tokenized Collateral Platform in Crypto Push'
-  img='https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2Fdf7f652470cec99d780a4421238b72e152be1176-1440x1080.jpg%3Fauto%3Dformat&w=1920&q=75'
-  author='Krisztian Sandor'
-  date='2025-04-02'
-%}
-
-
-{% include content-embed.html
-  url='https://www.ofnumbers.com/2015/04/06/consensus-as-a-service-a-brief-report-on-the-emergence-of-permissioned-distributed-ledger-systems/'
-  title='Consensus-as-a-service: a brief report on the emergence of permissioned, distributed ledger systems'
-  img='/images/ofnumbers.com/2025.10.22/centralized-decentralized-distributed.png'
-  author='Tim Swanson'
-  date='2015-04-06'
-%}
-
-
-{% include content-embed.html
-  url='https://www.coindesk.com/markets/2019/10/09/new-libra-fork-will-create-permissionless-stablecoin-free-of-corporate-control'
-  title='OpenLibra Plans to Launch Permissionless Fork of Facebook’s Stablecoin'
-  img='https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2F145e79ebf4bc43ce3d9e2071b7486e6abde1bea6-1370x1026.png%3Fauto%3Dformat&w=1920&q=75'
-  author='Christine Kim'
-  date='2019-10-09'
-%}
