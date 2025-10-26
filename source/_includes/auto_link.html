@@ -24,27 +24,48 @@ while ensuring clean, valid HTML output.
 {%- assign body_content = include.content -%}
 
 {%- comment -%}Convert markdown-style links [text](url) to HTML{%- endcomment -%}
-{%- assign md_parts = body_content | split: '[' -%}
-{%- assign converted = "" -%}
-{%- for part in md_parts -%}
-  {%- if forloop.first -%}
-    {%- assign converted = part -%}
-  {%- else -%}
-    {%- assign close_bracket = part | split: '](' -%}
-    {%- if close_bracket.size > 1 -%}
-      {%- assign link_text = close_bracket[0] -%}
-      {%- assign url_part = close_bracket[1] | split: ')' -%}
-      {%- if url_part.size > 1 -%}
-        {%- assign url = url_part[0] -%}
-        {%- assign rest = url_part[1] -%}
-        {%- assign converted = converted | append: '<a href="' | append: url | append: '">' | append: link_text | append: '</a>' | append: rest -%}
-      {%- else -%}
-        {%- assign converted = converted | append: '[' | append: part -%}
-      {%- endif -%}
+{%- assign converted = body_content -%}
+{%- assign md_link_pattern = '\[([^\]]+)\]\(([^)]+)\)' -%}
+{%- comment -%}Use a simpler approach: find and replace markdown links iteratively{%- endcomment -%}
+{%- assign continue_processing = true -%}
+{%- for i in (1..20) -%}
+  {%- unless continue_processing -%}
+    {%- break -%}
+  {%- endunless -%}
+  {%- assign continue_processing = false -%}
+  {%- assign parts = converted | split: '[' -%}
+  {%- assign new_converted = "" -%}
+  {%- for part in parts -%}
+    {%- if forloop.first -%}
+      {%- assign new_converted = part -%}
     {%- else -%}
-      {%- assign converted = converted | append: '[' | append: part -%}
+      {%- assign close_bracket_pos = part | split: '](' -%}
+      {%- if close_bracket_pos.size > 1 -%}
+        {%- assign link_text = close_bracket_pos[0] -%}
+        {%- assign after_bracket = close_bracket_pos[1] -%}
+        {%- assign paren_pos = after_bracket | split: ')' -%}
+        {%- if paren_pos.size > 1 -%}
+          {%- assign url = paren_pos[0] -%}
+          {%- comment -%}Rejoin remaining parts with ) separator{%- endcomment -%}
+          {%- assign remaining_parts = "" -%}
+          {%- for remaining in paren_pos offset: 1 -%}
+            {%- if forloop.first -%}
+              {%- assign remaining_parts = remaining -%}
+            {%- else -%}
+              {%- assign remaining_parts = remaining_parts | append: ')' | append: remaining -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- assign new_converted = new_converted | append: '<a href="' | append: url | append: '">' | append: link_text | append: '</a>' | append: remaining_parts -%}
+          {%- assign continue_processing = true -%}
+        {%- else -%}
+          {%- assign new_converted = new_converted | append: '[' | append: part -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- assign new_converted = new_converted | append: '[' | append: part -%}
+      {%- endif -%}
     {%- endif -%}
-  {%- endif -%}
+  {%- endfor -%}
+  {%- assign converted = new_converted -%}
 {%- endfor -%}
 {%- assign body_content = converted -%}
 
