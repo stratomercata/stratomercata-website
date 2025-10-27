@@ -1779,13 +1779,25 @@ article .content-meta {
   margin-bottom: 1rem;
 }
 
-article .content-meta a {
-  color: #6b7280;
-  text-decoration: none;
+article .content-meta a,
+.blog-post-meta a,
+.video-meta a {
+  color: #2563eb;
+  text-decoration: underline;
 }
 
-article .content-meta a:hover {
-  color: var(--primary-blue);
+article .content-meta a:hover,
+.blog-post-meta a:hover,
+.video-meta a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+article .content-meta a:visited,
+.blog-post-meta a:visited,
+.video-meta a:visited {
+  color: #7c3aed;
+  text-decoration: underline;
 }
 
 article .blog-description {
