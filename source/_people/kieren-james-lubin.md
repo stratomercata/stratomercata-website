@@ -15,4 +15,4 @@ Kieren leads [BlockApps](https://blockapps.net) and [STRATO Mercata](https://str
 
 After helping to pioneer enterprise blockchain deployments, he intentionally moved beyond that niche to build consumer-grade rails for tokenized real-world assets and DeFi.
 
-Kieren grew up in New York City, attended Stuyvesant High School, earned an A.B. in mathematics from Princeton University in 2011, and completed all-but-dissertation work in mathematical physics at UC Berkeley. He is a co-founder and board alternate of the Enterprise Ethereum Alliance (2017–present).
+Kieren grew up in New York City, attended [Stuyvesant High School](https://en.wikipedia.org/wiki/Stuyvesant_High_School), earned an A.B. in mathematics from [Princeton University](https://en.wikipedia.org/wiki/Princeton_University) in 2011, and completed all-but-dissertation work in mathematical physics at [UC Berkeley](https://en.wikipedia.org/wiki/University_of_California,_Berkeley). He is a co-founder and board alternate of the [Enterprise Ethereum Alliance](https://entethalliance.org) (2017–present).

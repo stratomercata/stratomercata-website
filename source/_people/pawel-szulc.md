@@ -12,8 +12,8 @@ description: Developing blockchain solutions and contributing to the platform's 
 
 Pawel Szulc is a Software Engineer at [STRATO Mercata](https://stratomercata.com), bringing expertise in functional programming and distributed systems to the team.
 
-With a strong background in software architecture and blockchain development, Pawel contributes to building reliable, maintainable code that powers STRATO Mercata's digital asset platform.
+With a strong background in software architecture and blockchain development, Pawel contributes to building reliable, maintainable code that powers [STRATO Mercata](https://stratomercata.com)'s digital asset platform.
 
-At STRATO Mercata, Pawel works on core platform features, applying best practices in software engineering to create robust systems that can handle complex financial operations at scale.
+At [STRATO Mercata](https://stratomercata.com), Pawel works on core platform features, applying best practices in software engineering to create robust systems that can handle complex financial operations at scale.
 
-Pawel's technical expertise helps ensure STRATO Mercata delivers a secure, reliable platform for digital asset finance.
+Pawel's technical expertise helps ensure [STRATO Mercata](https://stratomercata.com) delivers a secure, reliable platform for digital asset finance.

@@ -15,7 +15,7 @@ Victor is Co-Founder and Chief Product Officer at [BlockApps](https://blockapps.
 
 An early contributor to Ethereum and [Consensys](https://consensys.io), his key achievements include co-creating Blockchain-as-a-Service, helping with the establishment of the [Enterprise Ethereum Alliance](https://entethalliance.com), and developing some of the first real-world assets on private Ethereum blockchains.
 
-These assets supported Fortune 500 companies and governments in the mining, real estate, and agriculture sectors. Before his involvement in Web3, Victor was the tech founder of SmarTots, a mobile family startup, and Speak2Me, a language learning social network.
+These assets supported Fortune 500 companies and governments in the mining, real estate, and agriculture sectors. Before his involvement in Web3, Victor was the tech founder of [SmarTots](https://web.archive.org/web/20120503030930/http://www.smartots.com/), a mobile family startup, and [Speak2Me](https://web.archive.org/web/20130327042400/http://www.speak2me.cn/), a language learning social network.
 
 {% include content-embed.html
   url='https://www.coindesk.com/markets/2016/09/23/worlds-largest-mining-company-to-use-blockchain-for-supply-chain'
