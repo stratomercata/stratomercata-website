@@ -6,13 +6,9 @@ photo: https://avatars.githubusercontent.com/u/5171767
 social:
   github: https://github.com/nikitamendelbaum
   linkedin: https://linkedin.com/in/nikita-mendelbaum-a646b9bb
-description: Developing innovative blockchain solutions and building secure infrastructure for digital asset finance.
+description: Building and scaling blockchain infrastructure and developer tooling so others can focus on the fun stuff.
 ---
 
-Nikita Mendelbaum is a Software Engineer at [STRATO Mercata](https://stratomercata.com), contributing technical expertise to the platform's development.
+Nikita works on the infrastructure layer of [STRATO Mercata](https://stratomercata.com), making sure the platform stays stable and reliable.
 
-With a strong background in software engineering and blockchain technology, Nikita plays a key role in implementing features and ensuring the platform's reliability and performance.
-
-At STRATO Mercata, Nikita works on core platform development, helping to build the infrastructure that powers secure lending, borrowing, and asset management capabilities for users around the world.
-
-Nikita's work is essential in creating a reliable and user-friendly platform that makes digital asset finance accessible to everyone.
+His work includes managing cloud services, automating deployments, and keeping the underlying systems running smoothly.  He also focuses on improving internal tools and workflows to make development and operations easier, while also contributing to the platform's codebase.
