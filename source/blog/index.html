@@ -35,7 +35,7 @@ title: Blog
 
                     <div class="blog-post-meta">
                         {% if post.date %}
-                            <span class="release-date">{{ post.date | date: "%B %d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}</span>
+                            <span class="release-date">{{ post.date | date: "%B %d, %Y" }}{% if post.author %} by {% include auto_link.html content=post.author %}{% endif %}</span>
                         {% endif %}
                     </div>
 
