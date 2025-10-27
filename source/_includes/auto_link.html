@@ -160,7 +160,49 @@ while ensuring clean, valid HTML output.
   {%- assign body_content = new_body -%}
 {%- endif -%}
 
-{%- comment -%}Process hidden people links first - replace explicit links to hidden people with [REDACTED]{%- endcomment -%}
+{%- comment -%}Process hidden content links first - replace explicit links to hidden people and blog posts with [REDACTED]{%- endcomment -%}
+
+{%- comment -%}Handle hidden blog posts{%- endcomment -%}
+{%- for post in site.blog -%}
+  {%- if post.hidden -%}
+    {%- assign post_url_pattern = post.url | append: '"' -%}
+    {%- assign post_url_pattern_slash = post.url | append: '/"' -%}
+    
+    {%- assign parts = body_content | split: '<a href="' -%}
+    {%- assign new_content = "" -%}
+    {%- for part in parts -%}
+      {%- if forloop.first -%}
+        {%- assign new_content = part -%}
+      {%- else -%}
+        {%- if part contains post_url_pattern or part contains post_url_pattern_slash -%}
+          {%- assign close_tag_parts = part | split: '</a>' -%}
+          {%- if close_tag_parts.size > 1 -%}
+            {%- assign link_start = close_tag_parts[0] -%}
+            {%- if link_start contains post.url -%}
+              {%- assign new_content = new_content | append: '[REDACTED]' -%}
+              {%- for remaining_part in close_tag_parts offset: 1 -%}
+                {%- if forloop.first -%}
+                  {%- assign new_content = new_content | append: remaining_part -%}
+                {%- else -%}
+                  {%- assign new_content = new_content | append: '</a>' | append: remaining_part -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- else -%}
+              {%- assign new_content = new_content | append: '<a href="' | append: part -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign new_content = new_content | append: '<a href="' | append: part -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign new_content = new_content | append: '<a href="' | append: part -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign body_content = new_content -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}Handle hidden people{%- endcomment -%}
 {%- for person in site.people -%}
   {%- if person.hidden -%}
     {%- comment -%}Handle links with various formats - we need to replace the entire <a>...</a> tag{%- endcomment -%}
@@ -202,6 +244,73 @@ while ensuring clean, valid HTML output.
       {%- endif -%}
     {%- endfor -%}
     {%- assign body_content = new_content -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}Protect HTML attributes AFTER hidden content processing but BEFORE name replacements{%- endcomment -%}
+{%- assign protected_attributes = "" | split: "" -%}
+{%- assign attr_counter = 0 -%}
+{%- assign attribute_names = "alt|title|aria-label|aria-describedby|data-|src" | split: "|" -%}
+
+{%- for attr_name in attribute_names -%}
+  {%- comment -%}Match attributes like: alt="text" or title='text'{%- endcomment -%}
+  {%- assign attr_pattern_double = attr_name | append: '="' -%}
+  {%- assign attr_pattern_single = attr_name | append: "='" -%}
+  
+  {%- comment -%}Process double-quoted attributes{%- endcomment -%}
+  {%- assign attr_parts = body_content | split: attr_pattern_double -%}
+  {%- if attr_parts.size > 1 -%}
+    {%- assign new_body = attr_parts[0] -%}
+    {%- for part in attr_parts offset: 1 -%}
+      {%- assign quote_parts = part | split: '"' -%}
+      {%- if quote_parts.size > 1 -%}
+        {%- assign attr_value = quote_parts[0] -%}
+        {%- assign placeholder = '___PROTECTED_ATTR_' | append: attr_counter | append: '___' -%}
+        {%- assign original_attr = attr_pattern_double | append: attr_value | append: '"' -%}
+        {%- assign attr_pair = placeholder | append: '|||' | append: original_attr -%}
+        {%- assign protected_attributes = protected_attributes | push: attr_pair -%}
+        {%- assign new_body = new_body | append: placeholder -%}
+        {%- assign attr_counter = attr_counter | plus: 1 -%}
+        {%- for remaining in quote_parts offset: 1 -%}
+          {%- if forloop.first -%}
+            {%- assign new_body = new_body | append: remaining -%}
+          {%- else -%}
+            {%- assign new_body = new_body | append: '"' | append: remaining -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- assign new_body = new_body | append: attr_pattern_double | append: part -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign body_content = new_body -%}
+  {%- endif -%}
+  
+  {%- comment -%}Process single-quoted attributes{%- endcomment -%}
+  {%- assign attr_parts = body_content | split: attr_pattern_single -%}
+  {%- if attr_parts.size > 1 -%}
+    {%- assign new_body = attr_parts[0] -%}
+    {%- for part in attr_parts offset: 1 -%}
+      {%- assign quote_parts = part | split: "'" -%}
+      {%- if quote_parts.size > 1 -%}
+        {%- assign attr_value = quote_parts[0] -%}
+        {%- assign placeholder = '___PROTECTED_ATTR_' | append: attr_counter | append: '___' -%}
+        {%- assign original_attr = attr_pattern_single | append: attr_value | append: "'" -%}
+        {%- assign attr_pair = placeholder | append: '|||' | append: original_attr -%}
+        {%- assign protected_attributes = protected_attributes | push: attr_pair -%}
+        {%- assign new_body = new_body | append: placeholder -%}
+        {%- assign attr_counter = attr_counter | plus: 1 -%}
+        {%- for remaining in quote_parts offset: 1 -%}
+          {%- if forloop.first -%}
+            {%- assign new_body = new_body | append: remaining -%}
+          {%- else -%}
+            {%- assign new_body = new_body | append: "'" | append: remaining -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- assign new_body = new_body | append: attr_pattern_single | append: part -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign body_content = new_body -%}
   {%- endif -%}
 {%- endfor -%}
 
@@ -268,6 +377,7 @@ while ensuring clean, valid HTML output.
   {%- comment -%}Normalize the person name by removing quotes{%- endcomment -%}
   {%- assign normalized_person_name = other_person.name | remove: '"' | remove: "'" -%}
   {%- assign name_to_replace = normalized_person_name -%}
+  {%- assign nickname_to_replace = other_person.nickname -%}
   {%- assign display_name = normalized_person_name -%}
   
   {%- comment -%}Create the replacement link{%- endcomment -%}
@@ -278,15 +388,31 @@ while ensuring clean, valid HTML output.
     {%- assign link_replacement = '<a href="' | append: person_url | append: '">' | append: normalized_person_name | append: '</a>' -%}
   {%- endif -%}
   
+  {%- comment -%}For nicknames, create a separate replacement that links to the same person{%- endcomment -%}
+  {%- if nickname_to_replace and nickname_to_replace != "" -%}
+    {%- if other_person.hidden -%}
+      {%- assign nickname_link_replacement = '<span class="hidden-autolink" data-original-name="' | append: nickname_to_replace | append: '" data-original-url="' | append: person_url | append: '">[REDACTED]</span>' -%}
+    {%- else -%}
+      {%- assign nickname_link_replacement = '<a href="' | append: person_url | append: '">' | append: nickname_to_replace | append: '</a>' -%}
+    {%- endif -%}
+  {%- endif -%}
+  
   {%- comment -%}Replace person names, but protect instances within existing blog/video links{%- endcomment -%}
   {%- assign temp_content = body_content -%}
   
-  {%- comment -%}First, temporarily replace blog post and video links that contain this person's name{%- endcomment -%}
+  {%- comment -%}First, temporarily replace blog post and video links that contain this person's name or nickname{%- endcomment -%}
   {%- assign protected_links = "" | split: "" -%}
   {%- assign link_counter = 0 -%}
   
   {%- for post in site.blog -%}
+    {%- assign should_protect = false -%}
     {%- if post.title contains name_to_replace -%}
+      {%- assign should_protect = true -%}
+    {%- endif -%}
+    {%- if nickname_to_replace and nickname_to_replace != "" and post.title contains nickname_to_replace -%}
+      {%- assign should_protect = true -%}
+    {%- endif -%}
+    {%- if should_protect -%}
       {%- assign post_link_pattern = '<a href="' | append: post.url | append: '">' | append: post.title | append: '</a>' -%}
       {%- if temp_content contains post_link_pattern -%}
         {%- assign placeholder = '___PROTECTED_LINK_' | append: link_counter | append: '___' -%}
@@ -299,7 +425,14 @@ while ensuring clean, valid HTML output.
   {%- endfor -%}
   
   {%- for video in site.videos -%}
+    {%- assign should_protect = false -%}
     {%- if video.title contains name_to_replace -%}
+      {%- assign should_protect = true -%}
+    {%- endif -%}
+    {%- if nickname_to_replace and nickname_to_replace != "" and video.title contains nickname_to_replace -%}
+      {%- assign should_protect = true -%}
+    {%- endif -%}
+    {%- if should_protect -%}
       {%- assign video_link_pattern = '<a href="' | append: video.url | append: '">' | append: video.title | append: '</a>' -%}
       {%- if temp_content contains video_link_pattern -%}
         {%- assign placeholder = '___PROTECTED_LINK_' | append: link_counter | append: '___' -%}
@@ -323,6 +456,11 @@ while ensuring clean, valid HTML output.
     {%- assign temp_content = temp_content | replace: single_quoted_name, link_replacement -%}
   {%- endif -%}
   
+  {%- comment -%}Also replace the nickname if it exists{%- endcomment -%}
+  {%- if nickname_to_replace and nickname_to_replace != "" -%}
+    {%- assign temp_content = temp_content | replace: nickname_to_replace, nickname_link_replacement -%}
+  {%- endif -%}
+  
   {%- comment -%}Restore the protected links{%- endcomment -%}
   {%- for pair in protected_links -%}
     {%- assign parts = pair | split: '|||' -%}
@@ -332,6 +470,14 @@ while ensuring clean, valid HTML output.
   {%- endfor -%}
   
   {%- assign body_content = temp_content -%}
+{%- endfor -%}
+
+{%- comment -%}Restore protected attributes (from early protection){%- endcomment -%}
+{%- for pair in protected_attributes -%}
+  {%- assign parts = pair | split: '|||' -%}
+  {%- assign placeholder = parts[0] -%}
+  {%- assign original_attr = parts[1] -%}
+  {%- assign body_content = body_content | replace: placeholder, original_attr -%}
 {%- endfor -%}
 
 {%- comment -%}Restore content-embed includes{%- endcomment -%}

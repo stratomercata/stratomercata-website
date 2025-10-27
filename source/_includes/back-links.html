@@ -12,6 +12,7 @@ Expects page.url to be set (automatically available in layouts)
 {% assign current_url = page.url %}
 {% assign current_title = page.title | default: page.name | remove: '"' | remove: "'" %}
 {% assign current_name = page.name | remove: '"' | remove: "'" %}
+{% assign current_alias = page.alias | remove: '"' | remove: "'" %}
 {% assign content_backlinks = "" | split: "" %}
 {% assign people_backlinks = "" | split: "" %}
 
@@ -20,7 +21,7 @@ Phase 1: Traditional back-links
 Search through all blog posts for references to current page
 {% endcomment %}
 {% for post in site.blog %}
-  {% if post.url != current_url %}
+  {% if post.url != current_url and post.hidden != true and post.hidden != 'true' %}
     {% comment %}Check if blog post content or title links to current page{% endcomment %}
     {% assign content_with_fm = post.content | append: post.title | append: post.description | remove: '"' | remove: "'" %}
     {% assign found_match = false %}
@@ -31,6 +32,9 @@ Search through all blog posts for references to current page
       {% assign found_match = true %}
     {% endif %}
     {% if current_name and current_name != "" and content_with_fm contains current_name %}
+      {% assign found_match = true %}
+    {% endif %}
+    {% if current_alias and current_alias != "" and content_with_fm contains current_alias %}
       {% assign found_match = true %}
     {% endif %}
     {% if found_match %}
@@ -68,6 +72,9 @@ Search through all videos for references to current page
     {% if current_name and current_name != "" and video_content contains current_name %}
       {% assign found_match = true %}
     {% endif %}
+    {% if current_alias and current_alias != "" and video_content contains current_alias %}
+      {% assign found_match = true %}
+    {% endif %}
     {% if found_match %}
       {% assign content_backlinks = content_backlinks | push: video %}
     {% endif %}
@@ -78,7 +85,7 @@ Search through all videos for references to current page
 Search through all people for references to current page
 {% endcomment %}
 {% for person in site.people %}
-  {% if person.url != current_url %}
+  {% if person.url != current_url and person.hidden != true and person.hidden != 'true' %}
     {% comment %}Check person content and description{% endcomment %}
     {% assign person_content = person.content | append: person.description | append: person.name | remove: '"' | remove: "'" %}
     {% assign found_match = false %}
@@ -89,6 +96,9 @@ Search through all people for references to current page
       {% assign found_match = true %}
     {% endif %}
     {% if current_name and current_name != "" and person_content contains current_name %}
+      {% assign found_match = true %}
+    {% endif %}
+    {% if current_alias and current_alias != "" and person_content contains current_alias %}
       {% assign found_match = true %}
     {% endif %}
     {% if found_match %}
@@ -111,7 +121,7 @@ Find content that the current page would auto-link to, and add those as reciproc
 Find people that the current page would auto-link to
 {% endcomment %}
 {% for person in site.people %}
-  {% if person.url != current_url %}
+  {% if person.url != current_url and person.hidden != true and person.hidden != 'true' %}
     {% comment %}Check if current page content contains this person's name (would create auto-link){% endcomment %}
     {% assign normalized_person_name = person.name | remove: '"' | remove: "'" %}
     {% if normalized_person_name and normalized_person_name != "" and current_content contains normalized_person_name %}
@@ -135,12 +145,18 @@ Find blog posts that the current page would auto-link to
 {% endcomment %}
 {% assign autolink_backlinks = "" | split: "" %}
 {% for post in site.blog %}
-  {% if post.url != current_url %}
+  {% if post.url != current_url and post.hidden != true and post.hidden != 'true' %}
     {% assign would_be_linked = false %}
     
     {% comment %}Check if current page would auto-link to this post by title{% endcomment %}
     {% assign normalized_post_title = post.title | remove: '"' | remove: "'" %}
     {% if normalized_post_title and normalized_post_title != "" and current_content contains normalized_post_title %}
+      {% assign would_be_linked = true %}
+    {% endif %}
+    
+    {% comment %}Check if current page would auto-link to this post by alias{% endcomment %}
+    {% assign normalized_post_alias = post.alias | remove: '"' | remove: "'" %}
+    {% if normalized_post_alias and normalized_post_alias != "" and current_content contains normalized_post_alias %}
       {% assign would_be_linked = true %}
     {% endif %}
     
