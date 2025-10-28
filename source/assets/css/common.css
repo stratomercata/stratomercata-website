@@ -2223,6 +2223,15 @@ article .blog-tags .tag {
     max-width: 50%;
   }
 }
+/* Highlight boxes for important content */
+.highlight-yellow {
+  background: var(--secondary-yellow);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--primary-navy);
+}
+
 /* Telegram CTA Section */
 .telegram-cta-section {
   background: #fafafa;
