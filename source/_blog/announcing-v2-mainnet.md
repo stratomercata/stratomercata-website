@@ -1,9 +1,9 @@
 ---
 title: "Welcome to a New Beginning!"
-date: 2025-10-28
+date: 2025-10-29
 author: "Bob Summerwill"
 img: /images/wikipedia.org/2025.10.27/Sunrise_over_the_ocean.jpg
-description: "Nearly a year in the making, STRATO Mercata V2 will go live tomorrow."
+description: "Nearly a year in the making, STRATO Mercata V2 goes live"
 categories: ["Announcement"]
 ---
 
@@ -11,14 +11,15 @@ categories: ["Announcement"]
 
 Good things come to those who wait.
 
-It's been a long wait, we know, but it's finally here.  Tomorrow we will be releasing [STRATO Mercata V2](https://app.stratomercata.com/) to the world.
+It's been a long wait, we know, but it's finally here.  We are releasing [STRATO Mercata V2](https://app.stratomercata.com/) to the world.
 
 What's new? For end-users, absolutely everything.  It's a complete ground-up rebuild of the application.  Participants in our [July](/blog/announcing-mercata-v2-trading-competition/) and [September](/blog/announcing-mercata-v2-testing-challenge/) competitions got a sneak peek, but this will be fresh for everybody else.  Existing accounts and balances will carry forward into the new application.
 
 <div class="highlight-yellow">
 <b>
-The switchover will happen tomorrow, Wednesday, 29th October, 2025 at 10am ET (hopefully without <i>too much</i> downtime).<br/>
-We will be doing a walkthrough of the new application on our [weekly Spaces at 5pm ET](/videos/mercata-v2-launch/).
+The switchover will happen shortly (hopefully without <i>too much</i> downtime).<br/>
+We will send out a message on our primary channels confirming when V2 is live.<br/>
+We will be doing a walkthrough of the new application in an upcoming Spaces.
 </b>
 </div>
 
