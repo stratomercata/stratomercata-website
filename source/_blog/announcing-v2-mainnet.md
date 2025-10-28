@@ -25,9 +25,7 @@ We will be doing a walkthrough of the new application in an upcoming Spaces.
 
 Expect a steady drip of blog posts, documentation and videos from here on out.
 
-The underlying technology platform, [STRATO](https://docs.stratomercata.com/), also underwent fairly significant changes to support the new functionality and remove some remaining enterprise blockchain baggage. We'll open-source our entire tech stack in November - all 31,000 commits of it.  The initial Haskell codebase dates back to [September 2014](https://github.com/jamshidh/ethereum-client-haskell/commit/60d4cadb9ebde7b126b80079dede5ca0d5604a99), nearly a year before the Ethereum mainnet [was launched](https://blog.ethereum.org/2015/07/30/ethereum-launches).
-
-The code has just undergone an external security audit, and we'll make the results public on a similar timeline to the [open-source release](https://github.com/stratomercata).
+The code has just undergone an external security audit, and we'll make the results public in the near future.
 
 **If you have any questions or run into any issues during the transition, please [contact us](/contact/) in whatever way works best for you.  The [Telegram](https://t.me/stratomercata) channel will likely be the most responsive.**
 
