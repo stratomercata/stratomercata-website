@@ -1374,7 +1374,7 @@ main p {
 .blog-post-thumbnail {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  padding-bottom: 75%;
   overflow: hidden;
   background: #f3f4f6;
 }
@@ -1849,7 +1849,7 @@ article .blog-content ol,
 
 article .blog-content li,
 .video-content li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.125rem;
 }
 
 article .blog-content a,

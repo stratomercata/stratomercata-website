@@ -3,6 +3,7 @@ title: "Introducing Gary and Friends: AI Coding Projects from STRATO Mercata"
 date: 2025-05-23
 author: "Bob Summerwill"
 description: "During the STRATO Mercata quarterly offsite last month, each team member worked on AI-assisted coding projects. The AI assisted coding tools are progressing at breakneck speed, and the utility and productivity gains are frankly stunning."
+img: /images/chatgpt.com/2025.10.27/gary-and-friends.png
 categories: ["General"]
 ---
 

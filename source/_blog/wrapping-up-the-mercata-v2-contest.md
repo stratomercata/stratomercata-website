@@ -3,6 +3,7 @@ title: "Wrapping Up the Mercata V2 Contest"
 date: 2025-09-24
 author: "Michael Tan"
 description: "Yesterday, our long-awaited Mercata V2 Contest came to a close after a week of exciting trading and bug hunting on the Mercata testnet."
+img: /images/personal/bob-summerwill/telegram/2025.10.27/mercata-v2-contest-sep.jpg
 categories: ["General"]
 ---
 
