@@ -105,7 +105,7 @@ layout: default
                             {% if guest_found %}
                                 {% capture guest_entry %}<a href="{{ guest_url | relative_url }}">{{ guest_display_name }}</a>{% endcapture %}
                             {% else %}
-                                {% assign guest_entry = guest %}
+                                {% capture guest_entry %}{{ guest | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% endcapture %}
                             {% endif %}
                             {% assign visible_guests = visible_guests | push: guest_entry %}
                         {% endunless %}
