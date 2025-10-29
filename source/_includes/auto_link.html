@@ -26,47 +26,53 @@ while ensuring clean, valid HTML output.
 
 {%- comment -%}Convert markdown-style links [text](url) to HTML{%- endcomment -%}
 {%- assign converted = body_content -%}
-{%- assign md_link_pattern = '\[([^\]]+)\]\(([^)]+)\)' -%}
-{%- comment -%}Use a simpler approach: find and replace markdown links iteratively{%- endcomment -%}
+{%- comment -%}Process markdown links iteratively with a simpler, more robust approach{%- endcomment -%}
 {%- assign continue_processing = true -%}
-{%- for i in (1..20) -%}
+{%- for i in (1..50) -%}
   {%- unless continue_processing -%}
     {%- break -%}
   {%- endunless -%}
   {%- assign continue_processing = false -%}
-  {%- assign parts = converted | split: '[' -%}
-  {%- assign new_converted = "" -%}
-  {%- for part in parts -%}
-    {%- if forloop.first -%}
-      {%- assign new_converted = part -%}
-    {%- else -%}
-      {%- assign close_bracket_pos = part | split: '](' -%}
-      {%- if close_bracket_pos.size > 1 -%}
-        {%- assign link_text = close_bracket_pos[0] -%}
-        {%- assign after_bracket = close_bracket_pos[1] -%}
-        {%- assign paren_pos = after_bracket | split: ')' -%}
-        {%- if paren_pos.size > 1 -%}
-          {%- assign url = paren_pos[0] -%}
-          {%- comment -%}Rejoin remaining parts with ) separator{%- endcomment -%}
-          {%- assign remaining_parts = "" -%}
-          {%- for remaining in paren_pos offset: 1 -%}
-            {%- if forloop.first -%}
-              {%- assign remaining_parts = remaining -%}
-            {%- else -%}
-              {%- assign remaining_parts = remaining_parts | append: ')' | append: remaining -%}
-            {%- endif -%}
-          {%- endfor -%}
-          {%- assign new_converted = new_converted | append: '<a href="' | append: url | append: '">' | append: link_text | append: '</a>' | append: remaining_parts -%}
-          {%- assign continue_processing = true -%}
-        {%- else -%}
-          {%- assign new_converted = new_converted | append: '[' | append: part -%}
+  
+  {%- comment -%}Find the first markdown link pattern [text](url){%- endcomment -%}
+  {%- assign link_start = converted | split: '[' -%}
+  {%- if link_start.size > 1 -%}
+    {%- assign before_link = link_start[0] -%}
+    {%- comment -%}Process the first potential link{%- endcomment -%}
+    {%- for part_index in (1..link_start.size) -%}
+      {%- assign part = link_start[part_index] -%}
+      {%- if part contains '](' -%}
+        {%- assign bracket_parts = part | split: '](' -%}
+        {%- if bracket_parts.size > 1 -%}
+          {%- assign link_text = bracket_parts[0] -%}
+          {%- assign url_part = bracket_parts[1] -%}
+          {%- if url_part contains ')' -%}
+            {%- assign paren_parts = url_part | split: ')' -%}
+            {%- assign url = paren_parts[0] -%}
+            {%- comment -%}Reconstruct remaining content after the link{%- endcomment -%}
+            {%- assign after_link = "" -%}
+            {%- for remaining in paren_parts offset: 1 -%}
+              {%- if forloop.first -%}
+                {%- assign after_link = remaining -%}
+              {%- else -%}
+                {%- assign after_link = after_link | append: ')' | append: remaining -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- comment -%}Add back any remaining parts that were split on '['{%- endcomment -%}
+            {%- for remaining_part in link_start offset: part_index -%}
+              {%- unless forloop.first -%}
+                {%- assign after_link = after_link | append: '[' | append: remaining_part -%}
+              {%- endunless -%}
+            {%- endfor -%}
+            {%- comment -%}Replace the found link with HTML{%- endcomment -%}
+            {%- assign converted = before_link | append: '<a href="' | append: url | append: '">' | append: link_text | append: '</a>' | append: after_link -%}
+            {%- assign continue_processing = true -%}
+            {%- break -%}
+          {%- endif -%}
         {%- endif -%}
-      {%- else -%}
-        {%- assign new_converted = new_converted | append: '[' | append: part -%}
       {%- endif -%}
-    {%- endif -%}
-  {%- endfor -%}
-  {%- assign converted = new_converted -%}
+    {%- endfor -%}
+  {%- endif -%}
 {%- endfor -%}
 {%- assign body_content = converted -%}
 
