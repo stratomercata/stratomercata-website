@@ -1540,25 +1540,32 @@ main p {
 }
 
 .blog-featured-image img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
 
 /* Person detail page photo - make consistent with blog/video */
 .person-card-size .person-photo img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   border-radius: 9999px;
   object-fit: cover;
   width: auto;
 }
 
+/* Responsive image sizing - 100% on mobile, 50% on desktop */
+/* Use !important to override inline styles */
 @media (min-width: 768px) {
+  .blog-featured-image img,
   article .blog-content img,
   .video-content img,
   .person-content img {
-    max-width: 50%;
+    max-width: 50% !important;
+  }
+  
+  .person-card-size .person-photo img {
+    max-width: 50% !important;
   }
 }
 
@@ -1863,12 +1870,22 @@ article .blog-content a:hover,
   color: #1d4ed8;
 }
 
+/* Images in blog and video content - responsive sizing */
 article .blog-content img,
 .video-content img {
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
   margin: 1.5rem 0;
+}
+
+/* Desktop: 50% width for images in content areas */
+/* Use !important to override inline styles */
+@media (min-width: 768px) {
+  article .blog-content img,
+  .video-content img {
+    max-width: 50% !important;
+  }
 }
 
 article .blog-content blockquote,
@@ -2206,6 +2223,15 @@ article .blog-tags .tag {
     max-width: 50%;
   }
 }
+/* Highlight boxes for important content */
+.highlight-yellow {
+  background: var(--secondary-yellow);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--primary-navy);
+}
+
 /* Telegram CTA Section */
 .telegram-cta-section {
   background: #fafafa;
