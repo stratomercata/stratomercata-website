@@ -1,6 +1,6 @@
 ---
 title: "Welcome to a New Beginning!"
-date: 2025-10-29
+date: 2025-10-30
 author: "Bob Summerwill"
 img: /images/wikipedia.org/2025.10.27/Sunrise_over_the_ocean.jpg
 description: "Nearly a year in the making, STRATO Mercata V2 goes live"
