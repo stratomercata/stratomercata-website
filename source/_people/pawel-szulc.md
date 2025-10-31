@@ -7,6 +7,7 @@ social:
   website: https://encodepanda.com/
   twitter: https://x.com/EncodePanda
   github: https://github.com/EncodePanda
+  linkedin: https://www.linkedin.com/in/pawelszulc
 description: Developing blockchain solutions and contributing to the platform's secure and scalable infrastructure.
 ---
 
