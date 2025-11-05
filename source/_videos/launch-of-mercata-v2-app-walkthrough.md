@@ -56,7 +56,7 @@ That's right. So basically the deal there was that, I guess, annually you had li
 ### V2 Launch Celebration
 
 [[1:45]](https://www.youtube.com/watch?v=NPLeU3iVIMw&t=105s) **Victor Wong:**
-We should probably introduce Maiko, because he's a special guest. Absolutely, yes.
+We should probably introduce Michael, because he's a special guest. Absolutely, yes.
 
 [[1:52]](https://www.youtube.com/watch?v=NPLeU3iVIMw&t=112s) **Kieren James-Lubin:**
 I guess he's a guest.
@@ -325,7 +325,7 @@ Making delivery. Okay. Well, is there anything else anyone wanted to cover or we
 No, we just look forward to you guys trying it and giving us whatever input. We're really excited for you to see this and it's still going to evolve a lot. Things have been moving quickly and will continue to be moving quickly on it. So exciting times for us.
 
 [[30:52]](https://www.youtube.com/watch?v=NPLeU3iVIMw&t=1852s) **Bob Summerwill:**
-So yeah, just to head to stratomcarter.com, so S-T-R-A-T-O-M-E-R-C-A-T-A dot com, stratomcarter.com, and you've got the app there and all the information.
+So yeah, just to head to [stratomercata.com](https://stratomercata.com), so S-T-R-A-T-O-M-E-R-C-A-T-A dot com, [stratomercata.com](https://stratomercata.com), and you've got the app there and all the information.
 
 [[31:08]](https://www.youtube.com/watch?v=NPLeU3iVIMw&t=1868s) **Kieren James-Lubin:**
 My button in the top right.
