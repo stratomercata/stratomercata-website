@@ -39,7 +39,7 @@ _(thanks for the photo, ChatGPT!)_
 
 ### Technical Implementation
 
-[Gary](https://github.com/blockapps/gary) was written by [James Hormuzdiar](https://github.com/jamshidh), and is an surprisingly terse Haskell command-line application which really packs a punch. The application uses the OpenAI GPT-4.1 API and persists previous queries in a simple history text file. Gary wraps your command-line shell in "Gary-ness", and can generate and run shell commands on your behalf. Gary is like a command-line equivalent of the more common IDE-hosted coding assistants.
+[Gary](https://github.com/blockapps/gary) was written by Jim Hormuzdiar, and is an surprisingly terse Haskell command-line application which really packs a punch. The application uses the OpenAI GPT-4.1 API and persists previous queries in a simple history text file. Gary wraps your command-line shell in "Gary-ness", and can generate and run shell commands on your behalf. Gary is like a command-line equivalent of the more common IDE-hosted coding assistants.
 
 ### Gary in Action: Command-Line AI Assistant Demonstrations
 

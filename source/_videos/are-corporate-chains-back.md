@@ -3,6 +3,7 @@ title: "Are Corporate Chains Back?"
 date: 2025-10-22
 hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin"]
 description: "The [Tempo](https://tempo.xyz) blockchain was [announced](https://tempo.xyz/launch-announcement) in September 2025.  It is an L1 payments chain backed by a consortium led by [Stripe](https://stripe.com), and is leaching talent from the [Ethereum](https://ethereum.org) ecosystem, with [Dankrad Feist](https://x.com/dankrad) as the [most recent example](https://x.com/dankrad/status/1979133618254405775).  Are permissioned corporate chains back?"
+img: /images/covers-for-spaces/are-corporate-chains-back.png
 embed:
   url: https://www.youtube.com/embed/2BR6nodzzos
 table_of_contents:
