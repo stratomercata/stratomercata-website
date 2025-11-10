@@ -4,6 +4,7 @@ date: 2025-10-29
 hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin"]
 guests: ["[Brian Smocovich](https://x.com/BSmokes_)"]
 description: "We are joined by a special guest - [Brian Smocovich](https://x.com/BSmokes_), Founder of [PistachioFi](https://pistachio.fi) and ex-colleague at [BlockApps](https://blockapps.net) to discuss improving UX in the Web3 space"
+img: /images/covers-for-spaces/is-better-web3-ux-the-key-to-mainstream-adoption.png
 embed:
   url: https://www.youtube.com/embed/6iPxnzJEa2A
 table_of_contents:

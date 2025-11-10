@@ -2,7 +2,8 @@
 title: "Launch of Mercata V2: Vaulted Assets OnChain and App Walkthrough"
 date: 2025-11-05
 hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin", "Michael Tan"]
-description: "The STRATO Mercata team celebrates the launch of V2 with a comprehensive walkthrough of the new platform. Kieren and Victor explain the evolution from V1's NFT marketplace to V2's DeFi-focused platform for earning on tokenized real-world assets. Michael demonstrates the app's key features including bridging, swapping, lending pools, and borrowing against collateral. The team discusses how V2 makes DeFi accessible through a point-and-click interface while maintaining the benefits of decentralized finance."
+description: "The STRATO Mercata team celebrates the launch of V2 with a comprehensive walkthrough of the new platform. The team discusses how V2 makes DeFi accessible through a point-and-click interface while maintaining the benefits of decentralized finance."
+img: /images/covers-for-spaces/launch-of-mercata-v2-app-walkthrough.png
 embed:
   url: https://www.youtube.com/embed/NPLeU3iVIMw
 table_of_contents:
