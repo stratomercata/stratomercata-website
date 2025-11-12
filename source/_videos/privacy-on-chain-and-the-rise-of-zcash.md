@@ -4,18 +4,38 @@ date: 2025-11-12
 hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin", "Jim Hormuzdiar"]
 description: "[ZCash](https://z.cash/) is 1251% up in the last 3 months.  [Firo](https://firo.org/) up 377%, [Dash](https://www.dash.org/) up 223%, [Monero](https://www.getmonero.org/) up 50%.  It seems that privacy is the new meta-narrative.  What on earth is happening?  What changed?"
 img: /images/covers-for-spaces/privacy-on-chain-and-the-rise-of-zcash.png
+table_of_contents:
+  - link: "#introductions"
+    title: "Introductions"
+  - link: "#what-is-blockchain-privacy"
+    title: "What is blockchain privacy and why is it important?"
+  - link: "#blockapps-early-privacy-work"
+    title: "BlockApps early privacy work and lessons learned"
+  - link: "#what-is-zero-knowledge"
+    title: "What is zero knowledge and how does it work?"
+  - link: "#zcash-implementation"
+    title: "Zcash implementation and tumblers"
+  - link: "#zk-evms-and-programmability"
+    title: "ZK-EVMs and general programmability"
+  - link: "#zcash-price-performance"
+    title: "Zcash price performance and mobile wallets"
+  - link: "#closing-and-next-week"
+    title: "Closing thoughts and preview of next week"
 ---
 
 ## Transcript
 
 <!-- TABLE_OF_CONTENTS -->
 
+<a id="introductions"></a>
+
+### Introductions
 
 **Victor Wong:**
 Okay. Welcome everyone. We have a very special and very timely topic today. Privacy on-chain and the rise of Zcash. And we sort of have a special guest today. So I'm Victor Wong. I am founder and chief product officer at BlockApps. I'll get to our normal guests, but today we have Jim. Do you want to give us a quick intro?
 
 **Jim Hormuzdiar:**
-Yeah, I'm also, I've known Victor and Kieran for years. I'm one of the founders of BlockApps and CTO.
+Yeah, I'm also, I've known Victor and Kieren for years. I'm one of the founders of BlockApps and CTO.
 
 **Victor Wong:**
 And you're here in particularly because I would call you a Zcash expert, having written your own Zcash client.
@@ -39,7 +59,7 @@ Oh, I would say there's definitely less than 20 people who have written their ow
 Well, yeah, there's probably some core contributors. I imagine there's more than a handful into Zcash. But when Jim says non-expert, it's like there are, let's say, yes. I'll expand the range. Five to 100 people who understand Zcash better on the planet. Big, big, big range there, but we're talking about pretty small numbers in absolute terms. Yes, exactly.
 
 **Victor Wong:**
-I would say if Jim's not an expert, I don't know what even expert means. Anyways, Kieran, do you want to give a quick intro of yourself?
+I would say if Jim's not an expert, I don't know what even expert means. Anyways, Kieren, do you want to give a quick intro of yourself?
 
 **Kieren James-Lubin:**
 Certainly. I'm our CEO, been on these before. By the way, Vic, you're letting Jim off the hook, calling him a special guest. He has to do this all the time now with our continued in the public presence. Not special in the future. Special today.
@@ -59,6 +79,10 @@ There you go. But it won't be special soon. Bob, by the way, since you've spoken
 **Bob Summerwill:**
 So hi, I'm Bob. I'm head of ecosystem. And yeah, been doing a lot of spaces.
 
+<a id="what-is-blockchain-privacy"></a>
+
+### What is blockchain privacy and why is it important?
+
 **Victor Wong:**
 Yeah. So I think, you know, to level set, because I think there's a lot of misunderstanding about what privacy is. How would you define blockchain privacy and why do you think it's important?
 
@@ -69,9 +93,9 @@ Who's that question for?
 Could be for anyone, whoever wants to go.
 
 **Kieren James-Lubin:**
-Kieran, you want to kick us off? I assume the viewer is pretty deep in the space, but I'll bring it down to a fairly low technical level. So blockchains are great. They let you move digitally scarce value from party to party.
+Kieren, you want to kick us off? I assume the viewer is pretty deep in the space, but I'll bring it down to a fairly low technical level. So blockchains are great. They let you move digitally scarce value from party to party.
 
-And the way that this is typically done is that you've got a big address which is almost but not quite a public key and you sort of sign a message that says I, Kieran—but it's not Kieran because it's this address—send, you know, three Bitcoin to Bob. And it doesn't say Bob, it's another address. You don't quite know who either of those parties are. However, you've got the address forever.
+And the way that this is typically done is that you've got a big address which is almost but not quite a public key and you sort of sign a message that says I, Kieren—but it's not Kieren because it's this address—send, you know, three Bitcoin to Bob. And it doesn't say Bob, it's another address. You don't quite know who either of those parties are. However, you've got the address forever.
 
 And often it is the case that you can piece together what happened based on that address. So say you're on a centralized exchange which has KYC'd. It knows how to associate you to maybe a withdrawal address. It may not know down the line. But if you start to get a bunch of data points, you can kind of piece together who sent what to whom.
 
@@ -95,6 +119,10 @@ But yeah, Satoshi did talk a bit about zero knowledge. I can't remember who rais
 
 So, yeah, I mean, what that's meant is Bitcoin and then Ethereum following that same path, you know, they are an immutable public ledger forever. Ethereum even worse because it's an account model. So you are reusing the addresses all the time, right? And if your address is unmasked, you are forever doxxed. That's happened to at least one of the Ethereum founders who moved hundreds of millions of dollars out of a known address of his, which probably not desired.
 
+<a id="blockapps-early-privacy-work"></a>
+
+### BlockApps early privacy work and lessons learned
+
 **Victor Wong:**
 And I, you know, you guys have been talking about Satoshi, but Jim, I remember, I think it's like earlier at like 2014, Vitalik was talking like, he was like, ZK-SNARKs will fix all of this at some point in time. Do you remember that at all?
 
@@ -109,7 +137,15 @@ And getting things back onto the main chain became sort of this extra complicate
 
 And really the only way to make that stuff work is you have to go back to ZK. So ZK is overly complicated, but it is necessary. And so we started looking at that again, but I think like the safe thing to do is start with a proven technology and Zcash had been around for years and nobody had stolen money. And this is just sort of like a subset of ZK, but it's kind of a cool thing.
 
+<a id="zcash-implementation"></a>
+
+### Zcash implementation and tumblers
+
 You can build what they call tumblers of money. You throw a bunch of money in and then the money that you put into the tumbler is, you know how much went in, but the ownership is completely scrambled up. And at any time you can go and transfer money from within the tumbler from one user to another, but only the users who did the transferring and got the money know what was there, but nobody else can see what's happening. So again, like you have these systems of multiple users with lots of money, but you don't know who owns a percentage of the money there.
+
+<a id="what-is-zero-knowledge"></a>
+
+### What is zero knowledge and how does it work?
 
 **Kieren James-Lubin:**
 Yeah, actually before we even go that far, can we talk just like what is ZK and how does it work and why is it an important part of the solution? I want to pull back for also a second. I remember I think there was an Ethereum meetup in New York, I'm not sure if either of you guys were there. I think I spoke at it maybe. And there was also a Zcash, I think, presentation there. And it was, at that time, taking seven minutes to generate the ZK proofs.
@@ -126,7 +162,7 @@ Yeah, can you give a high level summary of what zero knowledge is? I think very 
 I have a good layman example, I think. And Jim can correct me. So I did once take a theoretical cryptography class. And the example they bring up is the CEO problem, so to speak. So you've got two CEOs. And they're high ego guys. And they want to know—
 
 **Victor Wong:**
-Do you say that from experience, Kieran?
+Do you say that from experience, Kieren?
 
 **Kieren James-Lubin:**
 I'm not speaking about myself. They want to know who has the most between the two. But they don't want to know how much money. They merely want to know which one has more. And you would think that there wouldn't really be a way to create a scheme in which they could learn that information and nothing else. But there actually is.
@@ -165,6 +201,10 @@ So yeah, Zcash at the moment is onto its...
 **Jim Hormuzdiar:**
 And sort of by identifying a certain set of algorithms and just focusing on them, they were able to sort of solve this one tumbler problem without going any more in-depth than that. So this isn't like, like in the dream world, you would take any like Ethereum contract and compile it somehow as something zero knowledge and then prove that you had run the full contract. That's something that at the time, at least so far in the world as it is, I didn't want to get into it or have us get into the company. But just to have these tumblers in place, I think that solves a lot.
 
+<a id="zcash-price-performance"></a>
+
+### Zcash price performance and mobile wallets
+
 **Victor Wong:**
 Yeah, Bob, you were saying something?
 
@@ -192,6 +232,10 @@ I mean, any of these things are technological advancements. But, I mean, you wan
 **Kieren James-Lubin:**
 I need to interject. I have a crypto friend who was texting about 30 seconds ago about whether I like Zcash at this price. This is a pre-recorded podcast, so I guess it'll run on Wednesday, November the 12th. But very timely, I think. It's sort of like, again, there's the old crypto joke where when your dentist and realtor friends start asking you about Ripple and Cardano, it's time to unwind your positions a little bit. But the Zcash meta, I don't know. Maybe that means there's room to run. Maybe it's tops.
 
+<a id="zk-evms-and-programmability"></a>
+
+### ZK-EVMs and general programmability
+
 **Victor Wong:**
 Well, as they say, it's like catching a falling knife, right? Trying to figure out the peak of the market. We've talked about how Zcash works and it uses ZK in these very specific areas and it's not programmable generally. Now, obviously, there's a lot of talk in the Ethereum world about ZK-EVMs. Do you guys have any thoughts on that and how those work? Because at what point do we get... Is it truly impossible to get full programmability or is that something that is just getting closer?
 
@@ -216,7 +260,7 @@ Yeah, Jim, what do you think, like, you know, on the sort of general programmabi
 I wish I had more, you know, hands-on experience with general ZK. I see a lot of people very excited by it. And maybe in a way that makes me skeptical because it seems like a cool toy. But I am open to them working great. And so I don't want to make a strong, firm stance at the moment on them, but they would be great if they work.
 
 **Victor Wong:**
-Yeah, it seems like the approach to Kieran's point is like find specific areas where you can create circuits and apply them and optimize for those and then expand that over time. You know, like it's really about kind of like, you know, nailing those initial use cases.
+Yeah, it seems like the approach to Kieren's point is like find specific areas where you can create circuits and apply them and optimize for those and then expand that over time. You know, like it's really about kind of like, you know, nailing those initial use cases.
 
 **Jim Hormuzdiar:**
 And that's why I was drawn to that because, because if you, if you really narrow it down to something really simple, then I think you can do it well.
@@ -226,6 +270,10 @@ I've heard that people even maybe compile the specific circuits and then optimiz
 
 **Victor Wong:**
 I think compiling a circuit is still pretty very computational intensive, but it's way less. For most circuits, once a circuit is compiled, it's way less to do the proof. You got to continue to push that down, but I think the ratio is very large.
+
+<a id="closing-and-next-week"></a>
+
+### Closing thoughts and preview of next week
 
 Well, I think we are at time. You know, where can we find you, Jim? I'm going to start with you. Where can you find me? Yes. People want to hear more and learn more about Jim, which I, you know, please speak up, ask him where can, where they find you.
 
@@ -251,7 +299,7 @@ Sorry, it's J-Hermos. Like J-H-E-R-M-O-S.
 I threw it in the chat. I don't know if we can all see that, the studio chat.
 
 **Victor Wong:**
-So yes. You can find them at J-Hermos. Kieran, where can people find you?
+So yes. You can find them at J-Hermos. Kieren, where can people find you?
 
 **Kieren James-Lubin:**
 Jamshied Hermos.
