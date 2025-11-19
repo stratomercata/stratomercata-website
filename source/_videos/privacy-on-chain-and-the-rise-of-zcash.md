@@ -25,6 +25,14 @@ table_of_contents:
     title: "Closing thoughts and preview of next week"
 ---
 
+## Audio
+
+<audio controls style="width: 100%; max-width: 600px;">
+  <source src="/assets/audio/privacy-on-chain-and-the-rise-of-zcash.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
 ## Transcript
 
 <!-- TABLE_OF_CONTENTS -->

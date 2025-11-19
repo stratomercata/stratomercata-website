@@ -29,6 +29,14 @@ Our long-awaited [Mercata V2 contest]("https://www.stratomercata.com/blog/announ
 Here are [instructions to get started](https://www.stratomercata.com/blog/announcing-the-mercata-v2-trading-and-testing-challenge).
 
 
+## Audio
+
+<audio controls style="width: 100%; max-width: 600px;">
+  <source src="/assets/audio/mercata-v2-context-kickoff.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
 ## Transcript
 
 <!-- TABLE_OF_CONTENTS -->

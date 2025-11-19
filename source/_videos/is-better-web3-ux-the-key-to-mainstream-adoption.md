@@ -34,6 +34,14 @@ table_of_contents:
     title: "Ready for the Normies?"
 ---
 
+## Audio
+
+<audio controls style="width: 100%; max-width: 600px;">
+  <source src="/assets/audio/is-better-web3-ux-the-key-to-mainstream-adoption.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
 ## Transcript
 
 <!-- TABLE_OF_CONTENTS -->

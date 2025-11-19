@@ -30,6 +30,13 @@ table_of_contents:
     title: "Closing thoughts and where to find more"
 ---
 
+## Audio
+
+<audio controls style="width: 100%; max-width: 600px;">
+  <source src="/assets/audio/institutions-want-tokens-how-is-ethereum-keeping-up.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 ## Transcript
 
 <!-- TABLE_OF_CONTENTS -->
