@@ -29,6 +29,14 @@ On November 5, 2025, the STRATO Mercata team went live to celebrate the official
 
 The session features Kieren James-Lubin explaining the technical evolution and design philosophy, Victor Wong discussing the earning opportunities and user experience improvements, and Michael providing a live demonstration of the app's key features including bridging, swapping, liquidity pools, and collateralized borrowing.
 
+## Audio
+
+<audio controls style="width: 100%; max-width: 600px;">
+  <source src="/assets/audio/launch-of-mercata-v2-app-walkthrough.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
 ## Transcript
 
 <!-- TABLE_OF_CONTENTS -->

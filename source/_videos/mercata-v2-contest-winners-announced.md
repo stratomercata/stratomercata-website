@@ -23,6 +23,15 @@ Our long-awaited [Mercata V2 contest]("https://www.stratomercata.com/blog/announ
 
 **STRATO Mercata V2** is our completely revamped application, which is due to be released later this year.  The contest is using our testnet running the latest pre-release version.
 
+
+## Audio
+
+<audio controls style="width: 100%; max-width: 600px;">
+  <source src="/assets/audio/mercata-v2-contest-winners-announced.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
 ## Transcript
 
 <!-- TABLE_OF_CONTENTS -->

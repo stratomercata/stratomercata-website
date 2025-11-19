@@ -35,6 +35,13 @@ table_of_contents:
 
 [Bob]({{ '/people/bob-summerwill/' | relative_url }}) and [Kieren]({{ '/people/kieren-james-lubin/' | relative_url }}) joined [Victor]({{ '/people/victor-wong/' | relative_url }}) to reflect on the event, and on the market trends which manifested there.
 
+## Audio
+
+<audio controls style="width: 100%; max-width: 600px;">
+  <source src="/assets/audio/state-of-blockchain-more-boring-or-more-crazy.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 
 ## Transcript
 
